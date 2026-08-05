@@ -1,0 +1,143 @@
+{
+  "model": "CNN1D",
+  "condition": "ENR",
+  "seed": 123,
+  "pipeline_version": "canonical_v04_2_vader_train_scope",
+  "created_at": "2026-08-03T00:06:06.654478",
+  "split_source": "GEN_split_gld_reddit_ids_v02.json",
+  "dataset": "gold_enriched_ontology.parquet",
+  "dataset_sha256": "62c6394d4ef68191b713d80c9b54849ecf00176822719bf515b8f0ee65b31162",
+  "lexicon_manifest": "results/lexicon/ontology_lexicon_v04_2_train_only.json",
+  "lexicon_manifest_sha256": "313af4e18f4d7b58f87e87a7ac5bbbb19c32d5e7c829816bdad9fa6515e51e77",
+  "test_size": 323,
+  "class_order": [
+    "Negative",
+    "Neutral",
+    "Positive"
+  ],
+  "support": [
+    48,
+    119,
+    156
+  ],
+  "accuracy": 0.6099071207430341,
+  "macro_f1": 0.5244821092278719,
+  "weighted_f1": 0.5912000839586503,
+  "confusion_matrix": [
+    [
+      14,
+      17,
+      17
+    ],
+    [
+      17,
+      52,
+      50
+    ],
+    [
+      5,
+      20,
+      131
+    ]
+  ],
+  "classification_report": {
+    "Negative": {
+      "precision": 0.3888888888888889,
+      "recall": 0.2916666666666667,
+      "f1-score": 0.3333333333333333,
+      "support": 48.0
+    },
+    "Neutral": {
+      "precision": 0.5842696629213483,
+      "recall": 0.4369747899159664,
+      "f1-score": 0.5,
+      "support": 119.0
+    },
+    "Positive": {
+      "precision": 0.6616161616161617,
+      "recall": 0.8397435897435898,
+      "f1-score": 0.7401129943502824,
+      "support": 156.0
+    },
+    "accuracy": 0.6099071207430341,
+    "macro avg": {
+      "precision": 0.5449249044754664,
+      "recall": 0.5227950154420743,
+      "f1-score": 0.5244821092278719,
+      "support": 323.0
+    },
+    "weighted avg": {
+      "precision": 0.5925909528372395,
+      "recall": 0.6099071207430341,
+      "f1-score": 0.5912000839586503,
+      "support": 323.0
+    }
+  },
+  "environment": {
+    "python": "3.13.13",
+    "sklearn": "1.9.0",
+    "xgboost": "3.3.0",
+    "torch": "2.13.0"
+  },
+  "hyperparameters": {
+    "embedding_dim": 300,
+    "num_filters": 128,
+    "kernel_sizes": [
+      3,
+      4,
+      5
+    ],
+    "hidden_dim": 128,
+    "classifier_head": "pooled_plus_optional_semantic_to_hidden128_to_output",
+    "dropout": 0.5,
+    "batch_size": 32,
+    "lr": 0.001,
+    "max_epochs": 20,
+    "early_stopping_patience": 5,
+    "max_len": 279,
+    "vocab_size": 5602,
+    "vocab_fit": "train_only",
+    "best_epoch": 6,
+    "best_val_f1": 0.5535,
+    "device": "cpu"
+  },
+  "ont_features": [
+    "ont_domain_density",
+    "ont_InteligenciaArtificial_Negativo",
+    "ont_total_negativo_mentions",
+    "ont_Innovacion_Neutro",
+    "ont_Etica_Negativo",
+    "ont_InteligenciaArtificial_Neutro",
+    "ont_Tecnologia_Positivo"
+  ],
+  "ont_list": "anova_p005_train_only_vader_scope",
+  "semantic_input_provenance": {
+    "train": {
+      "profile": "train_standardized_float32",
+      "rows": 968,
+      "columns": 7,
+      "dtype": "float32",
+      "ordered_post_ids_sha256": "d42ac8c75364349ab2bd40038940caf56eb506b786e420054190294a27f45476",
+      "ordered_features_sha256": "95680f916a7802a3221e04fee777df9e2dcfa6125d12e7c3064d0ce282f0da51",
+      "matrix_sha256": "7dc4480045884be82090e6eb7e9315469e12bfde0c8690ec9648fc70bd3c58e8"
+    },
+    "val": {
+      "profile": "train_standardized_float32",
+      "rows": 323,
+      "columns": 7,
+      "dtype": "float32",
+      "ordered_post_ids_sha256": "7334119058332c5d6b79d14cf324f0672edbc7b4a314852667deaad73828180e",
+      "ordered_features_sha256": "95680f916a7802a3221e04fee777df9e2dcfa6125d12e7c3064d0ce282f0da51",
+      "matrix_sha256": "10482e26e8a13b35b7e23c5ab6e70c29ddb1f105db6f13243cccb893c7c3da60"
+    },
+    "test": {
+      "profile": "train_standardized_float32",
+      "rows": 323,
+      "columns": 7,
+      "dtype": "float32",
+      "ordered_post_ids_sha256": "359d5f85b3b8c5eeacf179a9b91c8d4ed63dfda568712a6ed4c50ef3bf62f009",
+      "ordered_features_sha256": "95680f916a7802a3221e04fee777df9e2dcfa6125d12e7c3064d0ce282f0da51",
+      "matrix_sha256": "e9cbbb74d0e2cd294914d0640f48bb190f58a60bbab0a56e7e49c3c3dc6d2091"
+    }
+  }
+}

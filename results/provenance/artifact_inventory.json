@@ -1,0 +1,1109 @@
+{
+  "status": "passed",
+  "scope": {
+    "active_lineage": "v04.2",
+    "excluded_paths": [],
+    "sensitivity_policy": "Hashes the six aggregate sensitivity summaries; variant-level intermediates are referenced by the sensitivity manifest and excluded from the canonical inventory count.",
+    "control_output_policy": "Inventory and reproducibility reports do not hash themselves; the reproducibility manifest records the inventory and hash-manifest hashes after generation."
+  },
+  "artifact_count": 156,
+  "missing_required": [],
+  "canonical_ontology_decision": {
+    "selected": "src/ontology/resources",
+    "reason": "The public ontology directory is the canonical RDF/SHACL source used by the release scripts."
+  },
+  "artifacts": [
+    {
+      "path": "data/gold/GEN_split_gld_reddit_ids_v02.json",
+      "role": "split",
+      "size_bytes": 24858,
+      "hash_sha256": "473f7bad51f04cfb3de2cbf066e46d5539000037d5edab2cf20f06da7af95444",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "data/gold/gold_enriched_ontology.parquet",
+      "role": "semantic_feature_table",
+      "size_bytes": 912967,
+      "hash_sha256": "62c6394d4ef68191b713d80c9b54849ecf00176822719bf515b8f0ee65b31162",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "data/gold/gold_enriched_ontology_metadata.json",
+      "role": "supporting_artifact",
+      "size_bytes": 2792,
+      "hash_sha256": "9f53de941ae8f93c68a05a7322cd8959e04b873473ac890e851524e56d17c220",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/lexicon/lexicon_induction_report.json",
+      "role": "supporting_artifact",
+      "size_bytes": 585,
+      "hash_sha256": "596240bb38633d1ad24c14404d4ffa44981f1672d4e0e0e34c7fff5085d26975",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/lexicon/lexicon_induction_report.md",
+      "role": "documentation",
+      "size_bytes": 242,
+      "hash_sha256": "5213c62c1c3ff44eaf18cc093474232e53a28553848444e61fbc3acc502ba3bf",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/lexicon/ontology_lexicon_v04_2_train_only.json",
+      "role": "supporting_artifact",
+      "size_bytes": 23415,
+      "hash_sha256": "313af4e18f4d7b58f87e87a7ac5bbbb19c32d5e7c829816bdad9fa6515e51e77",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/feature_selection/ENR_selected_ont_features_anova_train_only.json",
+      "role": "semantic_variable_selection",
+      "size_bytes": 5950,
+      "hash_sha256": "03d660c83fdb0a796556edec66736f008df4d1b99b947051c640cb9c1b7ff854",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/feature_selection/support_verification.json",
+      "role": "semantic_variable_selection",
+      "size_bytes": 1292,
+      "hash_sha256": "e96004203b544f6d277714262d88a61136c0295b2f773e7efe27d687ab2e5009",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "docs/ARTIFACT_MANIFEST.md",
+      "role": "documentation",
+      "size_bytes": 2976,
+      "hash_sha256": "684f81cb72a88329210eca895a222d3d7520bf50875d16c6f14a9d03115630f2",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.md",
+      "role": "documentation",
+      "size_bytes": 3163,
+      "hash_sha256": "9cb1fbc85eb5ad6c195b6f1bddcf62d3fe2ce298b30916dcf6d2f666f4a5f6c1",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "docs/RESULTS_TRACEABILITY.md",
+      "role": "documentation",
+      "size_bytes": 2607,
+      "hash_sha256": "c4c029c3f47bded96fb0594ae9eb0fc41e9c8ff55aed789b3d4fc4f67a88f5b6",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "figures/fig01_traceable_ke_artifact_pipeline.png",
+      "role": "supporting_artifact",
+      "size_bytes": 1335235,
+      "hash_sha256": "3299ce806a07fa5c2ec84582bd7fe2a9655b15a62a60cf1b306ed51077c10f7c",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "figures/fig02_rdf_pattern.png",
+      "role": "supporting_artifact",
+      "size_bytes": 376471,
+      "hash_sha256": "39d8686789e297f0bb8736a99fc49886df69c257d33235f8d5b872219b2811b6",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "figures/fig03_traceability_governance_contract.png",
+      "role": "supporting_artifact",
+      "size_bytes": 608416,
+      "hash_sha256": "e28c9bae0a034e178b95361e4b54fb96dc5211343677ac37414caa8128bfafcb",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "figures/fig04_chain_governance_lineage_ledger.png",
+      "role": "supporting_artifact",
+      "size_bytes": 1056083,
+      "hash_sha256": "9049ab757a7662526898eb1a9a0007a859ed4b77e45ebd40e05e290094474105",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "figures/fig05_module_coverage.png",
+      "role": "supporting_artifact",
+      "size_bytes": 124633,
+      "hash_sha256": "2cd2d54be3389fd233e5dbec91d4f406af17671b4d883368bb185f8bf62eb0a0",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "figures/fig06_lexical_sensitivity.png",
+      "role": "supporting_artifact",
+      "size_bytes": 223867,
+      "hash_sha256": "cde918d8266d5f124543631dd94e350d0c2afa849832944cfedb4e2575fc06ab",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "figures/fig07_downstream_macro_f1.png",
+      "role": "supporting_artifact",
+      "size_bytes": 58846,
+      "hash_sha256": "0c7c94a29b1d3823160485e6e323ca2a69397e04a693bc96d0ed2df861cc9768",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "figures/fig08_downstream_confusion_delta.png",
+      "role": "supporting_artifact",
+      "size_bytes": 255396,
+      "hash_sha256": "ddeb476cbd0774779600d418d2b0d259fbeb63619573ac43aeeeba19b8bf6259",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "figures/fig09_prediction_distribution.png",
+      "role": "supporting_artifact",
+      "size_bytes": 71038,
+      "hash_sha256": "45fe89fd9e5e965f8b62b6952c94e37d80f83f181b2525292a7375fe72839bfb",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "figures/fig10_module_sensitivity.png",
+      "role": "supporting_artifact",
+      "size_bytes": 161474,
+      "hash_sha256": "a23d0e1110a2e8b948142556791ef88d88997955cb8c7f7fff0eaafaf938c50e",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "figures/fig11_feature_stability.png",
+      "role": "supporting_artifact",
+      "size_bytes": 167706,
+      "hash_sha256": "ade64aaf4ace805142ee2688fb8b2f27dcf82174a7606593ca4847c0ca946d91",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "figures/source/fig01_traceable_ke_artefact_pipeline.drawio",
+      "role": "supporting_artifact",
+      "size_bytes": 25442,
+      "hash_sha256": "67c8c18c076256fba150d2eea0ac4c1e5fc292fd14e52c9d861fe00fc163ebe6",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "figures/source/fig01_traceable_ke_artefact_pipeline.spec.json",
+      "role": "supporting_artifact",
+      "size_bytes": 6716,
+      "hash_sha256": "327dc7471a3e0f4ee10e1e9a0544716570a39732eb7d73d09c1622b5ee6991e4",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "figures/source/fig02_rdf_instance_pattern.drawio",
+      "role": "supporting_artifact",
+      "size_bytes": 8207,
+      "hash_sha256": "5d47bc69a7fef93393df604f8df64a90b58093726be5c3207f00d7a1bb12d988",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "figures/source/fig02_rdf_instance_pattern.spec.json",
+      "role": "supporting_artifact",
+      "size_bytes": 2601,
+      "hash_sha256": "a114fae5d935ef66a03d75cc303bc62dcdc3fbf8d83bb8d4d52f8ee278c292a0",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "figures/source/fig02_traceability_governance_contract.spec.json",
+      "role": "supporting_artifact",
+      "size_bytes": 4997,
+      "hash_sha256": "509bda4f9104446861f41f9ce08f1272f7c3ac990ed573e917b82e780b4cd995",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "figures/source/fig03_traceability_governance_contract.drawio",
+      "role": "supporting_artifact",
+      "size_bytes": 14074,
+      "hash_sha256": "2f3c69e570d593aa464ab2b4a63452cd11339e8082c89d3fb0712d384624ae12",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "figures/source/fig_chain_governance_lineage_ledger.drawio",
+      "role": "supporting_artifact",
+      "size_bytes": 18025,
+      "hash_sha256": "0c41bfcdbac4a8ad7d3a538f6b82729bdf722b800897ce7990539a9b2a0f8877",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "figures/source/fig_chain_governance_lineage_ledger.spec.json",
+      "role": "supporting_artifact",
+      "size_bytes": 5252,
+      "hash_sha256": "ad9e9e2bd28346f04b26349c74b7544209b312bfab342f26ab73782a22a8b8f1",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "src/ontology/enricher.py",
+      "role": "supporting_artifact",
+      "size_bytes": 34667,
+      "hash_sha256": "71cbc5ca402853bb6aae65764aac17e533dd61ca15d9cdd47d388b4eea2a5e52",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "src/ontology/resources/catalog-v001.xml",
+      "role": "supporting_artifact",
+      "size_bytes": 454,
+      "hash_sha256": "bd844fb3272e97dea66ce97f1921bfb60652affb8add7c69d3bb06a15f15b2dc",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "src/ontology/resources/rr-core.ttl",
+      "role": "ontology_or_shacl",
+      "size_bytes": 38366,
+      "hash_sha256": "b30a76e00cf73e0525c5d211246c617db5d3f5254f5c3eda0bb58801ef53d430",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "src/ontology/resources/rr-domain.ttl",
+      "role": "ontology_or_shacl",
+      "size_bytes": 18980,
+      "hash_sha256": "bb51d55c67fc9a98ad21a9e1b88792f78d10739c90272bcc9c1ff90d069b9b91",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "src/ontology/resources/rr-sentiment.ttl",
+      "role": "ontology_or_shacl",
+      "size_bytes": 4590,
+      "hash_sha256": "ef230818d02f9b7c2103935acf2ea8ef4b1046ab15d7775ce7a0019c58fc2942",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "src/ontology/resources/rr-shapes.ttl",
+      "role": "ontology_or_shacl",
+      "size_bytes": 7023,
+      "hash_sha256": "36f9b52a41df2f96e30620b1965a0f5acdb474e2e17e0ed6be2ec0a3d40d4afc",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "scripts/experiments/analyze_ontology_coverage.py",
+      "role": "supporting_artifact",
+      "size_bytes": 4281,
+      "hash_sha256": "b8515d78800801affe7c468d31e32f875aa52aa07f1e93c03aee3ac60261bb3e",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "scripts/experiments/audit_model_input_cells.py",
+      "role": "supporting_artifact",
+      "size_bytes": 17269,
+      "hash_sha256": "f0002ee7f0dd7fcb7a57935f6b2bb9fe281dd96178607cbdf9cd3f6651cb59c7",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "scripts/experiments/audit_model_inputs.py",
+      "role": "supporting_artifact",
+      "size_bytes": 3436,
+      "hash_sha256": "5e221065446143b7e0c84192195f9a5b3418289e50fa0601535b4c5b7e3b3600",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "scripts/experiments/audit_traceability.py",
+      "role": "supporting_artifact",
+      "size_bytes": 2101,
+      "hash_sha256": "f499994dad051eaf066eb3395420a066b6d4a5164793a41426a0a45fe7053ada",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "scripts/experiments/build_ke_artifact_inventory.py",
+      "role": "supporting_artifact",
+      "size_bytes": 8399,
+      "hash_sha256": "ec1e8b60d77dbb2ccf01448f05b0fed2047d6c8215b9f448ffeea36205437b6b",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "scripts/experiments/build_reproducibility_manifest.py",
+      "role": "supporting_artifact",
+      "size_bytes": 4246,
+      "hash_sha256": "5f54474c31b609439bdc29caee4f7affd3031550146ea148fa628c27deb22512",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "scripts/experiments/build_train_only_ontology_dataset.py",
+      "role": "supporting_artifact",
+      "size_bytes": 13960,
+      "hash_sha256": "c03f77feec47b3f76b17579757597640c12d6ced862bc07e18f9c77166ec1304",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "scripts/experiments/ke_artifact_utils.py",
+      "role": "supporting_artifact",
+      "size_bytes": 5870,
+      "hash_sha256": "ea868ad123052f6ddef568620ba75485c6021ce6fc4d44e16d9f2c1c0473a359",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "scripts/experiments/materialize_reddit_rdf.py",
+      "role": "supporting_artifact",
+      "size_bytes": 5076,
+      "hash_sha256": "fe2665247de4800d5acc02fbabfe2151aae4b45c89911a325acf6ee4032bca1d",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "scripts/experiments/model_input_provenance.py",
+      "role": "supporting_artifact",
+      "size_bytes": 1756,
+      "hash_sha256": "31d9dbaee385d392a71fbe62e56a3295bf2f5adb58d595b28d4bbe2119ce0042",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "scripts/experiments/reconcile_artifact_chain.py",
+      "role": "supporting_artifact",
+      "size_bytes": 7688,
+      "hash_sha256": "2b24116a91201ada5dfa97b4db5f7c1059fe17879ac0f7dab68f4cf831608f5d",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "scripts/experiments/run_cnn1d_module_ablation.py",
+      "role": "supporting_artifact",
+      "size_bytes": 26043,
+      "hash_sha256": "3d28c9e3286f76a76664d89fbe765918b82257e5d4a4024190682ac9524b42b3",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "scripts/experiments/run_module_ablation.py",
+      "role": "supporting_artifact",
+      "size_bytes": 12780,
+      "hash_sha256": "49b3c3988e4a4e564098dc55dfd8de6679423837dc970686d3b996cb918882e6",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "scripts/experiments/run_shacl_conformance.py",
+      "role": "supporting_artifact",
+      "size_bytes": 4423,
+      "hash_sha256": "cbb81c5e23fa592c17a9b1be8eb9562aa7c21f8dc224880a1e6c94b17781cf6a",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "scripts/experiments/run_vader_ke_sensitivity.py",
+      "role": "supporting_artifact",
+      "size_bytes": 37748,
+      "hash_sha256": "ccbca6edb146d3bb666012d415f1a6c2d72fe329090beea6270c97d21f8d7dad",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "scripts/experiments/select_ont_features_anova_train_only.py",
+      "role": "supporting_artifact",
+      "size_bytes": 3392,
+      "hash_sha256": "06b7abad3a80c79826e07d8d232dc6f9516527d4bd909147849f730dd29b06e0",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "scripts/experiments/train_canonical_anova_revalidation.py",
+      "role": "supporting_artifact",
+      "size_bytes": 23197,
+      "hash_sha256": "d8de5d9d1acf3b8f30832271402c027c526529813ec289a875892d15763af763",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "scripts/experiments/validate_v04_2_experiment_chain.py",
+      "role": "supporting_artifact",
+      "size_bytes": 13027,
+      "hash_sha256": "3441a86edb2dc0075b37e9acd3e14b64c56fc91baf06fcf5124d1448fbd2135d",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "scripts/figures/generate_results_plots.py",
+      "role": "supporting_artifact",
+      "size_bytes": 20438,
+      "hash_sha256": "1a2cdbc67fcd45b1a4a55d637bb6ecc1c13bdad008ca2c1e17465445a2d1e2f1",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "scripts/release/generate_manifest.py",
+      "role": "supporting_artifact",
+      "size_bytes": 1444,
+      "hash_sha256": "01b669e49e262c1511b8b502efe27e8e792ed049403f0f63d86f10ffd4c51fe5",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "scripts/release/prepare_public_dataset.py",
+      "role": "supporting_artifact",
+      "size_bytes": 4190,
+      "hash_sha256": "d37b9f4d79c36105bcb5c979971c17c503bb1ce919c0b11d0ef0594909be74c3",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/ablation/classical/module_ablation_module_rank.csv",
+      "role": "supporting_artifact",
+      "size_bytes": 6815,
+      "hash_sha256": "4bbbb1d3c5f1b4a8893f86a06685ace8b8e3d8457282809628cba9c29cd5111c",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/ablation/classical/module_ablation_predictions.csv",
+      "role": "prediction",
+      "size_bytes": 1327569,
+      "hash_sha256": "40ae03c2f1bf6f11ee8a516a5aede3079aae2537ba94bc976bba8909ce60372c",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/ablation/classical/module_ablation_raw.csv",
+      "role": "supporting_artifact",
+      "size_bytes": 109715,
+      "hash_sha256": "7439b056a03be2462e6e4f48dd298f9e33f73570104f1ec8765d141468cc9d92",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/ablation/classical/module_ablation_summary.csv",
+      "role": "supporting_artifact",
+      "size_bytes": 7202,
+      "hash_sha256": "2f773a0ad664f828207af3072fb765b0fbcacca735e7a66b8fd38d749b896ef5",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/ablation/classical/module_ablation_summary.json",
+      "role": "supporting_artifact",
+      "size_bytes": 1248,
+      "hash_sha256": "dfe92b082996d2e0fc2416c504e1dd3d60ffda29f8c250dace749701875991b3",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/ablation/classical/module_ablation_summary.md",
+      "role": "documentation",
+      "size_bytes": 588,
+      "hash_sha256": "586e91b9bc3532fd80161e0f11c20598eb84c02c526ca74ff2e12ec75aebeb6a",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/ablation/cnn1d/cnn1d_module_ablation_manifest.json",
+      "role": "supporting_artifact",
+      "size_bytes": 2358,
+      "hash_sha256": "1d7b66631f8c3055fa88a371588196b27e719014f796a84dc729690cec9ad804",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/ablation/cnn1d/cnn1d_module_ablation_module_rank.csv",
+      "role": "supporting_artifact",
+      "size_bytes": 2745,
+      "hash_sha256": "9e54a5dea800902c144017bf242a2c818ce66fcbf59bf1710c1fe7dbd01cf52a",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/ablation/cnn1d/cnn1d_module_ablation_predictions.csv",
+      "role": "prediction",
+      "size_bytes": 478725,
+      "hash_sha256": "661a542630a8391fd910dab355b8ef7ac4bbec0c3436cd668f2c67a4dbeb1990",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/ablation/cnn1d/cnn1d_module_ablation_raw.csv",
+      "role": "supporting_artifact",
+      "size_bytes": 40422,
+      "hash_sha256": "613dbbdc61372781a7c70c688d7f8e95b86220020af65587ea42290a8a5c888a",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/ablation/cnn1d/cnn1d_module_ablation_summary.csv",
+      "role": "supporting_artifact",
+      "size_bytes": 2939,
+      "hash_sha256": "3b28bb7fffcfbfaaeff26ee0606eacf61da269f44227ce470b42cb0d8aa4093a",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/README.md",
+      "role": "documentation",
+      "size_bytes": 1504,
+      "hash_sha256": "ba9770e805a8015b2549ecaa2ecdb57c7b36d8e4a355a76e84583be7dd1d46ae",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/environment.lock.txt",
+      "role": "supporting_artifact",
+      "size_bytes": 382,
+      "hash_sha256": "9fafccbba6d5a819d0242da5bf3197289f72c33e6e0e9c28219afc1d3fc12201",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/metrics/CNN1D_BSL_seed123_test_metrics_v2.json",
+      "role": "metric",
+      "size_bytes": 2414,
+      "hash_sha256": "84ea50bcaa6792da00e284586952b708caaac0110162b12bb1d95b788d0e98c8",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/metrics/CNN1D_BSL_seed2024_test_metrics_v2.json",
+      "role": "metric",
+      "size_bytes": 2360,
+      "hash_sha256": "cb08f0323ccbd55049518630246a52ed1cf32b7211ef0cf1feda81abfbe01a3c",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/metrics/CNN1D_BSL_seed42_test_metrics_v2.json",
+      "role": "metric",
+      "size_bytes": 2414,
+      "hash_sha256": "c69bd1e585b9191b94ceac243bf8a60a516e88aa83d0c467f68ff06788b4743f",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/metrics/CNN1D_ENR_seed123_test_metrics_v2.json",
+      "role": "metric",
+      "size_bytes": 4017,
+      "hash_sha256": "9af4b60c2ab84b536fa9f601c1900ca68a099d7fccee83e11915c2811ebd4f49",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/metrics/CNN1D_ENR_seed2024_test_metrics_v2.json",
+      "role": "metric",
+      "size_bytes": 4036,
+      "hash_sha256": "e990e7f3d358d46bf50b0020938e390c89acc21b46829c16e8dd56febd53226f",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/metrics/CNN1D_ENR_seed42_test_metrics_v2.json",
+      "role": "metric",
+      "size_bytes": 4017,
+      "hash_sha256": "cc0f0bb02b0a6937a9f4a6010ad9218a9673b42d59cba77b70c2adb412150343",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/metrics/LR_BSL_seed123_test_metrics_v2.json",
+      "role": "metric",
+      "size_bytes": 2096,
+      "hash_sha256": "e398002a164ec3de3b30f34773c0e67b4ad64f4148f85aadd943ce903bb4bb23",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/metrics/LR_BSL_seed2024_test_metrics_v2.json",
+      "role": "metric",
+      "size_bytes": 2097,
+      "hash_sha256": "3cf33a42f78123889b95f4be0f7809161c642722e9b1a28447330e0824cd2d68",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/metrics/LR_BSL_seed42_test_metrics_v2.json",
+      "role": "metric",
+      "size_bytes": 2095,
+      "hash_sha256": "615abab6e431a6c57f0d2c74549f90201f8b7c83ccc5d4ff14ef46e3833cb005",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/metrics/LR_ENR_seed123_test_metrics_v2.json",
+      "role": "metric",
+      "size_bytes": 3252,
+      "hash_sha256": "b22afb49b5ed4ec0d49288df4619ce171bdb22ee0a2a8b6058300700450488cd",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/metrics/LR_ENR_seed2024_test_metrics_v2.json",
+      "role": "metric",
+      "size_bytes": 3253,
+      "hash_sha256": "30cdb0d883a6f20329536eb6dc9fcd5dd7246c28a8b8fb6427c394b754e759b1",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/metrics/LR_ENR_seed42_test_metrics_v2.json",
+      "role": "metric",
+      "size_bytes": 3251,
+      "hash_sha256": "84ad06f1623a9dc4078f8ef9e16e23f83276541a3deb2d08a0776684275c4acd",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/metrics/RF_BSL_seed123_test_metrics_v2.json",
+      "role": "metric",
+      "size_bytes": 2149,
+      "hash_sha256": "4046efaf80f763019935870589b087884094b5084c7034cf51983dbb4046bc3d",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/metrics/RF_BSL_seed2024_test_metrics_v2.json",
+      "role": "metric",
+      "size_bytes": 2150,
+      "hash_sha256": "a4d823c02a48194217130231c7d1b24cb69fd509470d6d637d5783e6092b2b5f",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/metrics/RF_BSL_seed42_test_metrics_v2.json",
+      "role": "metric",
+      "size_bytes": 2123,
+      "hash_sha256": "df80725ede6c09871284b6b415f2e988b53eebe20cbba9c61c3cd0e5a0c8e448",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/metrics/RF_ENR_seed123_test_metrics_v2.json",
+      "role": "metric",
+      "size_bytes": 3283,
+      "hash_sha256": "bbafe53f87af3ad18b2a30cfd3d276590f144cb5d6711ac0d29f6f5543e331c0",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/metrics/RF_ENR_seed2024_test_metrics_v2.json",
+      "role": "metric",
+      "size_bytes": 3315,
+      "hash_sha256": "058c733c944bad9aa341cefa3f2943ea5703e38572af69f43713588505059663",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/metrics/RF_ENR_seed42_test_metrics_v2.json",
+      "role": "metric",
+      "size_bytes": 3283,
+      "hash_sha256": "f1362fafe3cb7a1d1b6eb17e76d41c2e62b0dd13c46b1928ef7e7fb17b091932",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/metrics/XGB_BSL_seed123_test_metrics_v2.json",
+      "role": "metric",
+      "size_bytes": 2219,
+      "hash_sha256": "b066200ec2c358ac46ffbc489b8ef7d0f621c41b7f5a2abd30c22ee447e539b5",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/metrics/XGB_BSL_seed2024_test_metrics_v2.json",
+      "role": "metric",
+      "size_bytes": 2201,
+      "hash_sha256": "d7387f18ae06f76d7b8c628deb7b9f90f25ab0cbd483ea562115299a3c6eee2b",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/metrics/XGB_BSL_seed42_test_metrics_v2.json",
+      "role": "metric",
+      "size_bytes": 2211,
+      "hash_sha256": "62538b35bf456d5e8dcff63ba0c1317603d1f849792c576626131cba72028748",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/metrics/XGB_ENR_seed123_test_metrics_v2.json",
+      "role": "metric",
+      "size_bytes": 3380,
+      "hash_sha256": "e99f1d7adccd32743081eacf9d1f2960472536cf66737858a2507b3ae75b0dd9",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/metrics/XGB_ENR_seed2024_test_metrics_v2.json",
+      "role": "metric",
+      "size_bytes": 3326,
+      "hash_sha256": "39077b5016822936fc34411c0811a13a767261a479dffb1bf1587a2711e426ee",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/metrics/XGB_ENR_seed42_test_metrics_v2.json",
+      "role": "metric",
+      "size_bytes": 3348,
+      "hash_sha256": "437fd6be5a1c98227611019be94bf113a16d8912a0eb2cded16b6d2f0872f677",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/metrics/multiseed_raw_v2.csv",
+      "role": "metric",
+      "size_bytes": 660,
+      "hash_sha256": "3ac46c26474a67e1ed478369f31e141b27fbeb24585ce90466e319fd691b41fc",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/metrics/multiseed_summary_v2.csv",
+      "role": "metric",
+      "size_bytes": 306,
+      "hash_sha256": "f8a27e7ae736f92e044d82a0a1e3507e83ca292150d7f7576f2f806d1da9b351",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/models/LR_ENR_scaler_v2.joblib",
+      "role": "supporting_artifact",
+      "size_bytes": 735,
+      "hash_sha256": "33ccfeca6e9d37d3b14e76447335b7b0078c9b6059d3c21c1af84a37c8a96978",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/predictions/CNN1D_BSL_seed123_test_predictions_v2.csv",
+      "role": "prediction",
+      "size_bytes": 10057,
+      "hash_sha256": "40c2293c19bbad048d8573a567dd7c3c1ed3cfc556ac0253902a5f879f2b45a6",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/predictions/CNN1D_BSL_seed2024_test_predictions_v2.csv",
+      "role": "prediction",
+      "size_bytes": 10380,
+      "hash_sha256": "e16d0830fc60ad571418cef5f39d4145dfaae864b477d51130987a65faf94af2",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/predictions/CNN1D_BSL_seed42_test_predictions_v2.csv",
+      "role": "prediction",
+      "size_bytes": 9734,
+      "hash_sha256": "c51fb193bde465298bac6b2385e37d00b494fe4e9d3d32ccc8d3a2b67892ebfc",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/predictions/CNN1D_ENR_seed123_test_predictions_v2.csv",
+      "role": "prediction",
+      "size_bytes": 10057,
+      "hash_sha256": "402c034991e1219cec0beba9a69d61ca8644c1659f0bd168a19d73986f473bb3",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/predictions/CNN1D_ENR_seed2024_test_predictions_v2.csv",
+      "role": "prediction",
+      "size_bytes": 10380,
+      "hash_sha256": "af2c030a25daf44d1a5127aae267d10313628cca4bb8782191d30a64af5e58f0",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/predictions/CNN1D_ENR_seed42_test_predictions_v2.csv",
+      "role": "prediction",
+      "size_bytes": 9734,
+      "hash_sha256": "8f7fd49e4511f91438669191f96a2a9715d9edc262f8e188838b579d9ee6e893",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/predictions/LR_BSL_seed123_test_predictions_v2.csv",
+      "role": "prediction",
+      "size_bytes": 9088,
+      "hash_sha256": "d3c750c6ef0cdfe245753f34ebcade5f0229fba70833bf541e3f694c0ab0df12",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/predictions/LR_BSL_seed2024_test_predictions_v2.csv",
+      "role": "prediction",
+      "size_bytes": 9411,
+      "hash_sha256": "588d63051344e53558466cb22d49ab316fe0d90933ff927c579dc963de4bf689",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/predictions/LR_BSL_seed42_test_predictions_v2.csv",
+      "role": "prediction",
+      "size_bytes": 8765,
+      "hash_sha256": "6802a899d989f49bc71b0de1b83742905155d49ef9d630d61756066b06991cb6",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/predictions/LR_ENR_seed123_test_predictions_v2.csv",
+      "role": "prediction",
+      "size_bytes": 9088,
+      "hash_sha256": "05c3babf027b2aabc5311ce371bb64f76005f18e041afd7b0a8d1c86afa23edd",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/predictions/LR_ENR_seed2024_test_predictions_v2.csv",
+      "role": "prediction",
+      "size_bytes": 9411,
+      "hash_sha256": "ce695dc229d621463d487fbc5d8afd414b700675ca8e56304fb561b4e3726e7a",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/predictions/LR_ENR_seed42_test_predictions_v2.csv",
+      "role": "prediction",
+      "size_bytes": 8765,
+      "hash_sha256": "88e887c2f28acf9a732353815536e6df1136e8b88a76c4d865f49c248121bbca",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/predictions/RF_BSL_seed123_test_predictions_v2.csv",
+      "role": "prediction",
+      "size_bytes": 9088,
+      "hash_sha256": "d43b4a97ddaa14f7396a3f2892fcd887149f5427e521a65fc422838c1d0a6ae7",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/predictions/RF_BSL_seed2024_test_predictions_v2.csv",
+      "role": "prediction",
+      "size_bytes": 9411,
+      "hash_sha256": "d60ec05f2c6fcb0319f1f8448953c6ce45476e4bef4097a4b101885130677f78",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/predictions/RF_BSL_seed42_test_predictions_v2.csv",
+      "role": "prediction",
+      "size_bytes": 8765,
+      "hash_sha256": "5b1651d6cc71673d91b992c3c7ba70d66d8626b41caebfb8885b52f23adabd18",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/predictions/RF_ENR_seed123_test_predictions_v2.csv",
+      "role": "prediction",
+      "size_bytes": 9088,
+      "hash_sha256": "3250b9a08a7c2fef108a2a62a2711fdfa6718fda3f2b72bf986c8d1279e37689",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/predictions/RF_ENR_seed2024_test_predictions_v2.csv",
+      "role": "prediction",
+      "size_bytes": 9411,
+      "hash_sha256": "f8a44c151aaa32511acffceced76a8469d03c02ae463f643e21d94794d96833b",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/predictions/RF_ENR_seed42_test_predictions_v2.csv",
+      "role": "prediction",
+      "size_bytes": 8765,
+      "hash_sha256": "cd486cca7bc75108443b4735128df103b6de069d94ebf4c5246fb0679f98a587",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/predictions/XGB_BSL_seed123_test_predictions_v2.csv",
+      "role": "prediction",
+      "size_bytes": 9411,
+      "hash_sha256": "62f0acfd6e5f43474fd7f8c38c9beeba093fb416c6cb59e6065dfccb2e1b84ca",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/predictions/XGB_BSL_seed2024_test_predictions_v2.csv",
+      "role": "prediction",
+      "size_bytes": 9734,
+      "hash_sha256": "6a37847abda369f9e1167302f5dd471a13a27a83589566c6bd2d83de609db7af",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/predictions/XGB_BSL_seed42_test_predictions_v2.csv",
+      "role": "prediction",
+      "size_bytes": 9088,
+      "hash_sha256": "34a5cea73504d68c065544802655873511024a553b2e210a17c79a2f754bc9f5",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/predictions/XGB_ENR_seed123_test_predictions_v2.csv",
+      "role": "prediction",
+      "size_bytes": 9411,
+      "hash_sha256": "a3e679de4c58d3251aade98ac34a5d972272e09fa444d36042bf1b4250175202",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/predictions/XGB_ENR_seed2024_test_predictions_v2.csv",
+      "role": "prediction",
+      "size_bytes": 9734,
+      "hash_sha256": "1c0441445dee48b4c6fa0f91a1359603f6bd9d2702372877e1c410d19ccf7c3a",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/anova_revalidation/predictions/XGB_ENR_seed42_test_predictions_v2.csv",
+      "role": "prediction",
+      "size_bytes": 9088,
+      "hash_sha256": "beac4fbdb9215fdca4c4199155b6fda0ee0c00c5bac7e045b729bfb9100ce601",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/knowledge_graph/materialization_report.json",
+      "role": "supporting_artifact",
+      "size_bytes": 414,
+      "hash_sha256": "75240fcae7a03f055700cd6e1fcaf672bd1bf7fcc3a231d5616014b9137ddb80",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/knowledge_graph/posts.ttl",
+      "role": "ontology_or_shacl",
+      "size_bytes": 846048,
+      "hash_sha256": "17301452602596c310fd5568e3e3658318bf8551843ae92d65defe5e34beb8fe",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/sensitivity/selected_feature_stability.csv",
+      "role": "supporting_artifact",
+      "size_bytes": 822,
+      "hash_sha256": "5e49fb5bae53a16b0c9d28964ce1a6b70a6530cca4e39591942b2982fc1377e4",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/sensitivity/vader_ke_sensitivity_aggregate_stats.json",
+      "role": "supporting_artifact",
+      "size_bytes": 8731,
+      "hash_sha256": "eb7cf7e417aca45f2f03962428ec2812bab4332b9bab317227bc20807765922e",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/sensitivity/vader_ke_sensitivity_manifest.json",
+      "role": "supporting_artifact",
+      "size_bytes": 24746,
+      "hash_sha256": "28146391a24b11b29dbf258e16045c8248db147c94d4a24287fa5a9cda29a87a",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/sensitivity/vader_ke_sensitivity_summary.csv",
+      "role": "supporting_artifact",
+      "size_bytes": 41606,
+      "hash_sha256": "97091e8d8882c5f46fb81034fb2e72a787a65fba6e4cd4f4648f9d5d39c1a300",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/sensitivity/vader_ke_sensitivity_summary.json",
+      "role": "supporting_artifact",
+      "size_bytes": 155530,
+      "hash_sha256": "56d2500ad0124f766de59e917f24490704720670ecfe70c093abe1a38cd0dc15",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/sensitivity/vader_ke_sensitivity_summary.md",
+      "role": "documentation",
+      "size_bytes": 12875,
+      "hash_sha256": "956d1aa2abb32a71b8089fb19d3dbb5fb2db8aca47304905f17f3c7895f2b9e8",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/traceability/chain_reconciliation_report.json",
+      "role": "supporting_artifact",
+      "size_bytes": 1912,
+      "hash_sha256": "d0e30df3e4e97bc08642201d46bc48fb66645747e408e65343c8f2c2afe6f26b",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/traceability/chain_reconciliation_report.md",
+      "role": "documentation",
+      "size_bytes": 1326,
+      "hash_sha256": "294f8f499d7af37dfe9b8147cc78f449f792ee25213b7dd500a36474e62279d8",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/traceability/model_inputs/downstream_semantic_input_fingerprints.csv",
+      "role": "supporting_artifact",
+      "size_bytes": 14011,
+      "hash_sha256": "4f00998b0022a96c0d7f7ee05052cb9415f5de91d9e79094e30f88c71f664002",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/traceability/model_inputs/model_input_trace.csv",
+      "role": "supporting_artifact",
+      "size_bytes": 1165,
+      "hash_sha256": "b01072e508914dc49dee53bad1b5bdf755aa3d27f101521bf72d9c9740135990",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/traceability/model_inputs/selected_semantic_input_cell_trace.csv",
+      "role": "supporting_artifact",
+      "size_bytes": 1197812,
+      "hash_sha256": "185a28b66fbc44cb543d12496c5202fe67927c344637270befc3b47436155d21",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/traceability/model_inputs/selected_semantic_input_matrix.csv",
+      "role": "supporting_artifact",
+      "size_bytes": 87547,
+      "hash_sha256": "da2dd8ecbb7e816da6c914fcaa557065ae0dea6c21df242f964def8688580918",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/traceability/model_inputs/selected_semantic_input_reconciliation_report.json",
+      "role": "supporting_artifact",
+      "size_bytes": 7038,
+      "hash_sha256": "8a5ed515dc40384e60441e6c06fc4cfc6560c1e1554fc14c39c30aa8892ac05e",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/traceability/model_inputs/selected_semantic_input_reconciliation_report.md",
+      "role": "documentation",
+      "size_bytes": 556,
+      "hash_sha256": "da218faef1059183fd29c02cd6007ab8eaa7c99970ddaa36ffcd3bae2f02fa06",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/traceability/model_inputs/selected_semantic_input_standardized.csv",
+      "role": "supporting_artifact",
+      "size_bytes": 254503,
+      "hash_sha256": "721ef2fbf61a9cd043aefcacf1c6f0880e8058eb517d8769f4e5f7c2b61d1db0",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/traceability/model_inputs/semantic_variable_model_input_report.json",
+      "role": "supporting_artifact",
+      "size_bytes": 403,
+      "hash_sha256": "0b1e9d928b07da600d67a321b413a5c067d25db6c1ecd1fd80dedd514cbc8579",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/traceability/model_inputs/semantic_variable_model_input_report.md",
+      "role": "documentation",
+      "size_bytes": 247,
+      "hash_sha256": "ea7f81d8adb4021281f8bdd53f462f06ba494a19005a7a1e6f77eb4eddbb271b",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/traceability/model_inputs/semantic_variable_presentation_map.md",
+      "role": "documentation",
+      "size_bytes": 2592,
+      "hash_sha256": "1e3e9847a04cf8d5e185e01e273ac567bf292dfff74430d18accacf3201a1d7f",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/traceability/traceability_audit_report.json",
+      "role": "supporting_artifact",
+      "size_bytes": 393,
+      "hash_sha256": "e2b4f3073c6e0a6c198af8bb264ba7270a9d48f8bfef608ab0596ea9efb3b044",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/traceability/traceability_map.csv",
+      "role": "supporting_artifact",
+      "size_bytes": 1083518,
+      "hash_sha256": "13a6f64f75c79305d96a8be92127c22f1946ffedfd58c1cb4e603458d839f136",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/validation/coverage/coverage_sparsity.csv",
+      "role": "supporting_artifact",
+      "size_bytes": 3493,
+      "hash_sha256": "25ea4950d69df78b573c7d8fbd1c96c51304592aa07541036d3f0014f44abd94",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/validation/coverage/coverage_sparsity_report.json",
+      "role": "supporting_artifact",
+      "size_bytes": 405,
+      "hash_sha256": "3fe2ca1315819a2cc7152020b17d21ee4edb2597c3c464cdf2af61cd02f7af75",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/validation/coverage/coverage_sparsity_report.md",
+      "role": "documentation",
+      "size_bytes": 880,
+      "hash_sha256": "c830693e7ef55a7a085fb64eb9a088d840b4767c9d5edc756d81e420d26230ab",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/validation/coverage/module_coverage.csv",
+      "role": "supporting_artifact",
+      "size_bytes": 1343,
+      "hash_sha256": "1bc6d4205499db1a9883a6a46ff0353ce3ff02ef0dbd60ac85f0ab55c4a1fd75",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/validation/experiment_chain_validation.json",
+      "role": "supporting_artifact",
+      "size_bytes": 918,
+      "hash_sha256": "d48bc77e779a1d75fd58f59d924895cb5ed53b3a0eca7f332a05f26dbdacd7fc",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/validation/shacl/baseline_report.json",
+      "role": "supporting_artifact",
+      "size_bytes": 832,
+      "hash_sha256": "91e0f2d9955c5b329d5d166512e1c08b7a8d2f9b8db16a9b06e7a3f6d7880e2b",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/validation/shacl/baseline_report.ttl",
+      "role": "ontology_or_shacl",
+      "size_bytes": 147,
+      "hash_sha256": "4a53a3befd9bcdb7273ef3d6e47a83be519927771faee49ef0d2a44ee23be2be",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/validation/shacl/baseline_report.txt",
+      "role": "supporting_artifact",
+      "size_bytes": 33,
+      "hash_sha256": "77debc800e6c973b66475968bdf71e2e667df8f4108e7f5299fe1651e6606dc9",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/validation/shacl/canonical_shapes_normalized.ttl",
+      "role": "ontology_or_shacl",
+      "size_bytes": 7022,
+      "hash_sha256": "d1f2c47e1053923c1235e1b83ca89becf681ede805d7dc6549d7dbaaa6191230",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/validation/shacl/invalid_fixture_missing_required.ttl",
+      "role": "ontology_or_shacl",
+      "size_bytes": 476,
+      "hash_sha256": "4f06c3f3cce10a88065df096aafcafccb280e967db398499801819e064ef3de0",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/validation/shacl/stress_report.ttl",
+      "role": "ontology_or_shacl",
+      "size_bytes": 4430,
+      "hash_sha256": "db43a83e59b1eb011f0bbebb69e7b500a35d9de6a44b99bec28aee31efb86dbc",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/validation/shacl/stress_report.txt",
+      "role": "supporting_artifact",
+      "size_bytes": 3616,
+      "hash_sha256": "afb6ebe46d906a710ce87cd635b520d4ad766247e684e7c7a459f4edd5c08a55",
+      "regeneration_status": "stored_or_scripted"
+    },
+    {
+      "path": "results/validation/shacl/stress_test_report.json",
+      "role": "supporting_artifact",
+      "size_bytes": 259,
+      "hash_sha256": "ba006b35988bb06676a12abcb8545060c8367c7b22d8f59506f1415c5d040d53",
+      "regeneration_status": "stored_or_scripted"
+    }
+  ]
+}

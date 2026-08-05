@@ -1,0 +1,17 @@
+feature,selected_count,selected_pct,canonical_selected
+ont_InteligenciaArtificial_Neutro,104,100.0,True
+ont_domain_density,104,100.0,True
+ont_Innovacion_Neutro,90,86.53846153846153,True
+ont_total_negativo_mentions,77,74.03846153846153,True
+ont_InteligenciaArtificial_Negativo,72,69.23076923076923,True
+ont_Etica_Negativo,47,45.19230769230769,True
+ont_Tecnologia_Positivo,34,32.69230769230769,True
+ont_Datos_Negativo,30,28.846153846153847,False
+ont_Robot_Negativo,29,27.884615384615383,False
+ont_total_positivo_mentions,26,25.0,False
+ont_Innovacion_Positivo,20,19.23076923076923,False
+ont_Tecnologia_Negativo,18,17.307692307692307,False
+ont_Futuro_Negativo,7,6.730769230769231,False
+ont_Futuro_Positivo,7,6.730769230769231,False
+ont_Datos_Positivo,6,5.769230769230769,False
+ont_Tecnologia_Neutro,1,0.9615384615384616,False

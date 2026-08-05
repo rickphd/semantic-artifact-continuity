@@ -1,0 +1,80 @@
+{
+  "check": "uniform_test_support_all_models",
+  "created_at": "2026-06-11T20:52:10.024524",
+  "pass": true,
+  "expected": {
+    "Negative": 48,
+    "Neutral": 119,
+    "Positive": 156,
+    "Total": 323
+  },
+  "per_model": {
+    "LR_BSL": {
+      "support": [
+        48,
+        119,
+        156
+      ],
+      "total": 323
+    },
+    "LR_ENR": {
+      "support": [
+        48,
+        119,
+        156
+      ],
+      "total": 323
+    },
+    "RF_BSL": {
+      "support": [
+        48,
+        119,
+        156
+      ],
+      "total": 323
+    },
+    "RF_ENR": {
+      "support": [
+        48,
+        119,
+        156
+      ],
+      "total": 323
+    },
+    "XGB_BSL": {
+      "support": [
+        48,
+        119,
+        156
+      ],
+      "total": 323
+    },
+    "XGB_ENR": {
+      "support": [
+        48,
+        119,
+        156
+      ],
+      "total": 323
+    },
+    "CNN1D_BSL": {
+      "support": [
+        48,
+        119,
+        156
+      ],
+      "total": 323
+    },
+    "CNN1D_ENR": {
+      "support": [
+        48,
+        119,
+        156
+      ],
+      "total": 323
+    }
+  },
+  "split_source": "data/gold/GEN_split_gld_reddit_ids_v02.json",
+  "split_md5": "6a260205a406b81d2c797d8c39632208",
+  "note": "BSL and ENR model outputs use the same fixed 323-record test split."
+}

@@ -1,0 +1,104 @@
+{
+  "title": "Materialized RDF instance pattern",
+  "subtitle": "Illustrative resource-level graph for one canonical post",
+  "type": "architecture",
+  "page": { "width": 1400, "height": 760 },
+  "visual": {
+    "title_size": 25,
+    "subtitle_size": 15,
+    "node_title_size": 20,
+    "detail_size": 14,
+    "edge_label_size": 15
+  },
+  "nodes": [
+    {
+      "id": "post",
+      "label": "base:post/1kykx6z",
+      "details": ["Materialized post resource", "rdf:type rr:Post"],
+      "tone": "orange",
+      "x": 510,
+      "y": 265,
+      "w": 380,
+      "h": 120
+    },
+    {
+      "id": "identifier",
+      "label": "\"1kykx6z\"",
+      "details": ["xsd:string literal"],
+      "tone": "green",
+      "x": 80,
+      "y": 120,
+      "w": 280,
+      "h": 92
+    },
+    {
+      "id": "sentiment",
+      "label": "rrsent:Positivo",
+      "details": ["sentiment resource"],
+      "tone": "purple",
+      "x": 1035,
+      "y": 120,
+      "w": 280,
+      "h": 92
+    },
+    {
+      "id": "subreddit",
+      "label": "base:subreddit/Tecnologia",
+      "details": ["rdf:type rr:Subreddit"],
+      "tone": "green",
+      "x": 70,
+      "y": 460,
+      "w": 350,
+      "h": 92
+    },
+    {
+      "id": "concepts",
+      "label": "Activated domain concepts",
+      "details": ["rrdom:InteligenciaArtificial", "rrdom:Tecnologia"],
+      "tone": "purple",
+      "x": 980,
+      "y": 442,
+      "w": 360,
+      "h": 120
+    }
+  ],
+  "edges": [
+    {
+      "source": "post",
+      "target": "identifier",
+      "label": "rr:identificador",
+      "source_port": "left",
+      "target_port": "right",
+      "waypoints": [{ "x": 450, "y": 325 }, { "x": 450, "y": 166 }]
+    },
+    {
+      "source": "post",
+      "target": "sentiment",
+      "label": "rr:etiquetaSentimiento",
+      "source_port": "right",
+      "target_port": "left",
+      "waypoints": [{ "x": 950, "y": 325 }, { "x": 950, "y": 166 }]
+    },
+    {
+      "source": "post",
+      "target": "subreddit",
+      "label": "rr:enSubreddit",
+      "source_port": "left",
+      "target_port": "right",
+      "waypoints": [{ "x": 455, "y": 325 }, { "x": 455, "y": 506 }]
+    },
+    {
+      "source": "post",
+      "target": "concepts",
+      "label": "rr:trataSobre",
+      "source_port": "right",
+      "target_port": "left",
+      "waypoints": [{ "x": 950, "y": 325 }, { "x": 950, "y": 502 }]
+    }
+  ],
+  "legend": [
+    { "kind": "solid-node", "label": "RDF resource or literal", "tone": "orange" },
+    { "kind": "solid-edge", "label": "materialized RDF predicate", "tone": "blue" }
+  ],
+  "legend_layout": { "x": 380, "y": 650, "item_width": 300 }
+}

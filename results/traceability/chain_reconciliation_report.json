@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "active_evidence_lineage": "v04.2",
+  "checks": [
+    {
+      "relation": "Canonical records to RDF resources",
+      "unit": "canonical records",
+      "expected": 1614,
+      "verified": 1614,
+      "exceptions": 0,
+      "status": "passed",
+      "interpretation": "Each canonical record is represented by one stable RDF resource."
+    },
+    {
+      "relation": "Selected semantic activations to source records",
+      "unit": "nonzero selected activations",
+      "expected": 2425,
+      "verified": 2425,
+      "exceptions": 0,
+      "status": "passed",
+      "interpretation": "Each selected activation retains a record, semantic-variable, module, and RDF-resource link; domain variables additionally retain their concept links."
+    },
+    {
+      "relation": "Selected semantic input cells to governed source values",
+      "unit": "selected input cells",
+      "expected": 11298,
+      "verified": 11298,
+      "exceptions": 0,
+      "status": "passed",
+      "interpretation": "All cells in the seven-variable interface retain ordered record and variable identity; every nonzero value matches its traceability relation."
+    },
+    {
+      "relation": "RDF graph to declared structural constraints",
+      "unit": "baseline graph",
+      "expected": 1,
+      "verified": 1,
+      "exceptions": 0,
+      "status": "passed",
+      "interpretation": "The baseline RDF graph conforms to the declared structural constraints."
+    },
+    {
+      "relation": "Test records to prediction records",
+      "unit": "record assignments across evaluation units",
+      "expected": 7752,
+      "verified": 7752,
+      "exceptions": 0,
+      "status": "passed",
+      "interpretation": "All 323 test records are reconciled across 24 evaluation units with matching reference labels."
+    }
+  ],
+  "summary": {
+    "checked_relations": 5,
+    "passed_relations": 5,
+    "exceptions": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "errors": [],
+  "release_dataset_sha256": "62c6394d4ef68191b713d80c9b54849ecf00176822719bf515b8f0ee65b31162",
+  "source_dataset_sha256": "a74cebfa0db51e9d6e34a8b58b16f149db690d2d5bca0cd5d5945a9c2cc0e99f",
+  "lexicon_manifest_sha256": "313af4e18f4d7b58f87e87a7ac5bbbb19c32d5e7c829816bdad9fa6515e51e77",
+  "feature_selection_sha256": "03d660c83fdb0a796556edec66736f008df4d1b99b947051c640cb9c1b7ff854",
+  "dataset_shape": [
+    1614,
+    47
+  ],
+  "split_counts": {
+    "train": 968,
+    "val": 323,
+    "test": 323
+  },
+  "ontology_feature_count": 37,
+  "selected_feature_count": 7,
+  "chain_reconciliation_relations": 5,
+  "included_result_figure_count": 8,
+  "primary_metric_rows": 24,
+  "primary_prediction_files": 24,
+  "classical_ablation_rows": 126,
+  "classical_prediction_rows": 40698,
+  "cnn_ablation_rows": 42,
+  "cnn_prediction_rows": 13566,
+  "historical_outputs_included": false
+}

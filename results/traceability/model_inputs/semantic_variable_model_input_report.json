@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "selected_feature_count": 7,
+  "missing_or_untraced_features": [],
+  "train_only_selection": true,
+  "train_scoped_external_lexicon": true,
+  "lexicon_manifest_sha256": "313af4e18f4d7b58f87e87a7ac5bbbb19c32d5e7c829816bdad9fa6515e51e77",
+  "candidate_feature_count": 37,
+  "selected_feature_source": "results/feature_selection/ENR_selected_ont_features_anova_train_only.json"
+}

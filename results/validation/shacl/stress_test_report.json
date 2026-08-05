@@ -1,0 +1,7 @@
+{
+  "conforms": false,
+  "validation_result_count": 6,
+  "fixture": "results/validation/shacl/invalid_fixture_missing_required.ttl",
+  "report_ttl": "results/validation/shacl/stress_report.ttl",
+  "report_text": "results/validation/shacl/stress_report.txt"
+}

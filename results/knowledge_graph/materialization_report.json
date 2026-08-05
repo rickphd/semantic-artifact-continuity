@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "canonical_ontology_dir": "src/ontology/resources",
+  "gold_rows": 1614,
+  "ontology_feature_count": 37,
+  "rdf_post_count": 1614,
+  "rdf_triple_count": 15603,
+  "nonzero_activation_count": 9208,
+  "posts_with_trace_rows": 1614,
+  "concept_assertion_count": 1888,
+  "rdf_output": "results/knowledge_graph/posts.ttl",
+  "traceability_output": "results/traceability/traceability_map.csv"
+}

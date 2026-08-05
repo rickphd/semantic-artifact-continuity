@@ -1,0 +1,10 @@
+@prefix ns1: <http://wfrp.ia/ontologia/ia-sentimiento#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://wfrp.ia/resource/reddit/post/invalid_missing_fields> a ns1:Post ;
+    ns1:etiquetaSentimiento <http://wfrp.ia/sentimiento/core#Positivo> ;
+    ns1:identificador "invalid_missing_fields"^^xsd:string ;
+    ns1:idiomaDetectado "fr"^^xsd:string ;
+    ns1:longitudTexto 8 ;
+    ns1:trataSobre <http://wfrp.ia/dominio/ciencia-tecnologia#InteligenciaArtificial> .
+

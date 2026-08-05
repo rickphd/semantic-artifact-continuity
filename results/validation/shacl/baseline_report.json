@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "namespace_normalization": {
+    "source": "src/ontology/resources/rr-shapes.ttl",
+    "normalized_copy": "results/validation/shacl/canonical_shapes_normalized.ttl",
+    "reason": "The source file used https://www.w3.org/ns/shacl#. pySHACL expects the W3C SHACL namespace http://www.w3.org/ns/shacl#."
+  },
+  "baseline": {
+    "conforms": true,
+    "validation_result_count": 0,
+    "report_ttl": "results/validation/shacl/baseline_report.ttl",
+    "report_text": "results/validation/shacl/baseline_report.txt"
+  },
+  "stress_test": {
+    "conforms": false,
+    "validation_result_count": 6,
+    "fixture": "results/validation/shacl/invalid_fixture_missing_required.ttl",
+    "report_ttl": "results/validation/shacl/stress_report.ttl",
+    "report_text": "results/validation/shacl/stress_report.txt"
+  }
+}

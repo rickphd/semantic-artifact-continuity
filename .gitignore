@@ -1,0 +1,49 @@
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+# Python caches and environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.venv/
+venv/
+env/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# LaTeX build artefacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+
+# Large trained model artefacts
+*.joblib
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+!results/anova_revalidation/models/LR_ENR_scaler_v2.joblib
+
+# Regenerated intermediate sensitivity packages
+results/sensitivity/*/
+
+# Archives and temporary bundles
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# Local configuration
+.env
+.envrc
+.zsh_project_config

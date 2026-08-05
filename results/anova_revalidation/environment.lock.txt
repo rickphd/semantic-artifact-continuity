@@ -1,0 +1,18 @@
+# Canonical downstream execution environment
+# Recorded from the CPU execution that generated the files in this directory.
+python==3.13.13
+numpy==2.5.1
+pandas==3.0.3
+scipy==1.18.0
+scikit-learn==1.9.0
+xgboost==3.3.0
+pyarrow==25.0.0
+joblib==1.5.3
+torch==2.13.0
+matplotlib==3.11.1
+seaborn==0.13.2
+
+# Runtime controls
+device=CNN1D:cpu
+XGB_OMP_NUM_THREADS=1
+XGB_VECLIB_MAXIMUM_THREADS=1

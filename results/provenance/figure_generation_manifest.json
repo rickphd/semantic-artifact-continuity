@@ -1,0 +1,299 @@
+{
+  "status": "passed",
+  "scope": "Figures 4-11 included by the manuscript",
+  "figures": [
+    {
+      "figure_id": "fig04_chain_governance_lineage_ledger",
+      "included_path": "figures/fig04_chain_governance_lineage_ledger.png",
+      "png_sha256": "9049ab757a7662526898eb1a9a0007a859ed4b77e45ebd40e05e290094474105",
+      "generation_method": "Draw.io export from the editable source; the specification and active evidence reports define the displayed callouts.",
+      "editable_source": {
+        "path": "figures/source/fig_chain_governance_lineage_ledger.drawio",
+        "sha256": "0c41bfcdbac4a8ad7d3a538f6b82729bdf722b800897ce7990539a9b2a0f8877"
+      },
+      "input_artifacts": [
+        {
+          "path": "figures/source/fig_chain_governance_lineage_ledger.spec.json",
+          "sha256": "ad9e9e2bd28346f04b26349c74b7544209b312bfab342f26ab73782a22a8b8f1"
+        },
+        {
+          "path": "results/traceability/chain_reconciliation_report.json",
+          "sha256": "d0e30df3e4e97bc08642201d46bc48fb66645747e408e65343c8f2c2afe6f26b"
+        },
+        {
+          "path": "results/knowledge_graph/materialization_report.json",
+          "sha256": "75240fcae7a03f055700cd6e1fcaf672bd1bf7fcc3a231d5616014b9137ddb80"
+        },
+        {
+          "path": "results/validation/shacl/baseline_report.json",
+          "sha256": "91e0f2d9955c5b329d5d166512e1c08b7a8d2f9b8db16a9b06e7a3f6d7880e2b"
+        }
+      ]
+    },
+    {
+      "figure_id": "fig05_module_coverage",
+      "included_path": "figures/fig05_module_coverage.png",
+      "png_sha256": "2cd2d54be3389fd233e5dbec91d4f406af17671b4d883368bb185f8bf62eb0a0",
+      "input_artifacts": [
+        {
+          "path": "results/validation/coverage/module_coverage.csv",
+          "sha256": "1bc6d4205499db1a9883a6a46ff0353ce3ff02ef0dbd60ac85f0ab55c4a1fd75"
+        }
+      ]
+    },
+    {
+      "figure_id": "fig06_lexical_sensitivity",
+      "included_path": "figures/fig06_lexical_sensitivity.png",
+      "png_sha256": "cde918d8266d5f124543631dd94e350d0c2afa849832944cfedb4e2575fc06ab",
+      "input_artifacts": [
+        {
+          "path": "results/sensitivity/vader_ke_sensitivity_summary.csv",
+          "sha256": "97091e8d8882c5f46fb81034fb2e72a787a65fba6e4cd4f4648f9d5d39c1a300"
+        },
+        {
+          "path": "results/sensitivity/selected_feature_stability.csv",
+          "sha256": "5e49fb5bae53a16b0c9d28964ce1a6b70a6530cca4e39591942b2982fc1377e4"
+        }
+      ]
+    },
+    {
+      "figure_id": "fig07_downstream_macro_f1",
+      "included_path": "figures/fig07_downstream_macro_f1.png",
+      "png_sha256": "0c7c94a29b1d3823160485e6e323ca2a69397e04a693bc96d0ed2df861cc9768",
+      "input_artifacts": [
+        {
+          "path": "results/anova_revalidation/metrics/multiseed_summary_v2.csv",
+          "sha256": "f8a27e7ae736f92e044d82a0a1e3507e83ca292150d7f7576f2f806d1da9b351"
+        }
+      ]
+    },
+    {
+      "figure_id": "fig08_downstream_confusion_delta",
+      "included_path": "figures/fig08_downstream_confusion_delta.png",
+      "png_sha256": "ddeb476cbd0774779600d418d2b0d259fbeb63619573ac43aeeeba19b8bf6259",
+      "input_artifacts": [
+        {
+          "path": "results/anova_revalidation/metrics/CNN1D_BSL_seed123_test_metrics_v2.json",
+          "sha256": "84ea50bcaa6792da00e284586952b708caaac0110162b12bb1d95b788d0e98c8"
+        },
+        {
+          "path": "results/anova_revalidation/metrics/CNN1D_BSL_seed2024_test_metrics_v2.json",
+          "sha256": "cb08f0323ccbd55049518630246a52ed1cf32b7211ef0cf1feda81abfbe01a3c"
+        },
+        {
+          "path": "results/anova_revalidation/metrics/CNN1D_BSL_seed42_test_metrics_v2.json",
+          "sha256": "c69bd1e585b9191b94ceac243bf8a60a516e88aa83d0c467f68ff06788b4743f"
+        },
+        {
+          "path": "results/anova_revalidation/metrics/CNN1D_ENR_seed123_test_metrics_v2.json",
+          "sha256": "9af4b60c2ab84b536fa9f601c1900ca68a099d7fccee83e11915c2811ebd4f49"
+        },
+        {
+          "path": "results/anova_revalidation/metrics/CNN1D_ENR_seed2024_test_metrics_v2.json",
+          "sha256": "e990e7f3d358d46bf50b0020938e390c89acc21b46829c16e8dd56febd53226f"
+        },
+        {
+          "path": "results/anova_revalidation/metrics/CNN1D_ENR_seed42_test_metrics_v2.json",
+          "sha256": "cc0f0bb02b0a6937a9f4a6010ad9218a9673b42d59cba77b70c2adb412150343"
+        },
+        {
+          "path": "results/anova_revalidation/metrics/LR_BSL_seed123_test_metrics_v2.json",
+          "sha256": "e398002a164ec3de3b30f34773c0e67b4ad64f4148f85aadd943ce903bb4bb23"
+        },
+        {
+          "path": "results/anova_revalidation/metrics/LR_BSL_seed2024_test_metrics_v2.json",
+          "sha256": "3cf33a42f78123889b95f4be0f7809161c642722e9b1a28447330e0824cd2d68"
+        },
+        {
+          "path": "results/anova_revalidation/metrics/LR_BSL_seed42_test_metrics_v2.json",
+          "sha256": "615abab6e431a6c57f0d2c74549f90201f8b7c83ccc5d4ff14ef46e3833cb005"
+        },
+        {
+          "path": "results/anova_revalidation/metrics/LR_ENR_seed123_test_metrics_v2.json",
+          "sha256": "b22afb49b5ed4ec0d49288df4619ce171bdb22ee0a2a8b6058300700450488cd"
+        },
+        {
+          "path": "results/anova_revalidation/metrics/LR_ENR_seed2024_test_metrics_v2.json",
+          "sha256": "30cdb0d883a6f20329536eb6dc9fcd5dd7246c28a8b8fb6427c394b754e759b1"
+        },
+        {
+          "path": "results/anova_revalidation/metrics/LR_ENR_seed42_test_metrics_v2.json",
+          "sha256": "84ad06f1623a9dc4078f8ef9e16e23f83276541a3deb2d08a0776684275c4acd"
+        },
+        {
+          "path": "results/anova_revalidation/metrics/RF_BSL_seed123_test_metrics_v2.json",
+          "sha256": "4046efaf80f763019935870589b087884094b5084c7034cf51983dbb4046bc3d"
+        },
+        {
+          "path": "results/anova_revalidation/metrics/RF_BSL_seed2024_test_metrics_v2.json",
+          "sha256": "a4d823c02a48194217130231c7d1b24cb69fd509470d6d637d5783e6092b2b5f"
+        },
+        {
+          "path": "results/anova_revalidation/metrics/RF_BSL_seed42_test_metrics_v2.json",
+          "sha256": "df80725ede6c09871284b6b415f2e988b53eebe20cbba9c61c3cd0e5a0c8e448"
+        },
+        {
+          "path": "results/anova_revalidation/metrics/RF_ENR_seed123_test_metrics_v2.json",
+          "sha256": "bbafe53f87af3ad18b2a30cfd3d276590f144cb5d6711ac0d29f6f5543e331c0"
+        },
+        {
+          "path": "results/anova_revalidation/metrics/RF_ENR_seed2024_test_metrics_v2.json",
+          "sha256": "058c733c944bad9aa341cefa3f2943ea5703e38572af69f43713588505059663"
+        },
+        {
+          "path": "results/anova_revalidation/metrics/RF_ENR_seed42_test_metrics_v2.json",
+          "sha256": "f1362fafe3cb7a1d1b6eb17e76d41c2e62b0dd13c46b1928ef7e7fb17b091932"
+        },
+        {
+          "path": "results/anova_revalidation/metrics/XGB_BSL_seed123_test_metrics_v2.json",
+          "sha256": "b066200ec2c358ac46ffbc489b8ef7d0f621c41b7f5a2abd30c22ee447e539b5"
+        },
+        {
+          "path": "results/anova_revalidation/metrics/XGB_BSL_seed2024_test_metrics_v2.json",
+          "sha256": "d7387f18ae06f76d7b8c628deb7b9f90f25ab0cbd483ea562115299a3c6eee2b"
+        },
+        {
+          "path": "results/anova_revalidation/metrics/XGB_BSL_seed42_test_metrics_v2.json",
+          "sha256": "62538b35bf456d5e8dcff63ba0c1317603d1f849792c576626131cba72028748"
+        },
+        {
+          "path": "results/anova_revalidation/metrics/XGB_ENR_seed123_test_metrics_v2.json",
+          "sha256": "e99f1d7adccd32743081eacf9d1f2960472536cf66737858a2507b3ae75b0dd9"
+        },
+        {
+          "path": "results/anova_revalidation/metrics/XGB_ENR_seed2024_test_metrics_v2.json",
+          "sha256": "39077b5016822936fc34411c0811a13a767261a479dffb1bf1587a2711e426ee"
+        },
+        {
+          "path": "results/anova_revalidation/metrics/XGB_ENR_seed42_test_metrics_v2.json",
+          "sha256": "437fd6be5a1c98227611019be94bf113a16d8912a0eb2cded16b6d2f0872f677"
+        }
+      ]
+    },
+    {
+      "figure_id": "fig09_prediction_distribution",
+      "included_path": "figures/fig09_prediction_distribution.png",
+      "png_sha256": "45fe89fd9e5e965f8b62b6952c94e37d80f83f181b2525292a7375fe72839bfb",
+      "input_artifacts": [
+        {
+          "path": "results/anova_revalidation/predictions/CNN1D_BSL_seed123_test_predictions_v2.csv",
+          "sha256": "40c2293c19bbad048d8573a567dd7c3c1ed3cfc556ac0253902a5f879f2b45a6"
+        },
+        {
+          "path": "results/anova_revalidation/predictions/CNN1D_BSL_seed2024_test_predictions_v2.csv",
+          "sha256": "e16d0830fc60ad571418cef5f39d4145dfaae864b477d51130987a65faf94af2"
+        },
+        {
+          "path": "results/anova_revalidation/predictions/CNN1D_BSL_seed42_test_predictions_v2.csv",
+          "sha256": "c51fb193bde465298bac6b2385e37d00b494fe4e9d3d32ccc8d3a2b67892ebfc"
+        },
+        {
+          "path": "results/anova_revalidation/predictions/CNN1D_ENR_seed123_test_predictions_v2.csv",
+          "sha256": "402c034991e1219cec0beba9a69d61ca8644c1659f0bd168a19d73986f473bb3"
+        },
+        {
+          "path": "results/anova_revalidation/predictions/CNN1D_ENR_seed2024_test_predictions_v2.csv",
+          "sha256": "af2c030a25daf44d1a5127aae267d10313628cca4bb8782191d30a64af5e58f0"
+        },
+        {
+          "path": "results/anova_revalidation/predictions/CNN1D_ENR_seed42_test_predictions_v2.csv",
+          "sha256": "8f7fd49e4511f91438669191f96a2a9715d9edc262f8e188838b579d9ee6e893"
+        },
+        {
+          "path": "results/anova_revalidation/predictions/LR_BSL_seed123_test_predictions_v2.csv",
+          "sha256": "d3c750c6ef0cdfe245753f34ebcade5f0229fba70833bf541e3f694c0ab0df12"
+        },
+        {
+          "path": "results/anova_revalidation/predictions/LR_BSL_seed2024_test_predictions_v2.csv",
+          "sha256": "588d63051344e53558466cb22d49ab316fe0d90933ff927c579dc963de4bf689"
+        },
+        {
+          "path": "results/anova_revalidation/predictions/LR_BSL_seed42_test_predictions_v2.csv",
+          "sha256": "6802a899d989f49bc71b0de1b83742905155d49ef9d630d61756066b06991cb6"
+        },
+        {
+          "path": "results/anova_revalidation/predictions/LR_ENR_seed123_test_predictions_v2.csv",
+          "sha256": "05c3babf027b2aabc5311ce371bb64f76005f18e041afd7b0a8d1c86afa23edd"
+        },
+        {
+          "path": "results/anova_revalidation/predictions/LR_ENR_seed2024_test_predictions_v2.csv",
+          "sha256": "ce695dc229d621463d487fbc5d8afd414b700675ca8e56304fb561b4e3726e7a"
+        },
+        {
+          "path": "results/anova_revalidation/predictions/LR_ENR_seed42_test_predictions_v2.csv",
+          "sha256": "88e887c2f28acf9a732353815536e6df1136e8b88a76c4d865f49c248121bbca"
+        },
+        {
+          "path": "results/anova_revalidation/predictions/RF_BSL_seed123_test_predictions_v2.csv",
+          "sha256": "d43b4a97ddaa14f7396a3f2892fcd887149f5427e521a65fc422838c1d0a6ae7"
+        },
+        {
+          "path": "results/anova_revalidation/predictions/RF_BSL_seed2024_test_predictions_v2.csv",
+          "sha256": "d60ec05f2c6fcb0319f1f8448953c6ce45476e4bef4097a4b101885130677f78"
+        },
+        {
+          "path": "results/anova_revalidation/predictions/RF_BSL_seed42_test_predictions_v2.csv",
+          "sha256": "5b1651d6cc71673d91b992c3c7ba70d66d8626b41caebfb8885b52f23adabd18"
+        },
+        {
+          "path": "results/anova_revalidation/predictions/RF_ENR_seed123_test_predictions_v2.csv",
+          "sha256": "3250b9a08a7c2fef108a2a62a2711fdfa6718fda3f2b72bf986c8d1279e37689"
+        },
+        {
+          "path": "results/anova_revalidation/predictions/RF_ENR_seed2024_test_predictions_v2.csv",
+          "sha256": "f8a44c151aaa32511acffceced76a8469d03c02ae463f643e21d94794d96833b"
+        },
+        {
+          "path": "results/anova_revalidation/predictions/RF_ENR_seed42_test_predictions_v2.csv",
+          "sha256": "cd486cca7bc75108443b4735128df103b6de069d94ebf4c5246fb0679f98a587"
+        },
+        {
+          "path": "results/anova_revalidation/predictions/XGB_BSL_seed123_test_predictions_v2.csv",
+          "sha256": "62f0acfd6e5f43474fd7f8c38c9beeba093fb416c6cb59e6065dfccb2e1b84ca"
+        },
+        {
+          "path": "results/anova_revalidation/predictions/XGB_BSL_seed2024_test_predictions_v2.csv",
+          "sha256": "6a37847abda369f9e1167302f5dd471a13a27a83589566c6bd2d83de609db7af"
+        },
+        {
+          "path": "results/anova_revalidation/predictions/XGB_BSL_seed42_test_predictions_v2.csv",
+          "sha256": "34a5cea73504d68c065544802655873511024a553b2e210a17c79a2f754bc9f5"
+        },
+        {
+          "path": "results/anova_revalidation/predictions/XGB_ENR_seed123_test_predictions_v2.csv",
+          "sha256": "a3e679de4c58d3251aade98ac34a5d972272e09fa444d36042bf1b4250175202"
+        },
+        {
+          "path": "results/anova_revalidation/predictions/XGB_ENR_seed2024_test_predictions_v2.csv",
+          "sha256": "1c0441445dee48b4c6fa0f91a1359603f6bd9d2702372877e1c410d19ccf7c3a"
+        },
+        {
+          "path": "results/anova_revalidation/predictions/XGB_ENR_seed42_test_predictions_v2.csv",
+          "sha256": "beac4fbdb9215fdca4c4199155b6fda0ee0c00c5bac7e045b729bfb9100ce601"
+        }
+      ]
+    },
+    {
+      "figure_id": "fig10_module_sensitivity",
+      "included_path": "figures/fig10_module_sensitivity.png",
+      "png_sha256": "a23d0e1110a2e8b948142556791ef88d88997955cb8c7f7fff0eaafaf938c50e",
+      "input_artifacts": [
+        {
+          "path": "results/ablation/classical/module_ablation_summary.csv",
+          "sha256": "2f773a0ad664f828207af3072fb765b0fbcacca735e7a66b8fd38d749b896ef5"
+        }
+      ]
+    },
+    {
+      "figure_id": "fig11_feature_stability",
+      "included_path": "figures/fig11_feature_stability.png",
+      "png_sha256": "ade64aaf4ace805142ee2688fb8b2f27dcf82174a7606593ca4847c0ca946d91",
+      "input_artifacts": [
+        {
+          "path": "results/sensitivity/selected_feature_stability.csv",
+          "sha256": "5e49fb5bae53a16b0c9d28964ce1a6b70a6530cca4e39591942b2982fc1377e4"
+        }
+      ]
+    }
+  ]
+}

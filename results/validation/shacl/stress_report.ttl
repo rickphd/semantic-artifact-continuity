@@ -1,0 +1,80 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rr: <http://wfrp.ia/ontologia/ia-sentimiento#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a sh:ValidationReport ;
+    sh:conforms false ;
+    sh:result [ a sh:ValidationResult ;
+            sh:focusNode <http://wfrp.ia/resource/reddit/post/invalid_missing_fields> ;
+            sh:resultMessage "rr:publicadoPor debe apuntar a exactamente 1 rr:Author (IRI)."@es ;
+            sh:resultPath rr:publicadoPor ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape [ sh:class rr:Author ;
+                    sh:maxCount 1 ;
+                    sh:message "rr:publicadoPor debe apuntar a exactamente 1 rr:Author (IRI)."@es ;
+                    sh:minCount 1 ;
+                    sh:nodeKind sh:IRI ;
+                    sh:path rr:publicadoPor ] ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://wfrp.ia/resource/reddit/post/invalid_missing_fields> ;
+            sh:resultMessage "rr:fechaCreacion faltante o con tipo inválido (xsd:dateTime)."@es ;
+            sh:resultPath rr:fechaCreacion ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape [ sh:datatype xsd:dateTime ;
+                    sh:maxCount 1 ;
+                    sh:message "rr:fechaCreacion faltante o con tipo inválido (xsd:dateTime)."@es ;
+                    sh:minCount 1 ;
+                    sh:path rr:fechaCreacion ] ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://wfrp.ia/resource/reddit/post/invalid_missing_fields> ;
+            sh:resultMessage "Idioma debe ser 'es' o 'en' (xsd:string, cardinalidad 1)."@es ;
+            sh:resultPath rr:idiomaDetectado ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:InConstraintComponent ;
+            sh:sourceShape [ sh:datatype xsd:string ;
+                    sh:in ( "es" "en" ) ;
+                    sh:maxCount 1 ;
+                    sh:message "Idioma debe ser 'es' o 'en' (xsd:string, cardinalidad 1)."@es ;
+                    sh:minCount 1 ;
+                    sh:path rr:idiomaDetectado ] ;
+            sh:value "fr"^^xsd:string ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://wfrp.ia/resource/reddit/post/invalid_missing_fields> ;
+            sh:resultMessage "Texto demasiado corto: rr:longitudTexto < 40."@es ;
+            sh:resultPath rr:longitudTexto ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinInclusiveConstraintComponent ;
+            sh:sourceShape [ sh:datatype xsd:integer ;
+                    sh:message "Texto demasiado corto: rr:longitudTexto < 40."@es ;
+                    sh:minInclusive 40 ;
+                    sh:path rr:longitudTexto ;
+                    sh:severity sh:Warning ] ;
+            sh:value 8 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://wfrp.ia/resource/reddit/post/invalid_missing_fields> ;
+            sh:resultMessage "rr:identificador debe ser alfanumérico base36."@es ;
+            sh:resultPath rr:identificador ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:PatternConstraintComponent ;
+            sh:sourceShape [ sh:datatype xsd:string ;
+                    sh:maxCount 1 ;
+                    sh:message "rr:identificador debe ser alfanumérico base36."@es ;
+                    sh:minCount 1 ;
+                    sh:path rr:identificador ;
+                    sh:pattern "^[0-9a-z]+$" ] ;
+            sh:value "invalid_missing_fields"^^xsd:string ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://wfrp.ia/resource/reddit/post/invalid_missing_fields> ;
+            sh:resultMessage "rr:enSubreddit debe apuntar a al menos 1 rr:Subreddit (IRI)."@es ;
+            sh:resultPath rr:enSubreddit ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape [ sh:class rr:Subreddit ;
+                    sh:message "rr:enSubreddit debe apuntar a al menos 1 rr:Subreddit (IRI)."@es ;
+                    sh:minCount 1 ;
+                    sh:nodeKind sh:IRI ;
+                    sh:path rr:enSubreddit ] ] .
+

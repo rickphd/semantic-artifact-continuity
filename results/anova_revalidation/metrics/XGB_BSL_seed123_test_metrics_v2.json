@@ -1,0 +1,96 @@
+{
+  "model": "XGB",
+  "condition": "BSL",
+  "seed": 123,
+  "pipeline_version": "canonical_v04_2_vader_train_scope",
+  "created_at": "2026-08-03T00:12:08.300408",
+  "split_source": "GEN_split_gld_reddit_ids_v02.json",
+  "dataset": "gold_enriched_ontology.parquet",
+  "dataset_sha256": "62c6394d4ef68191b713d80c9b54849ecf00176822719bf515b8f0ee65b31162",
+  "lexicon_manifest": "results/lexicon/ontology_lexicon_v04_2_train_only.json",
+  "lexicon_manifest_sha256": "313af4e18f4d7b58f87e87a7ac5bbbb19c32d5e7c829816bdad9fa6515e51e77",
+  "test_size": 323,
+  "class_order": [
+    "Negative",
+    "Neutral",
+    "Positive"
+  ],
+  "support": [
+    48,
+    119,
+    156
+  ],
+  "accuracy": 0.6191950464396285,
+  "macro_f1": 0.5194562033904232,
+  "weighted_f1": 0.5954102847246464,
+  "confusion_matrix": [
+    [
+      11,
+      21,
+      16
+    ],
+    [
+      12,
+      55,
+      52
+    ],
+    [
+      4,
+      18,
+      134
+    ]
+  ],
+  "classification_report": {
+    "Negative": {
+      "precision": 0.4074074074074074,
+      "recall": 0.22916666666666666,
+      "f1-score": 0.29333333333333333,
+      "support": 48.0
+    },
+    "Neutral": {
+      "precision": 0.5851063829787234,
+      "recall": 0.46218487394957986,
+      "f1-score": 0.5164319248826291,
+      "support": 119.0
+    },
+    "Positive": {
+      "precision": 0.6633663366336634,
+      "recall": 0.8589743589743589,
+      "f1-score": 0.7486033519553073,
+      "support": 156.0
+    },
+    "accuracy": 0.6191950464396285,
+    "macro avg": {
+      "precision": 0.5519600423399313,
+      "recall": 0.5167752998635352,
+      "f1-score": 0.5194562033904232,
+      "support": 323.0
+    },
+    "weighted avg": {
+      "precision": 0.5964964818726783,
+      "recall": 0.6191950464396285,
+      "f1-score": 0.5954102847246464,
+      "support": 323.0
+    }
+  },
+  "environment": {
+    "python": "3.13.13",
+    "sklearn": "1.9.0",
+    "xgboost": "3.3.0",
+    "torch": "2.13.0"
+  },
+  "hyperparameters": {
+    "n_estimators": 300,
+    "max_depth": 6,
+    "learning_rate": 0.1,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "tfidf_max_features": 10000,
+    "ngram_range": [
+      1,
+      2
+    ]
+  },
+  "n_features": 10000,
+  "class_weighting": "balanced_sample_weight"
+}
