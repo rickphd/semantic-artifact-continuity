@@ -1,0 +1,201 @@
+{
+  "id": "fig02-traceability-governance-contract",
+  "name": "Traceability Governance Contract",
+  "type": "architecture",
+  "page": {
+    "width": 1800,
+    "height": 760
+  },
+  "visual": {
+    "title_size": 26,
+    "node_title_size": 18,
+    "detail_size": 13,
+    "edge_label_size": 12
+  },
+  "nodes": [
+    {
+      "id": "canonical_post",
+      "label": "Canonical post record",
+      "details": ["source identity and split"],
+      "tone": "green",
+      "kind": "data",
+      "x": 129,
+      "y": 280,
+      "w": 215,
+      "h": 88
+    },
+    {
+      "id": "ontology_activation",
+      "label": "Ontology activation",
+      "details": ["post-linked concept signal"],
+      "tone": "orange",
+      "kind": "process",
+      "x": 430,
+      "y": 280,
+      "w": 215,
+      "h": 88
+    },
+    {
+      "id": "rdf_assertion",
+      "label": "RDF assertion",
+      "details": ["post IRI and concept URI"],
+      "tone": "blue",
+      "kind": "process",
+      "x": 645,
+      "y": 135,
+      "w": 215,
+      "h": 88
+    },
+    {
+      "id": "shacl_conformance",
+      "label": "SHACL conformance",
+      "details": ["generated graph against shapes"],
+      "tone": "blue",
+      "kind": "component",
+      "x": 987,
+      "y": 135,
+      "w": 223,
+      "h": 88
+    },
+    {
+      "id": "selected_variable",
+      "label": "Selected semantic variables",
+      "details": ["selection fitted on training data"],
+      "tone": "purple",
+      "kind": "process",
+      "x": 649,
+      "y": 425,
+      "w": 215,
+      "h": 88
+    },
+    {
+      "id": "audited_model_input",
+      "label": "Audited model input",
+      "details": ["selected input trace checked"],
+      "tone": "purple",
+      "kind": "component",
+      "dashed": true,
+      "x": 987,
+      "y": 425,
+      "w": 223,
+      "h": 88
+    },
+    {
+      "id": "traceability_provenance",
+      "label": "Traceability and provenance",
+      "details": ["post, resource and input relations"],
+      "tone": "teal",
+      "kind": "component",
+      "dashed": true,
+      "x": 987,
+      "y": 280,
+      "w": 223,
+      "h": 88
+    },
+    {
+      "id": "reproducibility_record",
+      "label": "Reproducibility record",
+      "details": ["artifact verification state"],
+      "tone": "neutral",
+      "kind": "component",
+      "dashed": true,
+      "x": 1308,
+      "y": 280,
+      "w": 215.5,
+      "h": 88
+    }
+  ],
+  "edges": [
+    {
+      "source": "canonical_post",
+      "target": "ontology_activation",
+      "label": "stable post_id",
+      "source_port": "right",
+      "target_port": "left",
+      "label_offset": {"x": 0, "y": -16}
+    },
+    {
+      "source": "ontology_activation",
+      "target": "rdf_assertion",
+      "label": "concept activation",
+      "source_port": "top",
+      "target_port": "left",
+      "waypoints": [
+        {"x": 537.5, "y": 179},
+        {"x": 645, "y": 179}
+      ],
+      "label_offset": {"x": 0, "y": -16}
+    },
+    {
+      "source": "rdf_assertion",
+      "target": "shacl_conformance",
+      "label": "graph + shapes",
+      "source_port": "right",
+      "target_port": "left",
+      "label_offset": {"x": 0, "y": -16}
+    },
+    {
+      "source": "ontology_activation",
+      "target": "selected_variable",
+      "label": "train-only selection",
+      "source_port": "bottom",
+      "target_port": "left",
+      "waypoints": [
+        {"x": 537.5, "y": 469},
+        {"x": 649, "y": 469}
+      ],
+      "label_offset": {"x": 0, "y": -16}
+    },
+    {
+      "source": "selected_variable",
+      "target": "audited_model_input",
+      "label": "input audit",
+      "source_port": "right",
+      "target_port": "left",
+      "label_offset": {"x": 0, "y": -16}
+    },
+    {
+      "source": "rdf_assertion",
+      "target": "traceability_provenance",
+      "label": "resource link",
+      "dashed": true,
+      "source_port": "right",
+      "target_port": "left",
+      "waypoints": [
+        {"x": 910, "y": 201},
+        {"x": 910, "y": 324}
+      ],
+      "label_offset": {"x": 0, "y": -14}
+    },
+    {
+      "source": "traceability_provenance",
+      "target": "audited_model_input",
+      "label": "provenance check",
+      "dashed": true,
+      "source_port": "bottom",
+      "target_port": "top",
+      "label_offset": {"x": 0, "y": -14}
+    },
+    {
+      "source": "traceability_provenance",
+      "target": "reproducibility_record",
+      "label": "hashes / commands / status",
+      "dashed": true,
+      "source_port": "right",
+      "target_port": "left",
+      "label_offset": {"x": 0, "y": -16}
+    }
+  ],
+  "legend": [
+    {"kind": "solid-node", "label": "Artifact or representation function", "tone": "blue"},
+    {"kind": "dashed-node", "label": "Governance or verification function", "tone": "teal"},
+    {"kind": "solid-edge", "label": "Identity or data dependency", "tone": "neutral"},
+    {"kind": "dashed-edge", "label": "Traceability or reproducibility", "tone": "neutral"}
+  ],
+  "legend_layout": {
+    "x": 129,
+    "y": 590,
+    "item_width": 365,
+    "gap": 25
+  }
+}

@@ -1,0 +1,282 @@
+{
+  "id": "fig01-traceable-ke-artefact-pipeline",
+  "name": "Traceable KE Artefact Pipeline",
+  "type": "architecture",
+  "page": {
+    "width": 1400,
+    "height": 800
+  },
+  "visual": {
+    "title_size": 26,
+    "section_title_size": 18,
+    "node_title_size": 18,
+    "detail_size": 13,
+    "edge_label_size": 12
+  },
+  "sections": [
+    {
+      "id": "semantic_evidence",
+      "label": "Source and semantic evidence",
+      "tone": "green",
+      "container": true,
+      "fill": "#EEEEEE",
+      "x": 0,
+      "y": 0,
+      "w": 630,
+      "h": 180
+    },
+    {
+      "id": "rdf_governance",
+      "label": "RDF and SHACL governance workflow",
+      "tone": "green",
+      "container": true,
+      "fill": "#D5E8D4",
+      "x": 0,
+      "y": 290,
+      "w": 630,
+      "h": 180
+    },
+    {
+      "id": "downstream_evaluation",
+      "label": "Downstream evaluation workflow",
+      "tone": "purple",
+      "container": true,
+      "fill": "#FFF2CC",
+      "x": 647,
+      "y": 290,
+      "w": 710,
+      "h": 180
+    }
+  ],
+  "nodes": [
+    {
+      "id": "canonical_posts",
+      "label": "Canonical post records",
+      "details": [
+        "post identity, text and label",
+        "train / validation / test"
+      ],
+      "tone": "green",
+      "kind": "data",
+      "section": "semantic_evidence",
+      "x": 13,
+      "y": 59,
+      "w": 230,
+      "h": 100
+    },
+    {
+      "id": "semantic_representation",
+      "label": "Ontology-driven representation",
+      "details": [
+        "37 candidate semantic variables",
+        "concept, polarity and counts"
+      ],
+      "tone": "orange",
+      "kind": "process",
+      "section": "semantic_evidence",
+      "x": 337,
+      "y": 59,
+      "w": 280,
+      "h": 100
+    },
+    {
+      "id": "rdf_materialization",
+      "label": "RDF materialization",
+      "details": [
+        "stable post identity",
+        "semantic assertions"
+      ],
+      "tone": "blue",
+      "kind": "process",
+      "section": "rdf_governance",
+      "x": 16,
+      "y": 347.75,
+      "w": 210,
+      "h": 100
+    },
+    {
+      "id": "shacl_validation",
+      "label": "SHACL conformance validation",
+      "details": [
+        "baseline and invalid fixture",
+        "conformance assessment"
+      ],
+      "tone": "blue",
+      "kind": "component",
+      "section": "rdf_governance",
+      "x": 320,
+      "y": 347.75,
+      "w": 296,
+      "h": 100
+    },
+    {
+      "id": "variable_selection",
+      "label": "Train-only variable selection",
+      "details": [
+        "37 candidate variables",
+        "selected semantic inputs"
+      ],
+      "tone": "purple",
+      "kind": "process",
+      "section": "downstream_evaluation",
+      "x": 661,
+      "y": 348,
+      "w": 180,
+      "h": 100
+    },
+    {
+      "id": "model_input_audit",
+      "label": "Model-input audit",
+      "details": [
+        "selection provenance",
+        "trace completeness"
+      ],
+      "tone": "purple",
+      "kind": "component",
+      "dashed": true,
+      "section": "downstream_evaluation",
+      "x": 921,
+      "y": 348,
+      "w": 180,
+      "h": 100
+    },
+    {
+      "id": "downstream_evaluation",
+      "label": "Downstream evaluation",
+      "details": [
+        "controlled model inputs",
+        "secondary evidence"
+      ],
+      "tone": "purple",
+      "kind": "model",
+      "section": "downstream_evaluation",
+      "x": 1181,
+      "y": 348,
+      "w": 160,
+      "h": 100
+    },
+    {
+      "id": "traceability_management",
+      "label": "Traceability and provenance management",
+      "details": [
+        "post, concept and model-input links"
+      ],
+      "tone": "teal",
+      "kind": "component",
+      "dashed": true,
+      "x": 306,
+      "y": 574.75,
+      "w": 290,
+      "h": 100
+    },
+    {
+      "id": "reproducibility_management",
+      "label": "Reproducibility management",
+      "details": [
+        "inventory, hashes and commands",
+        "regeneration or verification status"
+      ],
+      "tone": "neutral",
+      "kind": "component",
+      "dashed": true,
+      "x": 696,
+      "y": 574.75,
+      "w": 290,
+      "h": 100
+    }
+  ],
+  "edges": [
+    {
+      "source": "canonical_posts",
+      "target": "semantic_representation",
+      "label": "semantic signals",
+      "source_port": "right",
+      "target_port": "left"
+    },
+    {
+      "source": "semantic_representation",
+      "target": "rdf_materialization",
+      "label": "activation evidence",
+      "source_port": "bottom",
+      "target_port": "top",
+      "waypoints": [
+        {"x": 476, "y": 248},
+        {"x": 121, "y": 248}
+      ]
+    },
+    {
+      "source": "rdf_materialization",
+      "target": "shacl_validation",
+      "label": "generated RDF",
+      "source_port": "right",
+      "target_port": "left",
+      "label_offset": {"x": 0, "y": -16}
+    },
+    {
+      "source": "semantic_representation",
+      "target": "variable_selection",
+      "label": "candidate variables",
+      "source_port": "right",
+      "target_port": "top",
+      "waypoints": [
+        {"x": 736, "y": 109}
+      ]
+    },
+    {
+      "source": "variable_selection",
+      "target": "model_input_audit",
+      "label": "selected variables",
+      "source_port": "right",
+      "target_port": "left",
+      "label_offset": {"x": 0, "y": -16}
+    },
+    {
+      "source": "model_input_audit",
+      "target": "downstream_evaluation",
+      "label": "audited inputs",
+      "source_port": "right",
+      "target_port": "left",
+      "label_offset": {"x": 0, "y": -16}
+    },
+    {
+      "source": "rdf_materialization",
+      "target": "traceability_management",
+      "label": "stable identifiers",
+      "dashed": true,
+      "source_port": "bottom",
+      "target_port": "left"
+    },
+    {
+      "source": "traceability_management",
+      "target": "model_input_audit",
+      "label": "provenance check",
+      "dashed": true,
+      "source_port": "top",
+      "target_port": "bottom",
+      "waypoints": [
+        {"x": 451, "y": 540},
+        {"x": 1011, "y": 540}
+      ]
+    },
+    {
+      "source": "traceability_management",
+      "target": "reproducibility_management",
+      "label": "auditable outputs",
+      "dashed": true,
+      "source_port": "right",
+      "target_port": "left"
+    }
+  ],
+  "legend": [
+    {"kind": "solid-node", "label": "Pipeline function", "tone": "blue"},
+    {"kind": "dashed-node", "label": "Governance or verification function", "tone": "teal"},
+    {"kind": "solid-edge", "label": "Data or identity dependency", "tone": "neutral"},
+    {"kind": "dashed-edge", "label": "traceability, provenance, or reproducibility linkage", "tone": "neutral"}
+  ],
+  "legend_layout": {
+    "x": 6,
+    "y": 747,
+    "item_width": 320,
+    "gap": 50
+  }
+}

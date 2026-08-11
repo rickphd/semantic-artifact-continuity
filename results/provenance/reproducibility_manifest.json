@@ -1,0 +1,128 @@
+{
+  "status": "passed",
+  "python": "3.13.13",
+  "project_root": ".",
+  "generated_required_count": 27,
+  "missing_generated_outputs": [],
+  "v04_2_experiment_chain_validation": {
+    "returncode": 0,
+    "stdout": "passed",
+    "stderr": ""
+  },
+  "hashes": [
+    {
+      "path": "results/provenance/artifact_inventory.json",
+      "hash_sha256": "c94d44c5a44e00e98ece13158e7b954b21d4d5d0e0f5322121c59a79c31c0f67"
+    },
+    {
+      "path": "results/provenance/hash_manifest.json",
+      "hash_sha256": "72d0f2bc1916f232e791b1989d10885da0611355f8902a496424873cee95edad"
+    },
+    {
+      "path": "results/lexicon/lexicon_induction_report.json",
+      "hash_sha256": "596240bb38633d1ad24c14404d4ffa44981f1672d4e0e0e34c7fff5085d26975"
+    },
+    {
+      "path": "results/knowledge_graph/posts.ttl",
+      "hash_sha256": "17301452602596c310fd5568e3e3658318bf8551843ae92d65defe5e34beb8fe"
+    },
+    {
+      "path": "results/traceability/traceability_map.csv",
+      "hash_sha256": "13a6f64f75c79305d96a8be92127c22f1946ffedfd58c1cb4e603458d839f136"
+    },
+    {
+      "path": "results/knowledge_graph/materialization_report.json",
+      "hash_sha256": "75240fcae7a03f055700cd6e1fcaf672bd1bf7fcc3a231d5616014b9137ddb80"
+    },
+    {
+      "path": "results/validation/shacl/baseline_report.json",
+      "hash_sha256": "91e0f2d9955c5b329d5d166512e1c08b7a8d2f9b8db16a9b06e7a3f6d7880e2b"
+    },
+    {
+      "path": "results/validation/coverage/coverage_sparsity_report.md",
+      "hash_sha256": "c830693e7ef55a7a085fb64eb9a088d840b4767c9d5edc756d81e420d26230ab"
+    },
+    {
+      "path": "results/traceability/model_inputs/model_input_trace.csv",
+      "hash_sha256": "b01072e508914dc49dee53bad1b5bdf755aa3d27f101521bf72d9c9740135990"
+    },
+    {
+      "path": "results/traceability/model_inputs/semantic_variable_model_input_report.md",
+      "hash_sha256": "ea7f81d8adb4021281f8bdd53f462f06ba494a19005a7a1e6f77eb4eddbb271b"
+    },
+    {
+      "path": "results/traceability/model_inputs/selected_semantic_input_matrix.csv",
+      "hash_sha256": "da2dd8ecbb7e816da6c914fcaa557065ae0dea6c21df242f964def8688580918"
+    },
+    {
+      "path": "results/traceability/model_inputs/selected_semantic_input_standardized.csv",
+      "hash_sha256": "721ef2fbf61a9cd043aefcacf1c6f0880e8058eb517d8769f4e5f7c2b61d1db0"
+    },
+    {
+      "path": "results/traceability/model_inputs/selected_semantic_input_cell_trace.csv",
+      "hash_sha256": "185a28b66fbc44cb543d12496c5202fe67927c344637270befc3b47436155d21"
+    },
+    {
+      "path": "results/traceability/model_inputs/downstream_semantic_input_fingerprints.csv",
+      "hash_sha256": "4f00998b0022a96c0d7f7ee05052cb9415f5de91d9e79094e30f88c71f664002"
+    },
+    {
+      "path": "results/traceability/model_inputs/selected_semantic_input_reconciliation_report.json",
+      "hash_sha256": "8a5ed515dc40384e60441e6c06fc4cfc6560c1e1554fc14c39c30aa8892ac05e"
+    },
+    {
+      "path": "results/traceability/model_inputs/selected_semantic_input_reconciliation_report.md",
+      "hash_sha256": "da218faef1059183fd29c02cd6007ab8eaa7c99970ddaa36ffcd3bae2f02fa06"
+    },
+    {
+      "path": "results/traceability/chain_reconciliation_report.json",
+      "hash_sha256": "d0e30df3e4e97bc08642201d46bc48fb66645747e408e65343c8f2c2afe6f26b"
+    },
+    {
+      "path": "results/traceability/chain_reconciliation_report.md",
+      "hash_sha256": "294f8f499d7af37dfe9b8147cc78f449f792ee25213b7dd500a36474e62279d8"
+    },
+    {
+      "path": "results/ablation/classical/module_ablation_summary.md",
+      "hash_sha256": "586e91b9bc3532fd80161e0f11c20598eb84c02c526ca74ff2e12ec75aebeb6a"
+    },
+    {
+      "path": "results/ablation/classical/module_ablation_predictions.csv",
+      "hash_sha256": "40ae03c2f1bf6f11ee8a516a5aede3079aae2537ba94bc976bba8909ce60372c"
+    },
+    {
+      "path": "results/ablation/cnn1d/cnn1d_module_ablation_manifest.json",
+      "hash_sha256": "1d7b66631f8c3055fa88a371588196b27e719014f796a84dc729690cec9ad804"
+    },
+    {
+      "path": "results/ablation/cnn1d/cnn1d_module_ablation_summary.csv",
+      "hash_sha256": "3b28bb7fffcfbfaaeff26ee0606eacf61da269f44227ce470b42cb0d8aa4093a"
+    },
+    {
+      "path": "results/ablation/cnn1d/cnn1d_module_ablation_predictions.csv",
+      "hash_sha256": "661a542630a8391fd910dab355b8ef7ac4bbec0c3436cd668f2c67a4dbeb1990"
+    },
+    {
+      "path": "results/anova_revalidation/metrics/multiseed_summary_v2.csv",
+      "hash_sha256": "f8a27e7ae736f92e044d82a0a1e3507e83ca292150d7f7576f2f806d1da9b351"
+    },
+    {
+      "path": "results/anova_revalidation/metrics/multiseed_raw_v2.csv",
+      "hash_sha256": "3ac46c26474a67e1ed478369f31e141b27fbeb24585ce90466e319fd691b41fc"
+    },
+    {
+      "path": "results/anova_revalidation/README.md",
+      "hash_sha256": "ba9770e805a8015b2549ecaa2ecdb57c7b36d8e4a355a76e84583be7dd1d46ae"
+    },
+    {
+      "path": "results/validation/experiment_chain_validation.json",
+      "hash_sha256": "d48bc77e779a1d75fd58f59d924895cb5ed53b3a0eca7f332a05f26dbdacd7fc"
+    }
+  ],
+  "release_scope_exclusions": [
+    "non-authoritative experiment outputs",
+    "accelerator-specific diagnostic outputs",
+    "serialized trained model binaries other than the released input scaler"
+  ],
+  "known_non_reproducible_steps": []
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://wfrp.ia/shapes/ia-sentimiento" uri="rr-shapes.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://wfrp.ia/dominio/ciencia-tecnologia" uri="rr-domain.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://wfrp.ia/sentimiento/core/1.0" uri="rr-sentiment.ttl"/>
+</catalog>

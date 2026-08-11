@@ -1,0 +1,104 @@
+{
+  "model": "CNN1D",
+  "condition": "BSL",
+  "seed": 42,
+  "pipeline_version": "canonical_v04_2_vader_train_scope",
+  "created_at": "2026-08-03T00:01:32.022758",
+  "split_source": "GEN_split_gld_reddit_ids_v02.json",
+  "dataset": "gold_enriched_ontology.parquet",
+  "dataset_sha256": "62c6394d4ef68191b713d80c9b54849ecf00176822719bf515b8f0ee65b31162",
+  "lexicon_manifest": "results/lexicon/ontology_lexicon_v04_2_train_only.json",
+  "lexicon_manifest_sha256": "313af4e18f4d7b58f87e87a7ac5bbbb19c32d5e7c829816bdad9fa6515e51e77",
+  "test_size": 323,
+  "class_order": [
+    "Negative",
+    "Neutral",
+    "Positive"
+  ],
+  "support": [
+    48,
+    119,
+    156
+  ],
+  "accuracy": 0.5975232198142415,
+  "macro_f1": 0.5174988293267863,
+  "weighted_f1": 0.5802900673568806,
+  "confusion_matrix": [
+    [
+      13,
+      16,
+      19
+    ],
+    [
+      13,
+      55,
+      51
+    ],
+    [
+      4,
+      27,
+      125
+    ]
+  ],
+  "classification_report": {
+    "Negative": {
+      "precision": 0.43333333333333335,
+      "recall": 0.2708333333333333,
+      "f1-score": 0.3333333333333333,
+      "support": 48.0
+    },
+    "Neutral": {
+      "precision": 0.5612244897959183,
+      "recall": 0.46218487394957986,
+      "f1-score": 0.5069124423963134,
+      "support": 119.0
+    },
+    "Positive": {
+      "precision": 0.6410256410256411,
+      "recall": 0.8012820512820513,
+      "f1-score": 0.7122507122507122,
+      "support": 156.0
+    },
+    "accuracy": 0.5975232198142415,
+    "macro avg": {
+      "precision": 0.545194488051631,
+      "recall": 0.5114334195216549,
+      "f1-score": 0.5174988293267863,
+      "support": 323.0
+    },
+    "weighted avg": {
+      "precision": 0.5807607253427687,
+      "recall": 0.5975232198142415,
+      "f1-score": 0.5802900673568806,
+      "support": 323.0
+    }
+  },
+  "environment": {
+    "python": "3.13.13",
+    "sklearn": "1.9.0",
+    "xgboost": "3.3.0",
+    "torch": "2.13.0"
+  },
+  "hyperparameters": {
+    "embedding_dim": 300,
+    "num_filters": 128,
+    "kernel_sizes": [
+      3,
+      4,
+      5
+    ],
+    "hidden_dim": 128,
+    "classifier_head": "pooled_plus_optional_semantic_to_hidden128_to_output",
+    "dropout": 0.5,
+    "batch_size": 32,
+    "lr": 0.001,
+    "max_epochs": 20,
+    "early_stopping_patience": 5,
+    "max_len": 279,
+    "vocab_size": 5602,
+    "vocab_fit": "train_only",
+    "best_epoch": 8,
+    "best_val_f1": 0.5922,
+    "device": "cpu"
+  }
+}

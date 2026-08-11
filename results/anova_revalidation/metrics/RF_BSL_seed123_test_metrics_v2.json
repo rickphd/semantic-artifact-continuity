@@ -1,0 +1,94 @@
+{
+  "model": "RF",
+  "condition": "BSL",
+  "seed": 123,
+  "pipeline_version": "canonical_v04_2_vader_train_scope",
+  "created_at": "2026-08-03T00:12:03.560236",
+  "split_source": "GEN_split_gld_reddit_ids_v02.json",
+  "dataset": "gold_enriched_ontology.parquet",
+  "dataset_sha256": "62c6394d4ef68191b713d80c9b54849ecf00176822719bf515b8f0ee65b31162",
+  "lexicon_manifest": "results/lexicon/ontology_lexicon_v04_2_train_only.json",
+  "lexicon_manifest_sha256": "313af4e18f4d7b58f87e87a7ac5bbbb19c32d5e7c829816bdad9fa6515e51e77",
+  "test_size": 323,
+  "class_order": [
+    "Negative",
+    "Neutral",
+    "Positive"
+  ],
+  "support": [
+    48,
+    119,
+    156
+  ],
+  "accuracy": 0.6377708978328174,
+  "macro_f1": 0.5894296827902549,
+  "weighted_f1": 0.6355951603019281,
+  "confusion_matrix": [
+    [
+      20,
+      16,
+      12
+    ],
+    [
+      14,
+      72,
+      33
+    ],
+    [
+      7,
+      35,
+      114
+    ]
+  ],
+  "classification_report": {
+    "Negative": {
+      "precision": 0.4878048780487805,
+      "recall": 0.4166666666666667,
+      "f1-score": 0.449438202247191,
+      "support": 48.0
+    },
+    "Neutral": {
+      "precision": 0.5853658536585366,
+      "recall": 0.6050420168067226,
+      "f1-score": 0.5950413223140496,
+      "support": 119.0
+    },
+    "Positive": {
+      "precision": 0.7169811320754716,
+      "recall": 0.7307692307692307,
+      "f1-score": 0.7238095238095238,
+      "support": 156.0
+    },
+    "accuracy": 0.6377708978328174,
+    "macro avg": {
+      "precision": 0.5967172879275963,
+      "recall": 0.5841593047475401,
+      "f1-score": 0.5894296827902549,
+      "support": 323.0
+    },
+    "weighted avg": {
+      "precision": 0.634434140357526,
+      "recall": 0.6377708978328174,
+      "f1-score": 0.6355951603019281,
+      "support": 323.0
+    }
+  },
+  "environment": {
+    "python": "3.13.13",
+    "sklearn": "1.9.0",
+    "xgboost": "3.3.0",
+    "torch": "2.13.0"
+  },
+  "hyperparameters": {
+    "n_estimators": 300,
+    "max_depth": 20,
+    "min_samples_leaf": 2,
+    "class_weight": "balanced",
+    "tfidf_max_features": 10000,
+    "ngram_range": [
+      1,
+      2
+    ]
+  },
+  "n_features": 10000
+}

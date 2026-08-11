@@ -1,0 +1,42 @@
+Validation Report
+Conforms: False
+Results (6):
+Constraint Violation in InConstraintComponent (http://www.w3.org/ns/shacl#InConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:datatype xsd:string ; sh:in ( Literal("es") Literal("en") ) ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:message Literal("Idioma debe ser 'es' o 'en' (xsd:string, cardinalidad 1).", lang=es) ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path rr:idiomaDetectado ]
+	Focus Node: <http://wfrp.ia/resource/reddit/post/invalid_missing_fields>
+	Value Node: Literal("fr", datatype=xsd:string)
+	Result Path: rr:idiomaDetectado
+	Message: Idioma debe ser 'es' o 'en' (xsd:string, cardinalidad 1).
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:class rr:Author ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:message Literal("rr:publicadoPor debe apuntar a exactamente 1 rr:Author (IRI).", lang=es) ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:nodeKind sh:IRI ; sh:path rr:publicadoPor ]
+	Focus Node: <http://wfrp.ia/resource/reddit/post/invalid_missing_fields>
+	Result Path: rr:publicadoPor
+	Message: rr:publicadoPor debe apuntar a exactamente 1 rr:Author (IRI).
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:class rr:Subreddit ; sh:message Literal("rr:enSubreddit debe apuntar a al menos 1 rr:Subreddit (IRI).", lang=es) ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:nodeKind sh:IRI ; sh:path rr:enSubreddit ]
+	Focus Node: <http://wfrp.ia/resource/reddit/post/invalid_missing_fields>
+	Result Path: rr:enSubreddit
+	Message: rr:enSubreddit debe apuntar a al menos 1 rr:Subreddit (IRI).
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:datatype xsd:dateTime ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:message Literal("rr:fechaCreacion faltante o con tipo inválido (xsd:dateTime).", lang=es) ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path rr:fechaCreacion ]
+	Focus Node: <http://wfrp.ia/resource/reddit/post/invalid_missing_fields>
+	Result Path: rr:fechaCreacion
+	Message: rr:fechaCreacion faltante o con tipo inválido (xsd:dateTime).
+Constraint Violation in PatternConstraintComponent (http://www.w3.org/ns/shacl#PatternConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:datatype xsd:string ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:message Literal("rr:identificador debe ser alfanumérico base36.", lang=es) ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path rr:identificador ; sh:pattern Literal("^[0-9a-z]+$") ]
+	Focus Node: <http://wfrp.ia/resource/reddit/post/invalid_missing_fields>
+	Value Node: Literal("invalid_missing_fields", datatype=xsd:string)
+	Result Path: rr:identificador
+	Message: rr:identificador debe ser alfanumérico base36.
+Validation Result in MinInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MinInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:datatype xsd:integer ; sh:message Literal("Texto demasiado corto: rr:longitudTexto < 40.", lang=es) ; sh:minInclusive Literal("40", datatype=xsd:integer) ; sh:path rr:longitudTexto ; sh:severity sh:Warning ]
+	Focus Node: <http://wfrp.ia/resource/reddit/post/invalid_missing_fields>
+	Value Node: Literal("8", datatype=xsd:integer)
+	Result Path: rr:longitudTexto
+	Message: Texto demasiado corto: rr:longitudTexto < 40.

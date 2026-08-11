@@ -1,0 +1,126 @@
+{
+  "model": "XGB",
+  "condition": "ENR",
+  "seed": 123,
+  "pipeline_version": "canonical_v04_2_vader_train_scope",
+  "created_at": "2026-08-03T00:12:12.775990",
+  "split_source": "GEN_split_gld_reddit_ids_v02.json",
+  "dataset": "gold_enriched_ontology.parquet",
+  "dataset_sha256": "62c6394d4ef68191b713d80c9b54849ecf00176822719bf515b8f0ee65b31162",
+  "lexicon_manifest": "results/lexicon/ontology_lexicon_v04_2_train_only.json",
+  "lexicon_manifest_sha256": "313af4e18f4d7b58f87e87a7ac5bbbb19c32d5e7c829816bdad9fa6515e51e77",
+  "test_size": 323,
+  "class_order": [
+    "Negative",
+    "Neutral",
+    "Positive"
+  ],
+  "support": [
+    48,
+    119,
+    156
+  ],
+  "accuracy": 0.6408668730650154,
+  "macro_f1": 0.5523426042158031,
+  "weighted_f1": 0.6234121970241384,
+  "confusion_matrix": [
+    [
+      13,
+      21,
+      14
+    ],
+    [
+      12,
+      62,
+      45
+    ],
+    [
+      4,
+      20,
+      132
+    ]
+  ],
+  "classification_report": {
+    "Negative": {
+      "precision": 0.4482758620689655,
+      "recall": 0.2708333333333333,
+      "f1-score": 0.33766233766233766,
+      "support": 48.0
+    },
+    "Neutral": {
+      "precision": 0.6019417475728155,
+      "recall": 0.5210084033613446,
+      "f1-score": 0.5585585585585585,
+      "support": 119.0
+    },
+    "Positive": {
+      "precision": 0.6910994764397905,
+      "recall": 0.8461538461538461,
+      "f1-score": 0.760806916426513,
+      "support": 156.0
+    },
+    "accuracy": 0.6408668730650154,
+    "macro avg": {
+      "precision": 0.5804390286938572,
+      "recall": 0.5459985276161747,
+      "f1-score": 0.5523426042158031,
+      "support": 323.0
+    },
+    "weighted avg": {
+      "precision": 0.6221666491179031,
+      "recall": 0.6408668730650154,
+      "f1-score": 0.6234121970241384,
+      "support": 323.0
+    }
+  },
+  "environment": {
+    "python": "3.13.13",
+    "sklearn": "1.9.0",
+    "xgboost": "3.3.0",
+    "torch": "2.13.0"
+  },
+  "hyperparameters": {
+    "n_estimators": 300,
+    "max_depth": 6,
+    "learning_rate": 0.1,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "tfidf_max_features": 10000,
+    "ngram_range": [
+      1,
+      2
+    ]
+  },
+  "ont_features": [
+    "ont_domain_density",
+    "ont_InteligenciaArtificial_Negativo",
+    "ont_total_negativo_mentions",
+    "ont_Innovacion_Neutro",
+    "ont_Etica_Negativo",
+    "ont_InteligenciaArtificial_Neutro",
+    "ont_Tecnologia_Positivo"
+  ],
+  "ont_list": "anova_p005_train_only_vader_scope",
+  "n_features": 10007,
+  "class_weighting": "balanced_sample_weight",
+  "semantic_input_provenance": {
+    "train": {
+      "profile": "raw_float64",
+      "rows": 968,
+      "columns": 7,
+      "dtype": "float64",
+      "ordered_post_ids_sha256": "d42ac8c75364349ab2bd40038940caf56eb506b786e420054190294a27f45476",
+      "ordered_features_sha256": "95680f916a7802a3221e04fee777df9e2dcfa6125d12e7c3064d0ce282f0da51",
+      "matrix_sha256": "7ec14f7236be5effe9864312601e0053a6f7d387658cc7943581ea2ab7296e75"
+    },
+    "test": {
+      "profile": "raw_float64",
+      "rows": 323,
+      "columns": 7,
+      "dtype": "float64",
+      "ordered_post_ids_sha256": "359d5f85b3b8c5eeacf179a9b91c8d4ed63dfda568712a6ed4c50ef3bf62f009",
+      "ordered_features_sha256": "95680f916a7802a3221e04fee777df9e2dcfa6125d12e7c3064d0ce282f0da51",
+      "matrix_sha256": "6bbdae170b9d9f3c752c4cf8a999ffd34a1332b0a478e954a3eb5dac806bd2e6"
+    }
+  }
+}

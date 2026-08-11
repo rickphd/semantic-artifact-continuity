@@ -1,0 +1,8 @@
+feature,module,exists_in_gold,nonzero_count,trace_present,selection_method,selection_scope,lexicon_scope
+ont_domain_density,global_counts,True,1408,True,"ANOVA F-test (sklearn.feature_selection.f_classif), train-only",train_only,train_text_only_no_labels
+ont_InteligenciaArtificial_Negativo,ai,True,38,True,"ANOVA F-test (sklearn.feature_selection.f_classif), train-only",train_only,train_text_only_no_labels
+ont_total_negativo_mentions,global_counts,True,54,True,"ANOVA F-test (sklearn.feature_selection.f_classif), train-only",train_only,train_text_only_no_labels
+ont_Innovacion_Neutro,innovation,True,43,True,"ANOVA F-test (sklearn.feature_selection.f_classif), train-only",train_only,train_text_only_no_labels
+ont_Etica_Negativo,ethics,True,5,True,"ANOVA F-test (sklearn.feature_selection.f_classif), train-only",train_only,train_text_only_no_labels
+ont_InteligenciaArtificial_Neutro,ai,True,849,True,"ANOVA F-test (sklearn.feature_selection.f_classif), train-only",train_only,train_text_only_no_labels
+ont_Tecnologia_Positivo,technology,True,28,True,"ANOVA F-test (sklearn.feature_selection.f_classif), train-only",train_only,train_text_only_no_labels

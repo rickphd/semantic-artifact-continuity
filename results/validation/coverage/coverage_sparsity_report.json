@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "rows": 1614,
+  "ontology_feature_count": 37,
+  "selected_feature_count": 7,
+  "posts_with_any_ontology_feature": 1489,
+  "overall_activation_pct": 92.25526641883519,
+  "posts_with_selected_feature": 1408,
+  "selected_activation_pct": 87.2366790582404,
+  "split_activation_pct": {
+    "train": 93.38842975206612,
+    "val": 91.02167182662538,
+    "test": 90.09287925696594
+  }
+}

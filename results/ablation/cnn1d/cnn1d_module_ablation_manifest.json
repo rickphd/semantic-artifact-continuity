@@ -1,0 +1,88 @@
+{
+  "created_at": "2026-08-03T00:17:13.639767",
+  "root": ".",
+  "dataset": "data/gold/gold_enriched_ontology.parquet",
+  "dataset_sha256": "62c6394d4ef68191b713d80c9b54849ecf00176822719bf515b8f0ee65b31162",
+  "split": "data/gold/GEN_split_gld_reddit_ids_v02.json",
+  "split_sha256": "473f7bad51f04cfb3de2cbf066e46d5539000037d5edab2cf20f06da7af95444",
+  "lexicon_manifest": "results/lexicon/ontology_lexicon_v04_2_train_only.json",
+  "lexicon_manifest_sha256": "313af4e18f4d7b58f87e87a7ac5bbbb19c32d5e7c829816bdad9fa6515e51e77",
+  "feature_selection_sha256": "03d660c83fdb0a796556edec66736f008df4d1b99b947051c640cb9c1b7ff854",
+  "split_sizes": {
+    "train": 968,
+    "val": 323,
+    "test": 323
+  },
+  "test_support": [
+    48,
+    119,
+    156
+  ],
+  "all_ontology_features_count": 37,
+  "selected_features": [
+    "ont_domain_density",
+    "ont_InteligenciaArtificial_Negativo",
+    "ont_total_negativo_mentions",
+    "ont_Innovacion_Neutro",
+    "ont_Etica_Negativo",
+    "ont_InteligenciaArtificial_Neutro",
+    "ont_Tecnologia_Positivo"
+  ],
+  "conditions": [
+    "BSL",
+    "ENR_full_37",
+    "ENR_selected",
+    "drop_ai",
+    "drop_ml",
+    "drop_technology",
+    "drop_future",
+    "drop_data",
+    "drop_algorithm",
+    "drop_robot",
+    "drop_automation",
+    "drop_ethics",
+    "drop_innovation",
+    "drop_global_counts"
+  ],
+  "seeds": [
+    42,
+    123,
+    2024
+  ],
+  "missing_module_features": [],
+  "hyperparameters": {
+    "max_vocab": 1000000,
+    "min_freq": 2,
+    "max_len": 279,
+    "embedding_dim": 300,
+    "num_filters": 128,
+    "kernel_sizes": [
+      3,
+      4,
+      5
+    ],
+    "hidden_dim": 128,
+    "dropout": 0.5,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "max_grad_norm": 0.0,
+    "max_epochs": 20,
+    "patience": 5,
+    "semantic_input_profile": "train_standardized_float32",
+    "classifier_head": "pooled_plus_optional_semantic_to_hidden128_to_output"
+  },
+  "environment": {
+    "python": "3.13.13",
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O"
+  },
+  "completed_at": "2026-08-03T08:55:34.517970",
+  "runtime_seconds": 31100.8437,
+  "output_files": [
+    "cnn1d_module_ablation_manifest.json",
+    "cnn1d_module_ablation_raw.csv",
+    "cnn1d_module_ablation_summary.csv",
+    "cnn1d_module_ablation_module_rank.csv",
+    "cnn1d_module_ablation_predictions.csv"
+  ]
+}

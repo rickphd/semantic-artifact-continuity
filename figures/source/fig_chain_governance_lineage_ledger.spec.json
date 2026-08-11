@@ -1,0 +1,168 @@
+{
+  "id": "fig-chain-governance-lineage-ledger",
+  "name": "Canonical Lineage With Verification Evidence",
+  "title": "Canonical artifact lineage with verification evidence",
+  "subtitle": "The central spine follows the canonical lineage; blue callouts report the evidence associated with each artifact.",
+  "type": "process",
+  "page": {
+    "width": 1720,
+    "height": 710
+  },
+  "visual": {
+    "title_size": 27,
+    "subtitle_size": 14,
+    "node_title_size": 16,
+    "detail_size": 13,
+    "edge_label_size": 13
+  },
+  "nodes": [
+    {
+      "id": "post_identity",
+      "label": "Canonical post identity",
+      "tone": "green",
+      "x": 45,
+      "y": 335,
+      "w": 165,
+      "h": 64
+    },
+    {
+      "id": "identity_evidence",
+      "label": "Evidence: record correspondence",
+      "details": ["1,614 post resources", "Canonical identity preserved"],
+      "tone": "blue",
+      "x": 45,
+      "y": 165,
+      "w": 165,
+      "h": 110
+    },
+    {
+      "id": "activation",
+      "label": "Ontology activation",
+      "tone": "orange",
+      "x": 280,
+      "y": 335,
+      "w": 165,
+      "h": 64
+    },
+    {
+      "id": "activation_evidence",
+      "label": "Evidence: semantic coverage",
+      "details": ["37 variables", "9,208 nonzero activations"],
+      "tone": "blue",
+      "x": 281,
+      "y": 460,
+      "w": 164,
+      "h": 110
+    },
+    {
+      "id": "rdf_graph",
+      "label": "RDF graph artifact",
+      "tone": "purple",
+      "x": 515,
+      "y": 335,
+      "w": 165,
+      "h": 64
+    },
+    {
+      "id": "rdf_evidence",
+      "label": "Evidence: materialization inventory",
+      "details": ["1,614 post resources", "15,603 triples; 1,888 assertions"],
+      "tone": "blue",
+      "x": 515,
+      "y": 165,
+      "w": 165,
+      "h": 110
+    },
+    {
+      "id": "shacl_graph",
+      "label": "SHACL-conformant RDF",
+      "tone": "green",
+      "x": 750,
+      "y": 335,
+      "w": 165,
+      "h": 64
+    },
+    {
+      "id": "shacl_evidence",
+      "label": "Evidence: structural conformance",
+      "details": ["Baseline conforms: 0 validation results", "Negative fixture rejected: 6 results"],
+      "tone": "blue",
+      "x": 750,
+      "y": 460,
+      "w": 165,
+      "h": 110
+    },
+    {
+      "id": "selected_variables",
+      "label": "Traceable semantic variables",
+      "tone": "teal",
+      "x": 998,
+      "y": 335,
+      "w": 165,
+      "h": 64
+    },
+    {
+      "id": "trace_evidence",
+      "label": "Evidence: semantic traceability",
+      "details": ["7 train-only selected variables", "2,425 linked activations"],
+      "tone": "blue",
+      "x": 998,
+      "y": 165,
+      "w": 165,
+      "h": 110
+    },
+    {
+      "id": "audited_input",
+      "label": "Governed downstream input",
+      "tone": "purple",
+      "x": 1251,
+      "y": 335,
+      "w": 165,
+      "h": 64
+    },
+    {
+      "id": "input_evidence",
+      "label": "Evidence: model response",
+      "details": ["24 model-condition-seed units", "Secondary behavioral evidence"],
+      "tone": "blue",
+      "x": 1251,
+      "y": 460,
+      "w": 165,
+      "h": 110
+    },
+    {
+      "id": "evidence_package",
+      "label": "Bounded evidence package",
+      "tone": "green",
+      "x": 1486,
+      "y": 335,
+      "w": 165,
+      "h": 64
+    },
+    {
+      "id": "package_evidence",
+      "label": "Released research materials",
+      "details": ["Graph, traceability, and predictions", "Available for inspection"],
+      "tone": "blue",
+      "x": 1486,
+      "y": 165,
+      "w": 165,
+      "h": 110
+    }
+  ],
+  "edges": [
+    {"source": "post_identity", "target": "activation", "source_port": "right", "target_port": "left"},
+    {"source": "activation", "target": "rdf_graph", "source_port": "right", "target_port": "left"},
+    {"source": "rdf_graph", "target": "shacl_graph", "source_port": "right", "target_port": "left"},
+    {"source": "shacl_graph", "target": "selected_variables", "source_port": "right", "target_port": "left"},
+    {"source": "selected_variables", "target": "audited_input", "source_port": "right", "target_port": "left"},
+    {"source": "audited_input", "target": "evidence_package", "source_port": "right", "target_port": "left"},
+    {"source": "identity_evidence", "target": "post_identity", "source_port": "bottom", "target_port": "top", "stroke": "#94A3B8", "end_arrow": "none"},
+    {"source": "activation", "target": "activation_evidence", "source_port": "bottom", "target_port": "top", "stroke": "#94A3B8", "end_arrow": "none"},
+    {"source": "rdf_evidence", "target": "rdf_graph", "source_port": "bottom", "target_port": "top", "stroke": "#94A3B8", "end_arrow": "none"},
+    {"source": "shacl_graph", "target": "shacl_evidence", "source_port": "bottom", "target_port": "top", "stroke": "#2D5B9E", "end_arrow": "none"},
+    {"source": "trace_evidence", "target": "selected_variables", "source_port": "bottom", "target_port": "top", "stroke": "#94A3B8", "end_arrow": "none"},
+    {"source": "audited_input", "target": "input_evidence", "source_port": "bottom", "target_port": "top", "stroke": "#94A3B8", "end_arrow": "none"},
+    {"source": "package_evidence", "target": "evidence_package", "source_port": "bottom", "target_port": "top", "stroke": "#2D5B9E", "end_arrow": "none"}
+  ]
+}

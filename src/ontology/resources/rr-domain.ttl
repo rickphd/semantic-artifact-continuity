@@ -1,0 +1,413 @@
+@prefix : <http://wfrp.ia/dominio/ciencia-tecnologia#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rrdom: <http://wfrp.ia/dominio/ciencia-tecnologia#> .
+@base <http://wfrp.ia/dominio/ciencia-tecnologia#> .
+
+<http://wfrp.ia/dominio/ciencia-tecnologia> rdf:type owl:Ontology ;
+                                             dct:title "Ontología de dominio: contexto y ciencia/tecnología"@es ;
+                                             rdfs:isDefinedBy "Felipe Rosero (Autor)" ;
+                                             owl:versionInfo "0.4" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/title
+dct:title rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+skos:altLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+skos:broader rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+skos:inScheme rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#topConceptOf
+skos:topConceptOf rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+skos:Concept rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+skos:ConceptScheme rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#Ciencia
+rrdom:Ciencia rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:altLabel "science"@en ;
+              skos:broader rrdom:TecnologiaIA ;
+              skos:inScheme rrdom:ContextoCienciaTecnologia ;
+              skos:prefLabel "Ciencia"@es ,
+                             "Science"@en .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#Contexto
+rrdom:Contexto rdf:type owl:NamedIndividual ,
+                        skos:Concept ;
+               skos:inScheme rrdom:ContextoCienciaTecnologia ;
+               skos:prefLabel "Context"@en ,
+                              "Contexto"@es ;
+               skos:topConceptOf rrdom:ContextoCienciaTecnologia .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#ContextoCienciaTecnologia
+rrdom:ContextoCienciaTecnologia rdf:type owl:NamedIndividual ,
+                                         skos:ConceptScheme ;
+                                skos:prefLabel "Context & Science/Technology"@en ,
+                                               "Contexto y Ciencia/Tecnología"@es .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#Economia
+rrdom:Economia rdf:type owl:NamedIndividual ,
+                        skos:Concept ;
+               skos:altLabel "economics"@en ;
+               skos:broader rrdom:Contexto ;
+               skos:inScheme rrdom:ContextoCienciaTecnologia ;
+               skos:prefLabel "Economics"@en ,
+                              "Economía"@es .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#Ecuador
+rrdom:Ecuador rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:altLabel "ecuador"@en ;
+              skos:broader rrdom:Contexto ;
+              skos:inScheme rrdom:ContextoCienciaTecnologia ;
+              skos:prefLabel "Ecuador"@en ,
+                             "Ecuador"@es .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#Futurologia
+rrdom:Futurologia rdf:type owl:NamedIndividual ,
+                           skos:Concept ;
+                  skos:altLabel "futurology"@en ;
+                  skos:broader rrdom:TecnologiaIA ;
+                  skos:inScheme rrdom:ContextoCienciaTecnologia ;
+                  skos:prefLabel "Futurology & Tech"@en ,
+                                 "Futurología y tecnología"@es .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#InteligenciaArtificial
+rrdom:InteligenciaArtificial rdf:type owl:NamedIndividual ,
+                                      skos:Concept ;
+                             skos:altLabel "artificial"@en ,
+                                          "ai"@en ,
+                                          "a.i."@en ,
+                                          "ia"@es ,
+                                          "artificial intelligence"@en ,
+                                          "inteligencia artificial"@es ,
+                                          "machine intelligence"@en ,
+                                          "computer intelligence"@en ,
+                                          "agi"@en ,
+                                          "general ai"@en ,
+                                          "narrow ai"@en ,
+                                          "ai model"@en ,
+                                          "modelo de ia"@es ,
+                                          "ai system"@en ,
+                                          "sistema de ia"@es ,
+                                          # Added by v04 manual validation (2025-11-11)
+                                          "llm"@en ,
+                                          "la inteligencia artificial"@es ,
+                                          "de ia"@es ,
+                                          "la ia"@es ;
+                             skos:broader rrdom:TecnologiaIA ;
+                             skos:inScheme rrdom:ContextoCienciaTecnologia ;
+                             skos:prefLabel "Artificial Intelligence"@en ,
+                                            "Inteligencia Artificial"@es .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#Negocios
+rrdom:Negocios rdf:type owl:NamedIndividual ,
+                        skos:Concept ;
+               skos:altLabel "business"@en ;
+               skos:broader rrdom:Contexto ;
+               skos:inScheme rrdom:ContextoCienciaTecnologia ;
+               skos:prefLabel "Business"@en ,
+                              "Negocios"@es .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#NoticiasMundo
+rrdom:NoticiasMundo rdf:type owl:NamedIndividual ,
+                             skos:Concept ;
+                    skos:altLabel "worldnews"@en ;
+                    skos:broader rrdom:Contexto ;
+                    skos:inScheme rrdom:ContextoCienciaTecnologia ;
+                    skos:prefLabel "Noticias mundiales"@es ,
+                                   "World News"@en .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#NoticiasTecnologia
+rrdom:NoticiasTecnologia rdf:type owl:NamedIndividual ,
+                                  skos:Concept ;
+                         skos:altLabel "technews"@en ;
+                         skos:broader rrdom:TecnologiaIA ;
+                         skos:inScheme rrdom:ContextoCienciaTecnologia ;
+                         skos:prefLabel "Noticias de tecnología"@es ,
+                                        "Tech News"@en .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#Politica
+rrdom:Politica rdf:type owl:NamedIndividual ,
+                        skos:Concept ;
+               skos:altLabel "politics"@en ;
+               skos:broader rrdom:Contexto ;
+               skos:inScheme rrdom:ContextoCienciaTecnologia ;
+               skos:prefLabel "Politics"@en ,
+                              "Política"@es .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#Salud
+rrdom:Salud rdf:type owl:NamedIndividual ,
+                     skos:Concept ;
+            skos:altLabel "Health"@en ;
+            skos:broader rrdom:Contexto ;
+            skos:inScheme rrdom:ContextoCienciaTecnologia ;
+            skos:prefLabel "Health"@en ,
+                           "Salud"@es .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#Tecnologia
+rrdom:Tecnologia rdf:type owl:NamedIndividual ,
+                          skos:Concept ;
+                 skos:altLabel "Tecnologia"@es ,
+                               "technology"@en ,
+                               "tech"@en ,
+                               "technological"@en ,
+                               "tecnológico"@es ,
+                               "tecnológica"@es ;
+                 skos:broader rrdom:TecnologiaIA ;
+                 skos:inScheme rrdom:ContextoCienciaTecnologia ;
+                 skos:prefLabel "Technology"@en ,
+                                "Tecnología general"@es .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#TecnologiaIA
+rrdom:TecnologiaIA rdf:type owl:NamedIndividual ,
+                            skos:Concept ;
+                   skos:inScheme rrdom:ContextoCienciaTecnologia ;
+                   skos:prefLabel "Technology & AI"@en ,
+                                  "Tecnología e IA"@es ;
+                   skos:topConceptOf rrdom:ContextoCienciaTecnologia .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#AprendizajeAutomatico
+rrdom:AprendizajeAutomatico rdf:type owl:NamedIndividual ,
+                                      skos:Concept ;
+                            skos:altLabel "machine learning"@en ,
+                                         "ml"@en ,
+                                         "deep learning"@en ,
+                                         "neural network"@en ,
+                                         "neural networks"@en ,
+                                         "redes neuronales"@es ,
+                                         "aprendizaje profundo"@es ,
+                                         "deep neural"@en ,
+                                         "convolutional"@en ,
+                                         "transformer"@en ,
+                                         "language model"@en ,
+                                         "gpt"@en ,
+                                         "bert"@en ;
+                            skos:broader rrdom:TecnologiaIA ;
+                            skos:inScheme rrdom:ContextoCienciaTecnologia ;
+                            skos:prefLabel "Machine Learning"@en ,
+                                           "Aprendizaje Automático"@es .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#Algoritmo
+rrdom:Algoritmo rdf:type owl:NamedIndividual ,
+                         skos:Concept ;
+                skos:altLabel "algorithm"@en ,
+                             "algorithms"@en ,
+                             "algoritmos"@es ,
+                             "algorithmic"@en ;
+                skos:broader rrdom:TecnologiaIA ;
+                skos:inScheme rrdom:ContextoCienciaTecnologia ;
+                skos:prefLabel "Algorithm"@en ,
+                               "Algoritmo"@es .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#Datos
+rrdom:Datos rdf:type owl:NamedIndividual ,
+                     skos:Concept ;
+            skos:altLabel "data"@en ,
+                         "dataset"@en ,
+                         "datasets"@en ,
+                         "big data"@en ,
+                         "datos"@es ,
+                         "database"@en ,
+                         "training data"@en ,
+                         # Added by v04 manual validation (2025-11-11)
+                         "analytics"@en ;
+            skos:broader rrdom:TecnologiaIA ;
+            skos:inScheme rrdom:ContextoCienciaTecnologia ;
+            skos:prefLabel "Data"@en ,
+                           "Datos"@es .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#Robot
+rrdom:Robot rdf:type owl:NamedIndividual ,
+                     skos:Concept ;
+            skos:altLabel "robot"@en ,
+                         "robots"@en ,
+                         "robotic"@en ,
+                         "robotics"@en ,
+                         "robótica"@es ,
+                         "bot"@en ,
+                         "bots"@en ,
+                         "chatbot"@en ,
+                         "chatbots"@en ;
+            skos:broader rrdom:TecnologiaIA ;
+            skos:inScheme rrdom:ContextoCienciaTecnologia ;
+            skos:prefLabel "Robot"@en ,
+                           "Robot"@es .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#Automatizacion
+rrdom:Automatizacion rdf:type owl:NamedIndividual ,
+                              skos:Concept ;
+                     skos:altLabel "automation"@en ,
+                                  "automated"@en ,
+                                  "automatic"@en ,
+                                  "automatización"@es ,
+                                  "automate"@en ,
+                                  "automatizar"@es ;
+                     skos:broader rrdom:TecnologiaIA ;
+                     skos:inScheme rrdom:ContextoCienciaTecnologia ;
+                     skos:prefLabel "Automation"@en ,
+                                    "Automatización"@es .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#Etica
+rrdom:Etica rdf:type owl:NamedIndividual ,
+                     skos:Concept ;
+            skos:altLabel "ethics"@en ,
+                         "ethical"@en ,
+                         "ética"@es ,
+                         "ético"@es ,
+                         "bias"@en ,
+                         "fairness"@en ,
+                         "sesgo"@es ,
+                         "safety"@en ,
+                         "seguridad"@es ,
+                         "alignment"@en ,
+                         "responsible"@en ;
+            skos:broader rrdom:TecnologiaIA ;
+            skos:inScheme rrdom:ContextoCienciaTecnologia ;
+            skos:prefLabel "Ethics"@en ,
+                           "Ética"@es .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#Futuro
+rrdom:Futuro rdf:type owl:NamedIndividual ,
+                      skos:Concept ;
+             skos:altLabel "future"@en ,
+                          "futuro"@es ,
+                          "futuristic"@en ,
+                          "futurista"@es ,
+                          "tomorrow"@en ,
+                          "mañana"@es ,
+                          "next generation"@en ,
+                          "próxima generación"@es ;
+             skos:broader rrdom:Futurologia ;
+             skos:inScheme rrdom:ContextoCienciaTecnologia ;
+             skos:prefLabel "Future"@en ,
+                            "Futuro"@es .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#Innovacion
+rrdom:Innovacion rdf:type owl:NamedIndividual ,
+                          skos:Concept ;
+                 skos:altLabel "innovation"@en ,
+                              "innovative"@en ,
+                              "innovación"@es ,
+                              "innovador"@es ,
+                              "breakthrough"@en ,
+                              "advance"@en ,
+                              "advancement"@en ,
+                              "avance"@es ;
+                 skos:broader rrdom:TecnologiaIA ;
+                 skos:inScheme rrdom:ContextoCienciaTecnologia ;
+                 skos:prefLabel "Innovation"@en ,
+                                "Innovación"@es .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
+
+# === CHANGE LOG (auto-fix Claude 4.5 Copilot) ===
+# [2025-10-28] Correcciones según informe de validación ontológica:
+# 1. Agregado skos:inScheme rrdom:ContextoCienciaTecnologia a rrdom:Contexto
+# 2. Agregado skos:inScheme rrdom:ContextoCienciaTecnologia a rrdom:TecnologiaIA
+#
+# [2025-11-11] FASE 1: Expansión de términos de dominio para aumentar cobertura:
+# 1. InteligenciaArtificial: +10 sinónimos (ai, ia, agi, general ai, narrow ai, etc.)
+# 2. Tecnologia: +4 sinónimos (tech, technological, tecnológico, tecnológica)
+# 3. NUEVO: AprendizajeAutomatico con 13 sinónimos (ml, deep learning, neural networks, llm, gpt, bert, transformer, etc.)
+# 4. NUEVO: Algoritmo con 7 sinónimos (algorithm, algorithms, model, models, modelo, modelos, algorithmic)
+# 5. NUEVO: Datos con 8 sinónimos (data, dataset, big data, database, training data, información, information)
+# 6. NUEVO: Robot con 8 sinónimos (robot, robots, robotic, robotics, bot, bots, chatbot, chatbots)
+# 7. NUEVO: Automatizacion con 5 sinónimos (automation, automated, automatic, automate, automatizar)
+# 8. NUEVO: Etica con 10 sinónimos (ethics, ethical, bias, fairness, safety, alignment, responsible, sesgo, seguridad)
+# 9. NUEVO: Futuro con 7 sinónimos (future, futuristic, tomorrow, next generation, mañana, próxima generación)
+# 10. NUEVO: Innovacion con 7 sinónimos (innovation, innovative, breakthrough, advance, advancement, avance, innovador)
+# Total: 8 conceptos nuevos/expandidos con ~80 sinónimos agregados
+# Objetivo: Aumentar cobertura de conceptos de dominio de 13.38% a ~40-50%
+#
+# [2025-11-11] v02 HOTFIX: Reducción de sinónimos genéricos para mejorar precisión:
+# 1. Algoritmo: Eliminados "model", "models", "modelo", "modelos" (demasiado generales)
+#    - De 7→4 sinónimos (algorithm, algorithms, algoritmos, algorithmic)
+# 2. Datos: Eliminados "información", "information" (demasiado generales)
+#    - De 8→7 sinónimos (data, dataset, datasets, big data, datos, database, training data)
+# Total: Reducción de 6 sinónimos genéricos que generaban falsos positivos
+#
+# [2025-11-11] v03 RECUPERACIÓN DE COBERTURA: Agregar sinónimos compuestos de contexto IA:
+# 1. InteligenciaArtificial: +4 sinónimos compuestos de contexto
+#    - "ai model", "modelo de ia", "ai system", "sistema de ia"
+#    - De 11→15 altLabels (recuperar detección de "modelo de IA" sin genéricos)
+# Objetivo v03: Recuperar cobertura ≥85% manteniendo precisión (sin FP de v01)
+# Mapeos totales: 117 → 111 (reducción de 5.1%)
+# Objetivo: Reducir falsos positivos manteniendo cobertura >90%
+#
+# [2025-11-11] v04 PATCH CONSERVADOR: Integración de términos validados manualmente (R/P/C):
+# 1. InteligenciaArtificial: +4 altLabels validados
+#    - "llm"@en (movido desde AprendizajeAutomatico para consolidar en IA)
+#    - "la inteligencia artificial"@es (variante con artículo)
+#    - "de ia"@es (variante con preposición)
+#    - "la ia"@es (variante con artículo)
+#    De 15→19 altLabels
+# 2. Datos: +1 altLabel validado
+#    - "analytics"@en (analítica de datos)
+#    De 7→8 altLabels
+# Total v04: 5 altLabels nuevos validados manualmente
+# Objetivo v04: Cobertura +2-3pp (28-29%), FP <1%, Δ F1-macro +0.03 a +0.05
+# Términos validados: llm, gpt, inteligencia artificial, la inteligencia artificial,
+#                     robotics, automation, training data, analytics, chatbot, de ia, la ia
+# Términos rechazados: daily ai, ai news, ai i, model, technology, fragmentos bot
+
+
+

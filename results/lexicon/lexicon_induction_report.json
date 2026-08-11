@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "lexicon_version": "v04.2_vader_train_scope",
+  "induction_scope": "train_text_only_no_labels",
+  "train_size": 968,
+  "validation_ids_used": 0,
+  "test_ids_used": 0,
+  "lexicon_manifest": "results/lexicon/ontology_lexicon_v04_2_train_only.json",
+  "lexicon_manifest_sha256": "313af4e18f4d7b58f87e87a7ac5bbbb19c32d5e7c829816bdad9fa6515e51e77",
+  "dataset": "data/gold/gold_enriched_ontology.parquet",
+  "dataset_sha256": "a74cebfa0db51e9d6e34a8b58b16f149db690d2d5bca0cd5d5945a9c2cc0e99f",
+  "ontology_feature_count": 37,
+  "selected_features_pending": true
+}

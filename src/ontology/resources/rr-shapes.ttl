@@ -1,0 +1,206 @@
+@prefix rr:     <http://wfrp.ia/ontologia/ia-sentimiento#> .
+@prefix rrsent: <http://wfrp.ia/sentimiento/core#> .
+@prefix rrdom:  <http://wfrp.ia/dominio/ciencia-tecnologia#> .
+@prefix sh:     <https://www.w3.org/ns/shacl#> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+# SHACL: validación de instancias de rr:Post y conceptos
+#################################################################
+
+rr:PostShape a sh:NodeShape ;
+  sh:targetClass rr:Post ;
+
+  # identificador requerido
+  sh:property [
+    sh:path rr:identificador ;
+    sh:datatype xsd:string ;
+    sh:pattern "^[0-9a-z]+$" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "rr:identificador debe ser alfanumérico base36."@es
+  ] ;
+
+  # fechaCreacion requerida y bien tipada
+  sh:property [
+    sh:path rr:fechaCreacion ;
+    sh:datatype xsd:dateTime ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "rr:fechaCreacion faltante o con tipo inválido (xsd:dateTime)."@es
+  ] ;
+
+  # publicadoPor: exactamente 1 autor (IRI de rr:Author)
+  sh:property [
+    sh:path rr:publicadoPor ;
+    sh:class rr:Author ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "rr:publicadoPor debe apuntar a exactamente 1 rr:Author (IRI)."@es
+  ] ;
+
+  # enSubreddit: al menos 1 subreddit (IRI de rr:Subreddit)
+  sh:property [
+    sh:path rr:enSubreddit ;
+    sh:class rr:Subreddit ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1 ;
+    sh:message "rr:enSubreddit debe apuntar a al menos 1 rr:Subreddit (IRI)."@es
+  ] ;
+
+  # idioma permitido {es,en}
+  # idiomaDetectado: string, obligatorio y en {es,en}
+  sh:property [
+    sh:path rr:idiomaDetectado ;
+    sh:datatype xsd:string ;
+    sh:in ( "es" "en" ) ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "Idioma debe ser 'es' o 'en' (xsd:string, cardinalidad 1)."@es
+  ] ;
+
+  # longitud mínima (≥ 40)
+  sh:property [
+    sh:path rr:longitudTexto ;
+    sh:datatype xsd:integer ;
+    sh:minInclusive 40 ;
+    sh:severity sh:Warning ;
+    sh:message "Texto demasiado corto: rr:longitudTexto < 40."@es
+  ] ;
+
+  # etiquetaSentimiento permitida (sin Mixto como final)
+  # etiquetaSentimiento permitida y única (+ tipado)
+  sh:property [
+    sh:path rr:etiquetaSentimiento ;
+    sh:in ( rrsent:Positivo rrsent:Neutro rrsent:Negativo ) ;
+    sh:class rrsent:Sentiment ;
+    sh:maxCount 1 ;
+    sh:message "etiquetaSentimiento debe ser Positivo/Neutro/Negativo (1 valor, tipo rrsent:Sentiment)."@es
+  ] ;
+
+  # probabilidades en [0,1] y bien tipadas
+  sh:property [
+    sh:path rr:probPos ;
+    sh:datatype xsd:decimal ;
+    sh:minInclusive 0 ; sh:maxInclusive 1 ;
+    sh:message "rr:probPos fuera de [0,1] o con tipo inválido."@es
+  ] ;
+  sh:property [
+    sh:path rr:probNeu ;
+    sh:datatype xsd:decimal ;
+    sh:minInclusive 0 ; sh:maxInclusive 1 ;
+    sh:message "rr:probNeu fuera de [0,1] o con tipo inválido."@es
+  ] ;
+  sh:property [
+    sh:path rr:probNeg ;
+    sh:datatype xsd:decimal ;
+    sh:minInclusive 0 ; sh:maxInclusive 1 ;
+    sh:message "rr:probNeg fuera de [0,1] o con tipo inválido."@es
+  ] ;
+
+  # suma de probabilidades ≈ 1 (tolerancia 0.02)
+  sh:sparql [
+    sh:message "Probabilidades no normalizadas (|sum-1| > 0.02)."@es ;
+    sh:select """
+      PREFIX rr: <http://wfrp.ia/ontologia/ia-sentimiento#>
+      SELECT $this WHERE {
+        $this rr:probPos ?pp ; rr:probNeu ?pn ; rr:probNeg ?pg .
+        BIND(ABS((?pp + ?pn + ?pg) - 1) AS ?delta)
+        FILTER(?delta > 0.02)
+      }
+    """
+  ] ;
+
+  # consistencia entre etiqueta y probabilidades
+  sh:sparql [
+    sh:message "rr:etiquetaSentimiento no coincide con la probabilidad máxima (probPos/probNeu/probNeg)."@es ;
+    sh:select """
+      PREFIX rr:     <http://wfrp.ia/ontologia/ia-sentimiento#>
+      PREFIX rrsent: <http://wfrp.ia/sentimiento/core#>
+      SELECT $this WHERE {
+        $this rr:probPos ?pp ; rr:probNeu ?pn ; rr:probNeg ?pg ; rr:etiquetaSentimiento ?lbl .
+        BIND(
+          IF(?pp >= ?pn && ?pp >= ?pg, rrsent:Positivo,
+             IF(?pn >= ?pp && ?pn >= ?pg, rrsent:Neutro, rrsent:Negativo)
+          ) AS ?expected
+        )
+        FILTER(?lbl != ?expected)
+      }
+    """
+  ] ;
+
+  # si existe rr:tieneTerminoSentimiento ⇒ debe existir rr:etiquetaSentimiento
+  sh:sparql [
+    sh:message "Si existe rr:tieneTerminoSentimiento debe existir rr:etiquetaSentimiento."@es ;
+    sh:select """
+      PREFIX rr: <http://wfrp.ia/ontologia/ia-sentimiento#>
+      SELECT $this WHERE {
+        $this rr:tieneTerminoSentimiento ?t .
+        FILTER NOT EXISTS { $this rr:etiquetaSentimiento ?l }
+      }
+    """
+  ] ;
+
+  # tieneIntensidad en [0,1] cuando existe
+  sh:property [
+    sh:path rr:tieneIntensidad ;
+    sh:datatype xsd:decimal ;
+    sh:minInclusive 0 ; sh:maxInclusive 1 ;
+    sh:message "rr:tieneIntensidad fuera de [0,1] o con tipo inválido."@es
+  ] ;
+
+  # topic debe ser skos:Concept del esquema correcto (ajusta el ConceptScheme real)
+  sh:sparql [
+    sh:message "rr:trataSobre/rr:perteneceDominio debe apuntar a skos:Concept en el ConceptScheme de dominio."@es ;
+    sh:select """
+      PREFIX rr:   <http://wfrp.ia/ontologia/ia-sentimiento#>
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX rrdom:<http://wfrp.ia/dominio/ciencia-tecnologia#>
+      SELECT $this WHERE {
+        $this (rr:trataSobre|rr:perteneceDominio) ?c .
+        FILTER NOT EXISTS {
+          ?c a skos:Concept .
+          ?c skos:inScheme rrdom:ContextoCienciaTecnologia
+        }
+      }
+    """
+  ] ;
+
+  # unicidad de rr:identificador
+  sh:sparql [
+    sh:message "Duplicado de rr:identificador detectado en el grafo/dataset."@es ;
+    sh:select """
+      PREFIX rr: <http://wfrp.ia/ontologia/ia-sentimiento#>
+      SELECT $this WHERE {
+        $this rr:identificador ?id .
+        ?other rr:identificador ?id .
+        FILTER(?other != $this)
+      }
+    """
+  ] .
+
+### Shape para conceptos SKOS (exigir pertenencia a algún esquema)
+rrdom:ConceptShape a sh:NodeShape ;
+  sh:targetClass skos:Concept ;
+  sh:property [
+    sh:path skos:inScheme ;
+    sh:minCount 1 ;
+    sh:message "Todo skos:Concept debe pertenecer a un skos:ConceptScheme."@es
+  ] ;
+  sh:property [
+    sh:path skos:inScheme ;
+    sh:nodeKind sh:IRI ;
+    sh:message "skos:inScheme debe ser un IRI (no literal/blank node)."@es
+  ] .
+
+# === CHANGE LOG (auto-fix Claude 4.5 Copilot) ===
+# [2025-10-28] Correcciones según informe de validación ontológica:
+# 1. Corregido ConceptScheme placeholder: rrdom:TechSci → rrdom:ContextoCienciaTecnologia
+# 2. Agregadas propiedades obligatorias en rr:PostShape:
+#    - rr:publicadoPor (minCount 1, maxCount 1, class rr:Author, nodeKind IRI)
+#    - rr:enSubreddit (minCount 1, class rr:Subreddit, nodeKind IRI)
+# 3. Cambiado sh:severity de rr:longitudTexto a sh:Warning
+# 4. Agregada validación de patrón para rr:identificador: ^[0-9a-z]+$ (base36)
+# 5. Agregado constraint SPARQL para consistencia etiqueta/probabilidades

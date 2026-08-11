@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the associated manuscript and the repository release."
+title: "Traceable Knowledge Engineering Artifacts"
+type: software
+version: "1.0.0"
+date-released: "2026-08-04"
+repository-code: "https://github.com/rickphd/semantic-artifact-continuity"
+url: "https://github.com/rickphd/semantic-artifact-continuity"
+authors:
+  - family-names: "Flores-Moyano"
+    given-names: "Ricardo"
+    email: "rflores@usfq.edu.ec"
+    affiliation: "Universidad San Francisco de Quito"
+  - family-names: "Rosero-Polo"
+    given-names: "Felipe"
+    email: "froserop@alumni.usfq.edu.ec"
+    affiliation: "Universidad San Francisco de Quito"
+  - family-names: "Vega-Sánchez"
+    given-names: "José"
+    email: "dvega@usfq.edu.ec"
+    affiliation: "Universidad San Francisco de Quito"
+  - family-names: "Baldeon-Calisto"
+    given-names: "Maria"
+    email: "baldeom@wfu.edu"
+    affiliation: "Wake Forest University"
+keywords:
+  - knowledge engineering
+  - RDF
+  - SHACL
+  - traceability
+  - semantic artifacts
+  - social media
+  - reproducibility
+preferred-citation:
+  type: article
+  title: "Evaluating Semantic-Artifact Continuity for Noisy Social Text: RDF Materialization, SHACL Conformance, and Model-Input Evidence"
+  year: 2026
+  authors:
+    - family-names: "Flores-Moyano"
+      given-names: "Ricardo"
+    - family-names: "Rosero-Polo"
+      given-names: "Felipe"
+    - family-names: "Vega-Sánchez"
+      given-names: "José"
+    - family-names: "Baldeon-Calisto"
+      given-names: "Maria"

@@ -1,0 +1,955 @@
+@prefix : <http://wfrp.ia/ontologia/ia-sentimiento#Ontology#> .
+@prefix rr: <http://wfrp.ia/ontologia/ia-sentimiento#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rrdom: <http://wfrp.ia/dominio/ciencia-tecnologia#> .
+@prefix rrsent: <http://wfrp.ia/sentimiento/core#> .
+@prefix schema: <https://schema.org/> .
+@base <http://wfrp.ia/ontologia/ia-sentimiento#Ontology#> .
+
+<http://wfrp.ia/ontologia/ia-sentimiento#Ontology> rdf:type owl:Ontology ;
+                                                    owl:versionIRI <http://wfrp.ia/ontologia/ia-sentimiento#Ontology/0.5> ;
+                                                    owl:imports <rr-domain.ttl> ,
+                                                                <rr-sentiment.ttl> ,
+                                                                <rr-shapes.ttl> ;
+                                                    dct:creator "Felipe Rosero (autor)"@es ;
+                                                    dct:license "CC-BY-SA 4.0" ;
+                                                    dct:title "Ontología central del Sentimiento sobre IA para publicaciones de Reddit"@es ;
+                                                    <http://wfrp.ia/dc/terms/created> "2025-09-17"^^xsd:date ;
+                                                    owl:versionInfo 0.5 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+dct:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dct:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dct:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dct:title rdf:type owl:AnnotationProperty .
+
+
+###  http://wfrp.ia/dc/terms/created
+<http://wfrp.ia/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://wfrp.ia/sentimiento/core#peso
+rrsent:peso rdf:type owl:AnnotationProperty ;
+            rdfs:label "peso léxico/modificador (0..1)"@es .
+
+
+###  http://wfrp.ia/sentimiento/core#polaridad
+rrsent:polaridad rdf:type owl:AnnotationProperty ;
+                 rdfs:label "polaridad léxica (-1,0,1)"@es .
+
+
+###  http://wfrp.ia/sentimiento/core#tipoModificador
+rrsent:tipoModificador rdf:type owl:AnnotationProperty ;
+                       rdfs:label "tipo de modificador (negación/intensificador/atenuador)"@es .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+skos:altLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+skos:broader rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+skos:inScheme rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#topConceptOf
+skos:topConceptOf rdf:type owl:AnnotationProperty .
+
+
+###  https://www.w3.org/ns/shacl#datatype
+<https://www.w3.org/ns/shacl#datatype> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.w3.org/ns/shacl#in
+<https://www.w3.org/ns/shacl#in> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.w3.org/ns/shacl#maxInclusive
+<https://www.w3.org/ns/shacl#maxInclusive> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.w3.org/ns/shacl#message
+<https://www.w3.org/ns/shacl#message> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.w3.org/ns/shacl#minCount
+<https://www.w3.org/ns/shacl#minCount> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.w3.org/ns/shacl#minInclusive
+<https://www.w3.org/ns/shacl#minInclusive> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.w3.org/ns/shacl#path
+<https://www.w3.org/ns/shacl#path> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.w3.org/ns/shacl#property
+<https://www.w3.org/ns/shacl#property> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.w3.org/ns/shacl#select
+<https://www.w3.org/ns/shacl#select> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.w3.org/ns/shacl#sparql
+<https://www.w3.org/ns/shacl#sparql> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.w3.org/ns/shacl#targetClass
+<https://www.w3.org/ns/shacl#targetClass> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#aludeAEtica
+rr:aludeAEtica rdf:type owl:ObjectProperty ;
+               rdfs:domain rr:Post ;
+               rdfs:range skos:Concept ;
+               rdfs:label "alude a dimensión ética/gobernanza"@es .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#autorDe
+rr:autorDe rdf:type owl:ObjectProperty ;
+           owl:inverseOf rr:publicadoPor ;
+           rdfs:domain rr:Author ;
+           rdfs:range rr:Post ;
+           rdfs:label "autor de"@es .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#citaEvidencia
+rr:citaEvidencia rdf:type owl:ObjectProperty ;
+                 rdfs:domain rr:Post ;
+                 rdfs:range skos:Concept ;
+                 rdfs:label "cita evidencia"@es .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#comparaCon
+rr:comparaCon rdf:type owl:ObjectProperty ;
+              rdfs:domain rr:Post ;
+              rdfs:range rr:ObjetivoSentimiento ;
+              rdfs:label "compara con"@es .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#derivaDe
+rr:derivaDe rdf:type owl:ObjectProperty ;
+            rdfs:domain rr:Post ;
+            rdfs:range prov:Entity ;
+            rdfs:label "deriva de (proveniencia)"@es .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#enSubreddit
+rr:enSubreddit rdf:type owl:ObjectProperty ;
+               rdfs:domain rr:Post ;
+               rdfs:range rr:Subreddit ;
+               rdfs:label "pertenece al subreddit"@es .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#etiquetaSentimiento
+rr:etiquetaSentimiento rdf:type owl:ObjectProperty ;
+                       rdfs:domain rr:Post ;
+                       rdfs:range rrsent:Sentiment ;
+                       rdfs:label "etiqueta de sentimiento"@es .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#evocaEmocion
+rr:evocaEmocion rdf:type owl:ObjectProperty ;
+                rdfs:domain rr:Post ;
+                rdfs:range rrsent:Emocion ;
+                rdfs:label "evoca emoción"@es .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#expresaBeneficio
+rr:expresaBeneficio rdf:type owl:ObjectProperty ;
+                    rdfs:domain rr:Post ;
+                    rdfs:range rr:Beneficio ;
+                    rdfs:label "expresa beneficio"@es .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#expresaRiesgo
+rr:expresaRiesgo rdf:type owl:ObjectProperty ;
+                 rdfs:domain rr:Post ;
+                 rdfs:range rr:Riesgo ;
+                 rdfs:label "expresa riesgo"@es .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#perteneceDominio
+rr:perteneceDominio rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf rr:trataSobre ;
+                    rdfs:domain rr:Post ;
+                    rdfs:range skos:Concept ;
+                    rdfs:label "pertenece al dominio"@es .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#publicadoPor
+rr:publicadoPor rdf:type owl:ObjectProperty ;
+                rdfs:domain rr:Post ;
+                rdfs:range rr:Author ;
+                rdfs:label "publicado por"@es .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#refiereTecnica
+rr:refiereTecnica rdf:type owl:ObjectProperty ;
+                  rdfs:domain rr:Post ;
+                  rdfs:range skos:Concept ;
+                  rdfs:label "refiere artefacto/técnica IA"@es .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#requiereRegulacion
+rr:requiereRegulacion rdf:type owl:ObjectProperty ;
+                      rdfs:domain rr:Post ;
+                      rdfs:range skos:Concept ;
+                      rdfs:label "requiere regulación"@es .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#tieneModalidad
+rr:tieneModalidad rdf:type owl:ObjectProperty ;
+                  rdfs:domain rr:Post ;
+                  rdfs:range rrsent:Modalidad ;
+                  rdfs:label "tiene modalidad"@es .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#tieneObjetivo
+rr:tieneObjetivo rdf:type owl:ObjectProperty ;
+                 rdfs:domain rr:Post ;
+                 rdfs:range rrsent:ObjetivoSentimiento ;
+                 rdfs:label "tiene objetivo/target del sentimiento"@es .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#tieneTerminoSentimiento
+rr:tieneTerminoSentimiento rdf:type owl:ObjectProperty ;
+                           rdfs:domain rr:Post ;
+                           rdfs:range skos:Concept ;
+                           rdfs:label "tiene término de sentimiento (léxico)"@es .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#trataSobre
+rr:trataSobre rdf:type owl:ObjectProperty ;
+              rdfs:domain rr:Post ;
+              rdfs:range skos:Concept ;
+              rdfs:label "trata sobre"@es .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#contieneSarcasmo
+rr:contieneSarcasmo rdf:type owl:DatatypeProperty ;
+                    rdfs:domain rr:Post ;
+                    rdfs:range xsd:boolean ;
+                    rdfs:label "contiene sarcasmo (flag)"@es .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#fechaCreacion
+rr:fechaCreacion rdf:type owl:DatatypeProperty ;
+                 rdfs:domain rr:Post ;
+                 rdfs:range xsd:dateTime ;
+                 rdfs:label "fecha de creación"@es .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#identificador
+rr:identificador rdf:type owl:DatatypeProperty ;
+                 rdfs:domain rr:Post ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "identificador del post"@es .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#idiomaDetectado
+rr:idiomaDetectado rdf:type owl:DatatypeProperty ;
+                   rdfs:domain rr:Post ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "idioma detectado"@es .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#longitudTexto
+rr:longitudTexto rdf:type owl:DatatypeProperty ;
+                 rdfs:domain rr:Post ;
+                 rdfs:range xsd:integer ;
+                 rdfs:label "longitud de texto"@es .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#probNeg
+rr:probNeg rdf:type owl:DatatypeProperty ;
+           rdfs:domain rr:Post ;
+           rdfs:range xsd:decimal ;
+           rdfs:label "probabilidad negativa"@es .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#probNeu
+rr:probNeu rdf:type owl:DatatypeProperty ;
+           rdfs:domain rr:Post ;
+           rdfs:range xsd:decimal ;
+           rdfs:label "probabilidad neutra"@es .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#probPos
+rr:probPos rdf:type owl:DatatypeProperty ;
+           rdfs:domain rr:Post ;
+           rdfs:range xsd:decimal ;
+           rdfs:label "probabilidad positiva"@es .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#textoModelo
+rr:textoModelo rdf:type owl:DatatypeProperty ;
+               rdfs:domain rr:Post ;
+               rdfs:range xsd:string ;
+               rdfs:label "texto modelo (título+texto limpio)"@es .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#tieneIntensidad
+rr:tieneIntensidad rdf:type owl:DatatypeProperty ;
+                   rdfs:domain rr:Post ;
+                   rdfs:range xsd:decimal ;
+                   rdfs:label "intensidad (0..1)"@es .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://rdfs.org/sioc/ns#Forum
+sioc:Forum rdf:type owl:Class .
+
+
+###  http://rdfs.org/sioc/ns#Post
+sioc:Post rdf:type owl:Class .
+
+
+###  http://rdfs.org/sioc/ns#UserAccount
+sioc:UserAccount rdf:type owl:Class .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#Author
+rr:Author rdf:type owl:Class ;
+          rdfs:subClassOf sioc:UserAccount .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#Beneficio
+rr:Beneficio rdf:type owl:Class ;
+             rdfs:subClassOf skos:Concept .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#Emocion
+rr:Emocion rdf:type owl:Class ;
+           owl:equivalentClass rrsent:Emocion ;
+           rdfs:subClassOf skos:Concept ;
+           rdfs:comment "Usar rrsent:Emocion; esta clase de línea base queda deprecada."@es ;
+           owl:deprecated "true"^^xsd:boolean .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#Metafora
+rr:Metafora rdf:type owl:Class ;
+            owl:equivalentClass rrsent:Metafora ;
+            rdfs:subClassOf skos:Concept ;
+            rdfs:comment "Usar rrsent:Metafora; clase de línea base deprecada."@es ;
+            owl:deprecated "true"^^xsd:boolean .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#Modalidad
+rr:Modalidad rdf:type owl:Class ;
+             owl:equivalentClass rrsent:Modalidad ;
+             rdfs:subClassOf skos:Concept ;
+             rdfs:comment "Usar rrsent:Modalidad; clase de línea base deprecada."@es ;
+             owl:deprecated "true"^^xsd:boolean .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#ObjetivoSentimiento
+rr:ObjetivoSentimiento rdf:type owl:Class ;
+                       owl:equivalentClass rrsent:ObjetivoSentimiento ;
+                       rdfs:subClassOf skos:Concept ;
+                       rdfs:comment "Usar rrsent:ObjetivoSentimiento; clase de línea base deprecada."@es ;
+                       owl:deprecated "true"^^xsd:boolean .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#Post
+rr:Post rdf:type owl:Class ;
+        rdfs:subClassOf sioc:Post ;
+        owl:hasKey ( rr:identificador ) .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#Riesgo
+rr:Riesgo rdf:type owl:Class ;
+          rdfs:subClassOf skos:Concept .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#Subreddit
+rr:Subreddit rdf:type owl:Class ;
+             rdfs:subClassOf sioc:Forum .
+
+
+###  http://wfrp.ia/sentimiento/core#Amenaza
+rrsent:Amenaza rdf:type owl:Class ;
+               rdfs:subClassOf rrsent:Metafora .
+
+
+###  http://wfrp.ia/sentimiento/core#Atenuador
+rrsent:Atenuador rdf:type owl:Class ;
+                 rdfs:subClassOf rrsent:ModificadorPolaridad .
+
+
+###  http://wfrp.ia/sentimiento/core#Cierta
+rrsent:Cierta rdf:type owl:Class ;
+              rdfs:subClassOf rrsent:Modalidad .
+
+
+###  http://wfrp.ia/sentimiento/core#Emocion
+rrsent:Emocion rdf:type owl:Class ;
+               rdfs:subClassOf skos:Concept .
+
+
+###  http://wfrp.ia/sentimiento/core#Empresa
+rrsent:Empresa rdf:type owl:Class ;
+               rdfs:subClassOf rrsent:ObjetivoSentimiento .
+
+
+###  http://wfrp.ia/sentimiento/core#Entusiasmo
+rrsent:Entusiasmo rdf:type owl:Class ;
+                  rdfs:subClassOf rrsent:Emocion .
+
+
+###  http://wfrp.ia/sentimiento/core#Equidad
+rrsent:Equidad rdf:type owl:Class ;
+               rdfs:subClassOf rrsent:TemaEtico .
+
+
+###  http://wfrp.ia/sentimiento/core#Escepticismo
+rrsent:Escepticismo rdf:type owl:Class ;
+                    rdfs:subClassOf rrsent:Emocion .
+
+
+###  http://wfrp.ia/sentimiento/core#Especulativa
+rrsent:Especulativa rdf:type owl:Class ;
+                    rdfs:subClassOf rrsent:Modalidad .
+
+
+###  http://wfrp.ia/sentimiento/core#Esperanza
+rrsent:Esperanza rdf:type owl:Class ;
+                 rdfs:subClassOf rrsent:Emocion .
+
+
+###  http://wfrp.ia/sentimiento/core#Frustracion
+rrsent:Frustracion rdf:type owl:Class ;
+                   rdfs:subClassOf rrsent:Emocion .
+
+
+###  http://wfrp.ia/sentimiento/core#Gobierno
+rrsent:Gobierno rdf:type owl:Class ;
+                rdfs:subClassOf rrsent:ObjetivoSentimiento .
+
+
+###  http://wfrp.ia/sentimiento/core#ImpactoSocial
+rrsent:ImpactoSocial rdf:type owl:Class ;
+                     rdfs:subClassOf rrsent:ObjetivoSentimiento .
+
+
+###  http://wfrp.ia/sentimiento/core#Intensificador
+rrsent:Intensificador rdf:type owl:Class ;
+                      rdfs:subClassOf rrsent:ModificadorPolaridad .
+
+
+###  http://wfrp.ia/sentimiento/core#Metafora
+rrsent:Metafora rdf:type owl:Class ;
+                rdfs:subClassOf skos:Concept .
+
+
+###  http://wfrp.ia/sentimiento/core#Miedo
+rrsent:Miedo rdf:type owl:Class ;
+             rdfs:subClassOf rrsent:Emocion .
+
+
+###  http://wfrp.ia/sentimiento/core#MixtaMod
+rrsent:MixtaMod rdf:type owl:Class ;
+                rdfs:subClassOf rrsent:Modalidad .
+
+
+###  http://wfrp.ia/sentimiento/core#Modalidad
+rrsent:Modalidad rdf:type owl:Class ;
+                 rdfs:subClassOf skos:Concept .
+
+
+###  http://wfrp.ia/sentimiento/core#ModificadorPolaridad
+rrsent:ModificadorPolaridad rdf:type owl:Class ;
+                            rdfs:subClassOf skos:Concept .
+
+
+###  http://wfrp.ia/sentimiento/core#Negacion
+rrsent:Negacion rdf:type owl:Class ;
+                rdfs:subClassOf rrsent:ModificadorPolaridad .
+
+
+###  http://wfrp.ia/sentimiento/core#ObjetivoSentimiento
+rrsent:ObjetivoSentimiento rdf:type owl:Class ;
+                           rdfs:subClassOf skos:Concept .
+
+
+###  http://wfrp.ia/sentimiento/core#Positiva
+rrsent:Positiva rdf:type owl:Class ;
+                rdfs:subClassOf rrsent:Metafora ;
+                rdfs:comment "Clase de metáfora con connotación positiva; NO es la polaridad rrsent:Positivo."@es .
+
+
+###  http://wfrp.ia/sentimiento/core#PrivacidadEtica
+rrsent:PrivacidadEtica rdf:type owl:Class ;
+                       rdfs:subClassOf rrsent:TemaEtico .
+
+
+###  http://wfrp.ia/sentimiento/core#Responsabilidad
+rrsent:Responsabilidad rdf:type owl:Class ;
+                       rdfs:subClassOf rrsent:TemaEtico .
+
+
+###  http://wfrp.ia/sentimiento/core#Sentiment
+rrsent:Sentiment rdf:type owl:Class ;
+                 rdfs:subClassOf skos:Concept ;
+                 rdfs:label "Sentimiento (clase)"@es .
+
+
+###  http://wfrp.ia/sentimiento/core#Tecnologia
+rrsent:Tecnologia rdf:type owl:Class ;
+                  rdfs:subClassOf rrsent:ObjetivoSentimiento .
+
+
+###  http://wfrp.ia/sentimiento/core#TemaEtico
+rrsent:TemaEtico rdf:type owl:Class ;
+                 rdfs:subClassOf skos:Concept .
+
+
+###  http://wfrp.ia/sentimiento/core#Transparencia
+rrsent:Transparencia rdf:type owl:Class ;
+                     rdfs:subClassOf rrsent:TemaEtico .
+
+
+###  http://wfrp.ia/sentimiento/core#UsuarioFinal
+rrsent:UsuarioFinal rdf:type owl:Class ;
+                    rdfs:subClassOf rrsent:ObjetivoSentimiento .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+skos:Concept rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+skos:ConceptScheme rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Entity
+prov:Entity rdf:type owl:Class .
+
+
+###  https://www.w3.org/ns/shacl#NodeShape
+<https://www.w3.org/ns/shacl#NodeShape> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#Ciencia
+rrdom:Ciencia rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:altLabel "science"@en ;
+              skos:broader rrdom:TecnologiaIA ;
+              skos:inScheme rrdom:ContextoCienciaTecnologia ;
+              skos:prefLabel "Ciencia"@es ,
+                             "Science"@en .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#ConceptShape
+rrdom:ConceptShape rdf:type owl:NamedIndividual ,
+                            <https://www.w3.org/ns/shacl#NodeShape> ;
+                   <https://www.w3.org/ns/shacl#property> [ <https://www.w3.org/ns/shacl#message> "Todo skos:Concept debe pertenecer a un skos:ConceptScheme."@es ;
+                                                            <https://www.w3.org/ns/shacl#minCount> 1 ;
+                                                            <https://www.w3.org/ns/shacl#path> skos:inScheme
+                                                          ] ,
+                                                          [ <https://www.w3.org/ns/shacl#message> "Todo skos:Concept debe pertenecer a un skos:ConceptScheme."@es ;
+                                                            <https://www.w3.org/ns/shacl#minCount> 1 ;
+                                                            <https://www.w3.org/ns/shacl#path> skos:inScheme
+                                                          ] ;
+                   <https://www.w3.org/ns/shacl#targetClass> skos:Concept .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#Contexto
+rrdom:Contexto rdf:type owl:NamedIndividual ,
+                        skos:Concept ;
+               skos:prefLabel "Context"@en ,
+                              "Contexto"@es ;
+               skos:topConceptOf rrdom:ContextoCienciaTecnologia .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#ContextoCienciaTecnologia
+rrdom:ContextoCienciaTecnologia rdf:type owl:NamedIndividual ,
+                                         skos:ConceptScheme ;
+                                skos:prefLabel "Context & Science/Technology"@en ,
+                                               "Contexto y Ciencia/Tecnología"@es .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#Economia
+rrdom:Economia rdf:type owl:NamedIndividual ,
+                        skos:Concept ;
+               skos:altLabel "economics"@en ;
+               skos:broader rrdom:Contexto ;
+               skos:inScheme rrdom:ContextoCienciaTecnologia ;
+               skos:prefLabel "Economics"@en ,
+                              "Economía"@es .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#Ecuador
+rrdom:Ecuador rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:altLabel "ecuador"@en ;
+              skos:broader rrdom:Contexto ;
+              skos:inScheme rrdom:ContextoCienciaTecnologia ;
+              skos:prefLabel "Ecuador"@en ,
+                             "Ecuador"@es .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#Futurologia
+rrdom:Futurologia rdf:type owl:NamedIndividual ,
+                           skos:Concept ;
+                  skos:altLabel "futurology"@en ;
+                  skos:broader rrdom:TecnologiaIA ;
+                  skos:inScheme rrdom:ContextoCienciaTecnologia ;
+                  skos:prefLabel "Futurology & Tech"@en ,
+                                 "Futurología y tecnología"@es .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#InteligenciaArtificial
+rrdom:InteligenciaArtificial rdf:type owl:NamedIndividual ,
+                                      skos:Concept ;
+                             skos:altLabel "artificial"@en ;
+                             skos:broader rrdom:TecnologiaIA ;
+                             skos:inScheme rrdom:ContextoCienciaTecnologia ;
+                             skos:prefLabel "Artificial Intelligence"@en ,
+                                            "Inteligencia Artificial"@es .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#Negocios
+rrdom:Negocios rdf:type owl:NamedIndividual ,
+                        skos:Concept ;
+               skos:altLabel "business"@en ;
+               skos:broader rrdom:Contexto ;
+               skos:inScheme rrdom:ContextoCienciaTecnologia ;
+               skos:prefLabel "Business"@en ,
+                              "Negocios"@es .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#NoticiasMundo
+rrdom:NoticiasMundo rdf:type owl:NamedIndividual ,
+                             skos:Concept ;
+                    skos:altLabel "worldnews"@en ;
+                    skos:broader rrdom:Contexto ;
+                    skos:inScheme rrdom:ContextoCienciaTecnologia ;
+                    skos:prefLabel "Noticias mundiales"@es ,
+                                   "World News"@en .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#NoticiasTecnologia
+rrdom:NoticiasTecnologia rdf:type owl:NamedIndividual ,
+                                  skos:Concept ;
+                         skos:altLabel "technews"@en ;
+                         skos:broader rrdom:TecnologiaIA ;
+                         skos:inScheme rrdom:ContextoCienciaTecnologia ;
+                         skos:prefLabel "Noticias de tecnología"@es ,
+                                        "Tech News"@en .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#Politica
+rrdom:Politica rdf:type owl:NamedIndividual ,
+                        skos:Concept ;
+               skos:altLabel "politics"@en ;
+               skos:broader rrdom:Contexto ;
+               skos:inScheme rrdom:ContextoCienciaTecnologia ;
+               skos:prefLabel "Politics"@en ,
+                              "Política"@es .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#Salud
+rrdom:Salud rdf:type owl:NamedIndividual ,
+                     skos:Concept ;
+            skos:altLabel "Health"@en ;
+            skos:broader rrdom:Contexto ;
+            skos:inScheme rrdom:ContextoCienciaTecnologia ;
+            skos:prefLabel "Health"@en ,
+                           "Salud"@es .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#Tecnologia
+rrdom:Tecnologia rdf:type owl:NamedIndividual ,
+                          skos:Concept ;
+                 skos:altLabel "Tecnologia"@es ,
+                               "technology"@en ;
+                 skos:broader rrdom:TecnologiaIA ;
+                 skos:inScheme rrdom:ContextoCienciaTecnologia ;
+                 skos:prefLabel "Technology"@en ,
+                                "Tecnología general"@es .
+
+
+###  http://wfrp.ia/dominio/ciencia-tecnologia#TecnologiaIA
+rrdom:TecnologiaIA rdf:type owl:NamedIndividual ,
+                            skos:Concept ;
+                   skos:prefLabel "Technology & AI"@en ,
+                                  "Tecnología e IA"@es ;
+                   skos:topConceptOf rrdom:ContextoCienciaTecnologia .
+
+
+###  http://wfrp.ia/ontologia/ia-sentimiento#PostShape
+rr:PostShape rdf:type owl:NamedIndividual ,
+                      <https://www.w3.org/ns/shacl#NodeShape> ;
+             <https://www.w3.org/ns/shacl#property> [ <https://www.w3.org/ns/shacl#datatype> xsd:dateTime ;
+                                                      <https://www.w3.org/ns/shacl#message> "rr:fechaCreacion faltante o con tipo inválido (xsd:dateTime)."@es ;
+                                                      <https://www.w3.org/ns/shacl#minCount> 1 ;
+                                                      <https://www.w3.org/ns/shacl#path> rr:fechaCreacion
+                                                    ] ,
+                                                    [ <https://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                      <https://www.w3.org/ns/shacl#message> "Post sin rr:identificador (string) definido."@es ;
+                                                      <https://www.w3.org/ns/shacl#minCount> 1 ;
+                                                      <https://www.w3.org/ns/shacl#path> rr:identificador
+                                                    ] ,
+                                                    [ <https://www.w3.org/ns/shacl#maxInclusive> 1 ;
+                                                      <https://www.w3.org/ns/shacl#message> "rr:probNeg fuera de [0,1]."@es ;
+                                                      <https://www.w3.org/ns/shacl#minInclusive> 0 ;
+                                                      <https://www.w3.org/ns/shacl#path> rr:probNeg
+                                                    ] ,
+                                                    [ <https://www.w3.org/ns/shacl#maxInclusive> 1 ;
+                                                      <https://www.w3.org/ns/shacl#message> "rr:probPos fuera de [0,1]."@es ;
+                                                      <https://www.w3.org/ns/shacl#minInclusive> 0 ;
+                                                      <https://www.w3.org/ns/shacl#path> rr:probPos
+                                                    ] ,
+                                                    [ <https://www.w3.org/ns/shacl#datatype> xsd:integer ;
+                                                      <https://www.w3.org/ns/shacl#message> "Texto demasiado corto: rr:longitudTexto < 40."@es ;
+                                                      <https://www.w3.org/ns/shacl#minInclusive> 40 ;
+                                                      <https://www.w3.org/ns/shacl#path> rr:longitudTexto
+                                                    ] ,
+                                                    [ <https://www.w3.org/ns/shacl#datatype> xsd:integer ;
+                                                      <https://www.w3.org/ns/shacl#message> "Texto demasiado corto: rr:longitudTexto < 40."@es ;
+                                                      <https://www.w3.org/ns/shacl#minInclusive> 40 ;
+                                                      <https://www.w3.org/ns/shacl#path> rr:longitudTexto
+                                                    ] ,
+                                                    [ <https://www.w3.org/ns/shacl#in> [ ] ;
+                                                    <https://www.w3.org/ns/shacl#message> "etiquetaSentimiento permitido: Positivo/Neutro/Negativo (no Mixto)."@es ;
+                                                    <https://www.w3.org/ns/shacl#path> rr:etiquetaSentimiento
+             ] ,
+[ <https://www.w3.org/ns/shacl#in> [ ] ;
+<https://www.w3.org/ns/shacl#message> "rr:idiomaDetectado debe ser 'es' o 'en'."@es ;
+<https://www.w3.org/ns/shacl#minCount> 1 ;
+<https://www.w3.org/ns/shacl#path> rr:idiomaDetectado
+] ,
+[ <https://www.w3.org/ns/shacl#maxInclusive> 1 ;
+  <https://www.w3.org/ns/shacl#message> "rr:probNeu fuera de [0,1]."@es ;
+  <https://www.w3.org/ns/shacl#minInclusive> 0 ;
+  <https://www.w3.org/ns/shacl#path> rr:probNeu
+] ,
+[ <https://www.w3.org/ns/shacl#datatype> xsd:dateTime ;
+  <https://www.w3.org/ns/shacl#message> "rr:fechaCreacion faltante o con tipo inválido (xsd:dateTime)."@es ;
+  <https://www.w3.org/ns/shacl#minCount> 1 ;
+  <https://www.w3.org/ns/shacl#path> rr:fechaCreacion
+] ,
+[ <https://www.w3.org/ns/shacl#maxInclusive> 1 ;
+  <https://www.w3.org/ns/shacl#message> "rr:probNeu fuera de [0,1]."@es ;
+  <https://www.w3.org/ns/shacl#minInclusive> 0 ;
+  <https://www.w3.org/ns/shacl#path> rr:probNeu
+] ,
+[ <https://www.w3.org/ns/shacl#maxInclusive> 1 ;
+  <https://www.w3.org/ns/shacl#message> "rr:probNeg fuera de [0,1]."@es ;
+  <https://www.w3.org/ns/shacl#minInclusive> 0 ;
+  <https://www.w3.org/ns/shacl#path> rr:probNeg
+] ,
+[ <https://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <https://www.w3.org/ns/shacl#message> "Post sin rr:identificador (string) definido."@es ;
+  <https://www.w3.org/ns/shacl#minCount> 1 ;
+  <https://www.w3.org/ns/shacl#path> rr:identificador
+] ,
+[ <https://www.w3.org/ns/shacl#maxInclusive> 1 ;
+  <https://www.w3.org/ns/shacl#message> "rr:tieneIntensidad fuera de [0,1]."@es ;
+  <https://www.w3.org/ns/shacl#minInclusive> 0 ;
+  <https://www.w3.org/ns/shacl#path> rr:tieneIntensidad
+] ,
+[ <https://www.w3.org/ns/shacl#maxInclusive> 1 ;
+  <https://www.w3.org/ns/shacl#message> "rr:tieneIntensidad fuera de [0,1]."@es ;
+  <https://www.w3.org/ns/shacl#minInclusive> 0 ;
+  <https://www.w3.org/ns/shacl#path> rr:tieneIntensidad
+] ,
+[ <https://www.w3.org/ns/shacl#in> [ ] ;
+<https://www.w3.org/ns/shacl#message> "rr:idiomaDetectado debe ser 'es' o 'en'."@es ;
+<https://www.w3.org/ns/shacl#minCount> 1 ;
+<https://www.w3.org/ns/shacl#path> rr:idiomaDetectado
+] ,
+[ <https://www.w3.org/ns/shacl#maxInclusive> 1 ;
+  <https://www.w3.org/ns/shacl#message> "rr:probPos fuera de [0,1]."@es ;
+  <https://www.w3.org/ns/shacl#minInclusive> 0 ;
+  <https://www.w3.org/ns/shacl#path> rr:probPos
+] ,
+[ <https://www.w3.org/ns/shacl#in> [ ] ;
+<https://www.w3.org/ns/shacl#message> "etiquetaSentimiento permitido: Positivo/Neutro/Negativo (no Mixto)."@es ;
+<https://www.w3.org/ns/shacl#path> rr:etiquetaSentimiento
+] ;
+<https://www.w3.org/ns/shacl#sparql> [ <https://www.w3.org/ns/shacl#message> "rr:trataSobre/rr:perteneceDominio debe apuntar a skos:Concept en rrdom:ContextoCienciaTecnologia."@es ;
+                                       <https://www.w3.org/ns/shacl#select> """
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX rrdom: <http://wfrp.ia/dominio/ciencia-tecnologia#>
+      SELECT $this WHERE {
+        $this (rr:trataSobre|rr:perteneceDominio) ?c .
+        FILTER NOT EXISTS { ?c a skos:Concept . ?c skos:inScheme rrdom:ContextoCienciaTecnologia }
+      }
+    """
+                                     ] ,
+                                     [ <https://www.w3.org/ns/shacl#message> "rr:trataSobre/rr:perteneceDominio debe apuntar a skos:Concept en rrdom:ContextoCienciaTecnologia."@es ;
+                                       <https://www.w3.org/ns/shacl#select> """
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX rrdom: <http://wfrp.ia/dominio/ciencia-tecnologia#>
+      SELECT $this WHERE {
+        $this (rr:trataSobre|rr:perteneceDominio) ?c .
+        FILTER NOT EXISTS { ?c a skos:Concept . ?c skos:inScheme rrdom:ContextoCienciaTecnologia }
+      }
+    """
+                                     ] ,
+                                     [ <https://www.w3.org/ns/shacl#message> "Probabilidades no normalizadas (|sum-1| > 0.02)."@es ;
+                                       <https://www.w3.org/ns/shacl#select> """
+      SELECT $this WHERE {
+        $this rr:probPos ?pp ; rr:probNeu ?pn ; rr:probNeg ?pg .
+        BIND(ABS((?pp + ?pn + ?pg) - 1) AS ?delta)
+        FILTER(?delta > 0.02)
+      }
+    """
+                                     ] ,
+                                     [ <https://www.w3.org/ns/shacl#message> "Si existe rr:tieneTerminoSentimiento debe existir rr:etiquetaSentimiento."@es ;
+                                       <https://www.w3.org/ns/shacl#select> """
+      SELECT $this WHERE {
+        $this rr:tieneTerminoSentimiento ?t .
+        FILTER NOT EXISTS { $this rr:etiquetaSentimiento ?l }
+      }
+    """
+                                     ] ,
+                                     [ <https://www.w3.org/ns/shacl#message> "Duplicado de rr:identificador detectado en la grafo/dataset."@es ;
+                                       <https://www.w3.org/ns/shacl#select> """
+      SELECT $this WHERE {
+        $this rr:identificador ?id .
+        ?other rr:identificador ?id .
+        FILTER(?other != $this)
+      } LIMIT 1
+    """
+                                     ] ,
+                                     [ <https://www.w3.org/ns/shacl#message> "Duplicado de rr:identificador detectado en la grafo/dataset."@es ;
+                                       <https://www.w3.org/ns/shacl#select> """
+      SELECT $this WHERE {
+        $this rr:identificador ?id .
+        ?other rr:identificador ?id .
+        FILTER(?other != $this)
+      } LIMIT 1
+    """
+                                     ] ,
+                                     [ <https://www.w3.org/ns/shacl#message> "Probabilidades no normalizadas (|sum-1| > 0.02)."@es ;
+                                       <https://www.w3.org/ns/shacl#select> """
+      SELECT $this WHERE {
+        $this rr:probPos ?pp ; rr:probNeu ?pn ; rr:probNeg ?pg .
+        BIND(ABS((?pp + ?pn + ?pg) - 1) AS ?delta)
+        FILTER(?delta > 0.02)
+      }
+    """
+                                     ] ,
+                                     [ <https://www.w3.org/ns/shacl#message> "Si existe rr:tieneTerminoSentimiento debe existir rr:etiquetaSentimiento."@es ;
+                                       <https://www.w3.org/ns/shacl#select> """
+      SELECT $this WHERE {
+        $this rr:tieneTerminoSentimiento ?t .
+        FILTER NOT EXISTS { $this rr:etiquetaSentimiento ?l }
+      }
+    """
+                                     ] ;
+<https://www.w3.org/ns/shacl#targetClass> rr:Post .
+
+
+###  http://wfrp.ia/sentimiento/core#Negativo
+rrsent:Negativo rdf:type owl:NamedIndividual ,
+                         skos:Concept .
+
+
+###  http://wfrp.ia/sentimiento/core#Neutro
+rrsent:Neutro rdf:type owl:NamedIndividual ,
+                       skos:Concept .
+
+
+###  http://wfrp.ia/sentimiento/core#Positivo
+rrsent:Positivo rdf:type owl:NamedIndividual ,
+                         skos:Concept .
+
+
+###  http://wfrp.ia/sentimiento/core#SentimentScheme
+rrsent:SentimentScheme rdf:type owl:NamedIndividual ,
+                                skos:ConceptScheme ;
+                       skos:prefLabel "Esquema de Sentimiento"@es ,
+                                      "Sentiment Scheme"@en .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+rrsent:Negativo skos:inScheme rrsent:SentimentScheme ;
+                skos:prefLabel "Negative"@en ,
+                               "Negativo"@es .
+
+
+rrsent:Neutro skos:inScheme rrsent:SentimentScheme ;
+              skos:prefLabel "Neutral"@en ,
+                             "Neutro"@es .
+
+
+rrsent:Positivo skos:inScheme rrsent:SentimentScheme ;
+                skos:prefLabel "Positive"@en ,
+                               "Positivo"@es .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+# Removed: AllDisjointClasses for rrsent:Positivo/Neutro/Negativo (now individuals only)
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
+
+# === CHANGE LOG (auto-fix Claude 4.5 Copilot) ===
+# [2025-10-28] Correcciones según informe de validación ontológica:
+# 1. Eliminado punning de rrsent:Positivo/Neutro/Negativo (ahora solo individuos, no clases)
+# 2. Eliminada restricción owl:AllDisjointClasses para sentimientos
+# 3. Agregada clave única owl:hasKey(rr:identificador) a rr:Post
