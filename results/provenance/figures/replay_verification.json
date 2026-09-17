@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "byte_identical_outputs": {
+    "fig11_feature_stability.png": true,
+    "fig10_module_sensitivity.png": true,
+    "fig05_module_coverage.png": true,
+    "fig09_prediction_distribution.png": true,
+    "fig08_downstream_confusion_delta.png": true,
+    "fig07_downstream_macro_f1.png": true,
+    "fig06_lexical_sensitivity.png": true
+  },
+  "training_performed": false
+}

@@ -1,0 +1,62 @@
+{
+  "case_id": "E1-SHACL2-invalid-identifier-pattern",
+  "family": "shacl",
+  "oracle_should_alarm": true,
+  "oracle_conforms_expected": false,
+  "pyshacl_conforms": false,
+  "validation_result_count": 1,
+  "original_detected": true,
+  "extension_detected": true,
+  "detection_status": "detected_by_original",
+  "localization_status": "localized_to_expected_constraint",
+  "false_positive": false,
+  "non_detection": false,
+  "partial_detection": false,
+  "expected": {
+    "should_alarm": true,
+    "conforms": false,
+    "expected_path": "rr:identificador",
+    "expected_path_iri": "http://wfrp.ia/ontologia/ia-sentimiento#identificador",
+    "expected_component": "sh:PatternConstraintComponent",
+    "expected_component_iri": "http://www.w3.org/ns/shacl#PatternConstraintComponent",
+    "shape_family": "identifier_pattern",
+    "reserved_for_after_extension": false
+  },
+  "matched_result_count": 1,
+  "results": [
+    {
+      "result_node": "n86858cfa57a94eb5b3bbd39e888a8560b2",
+      "focus_node": [
+        "http://wfrp.ia/resource/reddit/post/1kkfjn0"
+      ],
+      "result_path": [
+        "http://wfrp.ia/ontologia/ia-sentimiento#identificador"
+      ],
+      "source_constraint_component": [
+        "http://www.w3.org/ns/shacl#PatternConstraintComponent"
+      ],
+      "result_severity": [
+        "http://www.w3.org/ns/shacl#Violation"
+      ],
+      "source_shape": [
+        "n86858cfa57a94eb5b3bbd39e888a8560b3"
+      ],
+      "message": [
+        "rr:identificador debe ser alfanumérico base36."
+      ]
+    }
+  ],
+  "artefacts": {
+    "case_dir": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL2-invalid-identifier-pattern",
+    "data_graph": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL2-invalid-identifier-pattern/mutated_posts.ttl",
+    "mutation_manifest": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL2-invalid-identifier-pattern/mutation_manifest.json",
+    "report_ttl": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL2-invalid-identifier-pattern/report.ttl",
+    "report_text": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL2-invalid-identifier-pattern/report.txt",
+    "report_extracted": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL2-invalid-identifier-pattern/report_extracted.json"
+  },
+  "runtime": {
+    "elapsed_seconds": 35.066081,
+    "command": "${PYTHON} experiments/controlled_discontinuities/evidence/shacl/run_e1_shacl.py"
+  },
+  "reclassification_note": "Recomputed from preserved report.ttl; pySHACL was not rerun."
+}

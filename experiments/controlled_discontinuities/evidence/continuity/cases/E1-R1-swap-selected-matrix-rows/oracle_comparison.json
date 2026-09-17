@@ -1,0 +1,21 @@
+{
+  "case_id": "E1-R1-swap-selected-matrix-rows",
+  "family": "row_alignment",
+  "required": true,
+  "reserved_for_after_extension": true,
+  "oracle_should_alarm": true,
+  "original_detected": false,
+  "extension_detected": true,
+  "detection_status": "detected_by_extension",
+  "expected_exception_detected": false,
+  "evaluation_error": false,
+  "unexpected_errors": [],
+  "false_positive": false,
+  "non_detection": false,
+  "partial_detection": true,
+  "original_detected_before_refresh": false,
+  "original_detected_after_refresh": false,
+  "extension_check_ids": "matrix_manifest_rechecker",
+  "mutation_summary": "{\"matrix\": \"test_raw_float64.npy\", \"post_ids\": [\"1n1plgb\", \"1n02v38\"], \"swapped_rows\": [0, 1]}",
+  "notes": "Recomputed matrix_sha256 differs and row-level comparison identifies the two affected IDs."
+}

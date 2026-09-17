@@ -1,0 +1,50 @@
+{
+  "detected": true,
+  "checks": {
+    "matrix_manifest_rechecker": {
+      "available": true,
+      "detected": true,
+      "mismatches": [
+        {
+          "split": "test",
+          "profile": "raw_float64",
+          "expected_matrix_sha256": "864f06c457b4fe7ddd8d0231ebeee62560f8195fcfa6924c512f37588935a2cf",
+          "actual_matrix_sha256": "ea2c1e746886bc7049ba18b3515bdfcbfc5d15f4ec8181952ef8e36e5a21034e",
+          "rows": 323,
+          "columns": 6
+        },
+        {
+          "split": "test",
+          "profile": "raw_float64",
+          "value_mismatch_at": {
+            "row": 0,
+            "column": 0,
+            "actual": "0.0",
+            "expected": "0.0111731843575419"
+          }
+        }
+      ]
+    },
+    "rdf_inventory_against_gold": {
+      "available": true,
+      "detected": false,
+      "rdf_post_count": 1614,
+      "missing_ids": [],
+      "extra_ids": [],
+      "iri_mismatches": [],
+      "missing_concepts": [],
+      "extra_concepts": [],
+      "invalid_concepts": []
+    },
+    "prediction_output_fingerprint_check": {
+      "available": true,
+      "detected": false,
+      "mismatches": []
+    },
+    "report_freshness_check": {
+      "available": false,
+      "detected": false,
+      "reason": "Report freshness is evaluated only for stale-report cases to avoid treating valid order-only changes as stale evidence."
+    }
+  }
+}

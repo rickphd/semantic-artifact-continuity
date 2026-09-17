@@ -1,13 +1,13 @@
 {
-  "created_at": "2026-08-03T00:17:13.639767",
+  "created_at": "2026-09-14T13:28:00.381799",
   "root": ".",
   "dataset": "data/gold/gold_enriched_ontology.parquet",
-  "dataset_sha256": "62c6394d4ef68191b713d80c9b54849ecf00176822719bf515b8f0ee65b31162",
+  "dataset_sha256": "8730955465e71bd9782d6f9bd42cc240f0dc80c6af7432db1f57299010bbacce",
   "split": "data/gold/GEN_split_gld_reddit_ids_v02.json",
   "split_sha256": "473f7bad51f04cfb3de2cbf066e46d5539000037d5edab2cf20f06da7af95444",
   "lexicon_manifest": "results/lexicon/ontology_lexicon_v04_2_train_only.json",
-  "lexicon_manifest_sha256": "313af4e18f4d7b58f87e87a7ac5bbbb19c32d5e7c829816bdad9fa6515e51e77",
-  "feature_selection_sha256": "03d660c83fdb0a796556edec66736f008df4d1b99b947051c640cb9c1b7ff854",
+  "lexicon_manifest_sha256": "8bd5d395007819b41ff4a1615004a62d9ce43c4383f18408047246bf201c7a53",
+  "feature_selection_sha256": "d830b576eec906b8e6a221660308dc7afc9ef86e5014793dcca732d07d712533",
   "split_sizes": {
     "train": 968,
     "val": 323,
@@ -21,12 +21,11 @@
   "all_ontology_features_count": 37,
   "selected_features": [
     "ont_domain_density",
-    "ont_InteligenciaArtificial_Negativo",
     "ont_total_negativo_mentions",
+    "ont_InteligenciaArtificial_Negativo",
     "ont_Innovacion_Neutro",
     "ont_Etica_Negativo",
-    "ont_InteligenciaArtificial_Neutro",
-    "ont_Tecnologia_Positivo"
+    "ont_Tecnologia_Neutro"
   ],
   "conditions": [
     "BSL",
@@ -74,10 +73,10 @@
   },
   "environment": {
     "python": "3.13.13",
-    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O"
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O"
   },
-  "completed_at": "2026-08-03T08:55:34.517970",
-  "runtime_seconds": 31100.8437,
+  "completed_at": "2026-09-14T21:02:27.426601",
+  "runtime_seconds": 27266.9971,
   "output_files": [
     "cnn1d_module_ablation_manifest.json",
     "cnn1d_module_ablation_raw.csv",

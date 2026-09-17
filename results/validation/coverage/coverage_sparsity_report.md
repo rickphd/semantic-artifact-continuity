@@ -2,7 +2,7 @@
 
 Rows: `1614`
 Ontology variables: `37`
-Selected train only variables: `7`
+Selected train only variables: `6`
 Posts with any ontology activation: `1489` (92.26%)
 Posts with selected variable activation: `1408` (87.24%)
 
@@ -14,7 +14,7 @@ Posts with selected variable activation: `1408` (87.24%)
 
 ## Module Coverage
 
-- `ai`: 941 posts (58.30%), selected features 2
+- `ai`: 954 posts (59.11%), selected features 1
 - `ml`: 36 posts (2.23%), selected features 0
 - `technology`: 232 posts (14.37%), selected features 1
 - `future`: 152 posts (9.42%), selected features 0

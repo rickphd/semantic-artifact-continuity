@@ -2,13 +2,13 @@
   "model": "CNN1D",
   "condition": "ENR",
   "seed": 2024,
-  "pipeline_version": "canonical_v04_2_vader_train_scope",
-  "created_at": "2026-08-03T00:10:48.620525",
+  "pipeline_version": "information_f123_20260914",
+  "created_at": "2026-09-14T13:59:39.758818",
   "split_source": "GEN_split_gld_reddit_ids_v02.json",
   "dataset": "gold_enriched_ontology.parquet",
-  "dataset_sha256": "62c6394d4ef68191b713d80c9b54849ecf00176822719bf515b8f0ee65b31162",
+  "dataset_sha256": "8730955465e71bd9782d6f9bd42cc240f0dc80c6af7432db1f57299010bbacce",
   "lexicon_manifest": "results/lexicon/ontology_lexicon_v04_2_train_only.json",
-  "lexicon_manifest_sha256": "313af4e18f4d7b58f87e87a7ac5bbbb19c32d5e7c829816bdad9fa6515e51e77",
+  "lexicon_manifest_sha256": "8bd5d395007819b41ff4a1615004a62d9ce43c4383f18408047246bf201c7a53",
   "test_size": 323,
   "class_order": [
     "Negative",
@@ -20,56 +20,56 @@
     119,
     156
   ],
-  "accuracy": 0.5882352941176471,
-  "macro_f1": 0.5010823998538568,
-  "weighted_f1": 0.5656800978187998,
+  "accuracy": 0.6222910216718266,
+  "macro_f1": 0.5225498273929435,
+  "weighted_f1": 0.6011083234693435,
   "confusion_matrix": [
     [
-      11,
-      16,
-      21
-    ],
-    [
       8,
-      53,
-      58
+      26,
+      14
     ],
     [
-      4,
-      26,
-      126
+      3,
+      75,
+      41
+    ],
+    [
+      1,
+      37,
+      118
     ]
   ],
   "classification_report": {
     "Negative": {
-      "precision": 0.4782608695652174,
-      "recall": 0.22916666666666666,
-      "f1-score": 0.30985915492957744,
+      "precision": 0.6666666666666666,
+      "recall": 0.16666666666666666,
+      "f1-score": 0.26666666666666666,
       "support": 48.0
     },
     "Neutral": {
-      "precision": 0.5578947368421052,
-      "recall": 0.44537815126050423,
-      "f1-score": 0.4953271028037383,
+      "precision": 0.5434782608695652,
+      "recall": 0.6302521008403361,
+      "f1-score": 0.5836575875486382,
       "support": 119.0
     },
     "Positive": {
-      "precision": 0.6146341463414634,
-      "recall": 0.8076923076923077,
-      "f1-score": 0.6980609418282548,
+      "precision": 0.6820809248554913,
+      "recall": 0.7564102564102564,
+      "f1-score": 0.7173252279635258,
       "support": 156.0
     },
-    "accuracy": 0.5882352941176471,
+    "accuracy": 0.6222910216718266,
     "macro avg": {
-      "precision": 0.550263250916262,
-      "recall": 0.49407904187315954,
-      "f1-score": 0.5010823998538568,
+      "precision": 0.630741950797241,
+      "recall": 0.517776341305753,
+      "f1-score": 0.5225498273929435,
       "support": 323.0
     },
     "weighted avg": {
-      "precision": 0.5734641555808335,
-      "recall": 0.5882352941176471,
-      "f1-score": 0.5656800978187998,
+      "precision": 0.6287261217366406,
+      "recall": 0.6222910216718266,
+      "f1-score": 0.6011083234693435,
       "support": 323.0
     }
   },
@@ -97,47 +97,46 @@
     "max_len": 279,
     "vocab_size": 5602,
     "vocab_fit": "train_only",
-    "best_epoch": 13,
-    "best_val_f1": 0.5663,
+    "best_epoch": 6,
+    "best_val_f1": 0.5636,
     "device": "cpu"
   },
   "ont_features": [
     "ont_domain_density",
-    "ont_InteligenciaArtificial_Negativo",
     "ont_total_negativo_mentions",
+    "ont_InteligenciaArtificial_Negativo",
     "ont_Innovacion_Neutro",
     "ont_Etica_Negativo",
-    "ont_InteligenciaArtificial_Neutro",
-    "ont_Tecnologia_Positivo"
+    "ont_Tecnologia_Neutro"
   ],
   "ont_list": "anova_p005_train_only_vader_scope",
   "semantic_input_provenance": {
     "train": {
       "profile": "train_standardized_float32",
       "rows": 968,
-      "columns": 7,
+      "columns": 6,
       "dtype": "float32",
       "ordered_post_ids_sha256": "d42ac8c75364349ab2bd40038940caf56eb506b786e420054190294a27f45476",
-      "ordered_features_sha256": "95680f916a7802a3221e04fee777df9e2dcfa6125d12e7c3064d0ce282f0da51",
-      "matrix_sha256": "7dc4480045884be82090e6eb7e9315469e12bfde0c8690ec9648fc70bd3c58e8"
+      "ordered_features_sha256": "02804b81a4bc0e255e4c42492103505dc799597569205fbfadc99ecbeaf925c6",
+      "matrix_sha256": "fd9057df2994d77810a6ded079bc7190cce17a7b4c4dad71ff21bb05d7a7cd46"
     },
     "val": {
       "profile": "train_standardized_float32",
       "rows": 323,
-      "columns": 7,
+      "columns": 6,
       "dtype": "float32",
       "ordered_post_ids_sha256": "7334119058332c5d6b79d14cf324f0672edbc7b4a314852667deaad73828180e",
-      "ordered_features_sha256": "95680f916a7802a3221e04fee777df9e2dcfa6125d12e7c3064d0ce282f0da51",
-      "matrix_sha256": "10482e26e8a13b35b7e23c5ab6e70c29ddb1f105db6f13243cccb893c7c3da60"
+      "ordered_features_sha256": "02804b81a4bc0e255e4c42492103505dc799597569205fbfadc99ecbeaf925c6",
+      "matrix_sha256": "8c01ed2d8726e1ec90ff29c5afbe197ad0045e412fdb267407f1afa2bd74bb59"
     },
     "test": {
       "profile": "train_standardized_float32",
       "rows": 323,
-      "columns": 7,
+      "columns": 6,
       "dtype": "float32",
       "ordered_post_ids_sha256": "359d5f85b3b8c5eeacf179a9b91c8d4ed63dfda568712a6ed4c50ef3bf62f009",
-      "ordered_features_sha256": "95680f916a7802a3221e04fee777df9e2dcfa6125d12e7c3064d0ce282f0da51",
-      "matrix_sha256": "e9cbbb74d0e2cd294914d0640f48bb190f58a60bbab0a56e7e49c3c3dc6d2091"
+      "ordered_features_sha256": "02804b81a4bc0e255e4c42492103505dc799597569205fbfadc99ecbeaf925c6",
+      "matrix_sha256": "24f62fea534f9f3629e3a40ab3e95f881d489c55549a64df5c663b95976749f1"
     }
   }
 }

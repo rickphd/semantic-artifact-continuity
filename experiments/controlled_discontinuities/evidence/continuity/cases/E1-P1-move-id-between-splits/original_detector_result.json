@@ -1,0 +1,351 @@
+{
+  "runs": [
+    {
+      "phase": "original_consumer_before_refresh",
+      "script": "reconcile_artifact_chain.py",
+      "returncode": 1,
+      "stdout": "attention_required\n",
+      "stderr": "",
+      "parsed_status": "attention_required",
+      "detected": true,
+      "operational_error": false,
+      "details": {
+        "status": "attention_required",
+        "active_evidence_lineage": "v04.2",
+        "checks": [
+          {
+            "relation": "Canonical records to RDF resources",
+            "unit": "canonical records",
+            "expected": 1614,
+            "verified": 1614,
+            "exceptions": 0,
+            "status": "passed",
+            "interpretation": "Each canonical record is represented by one stable RDF resource."
+          },
+          {
+            "relation": "Selected semantic activations to source records",
+            "unit": "nonzero selected activations",
+            "expected": 1789,
+            "verified": 1789,
+            "exceptions": 0,
+            "status": "passed",
+            "interpretation": "Each selected activation retains a record, semantic-variable, module, and RDF-resource link; domain variables additionally retain their concept links."
+          },
+          {
+            "relation": "Selected semantic input cells to governed source values",
+            "unit": "selected input cells",
+            "expected": 9684,
+            "verified": 9684,
+            "exceptions": 0,
+            "status": "passed",
+            "interpretation": "All cells in the seven-variable interface retain ordered record and variable identity; every nonzero value matches its traceability relation."
+          },
+          {
+            "relation": "RDF graph to declared structural constraints",
+            "unit": "baseline graph",
+            "expected": 1,
+            "verified": 1,
+            "exceptions": 0,
+            "status": "passed",
+            "interpretation": "The baseline RDF graph conforms to the declared structural constraints."
+          },
+          {
+            "relation": "Test records to prediction records",
+            "unit": "record assignments across evaluation units",
+            "expected": 7752,
+            "verified": 7752,
+            "exceptions": 2,
+            "status": "attention_required",
+            "interpretation": "All 323 test records are reconciled across 24 evaluation units with matching reference labels."
+          }
+        ],
+        "summary": {
+          "checked_relations": 5,
+          "passed_relations": 4,
+          "exceptions": 2
+        }
+      }
+    },
+    {
+      "phase": "original_after_refresh",
+      "script": "audit_traceability.py",
+      "returncode": 0,
+      "stdout": "passed 100.0\n",
+      "stderr": "",
+      "parsed_status": "passed",
+      "detected": false,
+      "operational_error": false,
+      "details": {
+        "status": "passed",
+        "gold_post_count": 1614,
+        "trace_post_count": 1614,
+        "missing_posts_in_trace": [],
+        "missing_iris_in_trace_count": 0,
+        "ontology_feature_count": 37,
+        "selected_feature_count": 6,
+        "nonzero_selected_activations": 1789,
+        "traced_selected_activations": 1789,
+        "selected_trace_rate_pct": 100.0,
+        "traceability_map": "results/traceability/traceability_map.csv"
+      }
+    },
+    {
+      "phase": "original_after_refresh",
+      "script": "audit_model_inputs.py",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": "",
+      "parsed_status": "passed",
+      "detected": false,
+      "operational_error": false,
+      "details": {
+        "status": "passed",
+        "selected_feature_count": 6,
+        "missing_or_untraced_features": [],
+        "train_only_selection": true,
+        "train_scoped_external_lexicon": true,
+        "lexicon_manifest_sha256": "8bd5d395007819b41ff4a1615004a62d9ce43c4383f18408047246bf201c7a53",
+        "candidate_feature_count": 37,
+        "selected_feature_source": "results/feature_selection/ENR_selected_ont_features_anova_train_only.json"
+      }
+    },
+    {
+      "phase": "original_after_refresh",
+      "script": "audit_model_input_cells.py",
+      "returncode": 0,
+      "stdout": "attention_required\n",
+      "stderr": "",
+      "parsed_status": "attention_required",
+      "detected": true,
+      "operational_error": false,
+      "details": {
+        "status": "attention_required",
+        "evidence_scope": {
+          "cell_reconciliation": "persisted",
+          "stored_run_linkage": "reconstructed_from_declared_sources",
+          "runtime_capture_available": true,
+          "interpretation": "Cell values, row order, feature order, and deterministic transformation profiles are reconciled. Existing runs did not record runtime matrix hashes."
+        },
+        "source": {
+          "gold_path": "data/gold/gold_enriched_ontology.parquet",
+          "release_gold_sha256": "8730955465e71bd9782d6f9bd42cc240f0dc80c6af7432db1f57299010bbacce",
+          "source_gold_sha256": null,
+          "split_path": "data/gold/GEN_split_gld_reddit_ids_v02.json",
+          "split_sha256": "936640476329d8e88bffbde5a96a0c322c9a8684f30515579ce810c96f7530ad",
+          "feature_selection_path": "results/feature_selection/ENR_selected_ont_features_anova_train_only.json",
+          "feature_selection_sha256": "d830b576eec906b8e6a221660308dc7afc9ef86e5014793dcca732d07d712533",
+          "traceability_path": "results/traceability/traceability_map.csv",
+          "traceability_sha256": "443d20c2339e13c4ca4365bdfcdb31a4d1c6419158162cdca7aa3fda7be822a5"
+        },
+        "selected_features": [
+          "ont_domain_density",
+          "ont_total_negativo_mentions",
+          "ont_InteligenciaArtificial_Negativo",
+          "ont_Innovacion_Neutro",
+          "ont_Etica_Negativo",
+          "ont_Tecnologia_Neutro"
+        ],
+        "selected_feature_count": 6,
+        "ordered_features_sha256": "02804b81a4bc0e255e4c42492103505dc799597569205fbfadc99ecbeaf925c6",
+        "partition_sizes": {
+          "train": 968,
+          "val": 323,
+          "test": 323
+        },
+        "cell_reconciliation": {
+          "expected_cells": 9684,
+          "matched_cells": 9682,
+          "nonzero_cells": 1789,
+          "matched_nonzero_trace_cells": 1787,
+          "missing_nonzero_trace_cells": 0,
+          "value_mismatches": 0,
+          "split_mismatches": 2,
+          "post_iri_mismatches": 0,
+          "unexpected_zero_trace_rows": 0,
+          "duplicate_trace_keys": 0
+        },
+        "run_reconciliation": {
+          "declared_enriched_runs": 12,
+          "linked_enriched_runs": 0,
+          "runtime_captured_runs": 12,
+          "reconstructed_partition_links": 0,
+          "prediction_order_mismatches": 12,
+          "dataset_hash_mismatches": 0,
+          "feature_order_mismatches": 0
+        },
+        "saved_lr_scaler_check": {
+          "available": true,
+          "path": "results/anova_revalidation/models/LR_ENR_scaler_v2.joblib",
+          "sha256": "e70df9575a89140d989a5fc37ff188d7a7a1f361983c13c52677961e73325378",
+          "mean_match": false,
+          "scale_match": false,
+          "parameters_match": false
+        },
+        "profile_fingerprints": {
+          "raw_float64": {
+            "train": {
+              "profile": "raw_float64",
+              "rows": 968,
+              "columns": 6,
+              "dtype": "float64",
+              "ordered_post_ids_sha256": "64e8c635defd86e5f534a84e45d6152b7fea00d0c2e9536ea814f1cb2922adba",
+              "ordered_features_sha256": "02804b81a4bc0e255e4c42492103505dc799597569205fbfadc99ecbeaf925c6",
+              "matrix_sha256": "e6a0e4452e0e13ff790426b983e4c5de06b0deb4d514ab6c7ec06488bbacd2f8"
+            },
+            "val": {
+              "profile": "raw_float64",
+              "rows": 323,
+              "columns": 6,
+              "dtype": "float64",
+              "ordered_post_ids_sha256": "7334119058332c5d6b79d14cf324f0672edbc7b4a314852667deaad73828180e",
+              "ordered_features_sha256": "02804b81a4bc0e255e4c42492103505dc799597569205fbfadc99ecbeaf925c6",
+              "matrix_sha256": "c13e2df1e4b4b93d3b14e2710a0ee6775d13838c1b9f7d53547880211e456dfb"
+            },
+            "test": {
+              "profile": "raw_float64",
+              "rows": 323,
+              "columns": 6,
+              "dtype": "float64",
+              "ordered_post_ids_sha256": "9ad03c6725f994bc9235545f50d1c6d3061f0dacb6ea7e57deea87d54db5d203",
+              "ordered_features_sha256": "02804b81a4bc0e255e4c42492103505dc799597569205fbfadc99ecbeaf925c6",
+              "matrix_sha256": "3e54c43aec888a1a6c3e1a95d152e918a7d25fe1cf54fdd6b37a35894b0371d1"
+            }
+          },
+          "train_standardized_float64": {
+            "train": {
+              "profile": "train_standardized_float64",
+              "rows": 968,
+              "columns": 6,
+              "dtype": "float64",
+              "ordered_post_ids_sha256": "64e8c635defd86e5f534a84e45d6152b7fea00d0c2e9536ea814f1cb2922adba",
+              "ordered_features_sha256": "02804b81a4bc0e255e4c42492103505dc799597569205fbfadc99ecbeaf925c6",
+              "matrix_sha256": "a17ed3c031d5b1cc189b7fb555b094e29f84a88a814dcfa7a945b9080a561c9f"
+            },
+            "val": {
+              "profile": "train_standardized_float64",
+              "rows": 323,
+              "columns": 6,
+              "dtype": "float64",
+              "ordered_post_ids_sha256": "7334119058332c5d6b79d14cf324f0672edbc7b4a314852667deaad73828180e",
+              "ordered_features_sha256": "02804b81a4bc0e255e4c42492103505dc799597569205fbfadc99ecbeaf925c6",
+              "matrix_sha256": "f7f5df029dcdb8cc15fddea37b480762c6b8205abdfc261dcbaeabc9bfa80132"
+            },
+            "test": {
+              "profile": "train_standardized_float64",
+              "rows": 323,
+              "columns": 6,
+              "dtype": "float64",
+              "ordered_post_ids_sha256": "9ad03c6725f994bc9235545f50d1c6d3061f0dacb6ea7e57deea87d54db5d203",
+              "ordered_features_sha256": "02804b81a4bc0e255e4c42492103505dc799597569205fbfadc99ecbeaf925c6",
+              "matrix_sha256": "67c436b7fb0d7a934ef6c475722145424b72f5f38ee586331a2b4b5be4d9cdf7"
+            }
+          },
+          "train_standardized_float32": {
+            "train": {
+              "profile": "train_standardized_float32",
+              "rows": 968,
+              "columns": 6,
+              "dtype": "float32",
+              "ordered_post_ids_sha256": "64e8c635defd86e5f534a84e45d6152b7fea00d0c2e9536ea814f1cb2922adba",
+              "ordered_features_sha256": "02804b81a4bc0e255e4c42492103505dc799597569205fbfadc99ecbeaf925c6",
+              "matrix_sha256": "73796704e840b983ea698bcb775b6a0232fc076c650a8501751b493da864a303"
+            },
+            "val": {
+              "profile": "train_standardized_float32",
+              "rows": 323,
+              "columns": 6,
+              "dtype": "float32",
+              "ordered_post_ids_sha256": "7334119058332c5d6b79d14cf324f0672edbc7b4a314852667deaad73828180e",
+              "ordered_features_sha256": "02804b81a4bc0e255e4c42492103505dc799597569205fbfadc99ecbeaf925c6",
+              "matrix_sha256": "1556498e96a5e155288c88217f607d81aeb85bc69f442734e6751f3213d335fc"
+            },
+            "test": {
+              "profile": "train_standardized_float32",
+              "rows": 323,
+              "columns": 6,
+              "dtype": "float32",
+              "ordered_post_ids_sha256": "9ad03c6725f994bc9235545f50d1c6d3061f0dacb6ea7e57deea87d54db5d203",
+              "ordered_features_sha256": "02804b81a4bc0e255e4c42492103505dc799597569205fbfadc99ecbeaf925c6",
+              "matrix_sha256": "06d9dc5765bc77d803dbaed8bed6194358c9c4743bbd0fcbb41bb81850e5c601"
+            }
+          }
+        },
+        "outputs": {
+          "raw_matrix": "results/traceability/model_inputs/selected_semantic_input_matrix.csv",
+          "standardized_matrix": "results/traceability/model_inputs/selected_semantic_input_standardized.csv",
+          "cell_trace": "results/traceability/model_inputs/selected_semantic_input_cell_trace.csv",
+          "run_fingerprints": "results/traceability/model_inputs/downstream_semantic_input_fingerprints.csv"
+        }
+      }
+    },
+    {
+      "phase": "original_after_refresh",
+      "script": "reconcile_artifact_chain.py",
+      "returncode": 1,
+      "stdout": "attention_required\n",
+      "stderr": "",
+      "parsed_status": "attention_required",
+      "detected": true,
+      "operational_error": false,
+      "details": {
+        "status": "attention_required",
+        "active_evidence_lineage": "v04.2",
+        "checks": [
+          {
+            "relation": "Canonical records to RDF resources",
+            "unit": "canonical records",
+            "expected": 1614,
+            "verified": 1614,
+            "exceptions": 0,
+            "status": "passed",
+            "interpretation": "Each canonical record is represented by one stable RDF resource."
+          },
+          {
+            "relation": "Selected semantic activations to source records",
+            "unit": "nonzero selected activations",
+            "expected": 1789,
+            "verified": 1789,
+            "exceptions": 0,
+            "status": "passed",
+            "interpretation": "Each selected activation retains a record, semantic-variable, module, and RDF-resource link; domain variables additionally retain their concept links."
+          },
+          {
+            "relation": "Selected semantic input cells to governed source values",
+            "unit": "selected input cells",
+            "expected": 9684,
+            "verified": 9682,
+            "exceptions": 2,
+            "status": "attention_required",
+            "interpretation": "All cells in the seven-variable interface retain ordered record and variable identity; every nonzero value matches its traceability relation."
+          },
+          {
+            "relation": "RDF graph to declared structural constraints",
+            "unit": "baseline graph",
+            "expected": 1,
+            "verified": 1,
+            "exceptions": 0,
+            "status": "passed",
+            "interpretation": "The baseline RDF graph conforms to the declared structural constraints."
+          },
+          {
+            "relation": "Test records to prediction records",
+            "unit": "record assignments across evaluation units",
+            "expected": 7752,
+            "verified": 7752,
+            "exceptions": 2,
+            "status": "attention_required",
+            "interpretation": "All 323 test records are reconciled across 24 evaluation units with matching reference labels."
+          }
+        ],
+        "summary": {
+          "checked_relations": 5,
+          "passed_relations": 3,
+          "exceptions": 4
+        }
+      }
+    }
+  ],
+  "skipped_after_refresh": [
+    "run_shacl_conformance.py inherited pristine SHACL report; RDF/shapes unchanged"
+  ]
+}

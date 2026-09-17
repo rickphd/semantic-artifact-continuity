@@ -1,0 +1,23 @@
+{
+  "VERSION.json": "4d989a8ab2fb341b928e121bfe07ad5c09044fc2bc0e75b740c5939e434ff86b",
+  "data/gold/GEN_split_gld_reddit_ids_v02.json": "473f7bad51f04cfb3de2cbf066e46d5539000037d5edab2cf20f06da7af95444",
+  "inputs/original_gold.parquet": "62c6394d4ef68191b713d80c9b54849ecf00176822719bf515b8f0ee65b31162",
+  "scripts/experiments/analyze_ontology_coverage.py": "b8515d78800801affe7c468d31e32f875aa52aa07f1e93c03aee3ac60261bb3e",
+  "scripts/experiments/audit_traceability.py": "f499994dad051eaf066eb3395420a066b6d4a5164793a41426a0a45fe7053ada",
+  "scripts/experiments/build_train_only_ontology_dataset.py": "5f38f93cfca7bdcbb661349762c361a52c23237caf219c9cdbb70167f94795ed",
+  "scripts/experiments/ke_artifact_utils.py": "ea868ad123052f6ddef568620ba75485c6021ce6fc4d44e16d9f2c1c0473a359",
+  "scripts/experiments/materialize_reddit_rdf.py": "fe2665247de4800d5acc02fbabfe2151aae4b45c89911a325acf6ee4032bca1d",
+  "scripts/experiments/model_input_provenance.py": "31d9dbaee385d392a71fbe62e56a3295bf2f5adb58d595b28d4bbe2119ce0042",
+  "scripts/experiments/run_shacl_conformance.py": "cbb81c5e23fa592c17a9b1be8eb9562aa7c21f8dc224880a1e6c94b17781cf6a",
+  "scripts/experiments/select_ont_features_anova_train_only.py": "1c6de8a57e5bd5edef47e5d7c7babfba73d85a8aeaf4a0627de056964e8ab20e",
+  "src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "src/ontology/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "src/ontology/enricher.py": "cb04751169459f917ea500eabe4329657b2ddaebbbd461539e8e3c768271669f",
+  "src/ontology/mention_spans.py": "a5eb0990f5b8266f095259899f163497d083320e0b7f7342e230a0959d211f72",
+  "src/ontology/resources/catalog-v001.xml": "bd844fb3272e97dea66ce97f1921bfb60652affb8add7c69d3bb06a15f15b2dc",
+  "src/ontology/resources/rr-core.ttl": "b30a76e00cf73e0525c5d211246c617db5d3f5254f5c3eda0bb58801ef53d430",
+  "src/ontology/resources/rr-domain.ttl": "bb51d55c67fc9a98ad21a9e1b88792f78d10739c90272bcc9c1ff90d069b9b91",
+  "src/ontology/resources/rr-sentiment.ttl": "ef230818d02f9b7c2103935acf2ea8ef4b1046ab15d7775ce7a0019c58fc2942",
+  "src/ontology/resources/rr-shapes.ttl": "36f9b52a41df2f96e30620b1965a0f5acdb474e2e17e0ed6be2ec0a3d40d4afc",
+  "src/ontology/window_spans.py": "3d1df5e025d2fc4aca99d2e4b297ea9c057f6477b6aa68f6328f87859dfa0621"
+}

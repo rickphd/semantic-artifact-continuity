@@ -1,0 +1,23 @@
+[
+  {
+    "result_node": "N457c2b7725da4f4ab46b69ef7f3d16ff",
+    "focus_node": [
+      "http://wfrp.ia/resource/reddit/post/1kkfjn0"
+    ],
+    "result_path": [
+      "http://wfrp.ia/ontologia/ia-sentimiento#publicadoPor"
+    ],
+    "source_constraint_component": [
+      "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+    ],
+    "result_severity": [
+      "http://www.w3.org/ns/shacl#Violation"
+    ],
+    "source_shape": [
+      "n7fd1c01edfe04963bcdca06028f3b77db3"
+    ],
+    "message": [
+      "rr:publicadoPor debe apuntar a exactamente 1 rr:Author (IRI)."
+    ]
+  }
+]

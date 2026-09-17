@@ -433,4 +433,5 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    from regenerate_release_figures import main as release_main
+    release_main()

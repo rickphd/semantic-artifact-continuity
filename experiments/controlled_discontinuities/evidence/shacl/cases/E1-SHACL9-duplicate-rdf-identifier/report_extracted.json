@@ -1,0 +1,40 @@
+[
+  {
+    "result_node": "N4ae359b5a08d409aa5bf1e7fb06fcb10",
+    "focus_node": [
+      "http://wfrp.ia/resource/reddit/post/1kkfjn0"
+    ],
+    "result_path": [],
+    "source_constraint_component": [
+      "http://www.w3.org/ns/shacl#SPARQLConstraintComponent"
+    ],
+    "result_severity": [
+      "http://www.w3.org/ns/shacl#Violation"
+    ],
+    "source_shape": [
+      "http://wfrp.ia/ontologia/ia-sentimiento#PostShape"
+    ],
+    "message": [
+      "Duplicado de rr:identificador detectado en el grafo/dataset."
+    ]
+  },
+  {
+    "result_node": "N890e8e7274144d5b9e60d0fde18e6a91",
+    "focus_node": [
+      "http://wfrp.ia/resource/reddit/post/e1_duplicate_identifier_fixture"
+    ],
+    "result_path": [],
+    "source_constraint_component": [
+      "http://www.w3.org/ns/shacl#SPARQLConstraintComponent"
+    ],
+    "result_severity": [
+      "http://www.w3.org/ns/shacl#Violation"
+    ],
+    "source_shape": [
+      "http://wfrp.ia/ontologia/ia-sentimiento#PostShape"
+    ],
+    "message": [
+      "Duplicado de rr:identificador detectado en el grafo/dataset."
+    ]
+  }
+]

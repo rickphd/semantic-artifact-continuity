@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "verified_at": 1789437765.416568,
+  "main_runs": 24,
+  "classical_ablation_runs": 126,
+  "cnn_ablation_runs": 42,
+  "predictions_verified": 62016,
+  "runtime_semantic_fingerprints_matched": 27,
+  "sensitivity_variants": 125,
+  "sensitivity_admissibility": {
+    "admissible_completed": 97,
+    "outside_current_loader_contract": 28
+  },
+  "sensitivity_rejection_reasons": {
+    "negative_empty": 22,
+    "both_polarities_empty": 6
+  },
+  "protected_files": 480,
+  "protected_unchanged": true,
+  "selected_features": [
+    "ont_domain_density",
+    "ont_total_negativo_mentions",
+    "ont_InteligenciaArtificial_Negativo",
+    "ont_Innovacion_Neutro",
+    "ont_Etica_Negativo",
+    "ont_Tecnologia_Neutro"
+  ]
+}

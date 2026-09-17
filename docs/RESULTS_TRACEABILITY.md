@@ -1,23 +1,23 @@
-# Results Traceability
+# Result Traceability
 
-This map identifies the released source for the principal quantitative
-statements in the manuscript.
+| Result | Public evidence | Boundary |
+| --- | --- | --- |
+| 1,614 posts; 15,616 triples; 9,329 nonzero variable values | `results/knowledge_graph/`, `data/gold/` | RDF is a projection, not a semantic truth test. |
+| 37 variables, six selected using 968 training records | `results/feature_selection/`, `results/lexicon/` | Held-out texts and labels are excluded from induction/selection as specified. |
+| 1,789 nonzero selected values; 9,684 selected cells including zeros | `results/prepared_model_inputs/`, `results/traceability/model_inputs/` | Prepared matrices and runtime consumption evidence are distinct. |
+| 27 runtime profiles match prepared profiles | Main metric JSON `semantic_input_provenance`; prepared manifest | These are profile records, not 27 model runs. |
+| 24 main, 126 classical-ablation, 42 CNN1D-ablation runs | `results/anova_revalidation/`, `results/ablation/` | Eight main seed-42 runs are recorded pilot reuse. |
+| 125 sensitivity settings: 97 admissible, 28 rejected | `results/sensitivity/`; `results/provenance/sensitivity_audit/` | Rejected lexicons have no evaluated RDF or SHACL outcome. |
+| 10 isolated SHACL faults and one control | `experiments/controlled_discontinuities/` | Reclassified constraint names derive from preserved reports. |
+| 22 continuity faults and four controls | `experiments/controlled_discontinuities/` | 15 detections by original checks; seven only by supplementary checks. |
+| 120 texts and 1,200 human units | `experiments/human_assessment/` | Ten concepts; 1,123 agreement-derived reference units and 77 adjudications. |
+| Presence TP/FP/FN/TN = 117/13/205/861 | Human-assessment comparisons and summary | Four uncertain units excluded; 1,196 definite units. |
+| Exact local polarity 52/322 | Human-assessment summary | Denominator includes human-present units missed by the extractor; 52/117 is supplementary detected-only agreement. |
+| Current Figures 4-11 | `figures/`; `results/provenance/figures/` | Historical output/source hashes are distinct from public adaptation hashes. |
 
-| Manuscript evidence | Released source | Interpretation limit |
-|---|---|---|
-| 1,614 RDF post resources, 15,603 triples, 9,208 nonzero activations, and 1,888 concept assertions | `results/knowledge_graph/materialization_report.json`, `results/knowledge_graph/posts.ttl` | RDF materialization does not establish semantic correctness. |
-| 11,298 selected cells and 2,425 nonzero selected activations reconciled | `results/traceability/model_inputs/selected_semantic_input_reconciliation_report.json`, `results/traceability/model_inputs/selected_semantic_input_cell_trace.csv` | Traceability is at post, variable, and cell level; token/span provenance is not claimed. |
-| Baseline SHACL conformance and six controlled validation results | `results/validation/shacl/baseline_report.json`, `results/validation/shacl/stress_test_report.json` | SHACL tests declared constraints, not factual truth. |
-| 92.26% any-variable coverage and 87.24% selected-variable coverage | `results/validation/coverage/coverage_sparsity_report.json`, `results/validation/coverage/module_coverage.csv` | Coverage is descriptive, not a quality threshold. |
-| 125 lexical variants, 104 valid and 21 invalid | `results/sensitivity/vader_ke_sensitivity_summary.csv` | Models were not retrained across this grid. |
-| Two variables selected in all 104 valid lexical variants | `results/sensitivity/selected_feature_stability.csv` | Stability is conditional on the tested grid. |
-| Selected-seven LR/RF/XGB/CNN1D comparison across three seeds | `results/anova_revalidation/metrics/multiseed_summary_v2.csv` | Effects are model-dependent and do not support universal superiority. |
-| 126 classical and 42 CNN1D full-37 ablation runs | `results/ablation/classical/module_ablation_raw.csv`, `results/ablation/cnn1d/cnn1d_module_ablation_raw.csv` | Module removal is model-side sensitivity, not causal concept importance. |
-| Five chain relations with zero exceptions | `results/traceability/chain_reconciliation_report.json` | The result is bounded to the five declared relations. |
-| Figures 4-11 | `results/provenance/figure_generation_manifest.json` | The manifest records exact figure and input hashes. |
-
-The stored run metadata references the SHA-256 hash of the original 126-column
-Gold table. The public 47-column projection has a different file hash because
-unused and identifying columns were removed. Both hashes and the projection
-policy are recorded in
-`data/gold/gold_enriched_ontology_metadata.json`.
+Computational source/public pairs are in `results/provenance/public_projection.json`.
+Experiment projections preserve their own source/public provenance. A path
+projection may change a file hash without changing its metrics or decisions.
+Historical source paths are identifiers, not promises that private working
+directories are shipped. The old seven-variable/15,603-triple package is retained
+only under tag `v1.0.0`; it is not the active result set.

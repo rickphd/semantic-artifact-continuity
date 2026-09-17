@@ -6,8 +6,12 @@
 manual sentiment labels, 37 ontology-derived variables, and the fixed
 train/validation/test split used by the released experiments.
 
-A version-specific copy of the Gold corpus is available from Hugging Face at
-https://doi.org/10.57967/hf/9852.
+A version-specific source-corpus deposit is available from Hugging Face at
+https://doi.org/10.57967/hf/9852. Corrected semantic values and the new experiments
+are distributed in repository tag v1.1.0; the DOI deposit is not asserted to
+contain this revision. Labels are inherited unchanged from source records.
+The detailed original global-label annotation protocol has not been recovered;
+the separate concept/local-polarity assessment does not establish that protocol.
 
 ## Minimization
 
@@ -20,6 +24,11 @@ Post IDs and text are retained because they are required to inspect the source
 records and reproduce the text-based experiments. They may permit a reader to
 locate the original public post. Do not use the dataset to profile, contact, or
 attempt to identify individual Reddit users.
+
+The human-assessment package uses anonymous annotator codes and preserves
+structured judgments, uncertainty and author-assisted adjudication roles.
+Private statements, annotator identities and unreviewed free prose are omitted.
+Source texts remain subject to the same notice as the Gold table.
 
 ## Rights And Reuse
 

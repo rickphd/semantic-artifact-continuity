@@ -1,0 +1,701 @@
+{
+  "created_at_utc": "2026-09-15T03:07:11.190174+00:00",
+  "status": "attention_required",
+  "scope": {
+    "executed_control_cases": 1,
+    "executed_shacl_fault_cases": 10,
+    "not_executed_from_full_e1_inventory": "identity, uniqueness, row alignment, column alignment, value, partition, RDF-link outside SHACL, prediction assignment, and stale-report cases are outside this subrun.",
+    "semantic_boundary": "SHACL validation reports conformance to declared shapes only; it does not prove semantic correctness of ontology activations."
+  },
+  "counts": {
+    "total_cases": 11,
+    "controls": 1,
+    "faults": 10,
+    "detected_by_original": 0,
+    "control_passed": 1,
+    "partial_detection": 10,
+    "not_detected": 0,
+    "false_positive": 0
+  },
+  "baseline_inputs": {
+    "posts": "${PUBLIC_REPO}/results/knowledge_graph/posts.ttl",
+    "posts_sha256": "fdbac59aa40039e1134863571fa2653fdf0b326b88d8a178dd0cf942ad0c0a55",
+    "shapes": "${PUBLIC_REPO}/src/ontology/resources/rr-shapes.ttl",
+    "shapes_sha256": "36f9b52a41df2f96e30620b1965a0f5acdb474e2e17e0ed6be2ec0a3d40d4afc",
+    "ontology_sha256": {
+      "${PUBLIC_REPO}/src/ontology/resources/rr-core.ttl": "b30a76e00cf73e0525c5d211246c617db5d3f5254f5c3eda0bb58801ef53d430",
+      "${PUBLIC_REPO}/src/ontology/resources/rr-domain.ttl": "bb51d55c67fc9a98ad21a9e1b88792f78d10739c90272bcc9c1ff90d069b9b91",
+      "${PUBLIC_REPO}/src/ontology/resources/rr-sentiment.ttl": "ef230818d02f9b7c2103935acf2ea8ef4b1046ab15d7775ce7a0019c58fc2942"
+    }
+  },
+  "environment": {
+    "python": "3.13.13 | packaged by conda-forge | (main, Apr  8 2026, 02:29:07) [Clang 19.1.7 ]",
+    "executable": "${PYTHON}",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "rdflib": "7.6.0",
+    "pyshacl": "0.40.1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "cases": [
+    {
+      "case_id": "E1-C0-pristine-shacl-control",
+      "family": "valid_control",
+      "oracle_should_alarm": false,
+      "oracle_conforms_expected": true,
+      "pyshacl_conforms": true,
+      "validation_result_count": 0,
+      "original_detected": false,
+      "extension_detected": false,
+      "detection_status": "control_passed",
+      "localization_status": "not_applicable",
+      "false_positive": false,
+      "non_detection": false,
+      "partial_detection": false,
+      "expected": {
+        "should_alarm": false,
+        "conforms": true,
+        "expected_path": null,
+        "expected_component": null
+      },
+      "matched_result_count": 0,
+      "results": [],
+      "artefacts": {
+        "case_dir": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-C0-pristine-shacl-control",
+        "data_graph": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-C0-pristine-shacl-control/mutated_posts.ttl",
+        "mutation_manifest": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-C0-pristine-shacl-control/mutation_manifest.json",
+        "report_ttl": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-C0-pristine-shacl-control/report.ttl",
+        "report_text": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-C0-pristine-shacl-control/report.txt",
+        "report_extracted": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-C0-pristine-shacl-control/report_extracted.json"
+      },
+      "runtime": {
+        "elapsed_seconds": 34.897541,
+        "command": "${PYTHON} experiments/controlled_discontinuities/evidence/shacl/run_e1_shacl.py"
+      }
+    },
+    {
+      "case_id": "E1-SHACL1-missing-identifier",
+      "family": "shacl",
+      "oracle_should_alarm": true,
+      "oracle_conforms_expected": false,
+      "pyshacl_conforms": false,
+      "validation_result_count": 1,
+      "original_detected": true,
+      "extension_detected": false,
+      "detection_status": "partial_detection",
+      "localization_status": "detected_without_expected_path_component_match",
+      "false_positive": false,
+      "non_detection": false,
+      "partial_detection": true,
+      "expected": {
+        "should_alarm": true,
+        "conforms": false,
+        "expected_path": "rr:identificador",
+        "expected_component": "sh:MinCountConstraintComponent",
+        "shape_family": "identifier_min_count",
+        "reserved_for_after_extension": false
+      },
+      "matched_result_count": 0,
+      "results": [
+        {
+          "result_node": "Na2a82009e2a24304b23fbd152195e632",
+          "focus_node": [
+            "http://wfrp.ia/resource/reddit/post/1kkfjn0"
+          ],
+          "result_path": [
+            "http://wfrp.ia/ontologia/ia-sentimiento#identificador"
+          ],
+          "source_constraint_component": [
+            "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+          ],
+          "result_severity": [
+            "http://www.w3.org/ns/shacl#Violation"
+          ],
+          "source_shape": [
+            "na5419cb0b6d3456fa187822926048456b1"
+          ],
+          "message": [
+            "rr:identificador debe ser alfanumérico base36."
+          ]
+        }
+      ],
+      "artefacts": {
+        "case_dir": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL1-missing-identifier",
+        "data_graph": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL1-missing-identifier/mutated_posts.ttl",
+        "mutation_manifest": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL1-missing-identifier/mutation_manifest.json",
+        "report_ttl": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL1-missing-identifier/report.ttl",
+        "report_text": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL1-missing-identifier/report.txt",
+        "report_extracted": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL1-missing-identifier/report_extracted.json"
+      },
+      "runtime": {
+        "elapsed_seconds": 34.831361,
+        "command": "${PYTHON} experiments/controlled_discontinuities/evidence/shacl/run_e1_shacl.py"
+      }
+    },
+    {
+      "case_id": "E1-SHACL2-invalid-identifier-pattern",
+      "family": "shacl",
+      "oracle_should_alarm": true,
+      "oracle_conforms_expected": false,
+      "pyshacl_conforms": false,
+      "validation_result_count": 1,
+      "original_detected": true,
+      "extension_detected": false,
+      "detection_status": "partial_detection",
+      "localization_status": "detected_without_expected_path_component_match",
+      "false_positive": false,
+      "non_detection": false,
+      "partial_detection": true,
+      "expected": {
+        "should_alarm": true,
+        "conforms": false,
+        "expected_path": "rr:identificador",
+        "expected_component": "sh:PatternConstraintComponent",
+        "shape_family": "identifier_pattern",
+        "reserved_for_after_extension": false
+      },
+      "matched_result_count": 0,
+      "results": [
+        {
+          "result_node": "N3cdc774547ca4632bfc1945f9dc08b5a",
+          "focus_node": [
+            "http://wfrp.ia/resource/reddit/post/1kkfjn0"
+          ],
+          "result_path": [
+            "http://wfrp.ia/ontologia/ia-sentimiento#identificador"
+          ],
+          "source_constraint_component": [
+            "http://www.w3.org/ns/shacl#PatternConstraintComponent"
+          ],
+          "result_severity": [
+            "http://www.w3.org/ns/shacl#Violation"
+          ],
+          "source_shape": [
+            "n508d7463dc0f4e52a4e269f58328ac76b1"
+          ],
+          "message": [
+            "rr:identificador debe ser alfanumérico base36."
+          ]
+        }
+      ],
+      "artefacts": {
+        "case_dir": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL2-invalid-identifier-pattern",
+        "data_graph": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL2-invalid-identifier-pattern/mutated_posts.ttl",
+        "mutation_manifest": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL2-invalid-identifier-pattern/mutation_manifest.json",
+        "report_ttl": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL2-invalid-identifier-pattern/report.ttl",
+        "report_text": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL2-invalid-identifier-pattern/report.txt",
+        "report_extracted": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL2-invalid-identifier-pattern/report_extracted.json"
+      },
+      "runtime": {
+        "elapsed_seconds": 35.066081,
+        "command": "${PYTHON} experiments/controlled_discontinuities/evidence/shacl/run_e1_shacl.py"
+      }
+    },
+    {
+      "case_id": "E1-SHACL3-invalid-language",
+      "family": "shacl",
+      "oracle_should_alarm": true,
+      "oracle_conforms_expected": false,
+      "pyshacl_conforms": false,
+      "validation_result_count": 1,
+      "original_detected": true,
+      "extension_detected": false,
+      "detection_status": "partial_detection",
+      "localization_status": "detected_without_expected_path_component_match",
+      "false_positive": false,
+      "non_detection": false,
+      "partial_detection": true,
+      "expected": {
+        "should_alarm": true,
+        "conforms": false,
+        "expected_path": "rr:idiomaDetectado",
+        "expected_component": "sh:InConstraintComponent",
+        "shape_family": "language_allowed_values",
+        "reserved_for_after_extension": false
+      },
+      "matched_result_count": 0,
+      "results": [
+        {
+          "result_node": "Nc2fcab81448e447cbf1e67f8c07be416",
+          "focus_node": [
+            "http://wfrp.ia/resource/reddit/post/1kkfjn0"
+          ],
+          "result_path": [
+            "http://wfrp.ia/ontologia/ia-sentimiento#idiomaDetectado"
+          ],
+          "source_constraint_component": [
+            "http://www.w3.org/ns/shacl#InConstraintComponent"
+          ],
+          "result_severity": [
+            "http://www.w3.org/ns/shacl#Violation"
+          ],
+          "source_shape": [
+            "n8afd739da47345d2a4abae1058d28f57b5"
+          ],
+          "message": [
+            "Idioma debe ser 'es' o 'en' (xsd:string, cardinalidad 1)."
+          ]
+        }
+      ],
+      "artefacts": {
+        "case_dir": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL3-invalid-language",
+        "data_graph": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL3-invalid-language/mutated_posts.ttl",
+        "mutation_manifest": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL3-invalid-language/mutation_manifest.json",
+        "report_ttl": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL3-invalid-language/report.ttl",
+        "report_text": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL3-invalid-language/report.txt",
+        "report_extracted": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL3-invalid-language/report_extracted.json"
+      },
+      "runtime": {
+        "elapsed_seconds": 34.967745,
+        "command": "${PYTHON} experiments/controlled_discontinuities/evidence/shacl/run_e1_shacl.py"
+      }
+    },
+    {
+      "case_id": "E1-SHACL4-missing-author",
+      "family": "shacl",
+      "oracle_should_alarm": true,
+      "oracle_conforms_expected": false,
+      "pyshacl_conforms": false,
+      "validation_result_count": 1,
+      "original_detected": true,
+      "extension_detected": false,
+      "detection_status": "partial_detection",
+      "localization_status": "detected_without_expected_path_component_match",
+      "false_positive": false,
+      "non_detection": false,
+      "partial_detection": true,
+      "expected": {
+        "should_alarm": true,
+        "conforms": false,
+        "expected_path": "rr:publicadoPor",
+        "expected_component": "sh:MinCountConstraintComponent",
+        "shape_family": "author_required",
+        "reserved_for_after_extension": false
+      },
+      "matched_result_count": 0,
+      "results": [
+        {
+          "result_node": "N457c2b7725da4f4ab46b69ef7f3d16ff",
+          "focus_node": [
+            "http://wfrp.ia/resource/reddit/post/1kkfjn0"
+          ],
+          "result_path": [
+            "http://wfrp.ia/ontologia/ia-sentimiento#publicadoPor"
+          ],
+          "source_constraint_component": [
+            "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+          ],
+          "result_severity": [
+            "http://www.w3.org/ns/shacl#Violation"
+          ],
+          "source_shape": [
+            "n7fd1c01edfe04963bcdca06028f3b77db3"
+          ],
+          "message": [
+            "rr:publicadoPor debe apuntar a exactamente 1 rr:Author (IRI)."
+          ]
+        }
+      ],
+      "artefacts": {
+        "case_dir": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL4-missing-author",
+        "data_graph": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL4-missing-author/mutated_posts.ttl",
+        "mutation_manifest": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL4-missing-author/mutation_manifest.json",
+        "report_ttl": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL4-missing-author/report.ttl",
+        "report_text": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL4-missing-author/report.txt",
+        "report_extracted": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL4-missing-author/report_extracted.json"
+      },
+      "runtime": {
+        "elapsed_seconds": 35.045096,
+        "command": "${PYTHON} experiments/controlled_discontinuities/evidence/shacl/run_e1_shacl.py"
+      }
+    },
+    {
+      "case_id": "E1-SHACL5-probability-out-of-range",
+      "family": "shacl",
+      "oracle_should_alarm": true,
+      "oracle_conforms_expected": false,
+      "pyshacl_conforms": false,
+      "validation_result_count": 1,
+      "original_detected": true,
+      "extension_detected": false,
+      "detection_status": "partial_detection",
+      "localization_status": "detected_without_expected_path_component_match",
+      "false_positive": false,
+      "non_detection": false,
+      "partial_detection": true,
+      "expected": {
+        "should_alarm": true,
+        "conforms": false,
+        "expected_path": "rr:probPos",
+        "expected_component": "sh:MaxInclusiveConstraintComponent",
+        "shape_family": "probability_range",
+        "reserved_for_after_extension": false
+      },
+      "matched_result_count": 0,
+      "results": [
+        {
+          "result_node": "Nb7edae794f2443eda00958fb77781811",
+          "focus_node": [
+            "http://wfrp.ia/resource/reddit/post/1kkfjn0"
+          ],
+          "result_path": [
+            "http://wfrp.ia/ontologia/ia-sentimiento#probPos"
+          ],
+          "source_constraint_component": [
+            "http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent"
+          ],
+          "result_severity": [
+            "http://www.w3.org/ns/shacl#Violation"
+          ],
+          "source_shape": [
+            "n23c88676ea07409cb692cdc6a4a68dd4b13"
+          ],
+          "message": [
+            "rr:probPos fuera de [0,1] o con tipo inválido."
+          ]
+        }
+      ],
+      "artefacts": {
+        "case_dir": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL5-probability-out-of-range",
+        "data_graph": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL5-probability-out-of-range/mutated_posts.ttl",
+        "mutation_manifest": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL5-probability-out-of-range/mutation_manifest.json",
+        "report_ttl": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL5-probability-out-of-range/report.ttl",
+        "report_text": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL5-probability-out-of-range/report.txt",
+        "report_extracted": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL5-probability-out-of-range/report_extracted.json"
+      },
+      "runtime": {
+        "elapsed_seconds": 35.199116,
+        "command": "${PYTHON} experiments/controlled_discontinuities/evidence/shacl/run_e1_shacl.py"
+      }
+    },
+    {
+      "case_id": "E1-SHACL6-probability-sum",
+      "family": "shacl",
+      "oracle_should_alarm": true,
+      "oracle_conforms_expected": false,
+      "pyshacl_conforms": false,
+      "validation_result_count": 1,
+      "original_detected": true,
+      "extension_detected": false,
+      "detection_status": "partial_detection",
+      "localization_status": "detected_without_expected_path_component_match",
+      "false_positive": false,
+      "non_detection": false,
+      "partial_detection": true,
+      "expected": {
+        "should_alarm": true,
+        "conforms": false,
+        "expected_path": "SPARQL",
+        "expected_component": "sh:SPARQLConstraintComponent",
+        "shape_family": "probability_sum_sparql",
+        "reserved_for_after_extension": true
+      },
+      "matched_result_count": 0,
+      "results": [
+        {
+          "result_node": "N9c2956542f8f4acbbf6c67ab9fca27ef",
+          "focus_node": [
+            "http://wfrp.ia/resource/reddit/post/1kkfjn0"
+          ],
+          "result_path": [],
+          "source_constraint_component": [
+            "http://www.w3.org/ns/shacl#SPARQLConstraintComponent"
+          ],
+          "result_severity": [
+            "http://www.w3.org/ns/shacl#Violation"
+          ],
+          "source_shape": [
+            "http://wfrp.ia/ontologia/ia-sentimiento#PostShape"
+          ],
+          "message": [
+            "Probabilidades no normalizadas (|sum-1| > 0.02)."
+          ]
+        }
+      ],
+      "artefacts": {
+        "case_dir": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL6-probability-sum",
+        "data_graph": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL6-probability-sum/mutated_posts.ttl",
+        "mutation_manifest": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL6-probability-sum/mutation_manifest.json",
+        "report_ttl": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL6-probability-sum/report.ttl",
+        "report_text": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL6-probability-sum/report.txt",
+        "report_extracted": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL6-probability-sum/report_extracted.json"
+      },
+      "runtime": {
+        "elapsed_seconds": 34.665555,
+        "command": "${PYTHON} experiments/controlled_discontinuities/evidence/shacl/run_e1_shacl.py"
+      }
+    },
+    {
+      "case_id": "E1-SHACL7-label-probability-inconsistency",
+      "family": "shacl",
+      "oracle_should_alarm": true,
+      "oracle_conforms_expected": false,
+      "pyshacl_conforms": false,
+      "validation_result_count": 1,
+      "original_detected": true,
+      "extension_detected": false,
+      "detection_status": "partial_detection",
+      "localization_status": "detected_without_expected_path_component_match",
+      "false_positive": false,
+      "non_detection": false,
+      "partial_detection": true,
+      "expected": {
+        "should_alarm": true,
+        "conforms": false,
+        "expected_path": "SPARQL",
+        "expected_component": "sh:SPARQLConstraintComponent",
+        "shape_family": "label_probability_consistency_sparql",
+        "reserved_for_after_extension": false
+      },
+      "matched_result_count": 0,
+      "results": [
+        {
+          "result_node": "N3a6eb703679d4877805beda3fb874503",
+          "focus_node": [
+            "http://wfrp.ia/resource/reddit/post/1kkfjn0"
+          ],
+          "result_path": [],
+          "source_constraint_component": [
+            "http://www.w3.org/ns/shacl#SPARQLConstraintComponent"
+          ],
+          "result_severity": [
+            "http://www.w3.org/ns/shacl#Violation"
+          ],
+          "source_shape": [
+            "http://wfrp.ia/ontologia/ia-sentimiento#PostShape"
+          ],
+          "message": [
+            "rr:etiquetaSentimiento no coincide con la probabilidad máxima (probPos/probNeu/probNeg)."
+          ]
+        }
+      ],
+      "artefacts": {
+        "case_dir": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL7-label-probability-inconsistency",
+        "data_graph": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL7-label-probability-inconsistency/mutated_posts.ttl",
+        "mutation_manifest": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL7-label-probability-inconsistency/mutation_manifest.json",
+        "report_ttl": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL7-label-probability-inconsistency/report.ttl",
+        "report_text": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL7-label-probability-inconsistency/report.txt",
+        "report_extracted": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL7-label-probability-inconsistency/report_extracted.json"
+      },
+      "runtime": {
+        "elapsed_seconds": 34.792592,
+        "command": "${PYTHON} experiments/controlled_discontinuities/evidence/shacl/run_e1_shacl.py"
+      }
+    },
+    {
+      "case_id": "E1-SHACL8-invalid-domain-concept",
+      "family": "shacl",
+      "oracle_should_alarm": true,
+      "oracle_conforms_expected": false,
+      "pyshacl_conforms": false,
+      "validation_result_count": 2,
+      "original_detected": true,
+      "extension_detected": false,
+      "detection_status": "partial_detection",
+      "localization_status": "detected_without_expected_path_component_match",
+      "false_positive": false,
+      "non_detection": false,
+      "partial_detection": true,
+      "expected": {
+        "should_alarm": true,
+        "conforms": false,
+        "expected_path": "SPARQL",
+        "expected_component": "sh:SPARQLConstraintComponent",
+        "shape_family": "domain_concept_scheme_sparql",
+        "reserved_for_after_extension": false
+      },
+      "matched_result_count": 0,
+      "results": [
+        {
+          "result_node": "N01b2414224e348378e3f2a83f978399a",
+          "focus_node": [
+            "http://wfrp.ia/dominio/ciencia-tecnologia#E1InvalidConcept"
+          ],
+          "result_path": [
+            "http://www.w3.org/2004/02/skos/core#inScheme"
+          ],
+          "source_constraint_component": [
+            "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+          ],
+          "result_severity": [
+            "http://www.w3.org/ns/shacl#Violation"
+          ],
+          "source_shape": [
+            "n97a445c47c3b4b529da268719e1393e0b22"
+          ],
+          "message": [
+            "Todo skos:Concept debe pertenecer a un skos:ConceptScheme."
+          ]
+        },
+        {
+          "result_node": "N7124824734064ac48c1c7c8009a5e160",
+          "focus_node": [
+            "http://wfrp.ia/resource/reddit/post/1kkfjn0"
+          ],
+          "result_path": [],
+          "source_constraint_component": [
+            "http://www.w3.org/ns/shacl#SPARQLConstraintComponent"
+          ],
+          "result_severity": [
+            "http://www.w3.org/ns/shacl#Violation"
+          ],
+          "source_shape": [
+            "http://wfrp.ia/ontologia/ia-sentimiento#PostShape"
+          ],
+          "message": [
+            "rr:trataSobre/rr:perteneceDominio debe apuntar a skos:Concept en el ConceptScheme de dominio."
+          ]
+        }
+      ],
+      "artefacts": {
+        "case_dir": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL8-invalid-domain-concept",
+        "data_graph": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL8-invalid-domain-concept/mutated_posts.ttl",
+        "mutation_manifest": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL8-invalid-domain-concept/mutation_manifest.json",
+        "report_ttl": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL8-invalid-domain-concept/report.ttl",
+        "report_text": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL8-invalid-domain-concept/report.txt",
+        "report_extracted": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL8-invalid-domain-concept/report_extracted.json"
+      },
+      "runtime": {
+        "elapsed_seconds": 35.473427,
+        "command": "${PYTHON} experiments/controlled_discontinuities/evidence/shacl/run_e1_shacl.py"
+      }
+    },
+    {
+      "case_id": "E1-SHACL9-duplicate-rdf-identifier",
+      "family": "shacl",
+      "oracle_should_alarm": true,
+      "oracle_conforms_expected": false,
+      "pyshacl_conforms": false,
+      "validation_result_count": 2,
+      "original_detected": true,
+      "extension_detected": false,
+      "detection_status": "partial_detection",
+      "localization_status": "detected_without_expected_path_component_match",
+      "false_positive": false,
+      "non_detection": false,
+      "partial_detection": true,
+      "expected": {
+        "should_alarm": true,
+        "conforms": false,
+        "expected_path": "SPARQL",
+        "expected_component": "sh:SPARQLConstraintComponent",
+        "shape_family": "duplicate_identifier_sparql",
+        "reserved_for_after_extension": false
+      },
+      "matched_result_count": 0,
+      "results": [
+        {
+          "result_node": "N4ae359b5a08d409aa5bf1e7fb06fcb10",
+          "focus_node": [
+            "http://wfrp.ia/resource/reddit/post/1kkfjn0"
+          ],
+          "result_path": [],
+          "source_constraint_component": [
+            "http://www.w3.org/ns/shacl#SPARQLConstraintComponent"
+          ],
+          "result_severity": [
+            "http://www.w3.org/ns/shacl#Violation"
+          ],
+          "source_shape": [
+            "http://wfrp.ia/ontologia/ia-sentimiento#PostShape"
+          ],
+          "message": [
+            "Duplicado de rr:identificador detectado en el grafo/dataset."
+          ]
+        },
+        {
+          "result_node": "N890e8e7274144d5b9e60d0fde18e6a91",
+          "focus_node": [
+            "http://wfrp.ia/resource/reddit/post/e1_duplicate_identifier_fixture"
+          ],
+          "result_path": [],
+          "source_constraint_component": [
+            "http://www.w3.org/ns/shacl#SPARQLConstraintComponent"
+          ],
+          "result_severity": [
+            "http://www.w3.org/ns/shacl#Violation"
+          ],
+          "source_shape": [
+            "http://wfrp.ia/ontologia/ia-sentimiento#PostShape"
+          ],
+          "message": [
+            "Duplicado de rr:identificador detectado en el grafo/dataset."
+          ]
+        }
+      ],
+      "artefacts": {
+        "case_dir": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL9-duplicate-rdf-identifier",
+        "data_graph": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL9-duplicate-rdf-identifier/mutated_posts.ttl",
+        "mutation_manifest": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL9-duplicate-rdf-identifier/mutation_manifest.json",
+        "report_ttl": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL9-duplicate-rdf-identifier/report.ttl",
+        "report_text": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL9-duplicate-rdf-identifier/report.txt",
+        "report_extracted": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL9-duplicate-rdf-identifier/report_extracted.json"
+      },
+      "runtime": {
+        "elapsed_seconds": 35.3717,
+        "command": "${PYTHON} experiments/controlled_discontinuities/evidence/shacl/run_e1_shacl.py"
+      }
+    },
+    {
+      "case_id": "E1-SHACL10-concept-without-scheme",
+      "family": "shacl",
+      "oracle_should_alarm": true,
+      "oracle_conforms_expected": false,
+      "pyshacl_conforms": false,
+      "validation_result_count": 1,
+      "original_detected": true,
+      "extension_detected": false,
+      "detection_status": "partial_detection",
+      "localization_status": "detected_without_expected_path_component_match",
+      "false_positive": false,
+      "non_detection": false,
+      "partial_detection": true,
+      "expected": {
+        "should_alarm": true,
+        "conforms": false,
+        "expected_path": "skos:inScheme",
+        "expected_component": "sh:MinCountConstraintComponent",
+        "shape_family": "concept_scheme_membership",
+        "reserved_for_after_extension": false
+      },
+      "matched_result_count": 0,
+      "results": [
+        {
+          "result_node": "N8fb8334528ab4cccaa72f27977771808",
+          "focus_node": [
+            "http://wfrp.ia/dominio/ciencia-tecnologia#E1ConceptWithoutScheme"
+          ],
+          "result_path": [
+            "http://www.w3.org/2004/02/skos/core#inScheme"
+          ],
+          "source_constraint_component": [
+            "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+          ],
+          "result_severity": [
+            "http://www.w3.org/ns/shacl#Violation"
+          ],
+          "source_shape": [
+            "n0cbc063cdbee40d1b200e0839ce03966b22"
+          ],
+          "message": [
+            "Todo skos:Concept debe pertenecer a un skos:ConceptScheme."
+          ]
+        }
+      ],
+      "artefacts": {
+        "case_dir": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL10-concept-without-scheme",
+        "data_graph": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL10-concept-without-scheme/mutated_posts.ttl",
+        "mutation_manifest": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL10-concept-without-scheme/mutation_manifest.json",
+        "report_ttl": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL10-concept-without-scheme/report.ttl",
+        "report_text": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL10-concept-without-scheme/report.txt",
+        "report_extracted": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL10-concept-without-scheme/report_extracted.json"
+      },
+      "runtime": {
+        "elapsed_seconds": 35.423678,
+        "command": "${PYTHON} experiments/controlled_discontinuities/evidence/shacl/run_e1_shacl.py"
+      }
+    }
+  ],
+  "detected_case_ids": [
+    "E1-C0-pristine-shacl-control"
+  ]
+}

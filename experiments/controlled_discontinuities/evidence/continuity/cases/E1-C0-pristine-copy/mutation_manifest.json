@@ -1,0 +1,23 @@
+{
+  "case_id": "E1-C0-pristine-copy",
+  "case": {
+    "case_id": "E1-C0-pristine-copy",
+    "family": "valid_control",
+    "required": true,
+    "reserved_for_after_extension": false,
+    "mutation": "Copy baseline package to case directory without changing scientific artefacts.",
+    "affected_artefacts": [
+      "all baseline artefacts"
+    ],
+    "oracle_expected": {
+      "should_alarm": false,
+      "expected_status": "passed"
+    },
+    "original_detector_expectation": "All applicable original checks should pass.",
+    "extension_required": false,
+    "acceptance": "No detector reports a discontinuity; counts match baseline."
+  },
+  "mutation_details": {
+    "mutation": "none"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "case_id": "E1-I2-remove-rdf-post-resource",
+  "case": {
+    "case_id": "E1-I2-remove-rdf-post-resource",
+    "family": "identity",
+    "required": true,
+    "reserved_for_after_extension": false,
+    "mutation": "Remove all triples for one rr:Post from posts.ttl while leaving Gold and reports unchanged.",
+    "affected_artefacts": [
+      "results/knowledge_graph/posts.ttl"
+    ],
+    "oracle_expected": {
+      "should_alarm": true,
+      "broken_relation": "Gold record to RDF resource",
+      "localization": [
+        "post_id",
+        "post_iri"
+      ]
+    },
+    "original_detector_expectation": "run_shacl_conformance may still conform because the missing post is no longer a SHACL target; reconcile_artifact_chain may miss the case if it trusts stale materialization_report.json.",
+    "extension_required": "rdf_inventory_against_gold and report_freshness_check",
+    "acceptance": "Extension reports missing RDF resource for the Gold post ID; original miss is preserved if observed."
+  },
+  "mutation_details": {
+    "removed_post_id": "1mug8n6",
+    "removed_triples": 9
+  }
+}

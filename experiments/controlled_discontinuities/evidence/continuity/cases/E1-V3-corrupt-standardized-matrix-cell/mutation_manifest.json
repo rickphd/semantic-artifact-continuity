@@ -1,0 +1,36 @@
+{
+  "case_id": "E1-V3-corrupt-standardized-matrix-cell",
+  "case": {
+    "case_id": "E1-V3-corrupt-standardized-matrix-cell",
+    "family": "value",
+    "required": true,
+    "reserved_for_after_extension": false,
+    "mutation": "Change one value in test_train_standardized_float64.npy while leaving raw values, scaler, and manifest unchanged.",
+    "affected_artefacts": [
+      "results/prepared_model_inputs/test_train_standardized_float64.npy",
+      "results/prepared_model_inputs/train_only_scaler.joblib",
+      "results/prepared_model_inputs/manifest.json"
+    ],
+    "oracle_expected": {
+      "should_alarm": true,
+      "broken_relation": "train-fitted transformation to prepared matrix",
+      "localization": [
+        "matrix_profile",
+        "split",
+        "row_index",
+        "feature"
+      ]
+    },
+    "original_detector_expectation": "Freeze verifier can detect transformed value mismatch if adapted to the case copy; public chain reconciler does not.",
+    "extension_required": "matrix_manifest_rechecker",
+    "acceptance": "Recomputed standardized value/fingerprint differs and cell is localized."
+  },
+  "mutation_details": {
+    "matrix": "test_train_standardized_float64.npy",
+    "row": 0,
+    "feature": "ont_domain_density",
+    "post_id": "1n1plgb",
+    "old": -0.9457374848165924,
+    "new": -0.8207374848165924
+  }
+}

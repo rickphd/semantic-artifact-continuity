@@ -1,0 +1,10 @@
+Validation Report
+Conforms: False
+Results (1):
+Constraint Violation in InConstraintComponent (http://www.w3.org/ns/shacl#InConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:datatype xsd:string ; sh:in ( Literal("es") Literal("en") ) ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:message Literal("Idioma debe ser 'es' o 'en' (xsd:string, cardinalidad 1).", lang=es) ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path rr:idiomaDetectado ]
+	Focus Node: <http://wfrp.ia/resource/reddit/post/1kkfjn0>
+	Value Node: Literal("fr", datatype=xsd:string)
+	Result Path: rr:idiomaDetectado
+	Message: Idioma debe ser 'es' o 'en' (xsd:string, cardinalidad 1).

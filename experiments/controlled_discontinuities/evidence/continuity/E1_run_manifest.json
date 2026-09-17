@@ -1,0 +1,40 @@
+{
+  "status": "executed",
+  "scope": "continuity_controls_and_fault_cases_only",
+  "case_count": 26,
+  "executed_this_invocation": [
+    "E1-I3-add-extra-valid-rdf-post"
+  ],
+  "execution_history_note": "The full 26-case run completed first. E1-I3-add-extra-valid-rdf-post was then rerun alone after correcting an invalid fixture literal. Aggregate files include all 26 case oracle_comparison.json results.",
+  "excluded_shacl_fixture_cases": 10,
+  "python": "${PYTHON}",
+  "freeze_package": "${PUBLIC_REPO}",
+  "campaign_package": "${PUBLIC_REPO}",
+  "template_package": "experiments/controlled_discontinuities/evidence/continuity/_prepared_baseline/package",
+  "script_names": [
+    "audit_traceability.py",
+    "audit_model_inputs.py",
+    "audit_model_input_cells.py",
+    "run_shacl_conformance.py",
+    "reconcile_artifact_chain.py"
+  ],
+  "results": {
+    "total": 26,
+    "controls": 4,
+    "faults": 22,
+    "not_detected": 0,
+    "false_positives": 0
+  },
+  "aggregate_includes_existing_case_results": true,
+  "cases_with_existing_results": 26,
+  "known_case_notes": [
+    {
+      "case_id": "E1-I3-add-extra-valid-rdf-post",
+      "note": "Initial invalid fixture logs were overwritten by the corrected single-case rerun; see cases/E1-I3-add-extra-valid-rdf-post/invalid_fixture_attempt_note.json."
+    },
+    {
+      "case_id": "E1-COL2-unknown-selected-feature",
+      "note": "A valid original alarm was accompanied by a later operational error in audit_model_input_cells.py; see the case original_detector_result.json."
+    }
+  ]
+}

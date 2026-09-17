@@ -1,0 +1,41 @@
+{
+  "case_id": "E1-SR1-stale-traceability-success-report",
+  "case": {
+    "case_id": "E1-SR1-stale-traceability-success-report",
+    "family": "stale_report",
+    "required": true,
+    "reserved_for_after_extension": false,
+    "mutation": "Remove one selected traceability row but keep the previous traceability_audit_report.json with status passed.",
+    "affected_artefacts": [
+      "results/traceability/traceability_map.csv",
+      "results/traceability/traceability_audit_report.json"
+    ],
+    "oracle_expected": {
+      "should_alarm": true,
+      "broken_relation": "report freshness against mutated traceability input",
+      "localization": [
+        "report_path",
+        "input_hash",
+        "post_id",
+        "feature"
+      ]
+    },
+    "original_detector_expectation": "reconcile_artifact_chain may be fooled if it trusts stale report counters; audit_model_input_cells should detect the underlying trace fault if run directly.",
+    "extension_required": "report_freshness_check and enforced producer recomputation",
+    "acceptance": "Harness fails the stale report even before accepting chain reconciliation output."
+  },
+  "mutation_details": {
+    "removed_trace": {
+      "post_id": "1mug8n6",
+      "split": "train",
+      "label": "2",
+      "post_iri": "http://wfrp.ia/resource/reddit/post/1mug8n6",
+      "feature": "ont_domain_density",
+      "module": "global_counts",
+      "concept_uri": "",
+      "value": "0.0416666666666666",
+      "used_downstream": ""
+    },
+    "rows_after": 9453
+  }
+}

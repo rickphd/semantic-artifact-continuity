@@ -1,0 +1,1579 @@
+[
+  {
+    "case_id": "D22-001",
+    "item_id": "R001",
+    "concept": "Etica",
+    "dimension": "presence",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "D22-002",
+    "item_id": "R001",
+    "concept": "Innovacion",
+    "dimension": "presence",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "D22-003",
+    "item_id": "R002",
+    "concept": "Innovacion",
+    "dimension": "presence",
+    "adjudicated_presence": "uncertain",
+    "adjudicated_polarity": "insufficient",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    },
+    "B": {
+      "presence": "present",
+      "polarity": "positive"
+    }
+  },
+  {
+    "case_id": "D22-004",
+    "item_id": "R002",
+    "concept": "Tecnologia",
+    "dimension": "presence",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "positive",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "present",
+      "polarity": "positive"
+    }
+  },
+  {
+    "case_id": "D22-005",
+    "item_id": "R007",
+    "concept": "InteligenciaArtificial",
+    "dimension": "presence",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "present",
+      "polarity": "neutral"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "D22-006",
+    "item_id": "R010",
+    "concept": "Automatizacion",
+    "dimension": "presence",
+    "adjudicated_presence": "uncertain",
+    "adjudicated_polarity": "insufficient",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "D22-007",
+    "item_id": "R016",
+    "concept": "Automatizacion",
+    "dimension": "presence",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "D22-008",
+    "item_id": "R023",
+    "concept": "Innovacion",
+    "dimension": "polarity",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "positive",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "present",
+      "polarity": "neutral"
+    },
+    "B": {
+      "presence": "present",
+      "polarity": "positive"
+    }
+  },
+  {
+    "case_id": "D22-009",
+    "item_id": "R024",
+    "concept": "Tecnologia",
+    "dimension": "presence",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "positive",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "present",
+      "polarity": "positive"
+    }
+  },
+  {
+    "case_id": "D22-010",
+    "item_id": "R029",
+    "concept": "Algoritmo",
+    "dimension": "presence",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "positive",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "present",
+      "polarity": "positive"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "D22-011",
+    "item_id": "R029",
+    "concept": "Etica",
+    "dimension": "presence",
+    "adjudicated_presence": "uncertain",
+    "adjudicated_polarity": "insufficient",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "D22-012",
+    "item_id": "R030",
+    "concept": "Futuro",
+    "dimension": "polarity",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "negative",
+    "review_status": "closed",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "present",
+      "polarity": "negative"
+    },
+    "B": {
+      "presence": "present",
+      "polarity": "insufficient"
+    },
+    "assistant_recommendation_rejected": {
+      "presence": "present",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "D22-013",
+    "item_id": "R034",
+    "concept": "Etica",
+    "dimension": "presence",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "assistant_recommendation_rejected": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "D22-014",
+    "item_id": "R034",
+    "concept": "Tecnologia",
+    "dimension": "polarity",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "neutral",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "present",
+      "polarity": "neutral"
+    },
+    "B": {
+      "presence": "present",
+      "polarity": "negative"
+    }
+  },
+  {
+    "case_id": "D22-015",
+    "item_id": "R036",
+    "concept": "Innovacion",
+    "dimension": "presence",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "present",
+      "polarity": "neutral"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "assistant_recommendation_rejected": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "D22-016",
+    "item_id": "R036",
+    "concept": "InteligenciaArtificial",
+    "dimension": "presence",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "D22-017",
+    "item_id": "R037",
+    "concept": "Etica",
+    "dimension": "polarity",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "positive",
+    "review_status": "closed",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "present",
+      "polarity": "mixed"
+    },
+    "B": {
+      "presence": "present",
+      "polarity": "negative"
+    },
+    "assistant_recommendation_rejected": {
+      "presence": "present",
+      "polarity": "negative"
+    }
+  },
+  {
+    "case_id": "D22-018",
+    "item_id": "R037",
+    "concept": "Tecnologia",
+    "dimension": "polarity",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "neutral",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "present",
+      "polarity": "neutral"
+    },
+    "B": {
+      "presence": "present",
+      "polarity": "negative"
+    }
+  },
+  {
+    "case_id": "D22-019",
+    "item_id": "R038",
+    "concept": "Innovacion",
+    "dimension": "presence",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "D22-020",
+    "item_id": "R039",
+    "concept": "Tecnologia",
+    "dimension": "presence",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "D22-021",
+    "item_id": "R040",
+    "concept": "Algoritmo",
+    "dimension": "polarity",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "negative",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "present",
+      "polarity": "neutral"
+    },
+    "B": {
+      "presence": "present",
+      "polarity": "negative"
+    }
+  },
+  {
+    "case_id": "D22-022",
+    "item_id": "R042",
+    "concept": "Etica",
+    "dimension": "presence",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "D22-023",
+    "item_id": "R051",
+    "concept": "Automatizacion",
+    "dimension": "presence",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "neutral",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    },
+    "B": {
+      "presence": "present",
+      "polarity": "neutral"
+    }
+  },
+  {
+    "case_id": "D22-024",
+    "item_id": "R058",
+    "concept": "Automatizacion",
+    "dimension": "presence",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "positive",
+    "review_status": "closed",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "D22-025",
+    "item_id": "R058",
+    "concept": "Innovacion",
+    "dimension": "presence",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "positive",
+    "review_status": "closed",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "present",
+      "polarity": "positive"
+    },
+    "assistant_recommendation_rejected": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "D22-026",
+    "item_id": "R060",
+    "concept": "Innovacion",
+    "dimension": "presence",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "neutral",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    },
+    "B": {
+      "presence": "present",
+      "polarity": "neutral"
+    }
+  },
+  {
+    "case_id": "D22-027",
+    "item_id": "R060",
+    "concept": "InteligenciaArtificial",
+    "dimension": "polarity",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "positive",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "present",
+      "polarity": "mixed"
+    },
+    "B": {
+      "presence": "present",
+      "polarity": "neutral"
+    }
+  },
+  {
+    "case_id": "D22-028",
+    "item_id": "R069",
+    "concept": "Innovacion",
+    "dimension": "presence",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    }
+  },
+  {
+    "case_id": "D22-029",
+    "item_id": "R070",
+    "concept": "Etica",
+    "dimension": "presence",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "negative",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "present",
+      "polarity": "negative"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "D22-030",
+    "item_id": "R072",
+    "concept": "Etica",
+    "dimension": "presence",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "D22-031",
+    "item_id": "R073",
+    "concept": "InteligenciaArtificial",
+    "dimension": "polarity",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "mixed",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "present",
+      "polarity": "positive"
+    },
+    "B": {
+      "presence": "present",
+      "polarity": "mixed"
+    }
+  },
+  {
+    "case_id": "D22-032",
+    "item_id": "R076",
+    "concept": "Automatizacion",
+    "dimension": "presence",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "neutral",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "D22-033",
+    "item_id": "R077",
+    "concept": "Automatizacion",
+    "dimension": "presence",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "present",
+      "polarity": "positive"
+    },
+    "assistant_recommendation_rejected": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "D22-034",
+    "item_id": "R083",
+    "concept": "Algoritmo",
+    "dimension": "polarity",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "positive",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "present",
+      "polarity": "positive"
+    },
+    "B": {
+      "presence": "present",
+      "polarity": "neutral"
+    }
+  },
+  {
+    "case_id": "D22-035",
+    "item_id": "R083",
+    "concept": "Automatizacion",
+    "dimension": "polarity",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "positive",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "present",
+      "polarity": "positive"
+    },
+    "B": {
+      "presence": "present",
+      "polarity": "neutral"
+    }
+  },
+  {
+    "case_id": "D22-036",
+    "item_id": "R083",
+    "concept": "Innovacion",
+    "dimension": "presence",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "D22-037",
+    "item_id": "R084",
+    "concept": "Datos",
+    "dimension": "polarity",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "positive",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "present",
+      "polarity": "neutral"
+    },
+    "B": {
+      "presence": "present",
+      "polarity": "positive"
+    }
+  },
+  {
+    "case_id": "D22-038",
+    "item_id": "R084",
+    "concept": "InteligenciaArtificial",
+    "dimension": "polarity",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "neutral",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "present",
+      "polarity": "neutral"
+    },
+    "B": {
+      "presence": "present",
+      "polarity": "negative"
+    }
+  },
+  {
+    "case_id": "D22-039",
+    "item_id": "R086",
+    "concept": "AprendizajeAutomatico",
+    "dimension": "presence",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    }
+  },
+  {
+    "case_id": "D22-040",
+    "item_id": "R088",
+    "concept": "Futuro",
+    "dimension": "presence",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "positive",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "present",
+      "polarity": "positive"
+    }
+  },
+  {
+    "case_id": "D22-041",
+    "item_id": "R093",
+    "concept": "Futuro",
+    "dimension": "presence",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "positive",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "present",
+      "polarity": "positive"
+    },
+    "B": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    }
+  },
+  {
+    "case_id": "D22-042",
+    "item_id": "R093",
+    "concept": "Tecnologia",
+    "dimension": "presence",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "present",
+      "polarity": "positive"
+    },
+    "B": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    }
+  },
+  {
+    "case_id": "D22-043",
+    "item_id": "R099",
+    "concept": "Algoritmo",
+    "dimension": "presence",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "assistant_recommendation_rejected": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "D22-044",
+    "item_id": "R101",
+    "concept": "Etica",
+    "dimension": "presence",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "D22-045",
+    "item_id": "R106",
+    "concept": "Algoritmo",
+    "dimension": "presence",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "assistant_recommendation_rejected": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "D22-046",
+    "item_id": "R108",
+    "concept": "Tecnologia",
+    "dimension": "presence",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "negative",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "present",
+      "polarity": "negative"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "D22-047",
+    "item_id": "R109",
+    "concept": "Algoritmo",
+    "dimension": "presence",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "D22-048",
+    "item_id": "R110",
+    "concept": "Etica",
+    "dimension": "presence",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "D22-049",
+    "item_id": "R112",
+    "concept": "Futuro",
+    "dimension": "presence",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "mixed",
+    "review_status": "closed",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    },
+    "assistant_recommendation_rejected": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "D22-050",
+    "item_id": "R112",
+    "concept": "InteligenciaArtificial",
+    "dimension": "polarity",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "mixed",
+    "review_status": "closed",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "present",
+      "polarity": "mixed"
+    },
+    "B": {
+      "presence": "present",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "D22-051",
+    "item_id": "R113",
+    "concept": "Automatizacion",
+    "dimension": "polarity",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "mixed",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "present",
+      "polarity": "neutral"
+    },
+    "B": {
+      "presence": "present",
+      "polarity": "mixed"
+    }
+  },
+  {
+    "case_id": "D22-052",
+    "item_id": "R113",
+    "concept": "Innovacion",
+    "dimension": "presence",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "present",
+      "polarity": "neutral"
+    },
+    "B": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    }
+  },
+  {
+    "case_id": "D22-053",
+    "item_id": "R116",
+    "concept": "Etica",
+    "dimension": "presence",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    }
+  },
+  {
+    "case_id": "D22-054",
+    "item_id": "R116",
+    "concept": "Futuro",
+    "dimension": "polarity",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "mixed",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "present",
+      "polarity": "negative"
+    },
+    "B": {
+      "presence": "present",
+      "polarity": "mixed"
+    }
+  },
+  {
+    "case_id": "D22-055",
+    "item_id": "R116",
+    "concept": "InteligenciaArtificial",
+    "dimension": "polarity",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "mixed",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "present",
+      "polarity": "negative"
+    },
+    "B": {
+      "presence": "present",
+      "polarity": "mixed"
+    }
+  },
+  {
+    "case_id": "D22-056",
+    "item_id": "R116",
+    "concept": "Tecnologia",
+    "dimension": "polarity",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "mixed",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "present",
+      "polarity": "negative"
+    },
+    "B": {
+      "presence": "present",
+      "polarity": "neutral"
+    }
+  },
+  {
+    "case_id": "D22-057",
+    "item_id": "R118",
+    "concept": "Tecnologia",
+    "dimension": "presence",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "absent",
+      "polarity": "not_applicable"
+    }
+  },
+  {
+    "case_id": "S22-001",
+    "item_id": "R016",
+    "concept": "Etica",
+    "status": "review_required_not_automatically_error",
+    "adjudicated_presence": "uncertain",
+    "adjudicated_polarity": "insufficient",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "S22-002",
+    "item_id": "R019",
+    "concept": "AprendizajeAutomatico",
+    "status": "review_required_not_automatically_error",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "S22-003",
+    "item_id": "R022",
+    "concept": "Etica",
+    "status": "review_required_not_automatically_error",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "S22-004",
+    "item_id": "R031",
+    "concept": "Algoritmo",
+    "status": "review_required_not_automatically_error",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "assistant_recommendation_rejected": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "S22-005",
+    "item_id": "R041",
+    "concept": "InteligenciaArtificial",
+    "status": "review_required_not_automatically_error",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "S22-006",
+    "item_id": "R050",
+    "concept": "Innovacion",
+    "status": "review_required_not_automatically_error",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "S22-007",
+    "item_id": "R065",
+    "concept": "Automatizacion",
+    "status": "review_required_not_automatically_error",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "S22-008",
+    "item_id": "R073",
+    "concept": "Etica",
+    "status": "review_required_not_automatically_error",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "assistant_recommendation_rejected": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "S22-009",
+    "item_id": "R075",
+    "concept": "Etica",
+    "status": "review_required_not_automatically_error",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "S22-010",
+    "item_id": "R080",
+    "concept": "Etica",
+    "status": "review_required_not_automatically_error",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "negative",
+    "review_status": "closed_after_human_clarification",
+    "rationale_origin": "assistant clarification explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "assistant_recommendation_rejected": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "S22-011",
+    "item_id": "R084",
+    "concept": "Etica",
+    "status": "review_required_not_automatically_error",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "positive",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "S22-012",
+    "item_id": "R089",
+    "concept": "Algoritmo",
+    "status": "review_required_not_automatically_error",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "S22-013",
+    "item_id": "R092",
+    "concept": "Automatizacion",
+    "status": "review_required_not_automatically_error",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "S22-014",
+    "item_id": "R094",
+    "concept": "InteligenciaArtificial",
+    "status": "review_required_not_automatically_error",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "S22-015",
+    "item_id": "R096",
+    "concept": "Innovacion",
+    "status": "review_required_not_automatically_error",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "S22-016",
+    "item_id": "R104",
+    "concept": "InteligenciaArtificial",
+    "status": "review_required_not_automatically_error",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "S22-017",
+    "item_id": "R106",
+    "concept": "Tecnologia",
+    "status": "review_required_not_automatically_error",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "negative",
+    "review_status": "closed",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "assistant_recommendation_rejected": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "S22-018",
+    "item_id": "R107",
+    "concept": "Tecnologia",
+    "status": "review_required_not_automatically_error",
+    "adjudicated_presence": "present",
+    "adjudicated_polarity": "positive",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "S22-019",
+    "item_id": "R120",
+    "concept": "Algoritmo",
+    "status": "review_required_not_automatically_error",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  },
+  {
+    "case_id": "S22-020",
+    "item_id": "R120",
+    "concept": "Etica",
+    "status": "review_required_not_automatically_error",
+    "adjudicated_presence": "absent",
+    "adjudicated_polarity": "not_applicable",
+    "review_status": "closed",
+    "rationale_origin": "assistant recommendation explicitly accepted by user",
+    "adjudication_mode": "human adjudication assisted by assistant recommendation, original labels, text and guide; not independent annotation",
+    "adjudicator_role": "author; AI-assisted adjudication, not independent annotation",
+    "A": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    },
+    "B": {
+      "presence": "uncertain",
+      "polarity": "insufficient"
+    }
+  }
+]

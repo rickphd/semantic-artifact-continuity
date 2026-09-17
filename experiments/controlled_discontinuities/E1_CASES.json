@@ -1,0 +1,976 @@
+{
+  "schema_version": "1.0",
+  "created_at": "2026-09-15",
+  "status": "protocol_only_not_executed",
+  "experiment": "E1_controlled_discontinuities_and_shacl",
+  "scope": {
+    "purpose": "Inject controlled discontinuities into isolated copies of the verified F1+F2+F3 artefact chain and measure detection/localization behavior.",
+    "no_training": true,
+    "no_tex_edits": true,
+    "no_mutation_of_freeze_or_campaign_sources": true,
+    "claims_not_supported": [
+      "semantic correctness of ontology activations",
+      "truth of source social-media claims",
+      "detection of every possible discontinuity",
+      "general downstream predictive advantage"
+    ]
+  },
+  "baseline": {
+    "freeze_package": "${PUBLIC_REPO}",
+    "campaign_package_for_predictions": "${PUBLIC_REPO}",
+    "pipeline_version": "information_f123_20260914",
+    "records": 1614,
+    "split_sizes": {
+      "train": 968,
+      "val": 323,
+      "test": 323
+    },
+    "semantic_variable_count": 37,
+    "selected_feature_count": 6,
+    "selected_features": [
+      "ont_domain_density",
+      "ont_total_negativo_mentions",
+      "ont_InteligenciaArtificial_Negativo",
+      "ont_Innovacion_Neutro",
+      "ont_Etica_Negativo",
+      "ont_Tecnologia_Neutro"
+    ],
+    "ordered_selected_features_sha256": "02804b81a4bc0e255e4c42492103505dc799597569205fbfadc99ecbeaf925c6",
+    "gold_sha256": "8730955465e71bd9782d6f9bd42cc240f0dc80c6af7432db1f57299010bbacce",
+    "lexicon_entries": 42,
+    "rdf_posts": 1614,
+    "rdf_triples": 15616,
+    "nonzero_ontology_values": 9329,
+    "selected_nonzero_trace_cells": 1789,
+    "prepared_selected_input_cells": 9684,
+    "shacl_baseline": {
+      "conforms": true,
+      "validation_result_count": 0
+    },
+    "historical_single_fixture": {
+      "conforms": false,
+      "validation_result_count": 6,
+      "interpretation": "One malformed fixture, not six independent SHACL tests."
+    }
+  },
+  "detectors": {
+    "original": [
+      {
+        "id": "materialize_reddit_rdf",
+        "path": "${PUBLIC_REPO}/scripts/experiments/materialize_reddit_rdf.py",
+        "detects": [
+          "RDF post count when regenerated from Gold",
+          "traceability map regeneration from nonzero ontology values",
+          "post IRI construction from Gold IDs"
+        ],
+        "limits": [
+          "does not compare an externally mutated RDF graph to Gold unless rerun or paired with an inventory check",
+          "does not validate semantic correctness of activations"
+        ]
+      },
+      {
+        "id": "audit_traceability",
+        "path": "${PUBLIC_REPO}/scripts/experiments/audit_traceability.py",
+        "detects": [
+          "Gold ID set equals traceability post ID set",
+          "stable post IRIs are present in traceability",
+          "selected nonzero activation count equals traced selected activation count"
+        ],
+        "limits": [
+          "does not detect every duplicate trace key",
+          "does not compare every ontology value cell",
+          "does not validate optional RDF triples"
+        ]
+      },
+      {
+        "id": "run_shacl_conformance",
+        "path": "${PUBLIC_REPO}/scripts/experiments/run_shacl_conformance.py",
+        "detects": [
+          "SHACL conformance against declared shapes",
+          "validation result count in report graph"
+        ],
+        "limits": [
+          "SHACL conformance is structural conformance, not semantic truth",
+          "optional or undeclared constraints are not detected",
+          "current stress fixture bundles multiple violations in one graph"
+        ]
+      },
+      {
+        "id": "audit_model_inputs",
+        "path": "${PUBLIC_REPO}/scripts/experiments/audit_model_inputs.py",
+        "detects": [
+          "selected feature existence in Gold",
+          "selected feature presence in traceability",
+          "train-only selection and lexicon scope metadata"
+        ],
+        "limits": [
+          "does not reconcile every selected input cell value",
+          "does not inspect prediction assignments"
+        ]
+      },
+      {
+        "id": "audit_model_input_cells",
+        "path": "${PUBLIC_REPO}/scripts/experiments/audit_model_input_cells.py",
+        "detects": [
+          "duplicate IDs in split partitions",
+          "missing partition IDs in Gold",
+          "selected cell value, split, and post IRI mismatches",
+          "duplicate trace keys",
+          "feature-order mismatches in metric files",
+          "prediction order mismatches for enriched runs",
+          "dataset hash mismatches in metric files"
+        ],
+        "limits": [
+          "depends on campaign metric/prediction availability for run linkage",
+          "older public report text may refer to seven variables and must not be reused as F1+F2+F3 evidence"
+        ]
+      },
+      {
+        "id": "reconcile_artifact_chain",
+        "path": "${PUBLIC_REPO}/scripts/experiments/reconcile_artifact_chain.py",
+        "detects": [
+          "record-to-RDF report count mismatches",
+          "selected activation trace report mismatches",
+          "selected input cell report mismatches",
+          "SHACL report baseline nonconformance",
+          "prediction duplicate IDs, missing IDs, split mismatch, and y_true mismatch"
+        ],
+        "limits": [
+          "consumes prior reports and can be fooled by stale success reports unless producers are rerun",
+          "does not prove runtime model consumption unless metrics contain semantic_input_provenance"
+        ]
+      }
+    ],
+    "extension_checks_required": [
+      {
+        "id": "rdf_inventory_against_gold",
+        "purpose": "Parse mutated RDF and compare rr:Post/rr:identificador set exactly against Gold IDs."
+      },
+      {
+        "id": "report_freshness_check",
+        "purpose": "Require every report to cite input hashes that match the mutated artefacts used in the current case."
+      },
+      {
+        "id": "matrix_manifest_rechecker",
+        "purpose": "Recompute selected input matrix fingerprints and compare row ID order, feature order, dtype, shape, and values to manifest."
+      },
+      {
+        "id": "prediction_output_fingerprint_check",
+        "purpose": "Hash ordered prediction assignments per model/condition/seed when the claim concerns unchanged output assignment."
+      },
+      {
+        "id": "shacl_fixture_classifier",
+        "purpose": "Extract focus node, result path, source constraint component, severity, and message family from each SHACL report."
+      }
+    ]
+  },
+  "case_defaults": {
+    "execution_mode": "future_preflight_then_run",
+    "mutation_scope": "isolated_copy_only",
+    "detector_order": [
+      "original_detector_first",
+      "extension_detector_second",
+      "oracle_comparison_last"
+    ],
+    "required_outputs_per_case": [
+      "mutation_manifest.json",
+      "before_hashes.json",
+      "after_hashes.json",
+      "original_detector_result.json",
+      "extension_detector_result.json_if_applicable",
+      "oracle_comparison.json",
+      "logs/stdout.txt",
+      "logs/stderr.txt"
+    ],
+    "localization_units": [
+      "post_id",
+      "feature",
+      "split",
+      "matrix_profile",
+      "prediction_file",
+      "rdf_focus_node",
+      "rdf_path",
+      "report_path"
+    ]
+  },
+  "controls": [
+    {
+      "case_id": "E1-C0-pristine-copy",
+      "family": "valid_control",
+      "required": true,
+      "reserved_for_after_extension": false,
+      "mutation": "Copy baseline package to case directory without changing scientific artefacts.",
+      "affected_artefacts": [
+        "all baseline artefacts"
+      ],
+      "oracle_expected": {
+        "should_alarm": false,
+        "expected_status": "passed"
+      },
+      "original_detector_expectation": "All applicable original checks should pass.",
+      "extension_required": false,
+      "acceptance": "No detector reports a discontinuity; counts match baseline."
+    },
+    {
+      "case_id": "E1-C1-trace-row-permutation",
+      "family": "valid_control",
+      "required": true,
+      "reserved_for_after_extension": false,
+      "mutation": "Permute rows of results/traceability/traceability_map.csv without changing any row content.",
+      "affected_artefacts": [
+        "results/traceability/traceability_map.csv"
+      ],
+      "oracle_expected": {
+        "should_alarm": false,
+        "expected_status": "passed"
+      },
+      "original_detector_expectation": "audit_traceability and audit_model_input_cells should pass because trace rows are reconciled by post_id and feature.",
+      "extension_required": false,
+      "acceptance": "No false positive; row order is not treated as a scientific identity relation for traceability rows."
+    },
+    {
+      "case_id": "E1-C2-rdf-triple-order-reserialization",
+      "family": "valid_control",
+      "required": true,
+      "reserved_for_after_extension": true,
+      "mutation": "Reserialize posts.ttl with changed triple order but identical RDF graph.",
+      "affected_artefacts": [
+        "results/knowledge_graph/posts.ttl"
+      ],
+      "oracle_expected": {
+        "should_alarm": false,
+        "expected_status": "passed"
+      },
+      "original_detector_expectation": "run_shacl_conformance should pass; byte-hash-only checks may differ and must not be used as semantic failure evidence.",
+      "extension_required": "RDF graph isomorphism or inventory check should confirm logical equivalence.",
+      "acceptance": "No continuity exception after graph-level comparison; byte hash difference is reported only as serialization difference."
+    },
+    {
+      "case_id": "E1-C3-regenerated-reports-unchanged-inputs",
+      "family": "valid_control",
+      "required": true,
+      "reserved_for_after_extension": false,
+      "mutation": "Regenerate reports from unchanged case copy.",
+      "affected_artefacts": [
+        "results/knowledge_graph/materialization_report.json",
+        "results/traceability/traceability_audit_report.json",
+        "results/validation/shacl/baseline_report.json"
+      ],
+      "oracle_expected": {
+        "should_alarm": false,
+        "expected_status": "passed"
+      },
+      "original_detector_expectation": "Original producers should reproduce pass status and core counts.",
+      "extension_required": false,
+      "acceptance": "Report timestamps or serialization details may change; scientific counts and status do not."
+    }
+  ],
+  "fault_cases": [
+    {
+      "case_id": "E1-I1-remove-selected-trace-row",
+      "family": "identity",
+      "required": true,
+      "reserved_for_after_extension": false,
+      "mutation": "Remove one traceability row for a nonzero selected feature.",
+      "affected_artefacts": [
+        "results/traceability/traceability_map.csv"
+      ],
+      "oracle_expected": {
+        "should_alarm": true,
+        "broken_relation": "selected semantic activation to source record",
+        "localization": [
+          "post_id",
+          "feature"
+        ]
+      },
+      "original_detector_expectation": "audit_traceability should reduce traced_selected_activations; audit_model_input_cells should report missing_nonzero_trace_cells.",
+      "extension_required": false,
+      "acceptance": "Detector reports the missing post_id-feature relation and status is attention_required or equivalent failure."
+    },
+    {
+      "case_id": "E1-I2-remove-rdf-post-resource",
+      "family": "identity",
+      "required": true,
+      "reserved_for_after_extension": false,
+      "mutation": "Remove all triples for one rr:Post from posts.ttl while leaving Gold and reports unchanged.",
+      "affected_artefacts": [
+        "results/knowledge_graph/posts.ttl"
+      ],
+      "oracle_expected": {
+        "should_alarm": true,
+        "broken_relation": "Gold record to RDF resource",
+        "localization": [
+          "post_id",
+          "post_iri"
+        ]
+      },
+      "original_detector_expectation": "run_shacl_conformance may still conform because the missing post is no longer a SHACL target; reconcile_artifact_chain may miss the case if it trusts stale materialization_report.json.",
+      "extension_required": "rdf_inventory_against_gold and report_freshness_check",
+      "acceptance": "Extension reports missing RDF resource for the Gold post ID; original miss is preserved if observed."
+    },
+    {
+      "case_id": "E1-I3-add-extra-valid-rdf-post",
+      "family": "identity",
+      "required": true,
+      "reserved_for_after_extension": true,
+      "mutation": "Add one extra SHACL-conformant rr:Post with an identifier absent from Gold.",
+      "affected_artefacts": [
+        "results/knowledge_graph/posts.ttl"
+      ],
+      "oracle_expected": {
+        "should_alarm": true,
+        "broken_relation": "RDF resource set exceeds Gold record set",
+        "localization": [
+          "post_id",
+          "post_iri"
+        ]
+      },
+      "original_detector_expectation": "SHACL should pass if the extra post satisfies shapes; existing reconciliation may miss stale report mismatch.",
+      "extension_required": "rdf_inventory_against_gold",
+      "acceptance": "Extension identifies extra RDF post ID without calling it a SHACL violation."
+    },
+    {
+      "case_id": "E1-U1-duplicate-trace-key",
+      "family": "uniqueness",
+      "required": true,
+      "reserved_for_after_extension": false,
+      "mutation": "Duplicate one traceability row with the same post_id and feature.",
+      "affected_artefacts": [
+        "results/traceability/traceability_map.csv"
+      ],
+      "oracle_expected": {
+        "should_alarm": true,
+        "broken_relation": "unique post-feature trace key",
+        "localization": [
+          "post_id",
+          "feature",
+          "trace_row_number"
+        ]
+      },
+      "original_detector_expectation": "audit_model_input_cells should report duplicate_trace_keys.",
+      "extension_required": false,
+      "acceptance": "Duplicate key count is positive and duplicated key is listed."
+    },
+    {
+      "case_id": "E1-U2-duplicate-split-id",
+      "family": "uniqueness",
+      "required": true,
+      "reserved_for_after_extension": false,
+      "mutation": "Duplicate one ID inside GEN_split_gld_reddit_ids_v02.json and remove another ID from the same split to preserve split length.",
+      "affected_artefacts": [
+        "data/gold/GEN_split_gld_reddit_ids_v02.json"
+      ],
+      "oracle_expected": {
+        "should_alarm": true,
+        "broken_relation": "unique partition membership",
+        "localization": [
+          "split",
+          "post_id"
+        ]
+      },
+      "original_detector_expectation": "audit_model_input_cells load_parts should raise a duplicate identifier error.",
+      "extension_required": false,
+      "acceptance": "The duplicate ID and missing displaced ID are reported."
+    },
+    {
+      "case_id": "E1-U3-duplicate-prediction-id",
+      "family": "uniqueness",
+      "required": true,
+      "reserved_for_after_extension": false,
+      "mutation": "Duplicate one prediction row ID and remove another test ID in one prediction file.",
+      "affected_artefacts": [
+        "results/anova_revalidation/predictions/LR_ENR_seed42_test_predictions_v2.csv"
+      ],
+      "oracle_expected": {
+        "should_alarm": true,
+        "broken_relation": "unique test prediction assignment",
+        "localization": [
+          "prediction_file",
+          "post_id"
+        ]
+      },
+      "original_detector_expectation": "reconcile_artifact_chain should report duplicated prediction ID and ID-set mismatch.",
+      "extension_required": false,
+      "acceptance": "Prediction duplicate count is positive and the missing test ID is reported."
+    },
+    {
+      "case_id": "E1-R1-swap-selected-matrix-rows",
+      "family": "row_alignment",
+      "required": true,
+      "reserved_for_after_extension": true,
+      "mutation": "Swap two rows in test_raw_float64.npy while leaving test_ids.json and manifest.json unchanged.",
+      "affected_artefacts": [
+        "results/prepared_model_inputs/test_raw_float64.npy",
+        "results/prepared_model_inputs/test_ids.json",
+        "results/prepared_model_inputs/manifest.json"
+      ],
+      "oracle_expected": {
+        "should_alarm": true,
+        "broken_relation": "ordered post IDs to matrix rows",
+        "localization": [
+          "matrix_profile",
+          "split",
+          "row_index",
+          "post_id"
+        ]
+      },
+      "original_detector_expectation": "No public original script in the preflight set is guaranteed to recheck prepared .npy files against manifest unless the freeze verifier or a new manifest rechecker is invoked.",
+      "extension_required": "matrix_manifest_rechecker",
+      "acceptance": "Recomputed matrix_sha256 differs and row-level comparison identifies the two affected IDs."
+    },
+    {
+      "case_id": "E1-R2-reorder-predictions-against-contract",
+      "family": "row_alignment",
+      "required": true,
+      "reserved_for_after_extension": false,
+      "mutation": "Permute rows in one enriched prediction CSV while preserving IDs and y_true values.",
+      "affected_artefacts": [
+        "results/anova_revalidation/predictions/LR_ENR_seed42_test_predictions_v2.csv"
+      ],
+      "oracle_expected": {
+        "should_alarm": true,
+        "broken_relation": "test prediction order to declared test order for enriched run linkage",
+        "localization": [
+          "prediction_file",
+          "row_index"
+        ]
+      },
+      "original_detector_expectation": "audit_model_input_cells should report prediction_order_mismatches for enriched run linkage; reconcile_artifact_chain may pass set-based ID checks.",
+      "extension_required": false,
+      "acceptance": "Order-sensitive run-linkage detector flags the mismatch; set-based pass is recorded as partial detection."
+    },
+    {
+      "case_id": "E1-COL1-swap-matrix-columns",
+      "family": "column_alignment",
+      "required": true,
+      "reserved_for_after_extension": false,
+      "mutation": "Swap two columns in test_raw_float64.npy while leaving selected feature order unchanged.",
+      "affected_artefacts": [
+        "results/prepared_model_inputs/test_raw_float64.npy",
+        "results/prepared_model_inputs/manifest.json"
+      ],
+      "oracle_expected": {
+        "should_alarm": true,
+        "broken_relation": "ordered selected features to matrix columns",
+        "localization": [
+          "matrix_profile",
+          "feature",
+          "column_index"
+        ]
+      },
+      "original_detector_expectation": "Metric feature-order checks detect only metric metadata changes, not silent .npy column swaps.",
+      "extension_required": "matrix_manifest_rechecker",
+      "acceptance": "Recomputed matrix_sha256 differs and column-level comparison identifies swapped features."
+    },
+    {
+      "case_id": "E1-COL2-unknown-selected-feature",
+      "family": "column_alignment",
+      "required": true,
+      "reserved_for_after_extension": false,
+      "mutation": "Replace one selected feature name in ENR_selected_ont_features_anova_train_only.json with an unknown ont_* feature.",
+      "affected_artefacts": [
+        "results/feature_selection/ENR_selected_ont_features_anova_train_only.json"
+      ],
+      "oracle_expected": {
+        "should_alarm": true,
+        "broken_relation": "selected feature exists in Gold and traceability",
+        "localization": [
+          "feature"
+        ]
+      },
+      "original_detector_expectation": "audit_model_inputs should list the unknown feature as missing or untraced.",
+      "extension_required": false,
+      "acceptance": "Missing/untraced feature list includes the injected feature."
+    },
+    {
+      "case_id": "E1-V1-corrupt-selected-gold-cell",
+      "family": "value",
+      "required": true,
+      "reserved_for_after_extension": false,
+      "mutation": "Change one nonzero selected semantic value in Gold while leaving traceability_map.csv unchanged.",
+      "affected_artefacts": [
+        "data/gold/gold_enriched_ontology.parquet",
+        "results/traceability/traceability_map.csv"
+      ],
+      "oracle_expected": {
+        "should_alarm": true,
+        "broken_relation": "Gold selected value to trace value",
+        "localization": [
+          "post_id",
+          "feature"
+        ]
+      },
+      "original_detector_expectation": "audit_model_input_cells should report value_mismatches.",
+      "extension_required": false,
+      "acceptance": "Value mismatch count is positive and affected cell is listed."
+    },
+    {
+      "case_id": "E1-V2-corrupt-trace-value",
+      "family": "value",
+      "required": true,
+      "reserved_for_after_extension": true,
+      "mutation": "Change one traceability value for a nonzero selected feature while leaving Gold unchanged.",
+      "affected_artefacts": [
+        "results/traceability/traceability_map.csv"
+      ],
+      "oracle_expected": {
+        "should_alarm": true,
+        "broken_relation": "trace value to Gold value",
+        "localization": [
+          "post_id",
+          "feature",
+          "trace_row_number"
+        ]
+      },
+      "original_detector_expectation": "audit_model_input_cells should report value_mismatches.",
+      "extension_required": false,
+      "acceptance": "Trace mismatch is localized to the mutated post_id-feature pair."
+    },
+    {
+      "case_id": "E1-V3-corrupt-standardized-matrix-cell",
+      "family": "value",
+      "required": true,
+      "reserved_for_after_extension": false,
+      "mutation": "Change one value in test_train_standardized_float64.npy while leaving raw values, scaler, and manifest unchanged.",
+      "affected_artefacts": [
+        "results/prepared_model_inputs/test_train_standardized_float64.npy",
+        "results/prepared_model_inputs/train_only_scaler.joblib",
+        "results/prepared_model_inputs/manifest.json"
+      ],
+      "oracle_expected": {
+        "should_alarm": true,
+        "broken_relation": "train-fitted transformation to prepared matrix",
+        "localization": [
+          "matrix_profile",
+          "split",
+          "row_index",
+          "feature"
+        ]
+      },
+      "original_detector_expectation": "Freeze verifier can detect transformed value mismatch if adapted to the case copy; public chain reconciler does not.",
+      "extension_required": "matrix_manifest_rechecker",
+      "acceptance": "Recomputed standardized value/fingerprint differs and cell is localized."
+    },
+    {
+      "case_id": "E1-P1-move-id-between-splits",
+      "family": "partition",
+      "required": true,
+      "reserved_for_after_extension": false,
+      "mutation": "Move one test ID to train and one train ID to test in the split JSON while leaving Gold split column unchanged.",
+      "affected_artefacts": [
+        "data/gold/GEN_split_gld_reddit_ids_v02.json",
+        "data/gold/gold_enriched_ontology.parquet"
+      ],
+      "oracle_expected": {
+        "should_alarm": true,
+        "broken_relation": "frozen partition membership",
+        "localization": [
+          "post_id",
+          "from_split",
+          "to_split"
+        ]
+      },
+      "original_detector_expectation": "reconcile_artifact_chain should report test split symmetric difference; audit_model_input_cells should detect downstream order/hash changes when regenerated.",
+      "extension_required": false,
+      "acceptance": "Moved IDs are listed and status is attention_required."
+    },
+    {
+      "case_id": "E1-P2-nontest-prediction-row",
+      "family": "partition",
+      "required": true,
+      "reserved_for_after_extension": false,
+      "mutation": "Set split='train' for one row in a test prediction CSV.",
+      "affected_artefacts": [
+        "results/anova_revalidation/predictions/LR_ENR_seed42_test_predictions_v2.csv"
+      ],
+      "oracle_expected": {
+        "should_alarm": true,
+        "broken_relation": "prediction row belongs to test split",
+        "localization": [
+          "prediction_file",
+          "post_id"
+        ]
+      },
+      "original_detector_expectation": "reconcile_artifact_chain should count prediction split mismatch.",
+      "extension_required": false,
+      "acceptance": "Prediction split mismatch count is positive and affected row is identified."
+    },
+    {
+      "case_id": "E1-RDF1-break-trace-post-iri",
+      "family": "rdf_link",
+      "required": true,
+      "reserved_for_after_extension": false,
+      "mutation": "Change post_iri for one nonzero traceability row to an IRI inconsistent with stable_post_iri(post_id).",
+      "affected_artefacts": [
+        "results/traceability/traceability_map.csv"
+      ],
+      "oracle_expected": {
+        "should_alarm": true,
+        "broken_relation": "trace row to stable RDF post IRI",
+        "localization": [
+          "post_id",
+          "feature",
+          "post_iri"
+        ]
+      },
+      "original_detector_expectation": "audit_model_input_cells should report post_iri_mismatches for selected features; audit_traceability may report missing expected IRI only at aggregate level.",
+      "extension_required": false,
+      "acceptance": "Affected post_id-feature IRI mismatch is localized."
+    },
+    {
+      "case_id": "E1-RDF2-remove-trataSobre-for-active-concept",
+      "family": "rdf_link",
+      "required": true,
+      "reserved_for_after_extension": true,
+      "mutation": "Remove one rr:trataSobre triple for a post that has a nonzero concept activation.",
+      "affected_artefacts": [
+        "results/knowledge_graph/posts.ttl",
+        "results/traceability/traceability_map.csv"
+      ],
+      "oracle_expected": {
+        "should_alarm": true,
+        "broken_relation": "activation concept to RDF concept assertion",
+        "localization": [
+          "post_id",
+          "concept_uri",
+          "rdf_triple"
+        ]
+      },
+      "original_detector_expectation": "SHACL may still conform because rr:trataSobre is not required for every active concept; existing trace checks may miss RDF triple absence.",
+      "extension_required": "rdf_inventory_against_gold with concept assertion comparison",
+      "acceptance": "Extension reports missing concept assertion and SHACL pass is interpreted as a declared limit."
+    },
+    {
+      "case_id": "E1-RDF3-invalid-domain-concept-iri",
+      "family": "rdf_link",
+      "required": true,
+      "reserved_for_after_extension": false,
+      "mutation": "Replace one rr:trataSobre object with an IRI that is not a skos:Concept in rrdom:ContextoCienciaTecnologia.",
+      "affected_artefacts": [
+        "results/knowledge_graph/posts.ttl"
+      ],
+      "oracle_expected": {
+        "should_alarm": true,
+        "broken_relation": "RDF domain concept target conforms to declared concept scheme",
+        "localization": [
+          "rdf_focus_node",
+          "rdf_path",
+          "concept_uri"
+        ]
+      },
+      "original_detector_expectation": "run_shacl_conformance should produce a validation result for the SPARQL domain concept rule.",
+      "extension_required": "shacl_fixture_classifier for precise result-family classification",
+      "acceptance": "SHACL report identifies rr:trataSobre or rr:perteneceDominio concept target violation."
+    },
+    {
+      "case_id": "E1-PR1-wrong-y-true",
+      "family": "prediction_assignment",
+      "required": true,
+      "reserved_for_after_extension": false,
+      "mutation": "Change y_true for one test prediction row while leaving Gold unchanged.",
+      "affected_artefacts": [
+        "results/anova_revalidation/predictions/LR_ENR_seed42_test_predictions_v2.csv"
+      ],
+      "oracle_expected": {
+        "should_alarm": true,
+        "broken_relation": "prediction reference label to Gold label",
+        "localization": [
+          "prediction_file",
+          "post_id"
+        ]
+      },
+      "original_detector_expectation": "reconcile_artifact_chain should detect y_true mismatch.",
+      "extension_required": false,
+      "acceptance": "Mismatch is reported for the mutated post_id."
+    },
+    {
+      "case_id": "E1-PR2-permute-y-pred-only",
+      "family": "prediction_assignment",
+      "required": true,
+      "reserved_for_after_extension": true,
+      "mutation": "Permute y_pred values among rows while preserving IDs, y_true, split, model, condition, and seed.",
+      "affected_artefacts": [
+        "results/anova_revalidation/predictions/LR_ENR_seed42_test_predictions_v2.csv"
+      ],
+      "oracle_expected": {
+        "should_alarm": true,
+        "broken_relation": "prediction output assignment to ordered test records",
+        "localization": [
+          "prediction_file",
+          "post_id",
+          "y_pred"
+        ]
+      },
+      "original_detector_expectation": "Existing reconciliation is expected to miss this if it checks IDs, split, and y_true only; metric recomputation may reveal metric drift but not original output provenance.",
+      "extension_required": "prediction_output_fingerprint_check",
+      "acceptance": "Extension detects ordered prediction-assignment hash mismatch; original non-detection is documented."
+    },
+    {
+      "case_id": "E1-SR1-stale-traceability-success-report",
+      "family": "stale_report",
+      "required": true,
+      "reserved_for_after_extension": false,
+      "mutation": "Remove one selected traceability row but keep the previous traceability_audit_report.json with status passed.",
+      "affected_artefacts": [
+        "results/traceability/traceability_map.csv",
+        "results/traceability/traceability_audit_report.json"
+      ],
+      "oracle_expected": {
+        "should_alarm": true,
+        "broken_relation": "report freshness against mutated traceability input",
+        "localization": [
+          "report_path",
+          "input_hash",
+          "post_id",
+          "feature"
+        ]
+      },
+      "original_detector_expectation": "reconcile_artifact_chain may be fooled if it trusts stale report counters; audit_model_input_cells should detect the underlying trace fault if run directly.",
+      "extension_required": "report_freshness_check and enforced producer recomputation",
+      "acceptance": "Harness fails the stale report even before accepting chain reconciliation output."
+    },
+    {
+      "case_id": "E1-SR2-stale-shacl-success-report",
+      "family": "stale_report",
+      "required": true,
+      "reserved_for_after_extension": true,
+      "mutation": "Introduce a SHACL violation in posts.ttl but leave baseline_report.json from the pristine graph.",
+      "affected_artefacts": [
+        "results/knowledge_graph/posts.ttl",
+        "results/validation/shacl/baseline_report.json"
+      ],
+      "oracle_expected": {
+        "should_alarm": true,
+        "broken_relation": "SHACL report freshness against RDF input",
+        "localization": [
+          "report_path",
+          "rdf_focus_node",
+          "rdf_path"
+        ]
+      },
+      "original_detector_expectation": "reconcile_artifact_chain may pass if it reads the stale baseline_report.json; run_shacl_conformance should fail when rerun.",
+      "extension_required": "report_freshness_check and enforced SHACL rerun",
+      "acceptance": "Stale report is rejected and regenerated SHACL report exposes the violation."
+    }
+  ],
+  "shacl_cases": [
+    {
+      "case_id": "E1-SHACL1-missing-identifier",
+      "family": "shacl",
+      "required": true,
+      "reserved_for_after_extension": false,
+      "fixture": "Remove rr:identificador from one rr:Post.",
+      "shape_family": "identifier_min_count",
+      "expected_focus": "mutated rr:Post",
+      "expected_path": "rr:identificador",
+      "expected_component": "sh:MinCountConstraintComponent",
+      "oracle_expected": {
+        "should_alarm": true,
+        "conforms": false
+      },
+      "original_detector_expectation": "run_shacl_conformance should fail if the fixture is passed as data graph.",
+      "extension_required": "shacl_fixture_classifier",
+      "acceptance": "One independent fixture produces a result for missing rr:identificador."
+    },
+    {
+      "case_id": "E1-SHACL2-invalid-identifier-pattern",
+      "family": "shacl",
+      "required": true,
+      "reserved_for_after_extension": false,
+      "fixture": "Set rr:identificador to a value containing uppercase or punctuation.",
+      "shape_family": "identifier_pattern",
+      "expected_focus": "mutated rr:Post",
+      "expected_path": "rr:identificador",
+      "expected_component": "sh:PatternConstraintComponent",
+      "oracle_expected": {
+        "should_alarm": true,
+        "conforms": false
+      },
+      "original_detector_expectation": "run_shacl_conformance should fail.",
+      "extension_required": "shacl_fixture_classifier",
+      "acceptance": "Report path/component correspond to identifier pattern."
+    },
+    {
+      "case_id": "E1-SHACL3-invalid-language",
+      "family": "shacl",
+      "required": true,
+      "reserved_for_after_extension": false,
+      "fixture": "Set rr:idiomaDetectado to 'fr'.",
+      "shape_family": "language_allowed_values",
+      "expected_focus": "mutated rr:Post",
+      "expected_path": "rr:idiomaDetectado",
+      "expected_component": "sh:InConstraintComponent",
+      "oracle_expected": {
+        "should_alarm": true,
+        "conforms": false
+      },
+      "original_detector_expectation": "run_shacl_conformance should fail.",
+      "extension_required": "shacl_fixture_classifier",
+      "acceptance": "Report localizes allowed-language violation."
+    },
+    {
+      "case_id": "E1-SHACL4-missing-author",
+      "family": "shacl",
+      "required": true,
+      "reserved_for_after_extension": false,
+      "fixture": "Remove rr:publicadoPor from one rr:Post.",
+      "shape_family": "author_required",
+      "expected_focus": "mutated rr:Post",
+      "expected_path": "rr:publicadoPor",
+      "expected_component": "sh:MinCountConstraintComponent",
+      "oracle_expected": {
+        "should_alarm": true,
+        "conforms": false
+      },
+      "original_detector_expectation": "run_shacl_conformance should fail.",
+      "extension_required": "shacl_fixture_classifier",
+      "acceptance": "Report localizes author-link violation."
+    },
+    {
+      "case_id": "E1-SHACL5-probability-out-of-range",
+      "family": "shacl",
+      "required": true,
+      "reserved_for_after_extension": false,
+      "fixture": "Add rr:probPos with decimal value 1.5 to one rr:Post.",
+      "shape_family": "probability_range",
+      "expected_focus": "mutated rr:Post",
+      "expected_path": "rr:probPos",
+      "expected_component": "sh:MaxInclusiveConstraintComponent",
+      "oracle_expected": {
+        "should_alarm": true,
+        "conforms": false
+      },
+      "original_detector_expectation": "run_shacl_conformance should fail.",
+      "extension_required": "shacl_fixture_classifier",
+      "acceptance": "Report localizes probability range violation."
+    },
+    {
+      "case_id": "E1-SHACL6-probability-sum",
+      "family": "shacl",
+      "required": true,
+      "reserved_for_after_extension": true,
+      "fixture": "Add rr:probPos, rr:probNeu, rr:probNeg values whose sum differs from 1 by more than 0.02.",
+      "shape_family": "probability_sum_sparql",
+      "expected_focus": "mutated rr:Post",
+      "expected_path": "SPARQL",
+      "expected_component": "sh:SPARQLConstraintComponent",
+      "oracle_expected": {
+        "should_alarm": true,
+        "conforms": false
+      },
+      "original_detector_expectation": "run_shacl_conformance should fail when all three probability properties exist.",
+      "extension_required": "shacl_fixture_classifier",
+      "acceptance": "Report classifies the SPARQL probability-normalization rule."
+    },
+    {
+      "case_id": "E1-SHACL7-label-probability-inconsistency",
+      "family": "shacl",
+      "required": true,
+      "reserved_for_after_extension": false,
+      "fixture": "Set probabilities so the maximum class differs from rr:etiquetaSentimiento.",
+      "shape_family": "label_probability_consistency_sparql",
+      "expected_focus": "mutated rr:Post",
+      "expected_path": "SPARQL",
+      "expected_component": "sh:SPARQLConstraintComponent",
+      "oracle_expected": {
+        "should_alarm": true,
+        "conforms": false
+      },
+      "original_detector_expectation": "run_shacl_conformance should fail when label and probability triples are present.",
+      "extension_required": "shacl_fixture_classifier",
+      "acceptance": "Report classifies the label/probability consistency rule."
+    },
+    {
+      "case_id": "E1-SHACL8-invalid-domain-concept",
+      "family": "shacl",
+      "required": true,
+      "reserved_for_after_extension": false,
+      "fixture": "Make rr:trataSobre point to a resource that is not a skos:Concept in rrdom:ContextoCienciaTecnologia.",
+      "shape_family": "domain_concept_scheme_sparql",
+      "expected_focus": "mutated rr:Post",
+      "expected_path": "SPARQL",
+      "expected_component": "sh:SPARQLConstraintComponent",
+      "oracle_expected": {
+        "should_alarm": true,
+        "conforms": false
+      },
+      "original_detector_expectation": "run_shacl_conformance should fail.",
+      "extension_required": "shacl_fixture_classifier",
+      "acceptance": "Report classifies invalid domain concept target without implying semantic truth."
+    },
+    {
+      "case_id": "E1-SHACL9-duplicate-rdf-identifier",
+      "family": "shacl",
+      "required": true,
+      "reserved_for_after_extension": false,
+      "fixture": "Add a second rr:Post with the same rr:identificador as an existing post.",
+      "shape_family": "duplicate_identifier_sparql",
+      "expected_focus": "duplicated rr:Post focus nodes",
+      "expected_path": "SPARQL",
+      "expected_component": "sh:SPARQLConstraintComponent",
+      "oracle_expected": {
+        "should_alarm": true,
+        "conforms": false
+      },
+      "original_detector_expectation": "run_shacl_conformance should fail through duplicate identifier SPARQL rule.",
+      "extension_required": "shacl_fixture_classifier",
+      "acceptance": "Report identifies duplicate identifier rule; focus-node multiplicity is recorded exactly as pySHACL reports it."
+    },
+    {
+      "case_id": "E1-SHACL10-concept-without-scheme",
+      "family": "shacl",
+      "required": true,
+      "reserved_for_after_extension": false,
+      "fixture": "Create a skos:Concept without skos:inScheme.",
+      "shape_family": "concept_scheme_membership",
+      "expected_focus": "mutated skos:Concept",
+      "expected_path": "skos:inScheme",
+      "expected_component": "sh:MinCountConstraintComponent",
+      "oracle_expected": {
+        "should_alarm": true,
+        "conforms": false
+      },
+      "original_detector_expectation": "run_shacl_conformance should fail if the fixture target class is present.",
+      "extension_required": "shacl_fixture_classifier",
+      "acceptance": "Report localizes concept scheme membership violation."
+    }
+  ],
+  "summary_requirements": {
+    "minimum_required_controls": 4,
+    "minimum_required_fault_families": [
+      "identity",
+      "uniqueness",
+      "row_alignment",
+      "column_alignment",
+      "value",
+      "partition",
+      "rdf_link",
+      "prediction_assignment",
+      "stale_report",
+      "shacl"
+    ],
+    "per_case_fields_in_results": [
+      "case_id",
+      "family",
+      "oracle_should_alarm",
+      "original_detected",
+      "extension_detected",
+      "detection_status",
+      "localization_status",
+      "false_positive",
+      "non_detection",
+      "partial_detection",
+      "notes"
+    ],
+    "allowed_detection_statuses": [
+      "control_passed",
+      "detected_by_original",
+      "detected_by_extension",
+      "partial_detection",
+      "not_detected",
+      "false_positive",
+      "not_executed"
+    ],
+    "manuscript_boundary": "Report E1 as controlled validation of declared continuity checks, not as semantic validation or exhaustive fault coverage."
+  }
+}

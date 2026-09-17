@@ -1,49 +1,31 @@
-# Artifact Manifest
-
-## Data And Frozen Inputs
+# Artifact Map
 
 | Path | Role |
-|---|---|
-| `data/gold/gold_enriched_ontology.parquet` | Minimized v04.2 release table with text, pseudonymous author IDs, labels, 37 ontology variables, and split assignments. |
-| `data/gold/gold_enriched_ontology_metadata.json` | Source/release hashes, distributions, and data-minimization record. |
-| `data/gold/GEN_split_gld_reddit_ids_v02.json` | Fixed ID-based train/validation/test split. |
-| `results/lexicon/ontology_lexicon_v04_2_train_only.json` | Frozen train-scope VADER lexical manifest. |
-| `results/feature_selection/ENR_selected_ont_features_anova_train_only.json` | Train-only ANOVA selection of seven semantic variables. |
+| --- | --- |
+| `inputs/original_gold.parquet` | Minimized input to corrected enrichment; same source records, labels and split. |
+| `data/gold/` | Corrected 47-column Gold, metadata and fixed IDs. |
+| `src/ontology/` | Span extraction, context-window implementation and RDF/SHACL resources. |
+| `results/lexicon/` | Train-only induction manifest and lexical entries. |
+| `results/feature_selection/` | Training-only ANOVA ranking and six-variable order. |
+| `results/knowledge_graph/` | Canonical RDF and materialization report. |
+| `results/prepared_model_inputs/` | Raw/standardized matrices, ordered IDs, scaler and profiles. |
+| `results/traceability/` | Record/variable/cell traces and reconciliation reports. |
+| `results/validation/` | Baseline SHACL, combined historical fixture and coverage. |
+| `results/anova_revalidation/` | 24 main metrics and predictions; LR input scaler. |
+| `results/ablation/` | 126 classical and 42 CNN1D final runs and predictions. |
+| `results/sensitivity/` | 125 lexicons, complete artifacts for 97 admissible settings and aggregate outputs. |
+| `experiments/controlled_discontinuities/` | Independent SHACL and continuity suites, mutations, detectors, oracles and replay. |
+| `experiments/human_assessment/` | Final guide, sample, anonymous judgments, adjudications, reference, comparisons and replay. |
+| `results/provenance/campaign/` | Full-campaign summary, environment, protocol and reuse provenance. |
+| `results/provenance/canonical/` | Frozen corrected-generation execution and environment records. |
+| `results/provenance/sensitivity_audit/` | Admissibility audit for all 125 settings. |
+| `results/provenance/figures/` | Historical figure provenance and public dependency mapping. |
+| `results/provenance/public_projection.json` | Computational source/public SHA-256 pairs and transformations. |
+| `MANIFEST.sha256` | Integrity of the curated public release, including code and documentation. |
 
-## Ontology And Governance
-
-| Path | Role |
-|---|---|
-| `src/ontology/resources/rr-core.ttl` | Core Reddit and provenance vocabulary. |
-| `src/ontology/resources/rr-domain.ttl` | AI and technology domain concepts. |
-| `src/ontology/resources/rr-sentiment.ttl` | Sentiment vocabulary. |
-| `src/ontology/resources/rr-shapes.ttl` | Canonical SHACL constraints. |
-| `results/knowledge_graph/posts.ttl` | Materialized post-level RDF graph. |
-| `results/validation/shacl/` | Normalized shapes, baseline report, invalid fixture, and stress report. |
-
-## Traceability And Evaluation
-
-| Path | Role |
-|---|---|
-| `results/traceability/traceability_map.csv` | Post-to-variable and post-to-RDF trace rows. |
-| `results/traceability/model_inputs/selected_semantic_input_matrix.csv` | Persisted selected seven-variable matrix. |
-| `results/traceability/model_inputs/selected_semantic_input_standardized.csv` | Train-standardized selected matrix. |
-| `results/traceability/model_inputs/selected_semantic_input_cell_trace.csv` | Cell-level source, value, split, and RDF links. |
-| `results/traceability/model_inputs/downstream_semantic_input_fingerprints.csv` | Ordered row, feature, and matrix fingerprints. |
-| `results/traceability/model_inputs/selected_semantic_input_reconciliation_report.json` | Cell and run reconciliation summary. |
-| `results/traceability/chain_reconciliation_report.json` | Five relation-level checks across the active chain. |
-| `results/validation/coverage/coverage_sparsity_report.json` | Dataset and selected-interface activation coverage. |
-| `results/sensitivity/` | Aggregate output for the 125-condition KE-only sensitivity grid. |
-
-## Downstream Evidence
-
-| Path | Role |
-|---|---|
-| `results/anova_revalidation/metrics/` | LR, RF, XGB, and CNN1D metrics for BSL/ENR across three seeds. |
-| `results/anova_revalidation/predictions/` | Corresponding test predictions. |
-| `results/ablation/classical/` | Full-37 classical model module ablations. |
-| `results/ablation/cnn1d/` | Full-37 CNN1D module ablation used by the manuscript. |
-
-The release contains the active v04.2 lineage and its authoritative output
-families. Serialized model binaries are not distributed, except for the small
-LR semantic-input scaler required for matrix reconciliation.
+Excluded: duplicated E1 per-case full packages, large trained classifier binaries,
+partial run tables, raw API payloads, account-name mappings, private correspondence,
+reviewer letters, manuscript drafts, and superseded human-assessment rounds.
+Mutation recipes and shared baseline artifacts replace duplicated E1 packages;
+the frozen outputs remain separately identifiable. No excluded experiment is
+represented as completed.

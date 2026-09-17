@@ -1,0 +1,21 @@
+{
+  "case_id": "E1-C2-rdf-triple-order-reserialization",
+  "family": "valid_control",
+  "required": true,
+  "reserved_for_after_extension": true,
+  "oracle_should_alarm": false,
+  "original_detected": false,
+  "extension_detected": false,
+  "detection_status": "control_passed",
+  "expected_exception_detected": false,
+  "evaluation_error": false,
+  "unexpected_errors": [],
+  "false_positive": false,
+  "non_detection": false,
+  "partial_detection": false,
+  "original_detected_before_refresh": false,
+  "original_detected_after_refresh": false,
+  "extension_check_ids": "",
+  "mutation_summary": "{\"mutation\": \"rdf graph reserialized\", \"triples\": 15616}",
+  "notes": "No continuity exception after graph-level comparison; byte hash difference is reported only as serialization difference."
+}

@@ -1,0 +1,38 @@
+{
+  "detected": true,
+  "checks": {
+    "matrix_manifest_rechecker": {
+      "available": true,
+      "detected": false,
+      "mismatches": []
+    },
+    "rdf_inventory_against_gold": {
+      "available": true,
+      "detected": true,
+      "rdf_post_count": 1613,
+      "missing_ids": [
+        "1mug8n6"
+      ],
+      "extra_ids": [],
+      "iri_mismatches": [],
+      "missing_concepts": [
+        {
+          "post_id": "1mug8n6",
+          "concept_uri": "http://wfrp.ia/dominio/ciencia-tecnologia#Datos"
+        }
+      ],
+      "extra_concepts": [],
+      "invalid_concepts": []
+    },
+    "prediction_output_fingerprint_check": {
+      "available": true,
+      "detected": false,
+      "mismatches": []
+    },
+    "report_freshness_check": {
+      "available": false,
+      "detected": false,
+      "reason": "Report freshness is evaluated only for stale-report cases to avoid treating valid order-only changes as stale evidence."
+    }
+  }
+}

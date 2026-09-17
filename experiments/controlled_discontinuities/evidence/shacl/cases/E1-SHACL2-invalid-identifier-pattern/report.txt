@@ -1,0 +1,10 @@
+Validation Report
+Conforms: False
+Results (1):
+Constraint Violation in PatternConstraintComponent (http://www.w3.org/ns/shacl#PatternConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:datatype xsd:string ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:message Literal("rr:identificador debe ser alfanumérico base36.", lang=es) ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path rr:identificador ; sh:pattern Literal("^[0-9a-z]+$") ]
+	Focus Node: <http://wfrp.ia/resource/reddit/post/1kkfjn0>
+	Value Node: Literal("BAD-ID!", datatype=xsd:string)
+	Result Path: rr:identificador
+	Message: rr:identificador debe ser alfanumérico base36.

@@ -1,0 +1,23 @@
+[
+  {
+    "result_node": "N3cdc774547ca4632bfc1945f9dc08b5a",
+    "focus_node": [
+      "http://wfrp.ia/resource/reddit/post/1kkfjn0"
+    ],
+    "result_path": [
+      "http://wfrp.ia/ontologia/ia-sentimiento#identificador"
+    ],
+    "source_constraint_component": [
+      "http://www.w3.org/ns/shacl#PatternConstraintComponent"
+    ],
+    "result_severity": [
+      "http://www.w3.org/ns/shacl#Violation"
+    ],
+    "source_shape": [
+      "n508d7463dc0f4e52a4e269f58328ac76b1"
+    ],
+    "message": [
+      "rr:identificador debe ser alfanumérico base36."
+    ]
+  }
+]

@@ -4,10 +4,10 @@
   "gold_rows": 1614,
   "ontology_feature_count": 37,
   "rdf_post_count": 1614,
-  "rdf_triple_count": 15603,
-  "nonzero_activation_count": 9208,
+  "rdf_triple_count": 15616,
+  "nonzero_activation_count": 9329,
   "posts_with_trace_rows": 1614,
-  "concept_assertion_count": 1888,
+  "concept_assertion_count": 1901,
   "rdf_output": "results/knowledge_graph/posts.ttl",
   "traceability_output": "results/traceability/traceability_map.csv"
 }

@@ -2,28 +2,28 @@
   "status": "passed",
   "grid_name": "expanded",
   "variant_count": 125,
-  "successful_variant_count": 104,
-  "invalid_variant_count": 21,
+  "successful_variant_count": 97,
+  "invalid_variant_count": 28,
   "canonical_variant": "w5_f3_v1p0_c2p0",
-  "shacl_pass_count": 104,
+  "shacl_pass_count": 97,
   "shacl_pass_pct_successful_variants": 100.0,
   "lexicon_size": {
-    "min": 3.0,
-    "q1": 13.0,
-    "median": 41.0,
-    "mean": 80.90384615384616,
-    "q3": 107.75,
-    "max": 408.0,
-    "std": 94.06508786174534
+    "min": 2.0,
+    "q1": 15.0,
+    "median": 47.0,
+    "mean": 82.23711340206185,
+    "q3": 114.0,
+    "max": 393.0,
+    "std": 90.69215781187901
   },
   "selected_feature_count": {
     "min": 3.0,
-    "q1": 4.0,
-    "median": 6.0,
-    "mean": 6.461538461538462,
-    "q3": 9.0,
-    "max": 11.0,
-    "std": 2.4803965134440356
+    "q1": 5.0,
+    "median": 7.0,
+    "mean": 6.680412371134021,
+    "q3": 8.0,
+    "max": 10.0,
+    "std": 1.8194050899941
   },
   "overall_activation_pct": {
     "min": 92.25526641883519,
@@ -35,277 +35,332 @@
     "std": 1.4210854715202004e-14
   },
   "rdf_triple_count": {
-    "min": 15603.0,
-    "q1": 15603.0,
-    "median": 15603.0,
-    "mean": 15603.0,
-    "q3": 15603.0,
-    "max": 15603.0,
+    "min": 14827.0,
+    "q1": 14827.0,
+    "median": 14827.0,
+    "mean": 14827.0,
+    "q3": 14827.0,
+    "max": 14827.0,
     "std": 0.0
   },
   "nonzero_activation_count": {
-    "min": 8990.0,
-    "q1": 9099.25,
-    "median": 9181.5,
-    "mean": 9192.028846153846,
-    "q3": 9287.5,
-    "max": 9428.0,
-    "std": 120.98946685962515
+    "min": 9008.0,
+    "q1": 9197.0,
+    "median": 9297.0,
+    "mean": 9309.701030927836,
+    "q3": 9442.0,
+    "max": 9594.0,
+    "std": 154.04465579278832
   },
   "selected_feature_jaccard_vs_canonical": {
-    "min": 0.3333333333333333,
+    "min": 0.25,
     "q1": 0.42857142857142855,
     "median": 0.625,
-    "mean": 0.6092563686313687,
-    "q3": 0.7232142857142857,
+    "mean": 0.6441718361821455,
+    "q3": 0.8333333333333334,
     "max": 1.0,
-    "std": 0.16839717490589837
+    "std": 0.23057923221202462
   },
   "selected_feature_stability": [
     {
-      "feature": "ont_InteligenciaArtificial_Neutro",
-      "selected_count": 104,
-      "selected_pct": 100.0,
-      "canonical_selected": true
-    },
-    {
       "feature": "ont_domain_density",
-      "selected_count": 104,
+      "selected_count": 97,
       "selected_pct": 100.0,
-      "canonical_selected": true
-    },
-    {
-      "feature": "ont_Innovacion_Neutro",
-      "selected_count": 90,
-      "selected_pct": 86.53846153846153,
       "canonical_selected": true
     },
     {
       "feature": "ont_total_negativo_mentions",
-      "selected_count": 77,
-      "selected_pct": 74.03846153846153,
+      "selected_count": 86,
+      "selected_pct": 88.65979381443299,
       "canonical_selected": true
     },
     {
       "feature": "ont_InteligenciaArtificial_Negativo",
-      "selected_count": 72,
-      "selected_pct": 69.23076923076923,
+      "selected_count": 83,
+      "selected_pct": 85.56701030927834,
+      "canonical_selected": true
+    },
+    {
+      "feature": "ont_Innovacion_Neutro",
+      "selected_count": 76,
+      "selected_pct": 78.35051546391753,
+      "canonical_selected": true
+    },
+    {
+      "feature": "ont_Tecnologia_Neutro",
+      "selected_count": 64,
+      "selected_pct": 65.97938144329896,
       "canonical_selected": true
     },
     {
       "feature": "ont_Etica_Negativo",
-      "selected_count": 47,
-      "selected_pct": 45.19230769230769,
-      "canonical_selected": true
-    },
-    {
-      "feature": "ont_Tecnologia_Positivo",
-      "selected_count": 34,
-      "selected_pct": 32.69230769230769,
+      "selected_count": 55,
+      "selected_pct": 56.70103092783505,
       "canonical_selected": true
     },
     {
       "feature": "ont_Datos_Negativo",
+      "selected_count": 35,
+      "selected_pct": 36.08247422680412,
+      "canonical_selected": false
+    },
+    {
+      "feature": "ont_Tecnologia_Positivo",
       "selected_count": 30,
-      "selected_pct": 28.846153846153847,
+      "selected_pct": 30.927835051546392,
       "canonical_selected": false
     },
     {
       "feature": "ont_Robot_Negativo",
-      "selected_count": 29,
-      "selected_pct": 27.884615384615383,
+      "selected_count": 28,
+      "selected_pct": 28.8659793814433,
       "canonical_selected": false
     },
     {
       "feature": "ont_total_positivo_mentions",
-      "selected_count": 26,
-      "selected_pct": 25.0,
+      "selected_count": 28,
+      "selected_pct": 28.8659793814433,
       "canonical_selected": false
     },
     {
       "feature": "ont_Innovacion_Positivo",
-      "selected_count": 20,
-      "selected_pct": 19.23076923076923,
+      "selected_count": 26,
+      "selected_pct": 26.804123711340207,
       "canonical_selected": false
     },
     {
       "feature": "ont_Tecnologia_Negativo",
-      "selected_count": 18,
-      "selected_pct": 17.307692307692307,
+      "selected_count": 14,
+      "selected_pct": 14.43298969072165,
+      "canonical_selected": false
+    },
+    {
+      "feature": "ont_Datos_Positivo",
+      "selected_count": 8,
+      "selected_pct": 8.24742268041237,
       "canonical_selected": false
     },
     {
       "feature": "ont_Futuro_Negativo",
       "selected_count": 7,
-      "selected_pct": 6.730769230769231,
+      "selected_pct": 7.216494845360825,
+      "canonical_selected": false
+    },
+    {
+      "feature": "ont_InteligenciaArtificial_Positivo",
+      "selected_count": 6,
+      "selected_pct": 6.185567010309279,
       "canonical_selected": false
     },
     {
       "feature": "ont_Futuro_Positivo",
-      "selected_count": 7,
-      "selected_pct": 6.730769230769231,
+      "selected_count": 3,
+      "selected_pct": 3.0927835051546393,
       "canonical_selected": false
     },
     {
-      "feature": "ont_Datos_Positivo",
-      "selected_count": 6,
-      "selected_pct": 5.769230769230769,
-      "canonical_selected": false
-    },
-    {
-      "feature": "ont_Tecnologia_Neutro",
-      "selected_count": 1,
-      "selected_pct": 0.9615384615384616,
+      "feature": "ont_AprendizajeAutomatico_Positivo",
+      "selected_count": 2,
+      "selected_pct": 2.0618556701030926,
       "canonical_selected": false
     }
   ],
   "invalid_variants": [
     {
+      "variant_id": "w2_f3_v2p0_c2p0",
+      "context_window": 2,
+      "minimum_frequency": 3,
+      "minimum_absolute_valence": 2.0,
+      "error": "Lexicon manifest lacks combined positive/negative entries: JOWS/revisions/campaign_f123_20260914/package/results/sensitivity/w2_f3_v2p0_c2p0/lexicon_manifest.json"
+    },
+    {
+      "variant_id": "w2_f5_v0p25_c2p0",
+      "context_window": 2,
+      "minimum_frequency": 5,
+      "minimum_absolute_valence": 0.25,
+      "error": "Lexicon manifest lacks combined positive/negative entries: JOWS/revisions/campaign_f123_20260914/package/results/sensitivity/w2_f5_v0p25_c2p0/lexicon_manifest.json"
+    },
+    {
+      "variant_id": "w2_f5_v0p5_c2p0",
+      "context_window": 2,
+      "minimum_frequency": 5,
+      "minimum_absolute_valence": 0.5,
+      "error": "Lexicon manifest lacks combined positive/negative entries: JOWS/revisions/campaign_f123_20260914/package/results/sensitivity/w2_f5_v0p5_c2p0/lexicon_manifest.json"
+    },
+    {
+      "variant_id": "w2_f5_v1p0_c2p0",
+      "context_window": 2,
+      "minimum_frequency": 5,
+      "minimum_absolute_valence": 1.0,
+      "error": "Lexicon manifest lacks combined positive/negative entries: JOWS/revisions/campaign_f123_20260914/package/results/sensitivity/w2_f5_v1p0_c2p0/lexicon_manifest.json"
+    },
+    {
       "variant_id": "w2_f5_v1p5_c2p0",
       "context_window": 2,
       "minimum_frequency": 5,
       "minimum_absolute_valence": 1.5,
-      "error": "lexicon manifest lacks combined positive/negative entries"
+      "error": "Lexicon manifest lacks combined positive/negative entries: JOWS/revisions/campaign_f123_20260914/package/results/sensitivity/w2_f5_v1p5_c2p0/lexicon_manifest.json"
     },
     {
       "variant_id": "w2_f5_v2p0_c2p0",
       "context_window": 2,
       "minimum_frequency": 5,
       "minimum_absolute_valence": 2.0,
-      "error": "lexicon manifest lacks combined positive/negative entries"
+      "error": "Lexicon manifest lacks combined positive/negative entries: JOWS/revisions/campaign_f123_20260914/package/results/sensitivity/w2_f5_v2p0_c2p0/lexicon_manifest.json"
     },
     {
       "variant_id": "w2_f8_v0p25_c2p0",
       "context_window": 2,
       "minimum_frequency": 8,
       "minimum_absolute_valence": 0.25,
-      "error": "lexicon manifest lacks combined positive/negative entries"
+      "error": "Lexicon manifest lacks combined positive/negative entries: JOWS/revisions/campaign_f123_20260914/package/results/sensitivity/w2_f8_v0p25_c2p0/lexicon_manifest.json"
     },
     {
       "variant_id": "w2_f8_v0p5_c2p0",
       "context_window": 2,
       "minimum_frequency": 8,
       "minimum_absolute_valence": 0.5,
-      "error": "lexicon manifest lacks combined positive/negative entries"
+      "error": "Lexicon manifest lacks combined positive/negative entries: JOWS/revisions/campaign_f123_20260914/package/results/sensitivity/w2_f8_v0p5_c2p0/lexicon_manifest.json"
     },
     {
       "variant_id": "w2_f8_v1p0_c2p0",
       "context_window": 2,
       "minimum_frequency": 8,
       "minimum_absolute_valence": 1.0,
-      "error": "lexicon manifest lacks combined positive/negative entries"
+      "error": "Lexicon manifest lacks combined positive/negative entries: JOWS/revisions/campaign_f123_20260914/package/results/sensitivity/w2_f8_v1p0_c2p0/lexicon_manifest.json"
     },
     {
       "variant_id": "w2_f8_v1p5_c2p0",
       "context_window": 2,
       "minimum_frequency": 8,
       "minimum_absolute_valence": 1.5,
-      "error": "lexicon manifest lacks combined positive/negative entries"
+      "error": "Lexicon manifest lacks combined positive/negative entries: JOWS/revisions/campaign_f123_20260914/package/results/sensitivity/w2_f8_v1p5_c2p0/lexicon_manifest.json"
     },
     {
       "variant_id": "w2_f8_v2p0_c2p0",
       "context_window": 2,
       "minimum_frequency": 8,
       "minimum_absolute_valence": 2.0,
-      "error": "lexicon manifest lacks combined positive/negative entries"
+      "error": "Lexicon manifest lacks combined positive/negative entries: JOWS/revisions/campaign_f123_20260914/package/results/sensitivity/w2_f8_v2p0_c2p0/lexicon_manifest.json"
+    },
+    {
+      "variant_id": "w3_f5_v0p25_c2p0",
+      "context_window": 3,
+      "minimum_frequency": 5,
+      "minimum_absolute_valence": 0.25,
+      "error": "Lexicon manifest lacks combined positive/negative entries: JOWS/revisions/campaign_f123_20260914/package/results/sensitivity/w3_f5_v0p25_c2p0/lexicon_manifest.json"
+    },
+    {
+      "variant_id": "w3_f5_v0p5_c2p0",
+      "context_window": 3,
+      "minimum_frequency": 5,
+      "minimum_absolute_valence": 0.5,
+      "error": "Lexicon manifest lacks combined positive/negative entries: JOWS/revisions/campaign_f123_20260914/package/results/sensitivity/w3_f5_v0p5_c2p0/lexicon_manifest.json"
+    },
+    {
+      "variant_id": "w3_f5_v1p0_c2p0",
+      "context_window": 3,
+      "minimum_frequency": 5,
+      "minimum_absolute_valence": 1.0,
+      "error": "Lexicon manifest lacks combined positive/negative entries: JOWS/revisions/campaign_f123_20260914/package/results/sensitivity/w3_f5_v1p0_c2p0/lexicon_manifest.json"
+    },
+    {
+      "variant_id": "w3_f5_v1p5_c2p0",
+      "context_window": 3,
+      "minimum_frequency": 5,
+      "minimum_absolute_valence": 1.5,
+      "error": "Lexicon manifest lacks combined positive/negative entries: JOWS/revisions/campaign_f123_20260914/package/results/sensitivity/w3_f5_v1p5_c2p0/lexicon_manifest.json"
     },
     {
       "variant_id": "w3_f5_v2p0_c2p0",
       "context_window": 3,
       "minimum_frequency": 5,
       "minimum_absolute_valence": 2.0,
-      "error": "lexicon manifest lacks combined positive/negative entries"
+      "error": "Lexicon manifest lacks combined positive/negative entries: JOWS/revisions/campaign_f123_20260914/package/results/sensitivity/w3_f5_v2p0_c2p0/lexicon_manifest.json"
     },
     {
       "variant_id": "w3_f8_v0p25_c2p0",
       "context_window": 3,
       "minimum_frequency": 8,
       "minimum_absolute_valence": 0.25,
-      "error": "lexicon manifest lacks combined positive/negative entries"
+      "error": "Lexicon manifest lacks combined positive/negative entries: JOWS/revisions/campaign_f123_20260914/package/results/sensitivity/w3_f8_v0p25_c2p0/lexicon_manifest.json"
     },
     {
       "variant_id": "w3_f8_v0p5_c2p0",
       "context_window": 3,
       "minimum_frequency": 8,
       "minimum_absolute_valence": 0.5,
-      "error": "lexicon manifest lacks combined positive/negative entries"
+      "error": "Lexicon manifest lacks combined positive/negative entries: JOWS/revisions/campaign_f123_20260914/package/results/sensitivity/w3_f8_v0p5_c2p0/lexicon_manifest.json"
     },
     {
       "variant_id": "w3_f8_v1p0_c2p0",
       "context_window": 3,
       "minimum_frequency": 8,
       "minimum_absolute_valence": 1.0,
-      "error": "lexicon manifest lacks combined positive/negative entries"
+      "error": "Lexicon manifest lacks combined positive/negative entries: JOWS/revisions/campaign_f123_20260914/package/results/sensitivity/w3_f8_v1p0_c2p0/lexicon_manifest.json"
     },
     {
       "variant_id": "w3_f8_v1p5_c2p0",
       "context_window": 3,
       "minimum_frequency": 8,
       "minimum_absolute_valence": 1.5,
-      "error": "lexicon manifest lacks combined positive/negative entries"
+      "error": "Lexicon manifest lacks combined positive/negative entries: JOWS/revisions/campaign_f123_20260914/package/results/sensitivity/w3_f8_v1p5_c2p0/lexicon_manifest.json"
     },
     {
       "variant_id": "w3_f8_v2p0_c2p0",
       "context_window": 3,
       "minimum_frequency": 8,
       "minimum_absolute_valence": 2.0,
-      "error": "lexicon manifest lacks combined positive/negative entries"
-    },
-    {
-      "variant_id": "w5_f5_v2p0_c2p0",
-      "context_window": 5,
-      "minimum_frequency": 5,
-      "minimum_absolute_valence": 2.0,
-      "error": "lexicon manifest lacks combined positive/negative entries"
+      "error": "Lexicon manifest lacks combined positive/negative entries: JOWS/revisions/campaign_f123_20260914/package/results/sensitivity/w3_f8_v2p0_c2p0/lexicon_manifest.json"
     },
     {
       "variant_id": "w5_f8_v0p25_c2p0",
       "context_window": 5,
       "minimum_frequency": 8,
       "minimum_absolute_valence": 0.25,
-      "error": "lexicon manifest lacks combined positive/negative entries"
+      "error": "Lexicon manifest lacks combined positive/negative entries: JOWS/revisions/campaign_f123_20260914/package/results/sensitivity/w5_f8_v0p25_c2p0/lexicon_manifest.json"
     },
     {
       "variant_id": "w5_f8_v0p5_c2p0",
       "context_window": 5,
       "minimum_frequency": 8,
       "minimum_absolute_valence": 0.5,
-      "error": "lexicon manifest lacks combined positive/negative entries"
+      "error": "Lexicon manifest lacks combined positive/negative entries: JOWS/revisions/campaign_f123_20260914/package/results/sensitivity/w5_f8_v0p5_c2p0/lexicon_manifest.json"
     },
     {
       "variant_id": "w5_f8_v1p0_c2p0",
       "context_window": 5,
       "minimum_frequency": 8,
       "minimum_absolute_valence": 1.0,
-      "error": "lexicon manifest lacks combined positive/negative entries"
+      "error": "Lexicon manifest lacks combined positive/negative entries: JOWS/revisions/campaign_f123_20260914/package/results/sensitivity/w5_f8_v1p0_c2p0/lexicon_manifest.json"
     },
     {
       "variant_id": "w5_f8_v1p5_c2p0",
       "context_window": 5,
       "minimum_frequency": 8,
       "minimum_absolute_valence": 1.5,
-      "error": "lexicon manifest lacks combined positive/negative entries"
+      "error": "Lexicon manifest lacks combined positive/negative entries: JOWS/revisions/campaign_f123_20260914/package/results/sensitivity/w5_f8_v1p5_c2p0/lexicon_manifest.json"
     },
     {
       "variant_id": "w5_f8_v2p0_c2p0",
       "context_window": 5,
       "minimum_frequency": 8,
       "minimum_absolute_valence": 2.0,
-      "error": "lexicon manifest lacks combined positive/negative entries"
+      "error": "Lexicon manifest lacks combined positive/negative entries: JOWS/revisions/campaign_f123_20260914/package/results/sensitivity/w5_f8_v2p0_c2p0/lexicon_manifest.json"
     },
     {
       "variant_id": "w7_f8_v2p0_c2p0",
       "context_window": 7,
       "minimum_frequency": 8,
       "minimum_absolute_valence": 2.0,
-      "error": "lexicon manifest lacks combined positive/negative entries"
+      "error": "Lexicon manifest lacks combined positive/negative entries: JOWS/revisions/campaign_f123_20260914/package/results/sensitivity/w7_f8_v2p0_c2p0/lexicon_manifest.json"
     },
     {
       "variant_id": "w10_f8_v2p0_c2p0",
       "context_window": 10,
       "minimum_frequency": 8,
       "minimum_absolute_valence": 2.0,
-      "error": "lexicon manifest lacks combined positive/negative entries"
+      "error": "Lexicon manifest lacks combined positive/negative entries: JOWS/revisions/campaign_f123_20260914/package/results/sensitivity/w10_f8_v2p0_c2p0/lexicon_manifest.json"
     }
   ]
 }

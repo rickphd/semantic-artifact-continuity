@@ -1,0 +1,732 @@
+{
+  "protocol": "E2-final-v22-reannotation-v1",
+  "seed": "E2-final-v22-20260916-display-v1",
+  "selection": "Exact same 120 texts; deterministic new order, no resampling",
+  "records": [
+    {
+      "item_id": "R001",
+      "previous_item_id": "F065",
+      "post_id": "1mzba3t",
+      "split": "val"
+    },
+    {
+      "item_id": "R002",
+      "previous_item_id": "F034",
+      "post_id": "1n86xcw",
+      "split": "val"
+    },
+    {
+      "item_id": "R003",
+      "previous_item_id": "F092",
+      "post_id": "1l7pe7r",
+      "split": "val"
+    },
+    {
+      "item_id": "R004",
+      "previous_item_id": "F057",
+      "post_id": "1mvj6po",
+      "split": "val"
+    },
+    {
+      "item_id": "R005",
+      "previous_item_id": "F112",
+      "post_id": "1n7buwd",
+      "split": "val"
+    },
+    {
+      "item_id": "R006",
+      "previous_item_id": "F067",
+      "post_id": "1n0lbx5",
+      "split": "val"
+    },
+    {
+      "item_id": "R007",
+      "previous_item_id": "F091",
+      "post_id": "1n7qvxw",
+      "split": "val"
+    },
+    {
+      "item_id": "R008",
+      "previous_item_id": "F053",
+      "post_id": "1n5x8k3",
+      "split": "val"
+    },
+    {
+      "item_id": "R009",
+      "previous_item_id": "F045",
+      "post_id": "1n29rkq",
+      "split": "val"
+    },
+    {
+      "item_id": "R010",
+      "previous_item_id": "F044",
+      "post_id": "1nd65xv",
+      "split": "val"
+    },
+    {
+      "item_id": "R011",
+      "previous_item_id": "F021",
+      "post_id": "1mxraf6",
+      "split": "val"
+    },
+    {
+      "item_id": "R012",
+      "previous_item_id": "F086",
+      "post_id": "1n0f3ji",
+      "split": "val"
+    },
+    {
+      "item_id": "R013",
+      "previous_item_id": "F051",
+      "post_id": "1ndlubh",
+      "split": "val"
+    },
+    {
+      "item_id": "R014",
+      "previous_item_id": "F054",
+      "post_id": "1n5nxl4",
+      "split": "val"
+    },
+    {
+      "item_id": "R015",
+      "previous_item_id": "F079",
+      "post_id": "1n2bv9s",
+      "split": "val"
+    },
+    {
+      "item_id": "R016",
+      "previous_item_id": "F074",
+      "post_id": "1n1cjni",
+      "split": "val"
+    },
+    {
+      "item_id": "R017",
+      "previous_item_id": "F003",
+      "post_id": "1nbw60e",
+      "split": "val"
+    },
+    {
+      "item_id": "R018",
+      "previous_item_id": "F061",
+      "post_id": "1nhiz7t",
+      "split": "val"
+    },
+    {
+      "item_id": "R019",
+      "previous_item_id": "F081",
+      "post_id": "1nczcaj",
+      "split": "val"
+    },
+    {
+      "item_id": "R020",
+      "previous_item_id": "F007",
+      "post_id": "1n7fjuo",
+      "split": "val"
+    },
+    {
+      "item_id": "R021",
+      "previous_item_id": "F063",
+      "post_id": "1nio1oz",
+      "split": "val"
+    },
+    {
+      "item_id": "R022",
+      "previous_item_id": "F084",
+      "post_id": "1nc4flz",
+      "split": "val"
+    },
+    {
+      "item_id": "R023",
+      "previous_item_id": "F039",
+      "post_id": "1n33zul",
+      "split": "val"
+    },
+    {
+      "item_id": "R024",
+      "previous_item_id": "F040",
+      "post_id": "1nf0r4j",
+      "split": "val"
+    },
+    {
+      "item_id": "R025",
+      "previous_item_id": "F049",
+      "post_id": "1n8fzj4",
+      "split": "val"
+    },
+    {
+      "item_id": "R026",
+      "previous_item_id": "F098",
+      "post_id": "1mn8x9j",
+      "split": "val"
+    },
+    {
+      "item_id": "R027",
+      "previous_item_id": "F052",
+      "post_id": "1n3xi0i",
+      "split": "val"
+    },
+    {
+      "item_id": "R028",
+      "previous_item_id": "F023",
+      "post_id": "1nej84z",
+      "split": "val"
+    },
+    {
+      "item_id": "R029",
+      "previous_item_id": "F101",
+      "post_id": "1n3mnsw",
+      "split": "val"
+    },
+    {
+      "item_id": "R030",
+      "previous_item_id": "F028",
+      "post_id": "1n0w0pq",
+      "split": "val"
+    },
+    {
+      "item_id": "R031",
+      "previous_item_id": "F033",
+      "post_id": "1mys2hg",
+      "split": "val"
+    },
+    {
+      "item_id": "R032",
+      "previous_item_id": "F001",
+      "post_id": "1mqvp0k",
+      "split": "val"
+    },
+    {
+      "item_id": "R033",
+      "previous_item_id": "F069",
+      "post_id": "1mrpttm",
+      "split": "val"
+    },
+    {
+      "item_id": "R034",
+      "previous_item_id": "F113",
+      "post_id": "1n7585n",
+      "split": "val"
+    },
+    {
+      "item_id": "R035",
+      "previous_item_id": "F100",
+      "post_id": "1n3vmxr",
+      "split": "val"
+    },
+    {
+      "item_id": "R036",
+      "previous_item_id": "F024",
+      "post_id": "1niqqyf",
+      "split": "val"
+    },
+    {
+      "item_id": "R037",
+      "previous_item_id": "F117",
+      "post_id": "1niwzbi",
+      "split": "val"
+    },
+    {
+      "item_id": "R038",
+      "previous_item_id": "F046",
+      "post_id": "1nco0oa",
+      "split": "val"
+    },
+    {
+      "item_id": "R039",
+      "previous_item_id": "F006",
+      "post_id": "1n68heo",
+      "split": "val"
+    },
+    {
+      "item_id": "R040",
+      "previous_item_id": "F109",
+      "post_id": "1ndsnz7",
+      "split": "val"
+    },
+    {
+      "item_id": "R041",
+      "previous_item_id": "F035",
+      "post_id": "1n1mbhz",
+      "split": "val"
+    },
+    {
+      "item_id": "R042",
+      "previous_item_id": "F099",
+      "post_id": "1nfth3y",
+      "split": "val"
+    },
+    {
+      "item_id": "R043",
+      "previous_item_id": "F108",
+      "post_id": "1ngm5cj",
+      "split": "val"
+    },
+    {
+      "item_id": "R044",
+      "previous_item_id": "F019",
+      "post_id": "1mx4l1p",
+      "split": "val"
+    },
+    {
+      "item_id": "R045",
+      "previous_item_id": "F111",
+      "post_id": "1n8bfa3",
+      "split": "val"
+    },
+    {
+      "item_id": "R046",
+      "previous_item_id": "F050",
+      "post_id": "1n9zo07",
+      "split": "val"
+    },
+    {
+      "item_id": "R047",
+      "previous_item_id": "F010",
+      "post_id": "1nifay3",
+      "split": "val"
+    },
+    {
+      "item_id": "R048",
+      "previous_item_id": "F020",
+      "post_id": "1n78we7",
+      "split": "val"
+    },
+    {
+      "item_id": "R049",
+      "previous_item_id": "F036",
+      "post_id": "1n1fn11",
+      "split": "val"
+    },
+    {
+      "item_id": "R050",
+      "previous_item_id": "F015",
+      "post_id": "1nct752",
+      "split": "val"
+    },
+    {
+      "item_id": "R051",
+      "previous_item_id": "F047",
+      "post_id": "1nc67qw",
+      "split": "val"
+    },
+    {
+      "item_id": "R052",
+      "previous_item_id": "F041",
+      "post_id": "1n8zfwd",
+      "split": "val"
+    },
+    {
+      "item_id": "R053",
+      "previous_item_id": "F078",
+      "post_id": "1ni101n",
+      "split": "val"
+    },
+    {
+      "item_id": "R054",
+      "previous_item_id": "F116",
+      "post_id": "1nd6lu8",
+      "split": "val"
+    },
+    {
+      "item_id": "R055",
+      "previous_item_id": "F066",
+      "post_id": "1n89vqv",
+      "split": "val"
+    },
+    {
+      "item_id": "R056",
+      "previous_item_id": "F076",
+      "post_id": "1mz98zz",
+      "split": "val"
+    },
+    {
+      "item_id": "R057",
+      "previous_item_id": "F094",
+      "post_id": "1myyanz",
+      "split": "val"
+    },
+    {
+      "item_id": "R058",
+      "previous_item_id": "F103",
+      "post_id": "1nczvz1",
+      "split": "val"
+    },
+    {
+      "item_id": "R059",
+      "previous_item_id": "F072",
+      "post_id": "1mzcgzp",
+      "split": "val"
+    },
+    {
+      "item_id": "R060",
+      "previous_item_id": "F058",
+      "post_id": "1n9xt56",
+      "split": "val"
+    },
+    {
+      "item_id": "R061",
+      "previous_item_id": "F120",
+      "post_id": "1ndndlc",
+      "split": "val"
+    },
+    {
+      "item_id": "R062",
+      "previous_item_id": "F106",
+      "post_id": "1mruz5d",
+      "split": "val"
+    },
+    {
+      "item_id": "R063",
+      "previous_item_id": "F087",
+      "post_id": "1n70u7v",
+      "split": "val"
+    },
+    {
+      "item_id": "R064",
+      "previous_item_id": "F002",
+      "post_id": "1ndguud",
+      "split": "val"
+    },
+    {
+      "item_id": "R065",
+      "previous_item_id": "F075",
+      "post_id": "1mr7ugm",
+      "split": "val"
+    },
+    {
+      "item_id": "R066",
+      "previous_item_id": "F096",
+      "post_id": "1n5ovi9",
+      "split": "val"
+    },
+    {
+      "item_id": "R067",
+      "previous_item_id": "F022",
+      "post_id": "1mz58a5",
+      "split": "val"
+    },
+    {
+      "item_id": "R068",
+      "previous_item_id": "F105",
+      "post_id": "1nemzt9",
+      "split": "val"
+    },
+    {
+      "item_id": "R069",
+      "previous_item_id": "F018",
+      "post_id": "1nhsc56",
+      "split": "val"
+    },
+    {
+      "item_id": "R070",
+      "previous_item_id": "F029",
+      "post_id": "1ne9wn4",
+      "split": "val"
+    },
+    {
+      "item_id": "R071",
+      "previous_item_id": "F082",
+      "post_id": "1n6z4c1",
+      "split": "val"
+    },
+    {
+      "item_id": "R072",
+      "previous_item_id": "F073",
+      "post_id": "1nh0vcy",
+      "split": "val"
+    },
+    {
+      "item_id": "R073",
+      "previous_item_id": "F042",
+      "post_id": "1n2ivl3",
+      "split": "val"
+    },
+    {
+      "item_id": "R074",
+      "previous_item_id": "F043",
+      "post_id": "1my890r",
+      "split": "val"
+    },
+    {
+      "item_id": "R075",
+      "previous_item_id": "F059",
+      "post_id": "1n98wv2",
+      "split": "val"
+    },
+    {
+      "item_id": "R076",
+      "previous_item_id": "F114",
+      "post_id": "1mvrt15",
+      "split": "val"
+    },
+    {
+      "item_id": "R077",
+      "previous_item_id": "F027",
+      "post_id": "1n9rf2w",
+      "split": "val"
+    },
+    {
+      "item_id": "R078",
+      "previous_item_id": "F056",
+      "post_id": "1n0rjya",
+      "split": "val"
+    },
+    {
+      "item_id": "R079",
+      "previous_item_id": "F004",
+      "post_id": "1n6z8oe",
+      "split": "val"
+    },
+    {
+      "item_id": "R080",
+      "previous_item_id": "F048",
+      "post_id": "1mwaxi2",
+      "split": "val"
+    },
+    {
+      "item_id": "R081",
+      "previous_item_id": "F085",
+      "post_id": "1mxotjf",
+      "split": "val"
+    },
+    {
+      "item_id": "R082",
+      "previous_item_id": "F107",
+      "post_id": "1nckv37",
+      "split": "val"
+    },
+    {
+      "item_id": "R083",
+      "previous_item_id": "F005",
+      "post_id": "1nfrb96",
+      "split": "val"
+    },
+    {
+      "item_id": "R084",
+      "previous_item_id": "F071",
+      "post_id": "1mxb9v2",
+      "split": "val"
+    },
+    {
+      "item_id": "R085",
+      "previous_item_id": "F102",
+      "post_id": "1ngbrix",
+      "split": "val"
+    },
+    {
+      "item_id": "R086",
+      "previous_item_id": "F017",
+      "post_id": "1ncj9qy",
+      "split": "val"
+    },
+    {
+      "item_id": "R087",
+      "previous_item_id": "F013",
+      "post_id": "1mzyj2z",
+      "split": "val"
+    },
+    {
+      "item_id": "R088",
+      "previous_item_id": "F104",
+      "post_id": "1n9al3j",
+      "split": "val"
+    },
+    {
+      "item_id": "R089",
+      "previous_item_id": "F119",
+      "post_id": "1narqb9",
+      "split": "val"
+    },
+    {
+      "item_id": "R090",
+      "previous_item_id": "F008",
+      "post_id": "1n99wrk",
+      "split": "val"
+    },
+    {
+      "item_id": "R091",
+      "previous_item_id": "F088",
+      "post_id": "1nhtewz",
+      "split": "val"
+    },
+    {
+      "item_id": "R092",
+      "previous_item_id": "F038",
+      "post_id": "1n5rb2m",
+      "split": "val"
+    },
+    {
+      "item_id": "R093",
+      "previous_item_id": "F077",
+      "post_id": "1nibbrx",
+      "split": "val"
+    },
+    {
+      "item_id": "R094",
+      "previous_item_id": "F089",
+      "post_id": "1nelcey",
+      "split": "val"
+    },
+    {
+      "item_id": "R095",
+      "previous_item_id": "F025",
+      "post_id": "1ndbsfo",
+      "split": "val"
+    },
+    {
+      "item_id": "R096",
+      "previous_item_id": "F037",
+      "post_id": "1n0lja0",
+      "split": "val"
+    },
+    {
+      "item_id": "R097",
+      "previous_item_id": "F097",
+      "post_id": "1nfe7l5",
+      "split": "val"
+    },
+    {
+      "item_id": "R098",
+      "previous_item_id": "F012",
+      "post_id": "1nj94ze",
+      "split": "val"
+    },
+    {
+      "item_id": "R099",
+      "previous_item_id": "F014",
+      "post_id": "1n5fcxf",
+      "split": "val"
+    },
+    {
+      "item_id": "R100",
+      "previous_item_id": "F068",
+      "post_id": "1nhxh5e",
+      "split": "val"
+    },
+    {
+      "item_id": "R101",
+      "previous_item_id": "F060",
+      "post_id": "1n08h8d",
+      "split": "val"
+    },
+    {
+      "item_id": "R102",
+      "previous_item_id": "F090",
+      "post_id": "1ndgvdl",
+      "split": "val"
+    },
+    {
+      "item_id": "R103",
+      "previous_item_id": "F062",
+      "post_id": "1nf7snm",
+      "split": "val"
+    },
+    {
+      "item_id": "R104",
+      "previous_item_id": "F080",
+      "post_id": "1n1mvvp",
+      "split": "val"
+    },
+    {
+      "item_id": "R105",
+      "previous_item_id": "F009",
+      "post_id": "1na0ey1",
+      "split": "val"
+    },
+    {
+      "item_id": "R106",
+      "previous_item_id": "F095",
+      "post_id": "1nf1q5n",
+      "split": "val"
+    },
+    {
+      "item_id": "R107",
+      "previous_item_id": "F030",
+      "post_id": "1ndp7ep",
+      "split": "val"
+    },
+    {
+      "item_id": "R108",
+      "previous_item_id": "F026",
+      "post_id": "1n0s9s2",
+      "split": "val"
+    },
+    {
+      "item_id": "R109",
+      "previous_item_id": "F011",
+      "post_id": "1nb7yzs",
+      "split": "val"
+    },
+    {
+      "item_id": "R110",
+      "previous_item_id": "F110",
+      "post_id": "1nd1hv4",
+      "split": "val"
+    },
+    {
+      "item_id": "R111",
+      "previous_item_id": "F032",
+      "post_id": "1ngvs56",
+      "split": "val"
+    },
+    {
+      "item_id": "R112",
+      "previous_item_id": "F016",
+      "post_id": "1nfq80i",
+      "split": "val"
+    },
+    {
+      "item_id": "R113",
+      "previous_item_id": "F031",
+      "post_id": "1nfpefr",
+      "split": "val"
+    },
+    {
+      "item_id": "R114",
+      "previous_item_id": "F055",
+      "post_id": "1naqa42",
+      "split": "val"
+    },
+    {
+      "item_id": "R115",
+      "previous_item_id": "F083",
+      "post_id": "1n7r83q",
+      "split": "val"
+    },
+    {
+      "item_id": "R116",
+      "previous_item_id": "F115",
+      "post_id": "1nbdi1a",
+      "split": "val"
+    },
+    {
+      "item_id": "R117",
+      "previous_item_id": "F064",
+      "post_id": "1nhffbu",
+      "split": "val"
+    },
+    {
+      "item_id": "R118",
+      "previous_item_id": "F093",
+      "post_id": "1nfder7",
+      "split": "val"
+    },
+    {
+      "item_id": "R119",
+      "previous_item_id": "F118",
+      "post_id": "1n3xnwx",
+      "split": "val"
+    },
+    {
+      "item_id": "R120",
+      "previous_item_id": "F070",
+      "post_id": "1n0hatj",
+      "split": "val"
+    }
+  ],
+  "sample_sha256": "d251db6bd0796801993d8fd018893e93b08b248a25ffa01665c0d47b19fb1754",
+  "guide_sha256": "b739e8bb73544ce999632f722a83d5355f1c47b602e0596bd9d057abf18bf26d",
+  "same_participants": true,
+  "recall_possible": true,
+  "independent_new_sample": false
+}

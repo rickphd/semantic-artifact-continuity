@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rr: <http://wfrp.ia/ontologia/ia-sentimiento#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a sh:ValidationReport ;
+    sh:conforms false ;
+    sh:result [ a sh:ValidationResult ;
+            sh:focusNode <http://wfrp.ia/resource/reddit/post/1kkfjn0> ;
+            sh:resultMessage "Idioma debe ser 'es' o 'en' (xsd:string, cardinalidad 1)."@es ;
+            sh:resultPath rr:idiomaDetectado ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:InConstraintComponent ;
+            sh:sourceShape [ sh:datatype xsd:string ;
+                    sh:in ( "es" "en" ) ;
+                    sh:maxCount 1 ;
+                    sh:message "Idioma debe ser 'es' o 'en' (xsd:string, cardinalidad 1)."@es ;
+                    sh:minCount 1 ;
+                    sh:path rr:idiomaDetectado ] ;
+            sh:value "fr"^^xsd:string ] .
+

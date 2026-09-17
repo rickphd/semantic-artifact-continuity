@@ -1,0 +1,18 @@
+{
+  "identity": "information_f123_20260914",
+  "main_seeds": [
+    42,
+    123,
+    2024
+  ],
+  "main_reused_seed": 42,
+  "ablation_runs": 168,
+  "sensitivity_total": 125,
+  "sensitivity_reused": "canonical_w5_f3_v1p0_c2p0",
+  "device": "cpu",
+  "torch_threads": 1,
+  "max_epochs": 20,
+  "patience": 5,
+  "source_pilot": "JOWS/revisions/pilot_f123_seed42_20260914",
+  "status": "prepared"
+}

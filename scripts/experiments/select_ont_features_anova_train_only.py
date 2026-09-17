@@ -46,7 +46,7 @@ def main():
     selected = ranking.loc[ranking["p_value"] < ALPHA, "feature"].tolist()
 
     payload = {
-        "version": "anova_train_only_v02_vader_train_scope",
+        "version": "information_f123_20260914",
         "created_at": datetime.now().isoformat(),
         "method": "ANOVA F-test (sklearn.feature_selection.f_classif), train-only",
         "alpha": ALPHA,

@@ -1,9 +1,9 @@
 {
   "status": "passed",
-  "created_at": "2026-07-16T13:30:14.961287",
+  "created_at": "2026-09-14T14:27:10.437588",
   "variant_count": 125,
   "canonical_dataset": "data/gold/gold_enriched_ontology.parquet",
-  "canonical_dataset_sha256": "a74cebfa0db51e9d6e34a8b58b16f149db690d2d5bca0cd5d5945a9c2cc0e99f",
+  "canonical_dataset_sha256": "8730955465e71bd9782d6f9bd42cc240f0dc80c6af7432db1f57299010bbacce",
   "canonical_artefacts_not_overwritten": true,
   "grid_design": "expanded",
   "variants": [
@@ -885,9 +885,9 @@
   ],
   "environment": {
     "python": "3.13.13",
-    "pandas": "3.0.2",
-    "numpy": "2.4.3",
-    "pyarrow": "24.0.0",
+    "pandas": "3.0.3",
+    "numpy": "2.5.1",
+    "pyarrow": "25.0.0",
     "rdflib": "7.6.0",
     "sklearn": "1.9.0"
   }

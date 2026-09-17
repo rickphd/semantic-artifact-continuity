@@ -1,0 +1,10 @@
+{
+  "status": "documented_after_overwrite",
+  "case_id": "E1-I3-add-extra-valid-rdf-post",
+  "attempt": "initial_invalid_fixture_attempt",
+  "problem": "The initial extra-post fixture used rr:idiomaDetectado as Literal('en', datatype=xsd:string). The declared sh:in list in rr-shapes.ttl uses the plain literal 'en', so pySHACL reported an InConstraintComponent violation unrelated to the intended extra-valid-RDF-post fault.",
+  "correction": "The rerun changed the injected extra post to copy the plain literal form Literal('en'), leaving shapes unchanged.",
+  "evidence_limit": "The initial logs were overwritten when the single-case rerun regenerated this case directory. This note records the cause and correction, but the preserved executable evidence for I3 is the corrected rerun now stored in this case directory.",
+  "final_case_status": "detected_by_extension",
+  "final_interpretation": "After correction, original SHACL and chain checks did not detect the extra valid RDF post; the RDF inventory diagnostic detected the extra rr:Post identifier."
+}

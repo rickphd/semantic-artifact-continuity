@@ -1,0 +1,50 @@
+{
+  "detected": true,
+  "checks": {
+    "matrix_manifest_rechecker": {
+      "available": true,
+      "detected": false,
+      "mismatches": []
+    },
+    "rdf_inventory_against_gold": {
+      "available": true,
+      "detected": false,
+      "rdf_post_count": 1614,
+      "missing_ids": [],
+      "extra_ids": [],
+      "iri_mismatches": [],
+      "missing_concepts": [],
+      "extra_concepts": [],
+      "invalid_concepts": []
+    },
+    "prediction_output_fingerprint_check": {
+      "available": true,
+      "detected": true,
+      "mismatches": [
+        {
+          "prediction_file": "LR_ENR_seed42_test_predictions_v2.csv",
+          "column": "id",
+          "baseline_sha256": "359d5f85b3b8c5eeacf179a9b91c8d4ed63dfda568712a6ed4c50ef3bf62f009",
+          "current_sha256": "797f2f8757b2c3bd90151c647ee5981b0bd1c80cef08dcad9d4b2a22ab820032"
+        },
+        {
+          "prediction_file": "LR_ENR_seed42_test_predictions_v2.csv",
+          "column": "y_true",
+          "baseline_sha256": "79c3ab43621757707849eacb470474134fc9d6c4d9e7998a6e84330a34819ac7",
+          "current_sha256": "d179b672b25c1091d1b9ffd674fe72e0765647ef157668cf18c21af282b98c5f"
+        },
+        {
+          "prediction_file": "LR_ENR_seed42_test_predictions_v2.csv",
+          "column": "y_pred",
+          "baseline_sha256": "71b825cc2313f15938ed56c98a774f2409604c06e6c0c06eb5be17a67eac9a14",
+          "current_sha256": "b5c227c83d6a09d5219d855bb28445ba75681290b35e6afaaa85e254691655f9"
+        }
+      ]
+    },
+    "report_freshness_check": {
+      "available": false,
+      "detected": false,
+      "reason": "Report freshness is evaluated only for stale-report cases to avoid treating valid order-only changes as stale evidence."
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@prefix rr: <http://wfrp.ia/ontologia/ia-sentimiento#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a sh:ValidationReport ;
+    sh:conforms false ;
+    sh:result [ a sh:ValidationResult ;
+            sh:focusNode <http://wfrp.ia/resource/reddit/post/1kkfjn0> ;
+            sh:resultMessage "Probabilidades no normalizadas (|sum-1| > 0.02)." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint [ sh:message "Probabilidades no normalizadas (|sum-1| > 0.02)."@es ;
+                    sh:select """
+      PREFIX rr: <http://wfrp.ia/ontologia/ia-sentimiento#>
+      SELECT $this WHERE {
+        $this rr:probPos ?pp ; rr:probNeu ?pn ; rr:probNeg ?pg .
+        BIND(ABS((?pp + ?pn + ?pg) - 1) AS ?delta)
+        FILTER(?delta > 0.02)
+      }
+    """ ] ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape rr:PostShape ;
+            sh:value <http://wfrp.ia/resource/reddit/post/1kkfjn0> ] .
+

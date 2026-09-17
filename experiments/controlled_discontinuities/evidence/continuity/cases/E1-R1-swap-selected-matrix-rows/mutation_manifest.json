@@ -1,0 +1,39 @@
+{
+  "case_id": "E1-R1-swap-selected-matrix-rows",
+  "case": {
+    "case_id": "E1-R1-swap-selected-matrix-rows",
+    "family": "row_alignment",
+    "required": true,
+    "reserved_for_after_extension": true,
+    "mutation": "Swap two rows in test_raw_float64.npy while leaving test_ids.json and manifest.json unchanged.",
+    "affected_artefacts": [
+      "results/prepared_model_inputs/test_raw_float64.npy",
+      "results/prepared_model_inputs/test_ids.json",
+      "results/prepared_model_inputs/manifest.json"
+    ],
+    "oracle_expected": {
+      "should_alarm": true,
+      "broken_relation": "ordered post IDs to matrix rows",
+      "localization": [
+        "matrix_profile",
+        "split",
+        "row_index",
+        "post_id"
+      ]
+    },
+    "original_detector_expectation": "No public original script in the preflight set is guaranteed to recheck prepared .npy files against manifest unless the freeze verifier or a new manifest rechecker is invoked.",
+    "extension_required": "matrix_manifest_rechecker",
+    "acceptance": "Recomputed matrix_sha256 differs and row-level comparison identifies the two affected IDs."
+  },
+  "mutation_details": {
+    "matrix": "test_raw_float64.npy",
+    "swapped_rows": [
+      0,
+      1
+    ],
+    "post_ids": [
+      "1n1plgb",
+      "1n02v38"
+    ]
+  }
+}

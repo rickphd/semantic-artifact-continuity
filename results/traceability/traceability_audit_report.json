@@ -5,9 +5,9 @@
   "missing_posts_in_trace": [],
   "missing_iris_in_trace_count": 0,
   "ontology_feature_count": 37,
-  "selected_feature_count": 7,
-  "nonzero_selected_activations": 2425,
-  "traced_selected_activations": 2425,
+  "selected_feature_count": 6,
+  "nonzero_selected_activations": 1789,
+  "traced_selected_activations": 1789,
   "selected_trace_rate_pct": 100.0,
   "traceability_map": "results/traceability/traceability_map.csv"
 }

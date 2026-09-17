@@ -1,0 +1,28 @@
+{
+  "case_id": "E1-R2-reorder-predictions-against-contract",
+  "case": {
+    "case_id": "E1-R2-reorder-predictions-against-contract",
+    "family": "row_alignment",
+    "required": true,
+    "reserved_for_after_extension": false,
+    "mutation": "Permute rows in one enriched prediction CSV while preserving IDs and y_true values.",
+    "affected_artefacts": [
+      "results/anova_revalidation/predictions/LR_ENR_seed42_test_predictions_v2.csv"
+    ],
+    "oracle_expected": {
+      "should_alarm": true,
+      "broken_relation": "test prediction order to declared test order for enriched run linkage",
+      "localization": [
+        "prediction_file",
+        "row_index"
+      ]
+    },
+    "original_detector_expectation": "audit_model_input_cells should report prediction_order_mismatches for enriched run linkage; reconcile_artifact_chain may pass set-based ID checks.",
+    "extension_required": false,
+    "acceptance": "Order-sensitive run-linkage detector flags the mismatch; set-based pass is recorded as partial detection."
+  },
+  "mutation_details": {
+    "prediction_file": "LR_ENR_seed42_test_predictions_v2.csv",
+    "mutation": "rows reversed"
+  }
+}

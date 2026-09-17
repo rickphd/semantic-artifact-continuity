@@ -1,0 +1,1996 @@
+{
+  "normalization": "Local workspace, frozen package, run and interpreter paths replaced with public paths or explicit ${...} placeholders. Embedded historical hashes remain source hashes. Portable scripts are subsequently adapted; their final public hashes are updated separately.",
+  "files": [
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/run_e1_continuity.py",
+      "public": "run_e1_continuity.py",
+      "source_sha256": "a454f2aafe8ce23d59096dbde400844cea3fb4a05233f499f01a02ca7e256bd5",
+      "public_sha256": "5d2f08f08ca78debbb27aa13e75df72c15ba5d362923726247cf0a7436701228",
+      "path_normalized": true,
+      "adaptation": "Portable roots, explicit disjoint scratch output, bounded copying, invoking Python; original scientific detector functions preserved. SHACL runs the existing QName reclassification automatically."
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/run_e1_shacl.py",
+      "public": "run_e1_shacl.py",
+      "source_sha256": "fa725cab3b3c95bef633ebcaf0715b3b587be77cbaaa05242685f193f1c872c5",
+      "public_sha256": "1c5e8d16d2c0c2e61ff9207adc278632e1cb7f185e9281ae3a4a02eea5225358",
+      "path_normalized": false,
+      "adaptation": "Portable roots, explicit disjoint scratch output, bounded copying, invoking Python; original scientific detector functions preserved. SHACL runs the existing QName reclassification automatically."
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/reclassify_shacl_reports.py",
+      "public": "reclassify_shacl_reports.py",
+      "source_sha256": "d579f0e8fe469b91c1570515808d855fd5578fc4e230344fed0a3525f9d234a5",
+      "public_sha256": "1d50c1c2e082645cbce1aeb1b3811b80569d30ce69a848171ab58e12bd8d9ba9",
+      "path_normalized": false,
+      "adaptation": "Portable roots, explicit disjoint scratch output, bounded copying, invoking Python; original scientific detector functions preserved. SHACL runs the existing QName reclassification automatically."
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_CASES.json",
+      "public": "E1_CASES.json",
+      "source_sha256": "7c984394df3168839a45c00439feb91782e6e52c9707bb9ff1aea0bae5fadca8",
+      "public_sha256": "6cb419e56ab607a35b0c0e5299d31263341cbf553311c2306dce64b7bd6e2563",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/E1_REPORT.md",
+      "public": "evidence/continuity/E1_REPORT.md",
+      "source_sha256": "f7c33f17c97dd7ef4095236f1d4066c287481a6cf07d0d15d3d8298079071c10",
+      "public_sha256": "f7c33f17c97dd7ef4095236f1d4066c287481a6cf07d0d15d3d8298079071c10",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/E1_RESULTS.csv",
+      "public": "evidence/continuity/E1_RESULTS.csv",
+      "source_sha256": "aae5746928713a38eb9e92d0292c0afc0ab7d9505b0945806faed77fd3103ded",
+      "public_sha256": "8d37b71b6c3453ac346bba143be7f126a2689bc5a8571e7d8d0ee6d35286b90a",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/E1_RESULTS.json",
+      "public": "evidence/continuity/E1_RESULTS.json",
+      "source_sha256": "5784c3afb763e0fe9d651253daf6d2ebe81841a77ff7eb6933806e3347eacd20",
+      "public_sha256": "0a049fbfdead965fc7c027cf1c61103f669371a1caab6fa92c9e5350ff9d7707",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/E1_run_manifest.json",
+      "public": "evidence/continuity/E1_run_manifest.json",
+      "source_sha256": "7ccf1d4238f43e88a07544d9445eecec55b122d1840e777a3f8348054a9a391e",
+      "public_sha256": "ec728f86e9c46b6348fc0e6415c740aa1ee966382cc98d8e4b2b97aabccaa52b",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/baseline_hashes.json",
+      "public": "evidence/continuity/baseline_hashes.json",
+      "source_sha256": "b35e44df857f52f1012817dfa55ec4e2302e9a3ee895a012f329d1a22d5f4fea",
+      "public_sha256": "b35e44df857f52f1012817dfa55ec4e2302e9a3ee895a012f329d1a22d5f4fea",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-C0-pristine-copy/after_detector_hashes.json",
+      "public": "evidence/continuity/cases/E1-C0-pristine-copy/after_detector_hashes.json",
+      "source_sha256": "c32318fad96355f68145388d5f5b6b2c66ab7e1d7c48f972ebba512e9b901551",
+      "public_sha256": "c32318fad96355f68145388d5f5b6b2c66ab7e1d7c48f972ebba512e9b901551",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-C0-pristine-copy/after_mutation_hashes.json",
+      "public": "evidence/continuity/cases/E1-C0-pristine-copy/after_mutation_hashes.json",
+      "source_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "public_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-C0-pristine-copy/before_hashes.json",
+      "public": "evidence/continuity/cases/E1-C0-pristine-copy/before_hashes.json",
+      "source_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "public_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-C0-pristine-copy/extension_detector_result.json",
+      "public": "evidence/continuity/cases/E1-C0-pristine-copy/extension_detector_result.json",
+      "source_sha256": "240e83297578d9117cca545e5edb1fa37ec1defa7b04b35e5aa242c7eb006e74",
+      "public_sha256": "240e83297578d9117cca545e5edb1fa37ec1defa7b04b35e5aa242c7eb006e74",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-C0-pristine-copy/mutation_manifest.json",
+      "public": "evidence/continuity/cases/E1-C0-pristine-copy/mutation_manifest.json",
+      "source_sha256": "9ba76860ce5e1b75981d34528117d63d9a3163ea5795f35493a842748de8935d",
+      "public_sha256": "9ba76860ce5e1b75981d34528117d63d9a3163ea5795f35493a842748de8935d",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-C0-pristine-copy/oracle_comparison.json",
+      "public": "evidence/continuity/cases/E1-C0-pristine-copy/oracle_comparison.json",
+      "source_sha256": "64d58ed4543e642f0592740b86c1129339f70728f83648d08c01118ddf8cbe10",
+      "public_sha256": "64d58ed4543e642f0592740b86c1129339f70728f83648d08c01118ddf8cbe10",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-C0-pristine-copy/original_detector_result.json",
+      "public": "evidence/continuity/cases/E1-C0-pristine-copy/original_detector_result.json",
+      "source_sha256": "d7da8a1c9a001673038cf99dc7958f9be5d695258a2535f44a13dd65e7aa8c99",
+      "public_sha256": "d7da8a1c9a001673038cf99dc7958f9be5d695258a2535f44a13dd65e7aa8c99",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-C1-trace-row-permutation/after_detector_hashes.json",
+      "public": "evidence/continuity/cases/E1-C1-trace-row-permutation/after_detector_hashes.json",
+      "source_sha256": "e2cfeb2ae917b9969e28d3ed7e7ad3b764db9dad04ba9131c9b6274b9ff07a7a",
+      "public_sha256": "e2cfeb2ae917b9969e28d3ed7e7ad3b764db9dad04ba9131c9b6274b9ff07a7a",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-C1-trace-row-permutation/after_mutation_hashes.json",
+      "public": "evidence/continuity/cases/E1-C1-trace-row-permutation/after_mutation_hashes.json",
+      "source_sha256": "30d6f75e8a73e661a9acdadb5e99c297ead98ec4bec0a5f70f6c0740e1ea35c4",
+      "public_sha256": "30d6f75e8a73e661a9acdadb5e99c297ead98ec4bec0a5f70f6c0740e1ea35c4",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-C1-trace-row-permutation/before_hashes.json",
+      "public": "evidence/continuity/cases/E1-C1-trace-row-permutation/before_hashes.json",
+      "source_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "public_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-C1-trace-row-permutation/extension_detector_result.json",
+      "public": "evidence/continuity/cases/E1-C1-trace-row-permutation/extension_detector_result.json",
+      "source_sha256": "240e83297578d9117cca545e5edb1fa37ec1defa7b04b35e5aa242c7eb006e74",
+      "public_sha256": "240e83297578d9117cca545e5edb1fa37ec1defa7b04b35e5aa242c7eb006e74",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-C1-trace-row-permutation/mutation_manifest.json",
+      "public": "evidence/continuity/cases/E1-C1-trace-row-permutation/mutation_manifest.json",
+      "source_sha256": "2f3b84de3df7e47cd178d4f17d1878635e43a95d1e853d2228448d206e6fb4a4",
+      "public_sha256": "2f3b84de3df7e47cd178d4f17d1878635e43a95d1e853d2228448d206e6fb4a4",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-C1-trace-row-permutation/oracle_comparison.json",
+      "public": "evidence/continuity/cases/E1-C1-trace-row-permutation/oracle_comparison.json",
+      "source_sha256": "d603e244ff56eb43f8af297d9b3bb444564f0d30d8d68b5fd3c3464ef85ecf92",
+      "public_sha256": "d603e244ff56eb43f8af297d9b3bb444564f0d30d8d68b5fd3c3464ef85ecf92",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-C1-trace-row-permutation/original_detector_result.json",
+      "public": "evidence/continuity/cases/E1-C1-trace-row-permutation/original_detector_result.json",
+      "source_sha256": "22c4ed8f496640d3a5ab46eed9b3852473093725618a47b186c92ea3c0dd5f43",
+      "public_sha256": "22c4ed8f496640d3a5ab46eed9b3852473093725618a47b186c92ea3c0dd5f43",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-C2-rdf-triple-order-reserialization/after_detector_hashes.json",
+      "public": "evidence/continuity/cases/E1-C2-rdf-triple-order-reserialization/after_detector_hashes.json",
+      "source_sha256": "742a342b205f28400c237bfd01c3b331a300ddc431b720afff6ab05c20c3705e",
+      "public_sha256": "742a342b205f28400c237bfd01c3b331a300ddc431b720afff6ab05c20c3705e",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-C2-rdf-triple-order-reserialization/after_mutation_hashes.json",
+      "public": "evidence/continuity/cases/E1-C2-rdf-triple-order-reserialization/after_mutation_hashes.json",
+      "source_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "public_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-C2-rdf-triple-order-reserialization/before_hashes.json",
+      "public": "evidence/continuity/cases/E1-C2-rdf-triple-order-reserialization/before_hashes.json",
+      "source_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "public_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-C2-rdf-triple-order-reserialization/extension_detector_result.json",
+      "public": "evidence/continuity/cases/E1-C2-rdf-triple-order-reserialization/extension_detector_result.json",
+      "source_sha256": "240e83297578d9117cca545e5edb1fa37ec1defa7b04b35e5aa242c7eb006e74",
+      "public_sha256": "240e83297578d9117cca545e5edb1fa37ec1defa7b04b35e5aa242c7eb006e74",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-C2-rdf-triple-order-reserialization/mutation_manifest.json",
+      "public": "evidence/continuity/cases/E1-C2-rdf-triple-order-reserialization/mutation_manifest.json",
+      "source_sha256": "fc4b58d75bf8f35e06abc0281689a130fcb3e8e358e4f005e68677e4e95a8136",
+      "public_sha256": "fc4b58d75bf8f35e06abc0281689a130fcb3e8e358e4f005e68677e4e95a8136",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-C2-rdf-triple-order-reserialization/oracle_comparison.json",
+      "public": "evidence/continuity/cases/E1-C2-rdf-triple-order-reserialization/oracle_comparison.json",
+      "source_sha256": "579fcf9de123acb3a0e5318c57d3dd3787a8a1813b5e0dfc19d62466cd115bc3",
+      "public_sha256": "579fcf9de123acb3a0e5318c57d3dd3787a8a1813b5e0dfc19d62466cd115bc3",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-C2-rdf-triple-order-reserialization/original_detector_result.json",
+      "public": "evidence/continuity/cases/E1-C2-rdf-triple-order-reserialization/original_detector_result.json",
+      "source_sha256": "0beab4e6038e1ea5b987b41739e16d3a5108b544619b90a299b24188aa4cc5d2",
+      "public_sha256": "0beab4e6038e1ea5b987b41739e16d3a5108b544619b90a299b24188aa4cc5d2",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-C3-regenerated-reports-unchanged-inputs/after_detector_hashes.json",
+      "public": "evidence/continuity/cases/E1-C3-regenerated-reports-unchanged-inputs/after_detector_hashes.json",
+      "source_sha256": "3dbaebe8d6dc388e2479969e98ea349756192a0a0bd6b410edb1ffb308bebb20",
+      "public_sha256": "3dbaebe8d6dc388e2479969e98ea349756192a0a0bd6b410edb1ffb308bebb20",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-C3-regenerated-reports-unchanged-inputs/after_mutation_hashes.json",
+      "public": "evidence/continuity/cases/E1-C3-regenerated-reports-unchanged-inputs/after_mutation_hashes.json",
+      "source_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "public_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-C3-regenerated-reports-unchanged-inputs/before_hashes.json",
+      "public": "evidence/continuity/cases/E1-C3-regenerated-reports-unchanged-inputs/before_hashes.json",
+      "source_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "public_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-C3-regenerated-reports-unchanged-inputs/extension_detector_result.json",
+      "public": "evidence/continuity/cases/E1-C3-regenerated-reports-unchanged-inputs/extension_detector_result.json",
+      "source_sha256": "240e83297578d9117cca545e5edb1fa37ec1defa7b04b35e5aa242c7eb006e74",
+      "public_sha256": "240e83297578d9117cca545e5edb1fa37ec1defa7b04b35e5aa242c7eb006e74",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-C3-regenerated-reports-unchanged-inputs/mutation_manifest.json",
+      "public": "evidence/continuity/cases/E1-C3-regenerated-reports-unchanged-inputs/mutation_manifest.json",
+      "source_sha256": "fc075fe35c2bc0639eaa253009beb9271401e3066cea0a8dd9ce3fc20f39b77b",
+      "public_sha256": "fc075fe35c2bc0639eaa253009beb9271401e3066cea0a8dd9ce3fc20f39b77b",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-C3-regenerated-reports-unchanged-inputs/oracle_comparison.json",
+      "public": "evidence/continuity/cases/E1-C3-regenerated-reports-unchanged-inputs/oracle_comparison.json",
+      "source_sha256": "6fb0461e825800c732335b23a1e8eb7bee23b8bc57fc9e5f7d365ecc8104a5f2",
+      "public_sha256": "6fb0461e825800c732335b23a1e8eb7bee23b8bc57fc9e5f7d365ecc8104a5f2",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-C3-regenerated-reports-unchanged-inputs/original_detector_result.json",
+      "public": "evidence/continuity/cases/E1-C3-regenerated-reports-unchanged-inputs/original_detector_result.json",
+      "source_sha256": "d7da8a1c9a001673038cf99dc7958f9be5d695258a2535f44a13dd65e7aa8c99",
+      "public_sha256": "d7da8a1c9a001673038cf99dc7958f9be5d695258a2535f44a13dd65e7aa8c99",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-COL1-swap-matrix-columns/after_detector_hashes.json",
+      "public": "evidence/continuity/cases/E1-COL1-swap-matrix-columns/after_detector_hashes.json",
+      "source_sha256": "d742c9f9cc1715f83f3c31a63e9071012109d5ab785915ea20e1ca68eac797d8",
+      "public_sha256": "d742c9f9cc1715f83f3c31a63e9071012109d5ab785915ea20e1ca68eac797d8",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-COL1-swap-matrix-columns/after_mutation_hashes.json",
+      "public": "evidence/continuity/cases/E1-COL1-swap-matrix-columns/after_mutation_hashes.json",
+      "source_sha256": "d742c9f9cc1715f83f3c31a63e9071012109d5ab785915ea20e1ca68eac797d8",
+      "public_sha256": "d742c9f9cc1715f83f3c31a63e9071012109d5ab785915ea20e1ca68eac797d8",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-COL1-swap-matrix-columns/before_hashes.json",
+      "public": "evidence/continuity/cases/E1-COL1-swap-matrix-columns/before_hashes.json",
+      "source_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "public_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-COL1-swap-matrix-columns/extension_detector_result.json",
+      "public": "evidence/continuity/cases/E1-COL1-swap-matrix-columns/extension_detector_result.json",
+      "source_sha256": "87c2ba4f3d8a32276f638b3528f8de37aea9aaca20d1a37dc79a544f2dc6b615",
+      "public_sha256": "87c2ba4f3d8a32276f638b3528f8de37aea9aaca20d1a37dc79a544f2dc6b615",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-COL1-swap-matrix-columns/mutation_manifest.json",
+      "public": "evidence/continuity/cases/E1-COL1-swap-matrix-columns/mutation_manifest.json",
+      "source_sha256": "c57e80697d2468edbfa9a9f49dcc64218c2105c0ff1d71252df1db5276cc69ad",
+      "public_sha256": "c57e80697d2468edbfa9a9f49dcc64218c2105c0ff1d71252df1db5276cc69ad",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-COL1-swap-matrix-columns/oracle_comparison.json",
+      "public": "evidence/continuity/cases/E1-COL1-swap-matrix-columns/oracle_comparison.json",
+      "source_sha256": "5338e1a8e113e554c45aef39d3cee7e090485b95c76394eec3ffb652412a4826",
+      "public_sha256": "5338e1a8e113e554c45aef39d3cee7e090485b95c76394eec3ffb652412a4826",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-COL1-swap-matrix-columns/original_detector_result.json",
+      "public": "evidence/continuity/cases/E1-COL1-swap-matrix-columns/original_detector_result.json",
+      "source_sha256": "77eb071c64f01b45595b619d34c63de55d1c717aba53962dcc6230d68fc73e88",
+      "public_sha256": "77eb071c64f01b45595b619d34c63de55d1c717aba53962dcc6230d68fc73e88",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-COL2-unknown-selected-feature/after_detector_hashes.json",
+      "public": "evidence/continuity/cases/E1-COL2-unknown-selected-feature/after_detector_hashes.json",
+      "source_sha256": "4ed8f629828997fc657f785db4d68cf62d26aeaa19e9aacf17b4ba82a467be79",
+      "public_sha256": "4ed8f629828997fc657f785db4d68cf62d26aeaa19e9aacf17b4ba82a467be79",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-COL2-unknown-selected-feature/after_mutation_hashes.json",
+      "public": "evidence/continuity/cases/E1-COL2-unknown-selected-feature/after_mutation_hashes.json",
+      "source_sha256": "eb6ba7e25d286a2c3bd8ae109f8886a60b2a44621dc5e10c4f998d9d691458b2",
+      "public_sha256": "eb6ba7e25d286a2c3bd8ae109f8886a60b2a44621dc5e10c4f998d9d691458b2",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-COL2-unknown-selected-feature/before_hashes.json",
+      "public": "evidence/continuity/cases/E1-COL2-unknown-selected-feature/before_hashes.json",
+      "source_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "public_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-COL2-unknown-selected-feature/extension_detector_result.json",
+      "public": "evidence/continuity/cases/E1-COL2-unknown-selected-feature/extension_detector_result.json",
+      "source_sha256": "240e83297578d9117cca545e5edb1fa37ec1defa7b04b35e5aa242c7eb006e74",
+      "public_sha256": "240e83297578d9117cca545e5edb1fa37ec1defa7b04b35e5aa242c7eb006e74",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-COL2-unknown-selected-feature/mutation_manifest.json",
+      "public": "evidence/continuity/cases/E1-COL2-unknown-selected-feature/mutation_manifest.json",
+      "source_sha256": "bda5b251292b49026716c57306f10ca8eb8a3b2eb758361b09d840237cbc8440",
+      "public_sha256": "bda5b251292b49026716c57306f10ca8eb8a3b2eb758361b09d840237cbc8440",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-COL2-unknown-selected-feature/oracle_comparison.json",
+      "public": "evidence/continuity/cases/E1-COL2-unknown-selected-feature/oracle_comparison.json",
+      "source_sha256": "e6221b26fef1aeb3a66d16b33f470f9f4a288b3f4cd9ffb4d34c33e53c9c2586",
+      "public_sha256": "6a7337e74466134737a962d9f582bec55c9fb08751d4a65d522f3cfed83386a3",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-COL2-unknown-selected-feature/original_detector_result.json",
+      "public": "evidence/continuity/cases/E1-COL2-unknown-selected-feature/original_detector_result.json",
+      "source_sha256": "0309ce50e6874ce130656d507dbab66f88d677fd243004bc347e9e97ef4bef8c",
+      "public_sha256": "ef358182c9cbdf809d9ccbc5aa1678d8dcefad9cd848e25d3f6e03e30f0e5869",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-I1-remove-selected-trace-row/after_detector_hashes.json",
+      "public": "evidence/continuity/cases/E1-I1-remove-selected-trace-row/after_detector_hashes.json",
+      "source_sha256": "23f1feef7b94b75f1dcefabf694c4d416bdc4bc8dc189f030866a7a077ad9e3c",
+      "public_sha256": "23f1feef7b94b75f1dcefabf694c4d416bdc4bc8dc189f030866a7a077ad9e3c",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-I1-remove-selected-trace-row/after_mutation_hashes.json",
+      "public": "evidence/continuity/cases/E1-I1-remove-selected-trace-row/after_mutation_hashes.json",
+      "source_sha256": "602d4be9510fade9620ca7346013694aab78921c4b943bf08cabfee312afda05",
+      "public_sha256": "602d4be9510fade9620ca7346013694aab78921c4b943bf08cabfee312afda05",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-I1-remove-selected-trace-row/before_hashes.json",
+      "public": "evidence/continuity/cases/E1-I1-remove-selected-trace-row/before_hashes.json",
+      "source_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "public_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-I1-remove-selected-trace-row/extension_detector_result.json",
+      "public": "evidence/continuity/cases/E1-I1-remove-selected-trace-row/extension_detector_result.json",
+      "source_sha256": "240e83297578d9117cca545e5edb1fa37ec1defa7b04b35e5aa242c7eb006e74",
+      "public_sha256": "240e83297578d9117cca545e5edb1fa37ec1defa7b04b35e5aa242c7eb006e74",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-I1-remove-selected-trace-row/mutation_manifest.json",
+      "public": "evidence/continuity/cases/E1-I1-remove-selected-trace-row/mutation_manifest.json",
+      "source_sha256": "5cd39ea5c6007d34c2a57e44c5f17ec3364866da145b513ad5938572a70e7c80",
+      "public_sha256": "5cd39ea5c6007d34c2a57e44c5f17ec3364866da145b513ad5938572a70e7c80",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-I1-remove-selected-trace-row/oracle_comparison.json",
+      "public": "evidence/continuity/cases/E1-I1-remove-selected-trace-row/oracle_comparison.json",
+      "source_sha256": "e59bd6ababa8bf9c4db884091e63490f1bb187ebdc5bfc0d5555c8124576d6b3",
+      "public_sha256": "e59bd6ababa8bf9c4db884091e63490f1bb187ebdc5bfc0d5555c8124576d6b3",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-I1-remove-selected-trace-row/original_detector_result.json",
+      "public": "evidence/continuity/cases/E1-I1-remove-selected-trace-row/original_detector_result.json",
+      "source_sha256": "273689ba0404fdf7b86d859674a7df47ba94cb6fbab12665d991608e460a3905",
+      "public_sha256": "273689ba0404fdf7b86d859674a7df47ba94cb6fbab12665d991608e460a3905",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-I2-remove-rdf-post-resource/after_detector_hashes.json",
+      "public": "evidence/continuity/cases/E1-I2-remove-rdf-post-resource/after_detector_hashes.json",
+      "source_sha256": "d84655f1111242f5c76b9fdb6634e67d206741e951ddb634632fd9f113c1ae7c",
+      "public_sha256": "d84655f1111242f5c76b9fdb6634e67d206741e951ddb634632fd9f113c1ae7c",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-I2-remove-rdf-post-resource/after_mutation_hashes.json",
+      "public": "evidence/continuity/cases/E1-I2-remove-rdf-post-resource/after_mutation_hashes.json",
+      "source_sha256": "4d7665805c0d337d41e029ff8cbadd79ac5a13ad2dd58cdab6b577b9877c877f",
+      "public_sha256": "4d7665805c0d337d41e029ff8cbadd79ac5a13ad2dd58cdab6b577b9877c877f",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-I2-remove-rdf-post-resource/before_hashes.json",
+      "public": "evidence/continuity/cases/E1-I2-remove-rdf-post-resource/before_hashes.json",
+      "source_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "public_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-I2-remove-rdf-post-resource/extension_detector_result.json",
+      "public": "evidence/continuity/cases/E1-I2-remove-rdf-post-resource/extension_detector_result.json",
+      "source_sha256": "a88b24a5528650732f4f024626dc335fe44c97a1ce1e0a47e5e9937196c10e52",
+      "public_sha256": "a88b24a5528650732f4f024626dc335fe44c97a1ce1e0a47e5e9937196c10e52",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-I2-remove-rdf-post-resource/mutation_manifest.json",
+      "public": "evidence/continuity/cases/E1-I2-remove-rdf-post-resource/mutation_manifest.json",
+      "source_sha256": "e0f5e621df0b9b3aa2d0af186ef06d5fa557cc0fc37e008a48003c22f04d2464",
+      "public_sha256": "e0f5e621df0b9b3aa2d0af186ef06d5fa557cc0fc37e008a48003c22f04d2464",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-I2-remove-rdf-post-resource/oracle_comparison.json",
+      "public": "evidence/continuity/cases/E1-I2-remove-rdf-post-resource/oracle_comparison.json",
+      "source_sha256": "20a8e105063eec9b70f51bc955e56071e7c23dff363b5bfce0ccf6353c94a0b9",
+      "public_sha256": "20a8e105063eec9b70f51bc955e56071e7c23dff363b5bfce0ccf6353c94a0b9",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-I2-remove-rdf-post-resource/original_detector_result.json",
+      "public": "evidence/continuity/cases/E1-I2-remove-rdf-post-resource/original_detector_result.json",
+      "source_sha256": "01ad427d650daa0a0a24135dc9ef1127301e763edda59eeedac25618da13967e",
+      "public_sha256": "01ad427d650daa0a0a24135dc9ef1127301e763edda59eeedac25618da13967e",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-I3-add-extra-valid-rdf-post/after_detector_hashes.json",
+      "public": "evidence/continuity/cases/E1-I3-add-extra-valid-rdf-post/after_detector_hashes.json",
+      "source_sha256": "1c1bbd27bffa5d714ed9b675c9a261be662aeeb879b579507eb974721c6c716a",
+      "public_sha256": "1c1bbd27bffa5d714ed9b675c9a261be662aeeb879b579507eb974721c6c716a",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-I3-add-extra-valid-rdf-post/after_mutation_hashes.json",
+      "public": "evidence/continuity/cases/E1-I3-add-extra-valid-rdf-post/after_mutation_hashes.json",
+      "source_sha256": "2c34698032757f38278b3992dcc80d141fff1ad2c1ea231509eb7514b0a94976",
+      "public_sha256": "2c34698032757f38278b3992dcc80d141fff1ad2c1ea231509eb7514b0a94976",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-I3-add-extra-valid-rdf-post/before_hashes.json",
+      "public": "evidence/continuity/cases/E1-I3-add-extra-valid-rdf-post/before_hashes.json",
+      "source_sha256": "b35e44df857f52f1012817dfa55ec4e2302e9a3ee895a012f329d1a22d5f4fea",
+      "public_sha256": "b35e44df857f52f1012817dfa55ec4e2302e9a3ee895a012f329d1a22d5f4fea",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-I3-add-extra-valid-rdf-post/extension_detector_result.json",
+      "public": "evidence/continuity/cases/E1-I3-add-extra-valid-rdf-post/extension_detector_result.json",
+      "source_sha256": "b1a80cb4df166e688d9653de2497a8d50d62f6691fa40f6e7925893742ea4c25",
+      "public_sha256": "b1a80cb4df166e688d9653de2497a8d50d62f6691fa40f6e7925893742ea4c25",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-I3-add-extra-valid-rdf-post/invalid_fixture_attempt_note.json",
+      "public": "evidence/continuity/cases/E1-I3-add-extra-valid-rdf-post/invalid_fixture_attempt_note.json",
+      "source_sha256": "f23dcf3911052aa043d40a06c1539a1c3e78c47b4af5c2bfdfd80e917c53bc60",
+      "public_sha256": "f23dcf3911052aa043d40a06c1539a1c3e78c47b4af5c2bfdfd80e917c53bc60",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-I3-add-extra-valid-rdf-post/mutation_manifest.json",
+      "public": "evidence/continuity/cases/E1-I3-add-extra-valid-rdf-post/mutation_manifest.json",
+      "source_sha256": "ee89be59072e0a44cb0f63a33ff74189ad8b9a57ca45ea6a00c2bdd8838ee567",
+      "public_sha256": "ee89be59072e0a44cb0f63a33ff74189ad8b9a57ca45ea6a00c2bdd8838ee567",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-I3-add-extra-valid-rdf-post/oracle_comparison.json",
+      "public": "evidence/continuity/cases/E1-I3-add-extra-valid-rdf-post/oracle_comparison.json",
+      "source_sha256": "6cce0c49171b59eb423d480f096a599a82ef43f34df441afab44e2fb55dc10fe",
+      "public_sha256": "6cce0c49171b59eb423d480f096a599a82ef43f34df441afab44e2fb55dc10fe",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-I3-add-extra-valid-rdf-post/original_detector_result.json",
+      "public": "evidence/continuity/cases/E1-I3-add-extra-valid-rdf-post/original_detector_result.json",
+      "source_sha256": "01ad427d650daa0a0a24135dc9ef1127301e763edda59eeedac25618da13967e",
+      "public_sha256": "01ad427d650daa0a0a24135dc9ef1127301e763edda59eeedac25618da13967e",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-P1-move-id-between-splits/after_detector_hashes.json",
+      "public": "evidence/continuity/cases/E1-P1-move-id-between-splits/after_detector_hashes.json",
+      "source_sha256": "ddad5482cce5024e8d68e9a3d2bc3939d955362f537a0001dc1c39fdba9b2f59",
+      "public_sha256": "ddad5482cce5024e8d68e9a3d2bc3939d955362f537a0001dc1c39fdba9b2f59",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-P1-move-id-between-splits/after_mutation_hashes.json",
+      "public": "evidence/continuity/cases/E1-P1-move-id-between-splits/after_mutation_hashes.json",
+      "source_sha256": "5b476c9e49f807aec9f1c21bf512a3f44688abe27262e740398d01babaaf3f35",
+      "public_sha256": "5b476c9e49f807aec9f1c21bf512a3f44688abe27262e740398d01babaaf3f35",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-P1-move-id-between-splits/before_hashes.json",
+      "public": "evidence/continuity/cases/E1-P1-move-id-between-splits/before_hashes.json",
+      "source_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "public_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-P1-move-id-between-splits/extension_detector_result.json",
+      "public": "evidence/continuity/cases/E1-P1-move-id-between-splits/extension_detector_result.json",
+      "source_sha256": "240e83297578d9117cca545e5edb1fa37ec1defa7b04b35e5aa242c7eb006e74",
+      "public_sha256": "240e83297578d9117cca545e5edb1fa37ec1defa7b04b35e5aa242c7eb006e74",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-P1-move-id-between-splits/mutation_manifest.json",
+      "public": "evidence/continuity/cases/E1-P1-move-id-between-splits/mutation_manifest.json",
+      "source_sha256": "1d56286bac5d6113384f132d40a720fa53d146ff5110b7774f8e59b1573c5116",
+      "public_sha256": "1d56286bac5d6113384f132d40a720fa53d146ff5110b7774f8e59b1573c5116",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-P1-move-id-between-splits/oracle_comparison.json",
+      "public": "evidence/continuity/cases/E1-P1-move-id-between-splits/oracle_comparison.json",
+      "source_sha256": "551d9c5b95e7d18a56cdefd231e9377d5922c40e439db65bd8788d1d46245df3",
+      "public_sha256": "551d9c5b95e7d18a56cdefd231e9377d5922c40e439db65bd8788d1d46245df3",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-P1-move-id-between-splits/original_detector_result.json",
+      "public": "evidence/continuity/cases/E1-P1-move-id-between-splits/original_detector_result.json",
+      "source_sha256": "3377c27f78403ed885f6f51ecb3359259053374744319fab3331ce89de47e43c",
+      "public_sha256": "3377c27f78403ed885f6f51ecb3359259053374744319fab3331ce89de47e43c",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-P2-nontest-prediction-row/after_detector_hashes.json",
+      "public": "evidence/continuity/cases/E1-P2-nontest-prediction-row/after_detector_hashes.json",
+      "source_sha256": "568d18c82128a8567882630d420040dbd934e6bafaae8b6d6416a55c549d8d3c",
+      "public_sha256": "568d18c82128a8567882630d420040dbd934e6bafaae8b6d6416a55c549d8d3c",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-P2-nontest-prediction-row/after_mutation_hashes.json",
+      "public": "evidence/continuity/cases/E1-P2-nontest-prediction-row/after_mutation_hashes.json",
+      "source_sha256": "eb1ce36b5dc2cf06b8ca15fb565984c02ee6bd1890a9465f72e9309da00400ba",
+      "public_sha256": "eb1ce36b5dc2cf06b8ca15fb565984c02ee6bd1890a9465f72e9309da00400ba",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-P2-nontest-prediction-row/before_hashes.json",
+      "public": "evidence/continuity/cases/E1-P2-nontest-prediction-row/before_hashes.json",
+      "source_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "public_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-P2-nontest-prediction-row/extension_detector_result.json",
+      "public": "evidence/continuity/cases/E1-P2-nontest-prediction-row/extension_detector_result.json",
+      "source_sha256": "336f701f586c8f7d509a9b86979352567fad361065f477069be01f164e2f4ad6",
+      "public_sha256": "336f701f586c8f7d509a9b86979352567fad361065f477069be01f164e2f4ad6",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-P2-nontest-prediction-row/mutation_manifest.json",
+      "public": "evidence/continuity/cases/E1-P2-nontest-prediction-row/mutation_manifest.json",
+      "source_sha256": "19f937ed8972d01eaac0101f5e89ab94cec1df0df8fd327ba9fb5afb929932ec",
+      "public_sha256": "19f937ed8972d01eaac0101f5e89ab94cec1df0df8fd327ba9fb5afb929932ec",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-P2-nontest-prediction-row/oracle_comparison.json",
+      "public": "evidence/continuity/cases/E1-P2-nontest-prediction-row/oracle_comparison.json",
+      "source_sha256": "4f2f8474f2650021d1f346ca68210e0c9a9a7dd55235460dfbcb71a829e1cabe",
+      "public_sha256": "4f2f8474f2650021d1f346ca68210e0c9a9a7dd55235460dfbcb71a829e1cabe",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-P2-nontest-prediction-row/original_detector_result.json",
+      "public": "evidence/continuity/cases/E1-P2-nontest-prediction-row/original_detector_result.json",
+      "source_sha256": "d82de18a2334583b6f1a2b0f73a4e94113103acebdbeac0fd08a0f661a5695d3",
+      "public_sha256": "d82de18a2334583b6f1a2b0f73a4e94113103acebdbeac0fd08a0f661a5695d3",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-PR1-wrong-y-true/after_detector_hashes.json",
+      "public": "evidence/continuity/cases/E1-PR1-wrong-y-true/after_detector_hashes.json",
+      "source_sha256": "943d74cda6b3b52eca67beeaee901115ce1272582fb1fe2644c422e85d1208e5",
+      "public_sha256": "943d74cda6b3b52eca67beeaee901115ce1272582fb1fe2644c422e85d1208e5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-PR1-wrong-y-true/after_mutation_hashes.json",
+      "public": "evidence/continuity/cases/E1-PR1-wrong-y-true/after_mutation_hashes.json",
+      "source_sha256": "04ebf9ab924b4d1c6f46d4f11008be38cdef1babc7a0f910e71bc6cc2d672ea1",
+      "public_sha256": "04ebf9ab924b4d1c6f46d4f11008be38cdef1babc7a0f910e71bc6cc2d672ea1",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-PR1-wrong-y-true/before_hashes.json",
+      "public": "evidence/continuity/cases/E1-PR1-wrong-y-true/before_hashes.json",
+      "source_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "public_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-PR1-wrong-y-true/extension_detector_result.json",
+      "public": "evidence/continuity/cases/E1-PR1-wrong-y-true/extension_detector_result.json",
+      "source_sha256": "2f9c0d3b2eac67ad108e6b4e5671786e92c9ce6f7b2e4c3dab1599d75fafd714",
+      "public_sha256": "2f9c0d3b2eac67ad108e6b4e5671786e92c9ce6f7b2e4c3dab1599d75fafd714",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-PR1-wrong-y-true/mutation_manifest.json",
+      "public": "evidence/continuity/cases/E1-PR1-wrong-y-true/mutation_manifest.json",
+      "source_sha256": "0fb65c6072609bc011bf1ba339bbd39d1e8dc65cceaacbb3252171fb182a23f2",
+      "public_sha256": "0fb65c6072609bc011bf1ba339bbd39d1e8dc65cceaacbb3252171fb182a23f2",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-PR1-wrong-y-true/oracle_comparison.json",
+      "public": "evidence/continuity/cases/E1-PR1-wrong-y-true/oracle_comparison.json",
+      "source_sha256": "2c20b8b9f094e9bb4be7dbe895ec0e112987fdfb3a06c3b0ed2b783e5548111f",
+      "public_sha256": "2c20b8b9f094e9bb4be7dbe895ec0e112987fdfb3a06c3b0ed2b783e5548111f",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-PR1-wrong-y-true/original_detector_result.json",
+      "public": "evidence/continuity/cases/E1-PR1-wrong-y-true/original_detector_result.json",
+      "source_sha256": "d82de18a2334583b6f1a2b0f73a4e94113103acebdbeac0fd08a0f661a5695d3",
+      "public_sha256": "d82de18a2334583b6f1a2b0f73a4e94113103acebdbeac0fd08a0f661a5695d3",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-PR2-permute-y-pred-only/after_detector_hashes.json",
+      "public": "evidence/continuity/cases/E1-PR2-permute-y-pred-only/after_detector_hashes.json",
+      "source_sha256": "0f6cad425ded2559c424b1046d43324b9d366ba576603bcabc4886889402fb74",
+      "public_sha256": "0f6cad425ded2559c424b1046d43324b9d366ba576603bcabc4886889402fb74",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-PR2-permute-y-pred-only/after_mutation_hashes.json",
+      "public": "evidence/continuity/cases/E1-PR2-permute-y-pred-only/after_mutation_hashes.json",
+      "source_sha256": "0f6cad425ded2559c424b1046d43324b9d366ba576603bcabc4886889402fb74",
+      "public_sha256": "0f6cad425ded2559c424b1046d43324b9d366ba576603bcabc4886889402fb74",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-PR2-permute-y-pred-only/before_hashes.json",
+      "public": "evidence/continuity/cases/E1-PR2-permute-y-pred-only/before_hashes.json",
+      "source_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "public_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-PR2-permute-y-pred-only/extension_detector_result.json",
+      "public": "evidence/continuity/cases/E1-PR2-permute-y-pred-only/extension_detector_result.json",
+      "source_sha256": "2bb9a853b9e8770a705c046ff57368ff804820741ecae6daabbfb09b1d12c815",
+      "public_sha256": "2bb9a853b9e8770a705c046ff57368ff804820741ecae6daabbfb09b1d12c815",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-PR2-permute-y-pred-only/mutation_manifest.json",
+      "public": "evidence/continuity/cases/E1-PR2-permute-y-pred-only/mutation_manifest.json",
+      "source_sha256": "3328b7be512e1a29c707ed2fd11010775d4681b7a0888940d2279210eaf95793",
+      "public_sha256": "3328b7be512e1a29c707ed2fd11010775d4681b7a0888940d2279210eaf95793",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-PR2-permute-y-pred-only/oracle_comparison.json",
+      "public": "evidence/continuity/cases/E1-PR2-permute-y-pred-only/oracle_comparison.json",
+      "source_sha256": "0f8bd9ccf1eacb1793e620b1c49dac8395028b0825c3ec277ad0864883b52a53",
+      "public_sha256": "0f8bd9ccf1eacb1793e620b1c49dac8395028b0825c3ec277ad0864883b52a53",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-PR2-permute-y-pred-only/original_detector_result.json",
+      "public": "evidence/continuity/cases/E1-PR2-permute-y-pred-only/original_detector_result.json",
+      "source_sha256": "77eb071c64f01b45595b619d34c63de55d1c717aba53962dcc6230d68fc73e88",
+      "public_sha256": "77eb071c64f01b45595b619d34c63de55d1c717aba53962dcc6230d68fc73e88",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-R1-swap-selected-matrix-rows/after_detector_hashes.json",
+      "public": "evidence/continuity/cases/E1-R1-swap-selected-matrix-rows/after_detector_hashes.json",
+      "source_sha256": "e4e1c09823658280bc6fcc28c322dc455ab00eb0abba9a9254891620fabef3cf",
+      "public_sha256": "e4e1c09823658280bc6fcc28c322dc455ab00eb0abba9a9254891620fabef3cf",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-R1-swap-selected-matrix-rows/after_mutation_hashes.json",
+      "public": "evidence/continuity/cases/E1-R1-swap-selected-matrix-rows/after_mutation_hashes.json",
+      "source_sha256": "e4e1c09823658280bc6fcc28c322dc455ab00eb0abba9a9254891620fabef3cf",
+      "public_sha256": "e4e1c09823658280bc6fcc28c322dc455ab00eb0abba9a9254891620fabef3cf",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-R1-swap-selected-matrix-rows/before_hashes.json",
+      "public": "evidence/continuity/cases/E1-R1-swap-selected-matrix-rows/before_hashes.json",
+      "source_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "public_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-R1-swap-selected-matrix-rows/extension_detector_result.json",
+      "public": "evidence/continuity/cases/E1-R1-swap-selected-matrix-rows/extension_detector_result.json",
+      "source_sha256": "752b2ff24eb3f136e04d08fa19446854cc58c9ebba821e1988f243a812b1d90e",
+      "public_sha256": "752b2ff24eb3f136e04d08fa19446854cc58c9ebba821e1988f243a812b1d90e",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-R1-swap-selected-matrix-rows/mutation_manifest.json",
+      "public": "evidence/continuity/cases/E1-R1-swap-selected-matrix-rows/mutation_manifest.json",
+      "source_sha256": "6ef7904b0274a9444713947e9c4c0b5c8a2df3941de5747f84680e2fe6ff6cd3",
+      "public_sha256": "6ef7904b0274a9444713947e9c4c0b5c8a2df3941de5747f84680e2fe6ff6cd3",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-R1-swap-selected-matrix-rows/oracle_comparison.json",
+      "public": "evidence/continuity/cases/E1-R1-swap-selected-matrix-rows/oracle_comparison.json",
+      "source_sha256": "220b8e57c70a5149b050898d1aa893cac35e69922588b9ce49410da19542497a",
+      "public_sha256": "220b8e57c70a5149b050898d1aa893cac35e69922588b9ce49410da19542497a",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-R1-swap-selected-matrix-rows/original_detector_result.json",
+      "public": "evidence/continuity/cases/E1-R1-swap-selected-matrix-rows/original_detector_result.json",
+      "source_sha256": "77eb071c64f01b45595b619d34c63de55d1c717aba53962dcc6230d68fc73e88",
+      "public_sha256": "77eb071c64f01b45595b619d34c63de55d1c717aba53962dcc6230d68fc73e88",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-R2-reorder-predictions-against-contract/after_detector_hashes.json",
+      "public": "evidence/continuity/cases/E1-R2-reorder-predictions-against-contract/after_detector_hashes.json",
+      "source_sha256": "0aaa8ca53d97580b25150edbf1ece87e7a24d9e613485737f286ea778c418f61",
+      "public_sha256": "0aaa8ca53d97580b25150edbf1ece87e7a24d9e613485737f286ea778c418f61",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-R2-reorder-predictions-against-contract/after_mutation_hashes.json",
+      "public": "evidence/continuity/cases/E1-R2-reorder-predictions-against-contract/after_mutation_hashes.json",
+      "source_sha256": "2debafad82b8a67952bf290adbda6a672c0f7a15f7938b577ef73019120bf47e",
+      "public_sha256": "2debafad82b8a67952bf290adbda6a672c0f7a15f7938b577ef73019120bf47e",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-R2-reorder-predictions-against-contract/before_hashes.json",
+      "public": "evidence/continuity/cases/E1-R2-reorder-predictions-against-contract/before_hashes.json",
+      "source_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "public_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-R2-reorder-predictions-against-contract/extension_detector_result.json",
+      "public": "evidence/continuity/cases/E1-R2-reorder-predictions-against-contract/extension_detector_result.json",
+      "source_sha256": "bfd45110e1ee05a031fe3232ead900090cadf19deff681c7e3f458805002a324",
+      "public_sha256": "bfd45110e1ee05a031fe3232ead900090cadf19deff681c7e3f458805002a324",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-R2-reorder-predictions-against-contract/mutation_manifest.json",
+      "public": "evidence/continuity/cases/E1-R2-reorder-predictions-against-contract/mutation_manifest.json",
+      "source_sha256": "cbd3cea73613c8231bfdc7790c7cc0190cc9e81a91b3b7d8487a6520552fafee",
+      "public_sha256": "cbd3cea73613c8231bfdc7790c7cc0190cc9e81a91b3b7d8487a6520552fafee",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-R2-reorder-predictions-against-contract/oracle_comparison.json",
+      "public": "evidence/continuity/cases/E1-R2-reorder-predictions-against-contract/oracle_comparison.json",
+      "source_sha256": "3e6ecf79eee5d79179cdaee8ddd8241a01cd3418227e8eec59906060ba4a4e9e",
+      "public_sha256": "3e6ecf79eee5d79179cdaee8ddd8241a01cd3418227e8eec59906060ba4a4e9e",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-R2-reorder-predictions-against-contract/original_detector_result.json",
+      "public": "evidence/continuity/cases/E1-R2-reorder-predictions-against-contract/original_detector_result.json",
+      "source_sha256": "0cdef73410c082deeb04f7a9cf0e330473ef3dc5bb17166f73ba1b29897eed0f",
+      "public_sha256": "0cdef73410c082deeb04f7a9cf0e330473ef3dc5bb17166f73ba1b29897eed0f",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-RDF1-break-trace-post-iri/after_detector_hashes.json",
+      "public": "evidence/continuity/cases/E1-RDF1-break-trace-post-iri/after_detector_hashes.json",
+      "source_sha256": "026628b7b14683aaf0b1d0d0fe8873f35ed68a29e81d9d9de0222f399217d210",
+      "public_sha256": "026628b7b14683aaf0b1d0d0fe8873f35ed68a29e81d9d9de0222f399217d210",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-RDF1-break-trace-post-iri/after_mutation_hashes.json",
+      "public": "evidence/continuity/cases/E1-RDF1-break-trace-post-iri/after_mutation_hashes.json",
+      "source_sha256": "24cbd449e44169aec27ead468d6d2265dc716b56aa97384de97d1e4a415382c5",
+      "public_sha256": "24cbd449e44169aec27ead468d6d2265dc716b56aa97384de97d1e4a415382c5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-RDF1-break-trace-post-iri/before_hashes.json",
+      "public": "evidence/continuity/cases/E1-RDF1-break-trace-post-iri/before_hashes.json",
+      "source_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "public_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-RDF1-break-trace-post-iri/extension_detector_result.json",
+      "public": "evidence/continuity/cases/E1-RDF1-break-trace-post-iri/extension_detector_result.json",
+      "source_sha256": "240e83297578d9117cca545e5edb1fa37ec1defa7b04b35e5aa242c7eb006e74",
+      "public_sha256": "240e83297578d9117cca545e5edb1fa37ec1defa7b04b35e5aa242c7eb006e74",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-RDF1-break-trace-post-iri/mutation_manifest.json",
+      "public": "evidence/continuity/cases/E1-RDF1-break-trace-post-iri/mutation_manifest.json",
+      "source_sha256": "dc6931ed4a35ebef593d35a6d0d7c9fd938b840557bddde431c24a6244f6fbaa",
+      "public_sha256": "dc6931ed4a35ebef593d35a6d0d7c9fd938b840557bddde431c24a6244f6fbaa",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-RDF1-break-trace-post-iri/oracle_comparison.json",
+      "public": "evidence/continuity/cases/E1-RDF1-break-trace-post-iri/oracle_comparison.json",
+      "source_sha256": "c7dcdf59ec1214482d82dda651c11eb0447dc1c26077f693c11089f749704dfa",
+      "public_sha256": "c7dcdf59ec1214482d82dda651c11eb0447dc1c26077f693c11089f749704dfa",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-RDF1-break-trace-post-iri/original_detector_result.json",
+      "public": "evidence/continuity/cases/E1-RDF1-break-trace-post-iri/original_detector_result.json",
+      "source_sha256": "4d02041c45a1e4378bafeda8345eabaa6dd8cc556021593f105afdb227700ae2",
+      "public_sha256": "4d02041c45a1e4378bafeda8345eabaa6dd8cc556021593f105afdb227700ae2",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-RDF2-remove-trataSobre-for-active-concept/after_detector_hashes.json",
+      "public": "evidence/continuity/cases/E1-RDF2-remove-trataSobre-for-active-concept/after_detector_hashes.json",
+      "source_sha256": "8992d82cd9af46d57f772eae9c35bf589a6ee62fdff13f272f09f83053f94cbf",
+      "public_sha256": "8992d82cd9af46d57f772eae9c35bf589a6ee62fdff13f272f09f83053f94cbf",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-RDF2-remove-trataSobre-for-active-concept/after_mutation_hashes.json",
+      "public": "evidence/continuity/cases/E1-RDF2-remove-trataSobre-for-active-concept/after_mutation_hashes.json",
+      "source_sha256": "881543d2eabb1a928c10f2bd9936e4950c69d72064e9dc2d8c91f18c33970721",
+      "public_sha256": "881543d2eabb1a928c10f2bd9936e4950c69d72064e9dc2d8c91f18c33970721",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-RDF2-remove-trataSobre-for-active-concept/before_hashes.json",
+      "public": "evidence/continuity/cases/E1-RDF2-remove-trataSobre-for-active-concept/before_hashes.json",
+      "source_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "public_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-RDF2-remove-trataSobre-for-active-concept/extension_detector_result.json",
+      "public": "evidence/continuity/cases/E1-RDF2-remove-trataSobre-for-active-concept/extension_detector_result.json",
+      "source_sha256": "cd9f293a6f89832773961eb321b58d4dc1554d85aeb20ae9853e1b4d6d15452d",
+      "public_sha256": "cd9f293a6f89832773961eb321b58d4dc1554d85aeb20ae9853e1b4d6d15452d",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-RDF2-remove-trataSobre-for-active-concept/mutation_manifest.json",
+      "public": "evidence/continuity/cases/E1-RDF2-remove-trataSobre-for-active-concept/mutation_manifest.json",
+      "source_sha256": "1be9cdad97086d82098162e2dfd9c8b1be4e6b55463b1cc5568a93b3e79a7fb4",
+      "public_sha256": "1be9cdad97086d82098162e2dfd9c8b1be4e6b55463b1cc5568a93b3e79a7fb4",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-RDF2-remove-trataSobre-for-active-concept/oracle_comparison.json",
+      "public": "evidence/continuity/cases/E1-RDF2-remove-trataSobre-for-active-concept/oracle_comparison.json",
+      "source_sha256": "92ef58912f10046d3dc7adc7b6336cb6034edd96566144d09b1fa6eceb974ba6",
+      "public_sha256": "92ef58912f10046d3dc7adc7b6336cb6034edd96566144d09b1fa6eceb974ba6",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-RDF2-remove-trataSobre-for-active-concept/original_detector_result.json",
+      "public": "evidence/continuity/cases/E1-RDF2-remove-trataSobre-for-active-concept/original_detector_result.json",
+      "source_sha256": "01ad427d650daa0a0a24135dc9ef1127301e763edda59eeedac25618da13967e",
+      "public_sha256": "01ad427d650daa0a0a24135dc9ef1127301e763edda59eeedac25618da13967e",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-RDF3-invalid-domain-concept-iri/after_detector_hashes.json",
+      "public": "evidence/continuity/cases/E1-RDF3-invalid-domain-concept-iri/after_detector_hashes.json",
+      "source_sha256": "d82293e7be50c241824ffbdca16c816590762f96646a92b9c2ca0dbf3ee40da9",
+      "public_sha256": "d82293e7be50c241824ffbdca16c816590762f96646a92b9c2ca0dbf3ee40da9",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-RDF3-invalid-domain-concept-iri/after_mutation_hashes.json",
+      "public": "evidence/continuity/cases/E1-RDF3-invalid-domain-concept-iri/after_mutation_hashes.json",
+      "source_sha256": "d5434cca1c1e9a2f3737dca4ebb8d7bc7585629138524428e37ea9e4282e321c",
+      "public_sha256": "d5434cca1c1e9a2f3737dca4ebb8d7bc7585629138524428e37ea9e4282e321c",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-RDF3-invalid-domain-concept-iri/before_hashes.json",
+      "public": "evidence/continuity/cases/E1-RDF3-invalid-domain-concept-iri/before_hashes.json",
+      "source_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "public_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-RDF3-invalid-domain-concept-iri/extension_detector_result.json",
+      "public": "evidence/continuity/cases/E1-RDF3-invalid-domain-concept-iri/extension_detector_result.json",
+      "source_sha256": "a9b67462d4fca7054baf5f43a75c61705d59e98fd98368ade3b0b1896827c275",
+      "public_sha256": "a9b67462d4fca7054baf5f43a75c61705d59e98fd98368ade3b0b1896827c275",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-RDF3-invalid-domain-concept-iri/mutation_manifest.json",
+      "public": "evidence/continuity/cases/E1-RDF3-invalid-domain-concept-iri/mutation_manifest.json",
+      "source_sha256": "0c096d6154b9bcab9204c34c9661a2768b31f871b66e58c43497c4700c139185",
+      "public_sha256": "0c096d6154b9bcab9204c34c9661a2768b31f871b66e58c43497c4700c139185",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-RDF3-invalid-domain-concept-iri/oracle_comparison.json",
+      "public": "evidence/continuity/cases/E1-RDF3-invalid-domain-concept-iri/oracle_comparison.json",
+      "source_sha256": "0697fe6a5811c15478b6edc0823252d25a6da7ce9f79b98ddf74eb27df9291a5",
+      "public_sha256": "0697fe6a5811c15478b6edc0823252d25a6da7ce9f79b98ddf74eb27df9291a5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-RDF3-invalid-domain-concept-iri/original_detector_result.json",
+      "public": "evidence/continuity/cases/E1-RDF3-invalid-domain-concept-iri/original_detector_result.json",
+      "source_sha256": "74bb713dcc5c9a7b5767c7236211db8aa0660f89c094601d506a26952aad98a4",
+      "public_sha256": "74bb713dcc5c9a7b5767c7236211db8aa0660f89c094601d506a26952aad98a4",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-SR1-stale-traceability-success-report/after_detector_hashes.json",
+      "public": "evidence/continuity/cases/E1-SR1-stale-traceability-success-report/after_detector_hashes.json",
+      "source_sha256": "23f1feef7b94b75f1dcefabf694c4d416bdc4bc8dc189f030866a7a077ad9e3c",
+      "public_sha256": "23f1feef7b94b75f1dcefabf694c4d416bdc4bc8dc189f030866a7a077ad9e3c",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-SR1-stale-traceability-success-report/after_mutation_hashes.json",
+      "public": "evidence/continuity/cases/E1-SR1-stale-traceability-success-report/after_mutation_hashes.json",
+      "source_sha256": "602d4be9510fade9620ca7346013694aab78921c4b943bf08cabfee312afda05",
+      "public_sha256": "602d4be9510fade9620ca7346013694aab78921c4b943bf08cabfee312afda05",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-SR1-stale-traceability-success-report/before_hashes.json",
+      "public": "evidence/continuity/cases/E1-SR1-stale-traceability-success-report/before_hashes.json",
+      "source_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "public_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-SR1-stale-traceability-success-report/extension_detector_result.json",
+      "public": "evidence/continuity/cases/E1-SR1-stale-traceability-success-report/extension_detector_result.json",
+      "source_sha256": "37b1c0aee69c7a9d0c34bafde928c7897fd1eff8729d0b06b0fa349906f4cd60",
+      "public_sha256": "37b1c0aee69c7a9d0c34bafde928c7897fd1eff8729d0b06b0fa349906f4cd60",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-SR1-stale-traceability-success-report/mutation_manifest.json",
+      "public": "evidence/continuity/cases/E1-SR1-stale-traceability-success-report/mutation_manifest.json",
+      "source_sha256": "a6ccd4bf971c2d4c6cf9adeeb6b6ea4eaf3d32a965f76ccf9acc739e2fc23589",
+      "public_sha256": "a6ccd4bf971c2d4c6cf9adeeb6b6ea4eaf3d32a965f76ccf9acc739e2fc23589",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-SR1-stale-traceability-success-report/oracle_comparison.json",
+      "public": "evidence/continuity/cases/E1-SR1-stale-traceability-success-report/oracle_comparison.json",
+      "source_sha256": "73023c6c5a26d78a19d9d16056f783945c3f05c366d5dbb4d3ed4821cc4d6d47",
+      "public_sha256": "73023c6c5a26d78a19d9d16056f783945c3f05c366d5dbb4d3ed4821cc4d6d47",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-SR1-stale-traceability-success-report/original_detector_result.json",
+      "public": "evidence/continuity/cases/E1-SR1-stale-traceability-success-report/original_detector_result.json",
+      "source_sha256": "273689ba0404fdf7b86d859674a7df47ba94cb6fbab12665d991608e460a3905",
+      "public_sha256": "273689ba0404fdf7b86d859674a7df47ba94cb6fbab12665d991608e460a3905",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-SR2-stale-shacl-success-report/after_detector_hashes.json",
+      "public": "evidence/continuity/cases/E1-SR2-stale-shacl-success-report/after_detector_hashes.json",
+      "source_sha256": "51366765f4c802925ce7bef024d1e15adc5bd0fa37f4ce3b23621a897430ef99",
+      "public_sha256": "51366765f4c802925ce7bef024d1e15adc5bd0fa37f4ce3b23621a897430ef99",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-SR2-stale-shacl-success-report/after_mutation_hashes.json",
+      "public": "evidence/continuity/cases/E1-SR2-stale-shacl-success-report/after_mutation_hashes.json",
+      "source_sha256": "d5434cca1c1e9a2f3737dca4ebb8d7bc7585629138524428e37ea9e4282e321c",
+      "public_sha256": "d5434cca1c1e9a2f3737dca4ebb8d7bc7585629138524428e37ea9e4282e321c",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-SR2-stale-shacl-success-report/before_hashes.json",
+      "public": "evidence/continuity/cases/E1-SR2-stale-shacl-success-report/before_hashes.json",
+      "source_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "public_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-SR2-stale-shacl-success-report/extension_detector_result.json",
+      "public": "evidence/continuity/cases/E1-SR2-stale-shacl-success-report/extension_detector_result.json",
+      "source_sha256": "863cc81594e93f33cf329d63af0b75e83c65af66457d7b16e2b8b26a712ba877",
+      "public_sha256": "863cc81594e93f33cf329d63af0b75e83c65af66457d7b16e2b8b26a712ba877",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-SR2-stale-shacl-success-report/mutation_manifest.json",
+      "public": "evidence/continuity/cases/E1-SR2-stale-shacl-success-report/mutation_manifest.json",
+      "source_sha256": "f459ea6e61858825add8d87795f314a94f725290b0b348d3013596608632fb4f",
+      "public_sha256": "f459ea6e61858825add8d87795f314a94f725290b0b348d3013596608632fb4f",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-SR2-stale-shacl-success-report/oracle_comparison.json",
+      "public": "evidence/continuity/cases/E1-SR2-stale-shacl-success-report/oracle_comparison.json",
+      "source_sha256": "3ec9d539b82855ee041e31cf7aa7742cd1b11dcb70d40b46446696a641f68f82",
+      "public_sha256": "3ec9d539b82855ee041e31cf7aa7742cd1b11dcb70d40b46446696a641f68f82",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-SR2-stale-shacl-success-report/original_detector_result.json",
+      "public": "evidence/continuity/cases/E1-SR2-stale-shacl-success-report/original_detector_result.json",
+      "source_sha256": "ca51eae56d0dc406be533c8682e98c5c9bfd563fac805c054696985f1c3977e1",
+      "public_sha256": "ca51eae56d0dc406be533c8682e98c5c9bfd563fac805c054696985f1c3977e1",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-U1-duplicate-trace-key/after_detector_hashes.json",
+      "public": "evidence/continuity/cases/E1-U1-duplicate-trace-key/after_detector_hashes.json",
+      "source_sha256": "8fbb93c91c203bda18b1f185398eb4a66b102852455ef52099e4fc38dea22a18",
+      "public_sha256": "8fbb93c91c203bda18b1f185398eb4a66b102852455ef52099e4fc38dea22a18",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-U1-duplicate-trace-key/after_mutation_hashes.json",
+      "public": "evidence/continuity/cases/E1-U1-duplicate-trace-key/after_mutation_hashes.json",
+      "source_sha256": "a8813c255bf17c156eb4a04e079e160d07ee1d55ea644851cb165ab0289ea1ad",
+      "public_sha256": "a8813c255bf17c156eb4a04e079e160d07ee1d55ea644851cb165ab0289ea1ad",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-U1-duplicate-trace-key/before_hashes.json",
+      "public": "evidence/continuity/cases/E1-U1-duplicate-trace-key/before_hashes.json",
+      "source_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "public_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-U1-duplicate-trace-key/extension_detector_result.json",
+      "public": "evidence/continuity/cases/E1-U1-duplicate-trace-key/extension_detector_result.json",
+      "source_sha256": "240e83297578d9117cca545e5edb1fa37ec1defa7b04b35e5aa242c7eb006e74",
+      "public_sha256": "240e83297578d9117cca545e5edb1fa37ec1defa7b04b35e5aa242c7eb006e74",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-U1-duplicate-trace-key/mutation_manifest.json",
+      "public": "evidence/continuity/cases/E1-U1-duplicate-trace-key/mutation_manifest.json",
+      "source_sha256": "9a7a79e90fb017bf96586a85258d1f1b8af8df30dd349dbe0c50ecfd0b429491",
+      "public_sha256": "9a7a79e90fb017bf96586a85258d1f1b8af8df30dd349dbe0c50ecfd0b429491",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-U1-duplicate-trace-key/oracle_comparison.json",
+      "public": "evidence/continuity/cases/E1-U1-duplicate-trace-key/oracle_comparison.json",
+      "source_sha256": "241de2c65ace1226d2bd28f2e8942fa94216427c3b6e8dc87c8a58771749b946",
+      "public_sha256": "241de2c65ace1226d2bd28f2e8942fa94216427c3b6e8dc87c8a58771749b946",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-U1-duplicate-trace-key/original_detector_result.json",
+      "public": "evidence/continuity/cases/E1-U1-duplicate-trace-key/original_detector_result.json",
+      "source_sha256": "b35a59b2b031c58e3501622dcf553507da06be2f8ba4f9416c904e1166153b5f",
+      "public_sha256": "b35a59b2b031c58e3501622dcf553507da06be2f8ba4f9416c904e1166153b5f",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-U2-duplicate-split-id/after_detector_hashes.json",
+      "public": "evidence/continuity/cases/E1-U2-duplicate-split-id/after_detector_hashes.json",
+      "source_sha256": "1d190d1069e7df64fc474797b00a334c9b3221219dc748bd646bdec70587c50d",
+      "public_sha256": "1d190d1069e7df64fc474797b00a334c9b3221219dc748bd646bdec70587c50d",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-U2-duplicate-split-id/after_mutation_hashes.json",
+      "public": "evidence/continuity/cases/E1-U2-duplicate-split-id/after_mutation_hashes.json",
+      "source_sha256": "1d190d1069e7df64fc474797b00a334c9b3221219dc748bd646bdec70587c50d",
+      "public_sha256": "1d190d1069e7df64fc474797b00a334c9b3221219dc748bd646bdec70587c50d",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-U2-duplicate-split-id/before_hashes.json",
+      "public": "evidence/continuity/cases/E1-U2-duplicate-split-id/before_hashes.json",
+      "source_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "public_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-U2-duplicate-split-id/extension_detector_result.json",
+      "public": "evidence/continuity/cases/E1-U2-duplicate-split-id/extension_detector_result.json",
+      "source_sha256": "240e83297578d9117cca545e5edb1fa37ec1defa7b04b35e5aa242c7eb006e74",
+      "public_sha256": "240e83297578d9117cca545e5edb1fa37ec1defa7b04b35e5aa242c7eb006e74",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-U2-duplicate-split-id/mutation_manifest.json",
+      "public": "evidence/continuity/cases/E1-U2-duplicate-split-id/mutation_manifest.json",
+      "source_sha256": "d87fb7a6577a14107d22c4eb5fb784024439e197d58696db45b8bc695ade744f",
+      "public_sha256": "d87fb7a6577a14107d22c4eb5fb784024439e197d58696db45b8bc695ade744f",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-U2-duplicate-split-id/oracle_comparison.json",
+      "public": "evidence/continuity/cases/E1-U2-duplicate-split-id/oracle_comparison.json",
+      "source_sha256": "24b2f3e1fb29f128b20c16503609a8649eb921fd84e40171daf388654cbcd613",
+      "public_sha256": "24b2f3e1fb29f128b20c16503609a8649eb921fd84e40171daf388654cbcd613",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-U2-duplicate-split-id/original_detector_result.json",
+      "public": "evidence/continuity/cases/E1-U2-duplicate-split-id/original_detector_result.json",
+      "source_sha256": "3e32322bf66a7d3b59a740287514f207631ac0be8c4ec6c76574d7bfb01f6283",
+      "public_sha256": "aef37bf33ccf8c297e9d4f7679132f71e5b1976660b8df78e3b449cd4ef354e3",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-U3-duplicate-prediction-id/after_detector_hashes.json",
+      "public": "evidence/continuity/cases/E1-U3-duplicate-prediction-id/after_detector_hashes.json",
+      "source_sha256": "1c775c1c3f11acd84ed360f35895ab25df640012aabe83b93baa3b759599c2a0",
+      "public_sha256": "1c775c1c3f11acd84ed360f35895ab25df640012aabe83b93baa3b759599c2a0",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-U3-duplicate-prediction-id/after_mutation_hashes.json",
+      "public": "evidence/continuity/cases/E1-U3-duplicate-prediction-id/after_mutation_hashes.json",
+      "source_sha256": "39ed48fe1c331a125cc3e6a1438e24822380ff462846df3da8921518b22a9e95",
+      "public_sha256": "39ed48fe1c331a125cc3e6a1438e24822380ff462846df3da8921518b22a9e95",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-U3-duplicate-prediction-id/before_hashes.json",
+      "public": "evidence/continuity/cases/E1-U3-duplicate-prediction-id/before_hashes.json",
+      "source_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "public_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-U3-duplicate-prediction-id/extension_detector_result.json",
+      "public": "evidence/continuity/cases/E1-U3-duplicate-prediction-id/extension_detector_result.json",
+      "source_sha256": "a4c43eab7f5862e197364fcb980c731163c8a4d782c41611b2726e5e1082012b",
+      "public_sha256": "a4c43eab7f5862e197364fcb980c731163c8a4d782c41611b2726e5e1082012b",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-U3-duplicate-prediction-id/mutation_manifest.json",
+      "public": "evidence/continuity/cases/E1-U3-duplicate-prediction-id/mutation_manifest.json",
+      "source_sha256": "dbb2cbec234cf1c5b43403a5a6c035ae47a48f4a25018d7745ad79342e939185",
+      "public_sha256": "dbb2cbec234cf1c5b43403a5a6c035ae47a48f4a25018d7745ad79342e939185",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-U3-duplicate-prediction-id/oracle_comparison.json",
+      "public": "evidence/continuity/cases/E1-U3-duplicate-prediction-id/oracle_comparison.json",
+      "source_sha256": "0b813968c7202b9deae77e9645d34527724fbbc18c5036c9de6485770b7e24fa",
+      "public_sha256": "0b813968c7202b9deae77e9645d34527724fbbc18c5036c9de6485770b7e24fa",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-U3-duplicate-prediction-id/original_detector_result.json",
+      "public": "evidence/continuity/cases/E1-U3-duplicate-prediction-id/original_detector_result.json",
+      "source_sha256": "bcd5e18a7770c76f5a6c04b0e308effe405f78f23ec7d397ab9a008f1767edc9",
+      "public_sha256": "bcd5e18a7770c76f5a6c04b0e308effe405f78f23ec7d397ab9a008f1767edc9",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-V1-corrupt-selected-gold-cell/after_detector_hashes.json",
+      "public": "evidence/continuity/cases/E1-V1-corrupt-selected-gold-cell/after_detector_hashes.json",
+      "source_sha256": "391c585d6336b8f89cb9c6c37182bd183776bc22578b30aa3b39023400e7c89e",
+      "public_sha256": "391c585d6336b8f89cb9c6c37182bd183776bc22578b30aa3b39023400e7c89e",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-V1-corrupt-selected-gold-cell/after_mutation_hashes.json",
+      "public": "evidence/continuity/cases/E1-V1-corrupt-selected-gold-cell/after_mutation_hashes.json",
+      "source_sha256": "1d8df01058e28fa18f27adfb438a9d0121d25a3281633310b108375c2d9751d7",
+      "public_sha256": "1d8df01058e28fa18f27adfb438a9d0121d25a3281633310b108375c2d9751d7",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-V1-corrupt-selected-gold-cell/before_hashes.json",
+      "public": "evidence/continuity/cases/E1-V1-corrupt-selected-gold-cell/before_hashes.json",
+      "source_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "public_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-V1-corrupt-selected-gold-cell/extension_detector_result.json",
+      "public": "evidence/continuity/cases/E1-V1-corrupt-selected-gold-cell/extension_detector_result.json",
+      "source_sha256": "cf98952ea2af3b4e549528cef82876914da8eb716c726b2f7dacfa1ac4781dc2",
+      "public_sha256": "cf98952ea2af3b4e549528cef82876914da8eb716c726b2f7dacfa1ac4781dc2",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-V1-corrupt-selected-gold-cell/mutation_manifest.json",
+      "public": "evidence/continuity/cases/E1-V1-corrupt-selected-gold-cell/mutation_manifest.json",
+      "source_sha256": "befdf930312b84aa300c3a551a26c7713fdb94cff42090eef2c83dc658956d05",
+      "public_sha256": "befdf930312b84aa300c3a551a26c7713fdb94cff42090eef2c83dc658956d05",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-V1-corrupt-selected-gold-cell/oracle_comparison.json",
+      "public": "evidence/continuity/cases/E1-V1-corrupt-selected-gold-cell/oracle_comparison.json",
+      "source_sha256": "271b34525b89c2f106553a0132326bf62759d78e22ffab6f65c3099e69e3c681",
+      "public_sha256": "271b34525b89c2f106553a0132326bf62759d78e22ffab6f65c3099e69e3c681",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-V1-corrupt-selected-gold-cell/original_detector_result.json",
+      "public": "evidence/continuity/cases/E1-V1-corrupt-selected-gold-cell/original_detector_result.json",
+      "source_sha256": "cdba7a881994703c60e09585779310fd68892d4f44082bf29197905371e829b1",
+      "public_sha256": "cdba7a881994703c60e09585779310fd68892d4f44082bf29197905371e829b1",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-V2-corrupt-trace-value/after_detector_hashes.json",
+      "public": "evidence/continuity/cases/E1-V2-corrupt-trace-value/after_detector_hashes.json",
+      "source_sha256": "f88ccd4d322ebf3ac315ab246a07d96b49ee3fbef75751e5ef8a06c04bbeeb1d",
+      "public_sha256": "f88ccd4d322ebf3ac315ab246a07d96b49ee3fbef75751e5ef8a06c04bbeeb1d",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-V2-corrupt-trace-value/after_mutation_hashes.json",
+      "public": "evidence/continuity/cases/E1-V2-corrupt-trace-value/after_mutation_hashes.json",
+      "source_sha256": "d5961f9106f64d821c3545b962d3d18389f7182acd2862accb77c7e4bd0bc392",
+      "public_sha256": "d5961f9106f64d821c3545b962d3d18389f7182acd2862accb77c7e4bd0bc392",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-V2-corrupt-trace-value/before_hashes.json",
+      "public": "evidence/continuity/cases/E1-V2-corrupt-trace-value/before_hashes.json",
+      "source_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "public_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-V2-corrupt-trace-value/extension_detector_result.json",
+      "public": "evidence/continuity/cases/E1-V2-corrupt-trace-value/extension_detector_result.json",
+      "source_sha256": "240e83297578d9117cca545e5edb1fa37ec1defa7b04b35e5aa242c7eb006e74",
+      "public_sha256": "240e83297578d9117cca545e5edb1fa37ec1defa7b04b35e5aa242c7eb006e74",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-V2-corrupt-trace-value/mutation_manifest.json",
+      "public": "evidence/continuity/cases/E1-V2-corrupt-trace-value/mutation_manifest.json",
+      "source_sha256": "0b6c2d660c6f29a22fccad8da375c7533075e59510ec61c3a102cd57187bbc7d",
+      "public_sha256": "0b6c2d660c6f29a22fccad8da375c7533075e59510ec61c3a102cd57187bbc7d",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-V2-corrupt-trace-value/oracle_comparison.json",
+      "public": "evidence/continuity/cases/E1-V2-corrupt-trace-value/oracle_comparison.json",
+      "source_sha256": "bcd74488b830cbf7bf3bb9d37372a2823e01e675f9d8c9c8d447b90ec9990c4e",
+      "public_sha256": "bcd74488b830cbf7bf3bb9d37372a2823e01e675f9d8c9c8d447b90ec9990c4e",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-V2-corrupt-trace-value/original_detector_result.json",
+      "public": "evidence/continuity/cases/E1-V2-corrupt-trace-value/original_detector_result.json",
+      "source_sha256": "f9111236c70ff04fd29d94790e9e88ee8197f222332d2b9c4ff14c652fa43de1",
+      "public_sha256": "f9111236c70ff04fd29d94790e9e88ee8197f222332d2b9c4ff14c652fa43de1",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-V3-corrupt-standardized-matrix-cell/after_detector_hashes.json",
+      "public": "evidence/continuity/cases/E1-V3-corrupt-standardized-matrix-cell/after_detector_hashes.json",
+      "source_sha256": "0adf43c25c26d2f5bd4baa29d0802110b27886d61a3718a0ea09d8ed9b26cf21",
+      "public_sha256": "0adf43c25c26d2f5bd4baa29d0802110b27886d61a3718a0ea09d8ed9b26cf21",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-V3-corrupt-standardized-matrix-cell/after_mutation_hashes.json",
+      "public": "evidence/continuity/cases/E1-V3-corrupt-standardized-matrix-cell/after_mutation_hashes.json",
+      "source_sha256": "0adf43c25c26d2f5bd4baa29d0802110b27886d61a3718a0ea09d8ed9b26cf21",
+      "public_sha256": "0adf43c25c26d2f5bd4baa29d0802110b27886d61a3718a0ea09d8ed9b26cf21",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-V3-corrupt-standardized-matrix-cell/before_hashes.json",
+      "public": "evidence/continuity/cases/E1-V3-corrupt-standardized-matrix-cell/before_hashes.json",
+      "source_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "public_sha256": "d482ac2b84fab99babec0000f7fd580e3b441e8be68585bde70b488a32b3aaa5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-V3-corrupt-standardized-matrix-cell/extension_detector_result.json",
+      "public": "evidence/continuity/cases/E1-V3-corrupt-standardized-matrix-cell/extension_detector_result.json",
+      "source_sha256": "412a16e4187f63637ef7dacc741e4a3547de67ade20f44729e9df78a6703590f",
+      "public_sha256": "412a16e4187f63637ef7dacc741e4a3547de67ade20f44729e9df78a6703590f",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-V3-corrupt-standardized-matrix-cell/mutation_manifest.json",
+      "public": "evidence/continuity/cases/E1-V3-corrupt-standardized-matrix-cell/mutation_manifest.json",
+      "source_sha256": "5de0e1ae913bbee97da0ac9d98d0d7de41e76cc0678a4cb710e129a6a4af77bd",
+      "public_sha256": "5de0e1ae913bbee97da0ac9d98d0d7de41e76cc0678a4cb710e129a6a4af77bd",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-V3-corrupt-standardized-matrix-cell/oracle_comparison.json",
+      "public": "evidence/continuity/cases/E1-V3-corrupt-standardized-matrix-cell/oracle_comparison.json",
+      "source_sha256": "21d7b02015b0da1a8226582222e22de6bf36e8eda400d0551a3ce4ba0e4fdbf3",
+      "public_sha256": "21d7b02015b0da1a8226582222e22de6bf36e8eda400d0551a3ce4ba0e4fdbf3",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/continuity/cases/E1-V3-corrupt-standardized-matrix-cell/original_detector_result.json",
+      "public": "evidence/continuity/cases/E1-V3-corrupt-standardized-matrix-cell/original_detector_result.json",
+      "source_sha256": "77eb071c64f01b45595b619d34c63de55d1c717aba53962dcc6230d68fc73e88",
+      "public_sha256": "77eb071c64f01b45595b619d34c63de55d1c717aba53962dcc6230d68fc73e88",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/REPORT.md",
+      "public": "evidence/shacl/REPORT.md",
+      "source_sha256": "a0589025cd3ff42df08ab435dbe4a386b2186fc0d0cbfd0ca12be2742feeae7c",
+      "public_sha256": "644ffaacffd8ddcf31bb4cc051369776fa410a79e2494a211443b13454c6df9d",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/REPORT_RECLASSIFIED.md",
+      "public": "evidence/shacl/REPORT_RECLASSIFIED.md",
+      "source_sha256": "2d9331d177db66d3a20c12f72e06e9e1b0a47d013d3aba684e4d278f1ba6acb9",
+      "public_sha256": "2d9331d177db66d3a20c12f72e06e9e1b0a47d013d3aba684e4d278f1ba6acb9",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/summary.json",
+      "public": "evidence/shacl/summary.json",
+      "source_sha256": "f34e05957b06ae8817d9c66f3f363055ae78de0b328e62126d1f8292863b84b7",
+      "public_sha256": "faaceefdaae6d5a49f32c6c8cf50e269bb1770d1b6ade02be458bdf9f2eeeaa3",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/summary_reclassified.json",
+      "public": "evidence/shacl/summary_reclassified.json",
+      "source_sha256": "32149b90f586736a149c699dab2cffc01646b5fdde45e6dfa61b95849c544be8",
+      "public_sha256": "877c20f7ab88daa1bde844026a72d9b523ab95b8654d5d902f0555fa3ae354ba",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-C0-pristine-shacl-control/canonical_shapes_normalized.ttl",
+      "public": "evidence/shacl/cases/E1-C0-pristine-shacl-control/canonical_shapes_normalized.ttl",
+      "source_sha256": "d1f2c47e1053923c1235e1b83ca89becf681ede805d7dc6549d7dbaaa6191230",
+      "public_sha256": "d1f2c47e1053923c1235e1b83ca89becf681ede805d7dc6549d7dbaaa6191230",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-C0-pristine-shacl-control/mutated_posts.ttl",
+      "public": "evidence/shacl/cases/E1-C0-pristine-shacl-control/mutated_posts.ttl",
+      "source_sha256": "fdbac59aa40039e1134863571fa2653fdf0b326b88d8a178dd0cf942ad0c0a55",
+      "public_sha256": "fdbac59aa40039e1134863571fa2653fdf0b326b88d8a178dd0cf942ad0c0a55",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-C0-pristine-shacl-control/mutation_manifest.json",
+      "public": "evidence/shacl/cases/E1-C0-pristine-shacl-control/mutation_manifest.json",
+      "source_sha256": "d6532489dc66d4fc9ffa688c3d778237ced1b5998d18d6cf20c83b8ffbba8e72",
+      "public_sha256": "d634add583d3d19c03220a9ff88fe56b9881b845a974c177ac82a57bb10635c2",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-C0-pristine-shacl-control/report.ttl",
+      "public": "evidence/shacl/cases/E1-C0-pristine-shacl-control/report.ttl",
+      "source_sha256": "4a53a3befd9bcdb7273ef3d6e47a83be519927771faee49ef0d2a44ee23be2be",
+      "public_sha256": "4a53a3befd9bcdb7273ef3d6e47a83be519927771faee49ef0d2a44ee23be2be",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-C0-pristine-shacl-control/report.txt",
+      "public": "evidence/shacl/cases/E1-C0-pristine-shacl-control/report.txt",
+      "source_sha256": "77debc800e6c973b66475968bdf71e2e667df8f4108e7f5299fe1651e6606dc9",
+      "public_sha256": "77debc800e6c973b66475968bdf71e2e667df8f4108e7f5299fe1651e6606dc9",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-C0-pristine-shacl-control/report_extracted.json",
+      "public": "evidence/shacl/cases/E1-C0-pristine-shacl-control/report_extracted.json",
+      "source_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "public_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-C0-pristine-shacl-control/result.json",
+      "public": "evidence/shacl/cases/E1-C0-pristine-shacl-control/result.json",
+      "source_sha256": "f32394cfedfd7830a97bd6c778672ba116d3f8d00e85c7e32331af3aed0fa52a",
+      "public_sha256": "26959520daddac15334444e3df5465b07cab5c870bc1dd1cfcf32a5d9f09a0b0",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-C0-pristine-shacl-control/result_reclassified.json",
+      "public": "evidence/shacl/cases/E1-C0-pristine-shacl-control/result_reclassified.json",
+      "source_sha256": "d0e04202b92147f11265fbc20a5966b0fb5a1bff73b0f7c7fd8ffb3ba936b6fb",
+      "public_sha256": "6039b726f2090f732b1a0dbffdef14a821a634aad7db21aed79cf8bdab3022eb",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL1-missing-identifier/canonical_shapes_normalized.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL1-missing-identifier/canonical_shapes_normalized.ttl",
+      "source_sha256": "d1f2c47e1053923c1235e1b83ca89becf681ede805d7dc6549d7dbaaa6191230",
+      "public_sha256": "d1f2c47e1053923c1235e1b83ca89becf681ede805d7dc6549d7dbaaa6191230",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL1-missing-identifier/mutated_posts.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL1-missing-identifier/mutated_posts.ttl",
+      "source_sha256": "437914fa50feb53f6100e7cdbbe3e0222be7ff53af1393a18801561ddf0a00d7",
+      "public_sha256": "437914fa50feb53f6100e7cdbbe3e0222be7ff53af1393a18801561ddf0a00d7",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL1-missing-identifier/mutation_manifest.json",
+      "public": "evidence/shacl/cases/E1-SHACL1-missing-identifier/mutation_manifest.json",
+      "source_sha256": "b86335f29c34eeaa3b47966b75ef9494b3da2c32bb4732a7d8cb0b00fcf6f595",
+      "public_sha256": "cbc94de5bf4bf47c88b59ee67cb7e99025aa168d8f3331ce82bc3acfe2f7d727",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL1-missing-identifier/report.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL1-missing-identifier/report.ttl",
+      "source_sha256": "a0364d5536720a9f1edc95a3754eee4acf201be3b9483e2b8cb3fc88b27c36a6",
+      "public_sha256": "a0364d5536720a9f1edc95a3754eee4acf201be3b9483e2b8cb3fc88b27c36a6",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL1-missing-identifier/report.txt",
+      "public": "evidence/shacl/cases/E1-SHACL1-missing-identifier/report.txt",
+      "source_sha256": "764ee4bcb4a1ef59a2cabe8e3672058be13716be320861cd7fcd2b80aad6c40d",
+      "public_sha256": "764ee4bcb4a1ef59a2cabe8e3672058be13716be320861cd7fcd2b80aad6c40d",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL1-missing-identifier/report_extracted.json",
+      "public": "evidence/shacl/cases/E1-SHACL1-missing-identifier/report_extracted.json",
+      "source_sha256": "278721e05d3859a337c47c8526b5df5b226868b06e89a9112f048caebec2f47f",
+      "public_sha256": "278721e05d3859a337c47c8526b5df5b226868b06e89a9112f048caebec2f47f",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL1-missing-identifier/result.json",
+      "public": "evidence/shacl/cases/E1-SHACL1-missing-identifier/result.json",
+      "source_sha256": "f904473e756cdbd00dccd01044ee52ce9130be16b8dc67049580f052f9877a02",
+      "public_sha256": "29ae74401ac022f3999833055a83696f77ef517d2e215f369c47aff6e91251a7",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL1-missing-identifier/result_reclassified.json",
+      "public": "evidence/shacl/cases/E1-SHACL1-missing-identifier/result_reclassified.json",
+      "source_sha256": "0aa2619f1dadc5b3c7700a54750201c2399adc2d768008985f61d55dc0de293b",
+      "public_sha256": "99afaebe81f1f426b30b102d9414c24d749c84e51870f0f96ea38dfab344b852",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL10-concept-without-scheme/canonical_shapes_normalized.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL10-concept-without-scheme/canonical_shapes_normalized.ttl",
+      "source_sha256": "d1f2c47e1053923c1235e1b83ca89becf681ede805d7dc6549d7dbaaa6191230",
+      "public_sha256": "d1f2c47e1053923c1235e1b83ca89becf681ede805d7dc6549d7dbaaa6191230",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL10-concept-without-scheme/mutated_posts.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL10-concept-without-scheme/mutated_posts.ttl",
+      "source_sha256": "f6efc30ce7a51f82b57c504d3ff830849725953269e372c2decb53c1ae62cb0f",
+      "public_sha256": "f6efc30ce7a51f82b57c504d3ff830849725953269e372c2decb53c1ae62cb0f",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL10-concept-without-scheme/mutation_manifest.json",
+      "public": "evidence/shacl/cases/E1-SHACL10-concept-without-scheme/mutation_manifest.json",
+      "source_sha256": "18fd3464bd659bee08aa218ae5a393189166518a94aadcc0944d8085caff4565",
+      "public_sha256": "8e9294834a090702f9fd7d2b832cb96318abd3767e8525937393c7bd11410fad",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL10-concept-without-scheme/report.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL10-concept-without-scheme/report.ttl",
+      "source_sha256": "4423ecc58226fe98cd096657915311cc106b5069f067b6927425ad65a889d36c",
+      "public_sha256": "4423ecc58226fe98cd096657915311cc106b5069f067b6927425ad65a889d36c",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL10-concept-without-scheme/report.txt",
+      "public": "evidence/shacl/cases/E1-SHACL10-concept-without-scheme/report.txt",
+      "source_sha256": "58a130ee8e8d0d9cf3d8481d05fffb5f2110cac7254e8d014226361d15328e2d",
+      "public_sha256": "58a130ee8e8d0d9cf3d8481d05fffb5f2110cac7254e8d014226361d15328e2d",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL10-concept-without-scheme/report_extracted.json",
+      "public": "evidence/shacl/cases/E1-SHACL10-concept-without-scheme/report_extracted.json",
+      "source_sha256": "6faa1cf84b5c8a19eccbaec60344d6056db73cb0213be0684ff7b1fce632bbdc",
+      "public_sha256": "6faa1cf84b5c8a19eccbaec60344d6056db73cb0213be0684ff7b1fce632bbdc",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL10-concept-without-scheme/result.json",
+      "public": "evidence/shacl/cases/E1-SHACL10-concept-without-scheme/result.json",
+      "source_sha256": "384aead03ac215236e4962c9861f12c3044e7046e8a1310750242cedf8f9077e",
+      "public_sha256": "e1e8f0879e03c7b7761d2f962d1c871b4231d9d5e709214571935ac3bc0e9959",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL10-concept-without-scheme/result_reclassified.json",
+      "public": "evidence/shacl/cases/E1-SHACL10-concept-without-scheme/result_reclassified.json",
+      "source_sha256": "c5f8a37ee87f3e665141c0a02ee07f73bef55461fdc02b293c37eb7e07662c7c",
+      "public_sha256": "86e8fb5f615ae0255a4a3a4e8559e60c747765d46ca6f7442d52e637c2cb2a3d",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL2-invalid-identifier-pattern/canonical_shapes_normalized.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL2-invalid-identifier-pattern/canonical_shapes_normalized.ttl",
+      "source_sha256": "d1f2c47e1053923c1235e1b83ca89becf681ede805d7dc6549d7dbaaa6191230",
+      "public_sha256": "d1f2c47e1053923c1235e1b83ca89becf681ede805d7dc6549d7dbaaa6191230",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL2-invalid-identifier-pattern/mutated_posts.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL2-invalid-identifier-pattern/mutated_posts.ttl",
+      "source_sha256": "22b8fa1fb32d4d9a2fde1d0469ad6912d63f5cc29cfee509acc2093b2d53cf2a",
+      "public_sha256": "22b8fa1fb32d4d9a2fde1d0469ad6912d63f5cc29cfee509acc2093b2d53cf2a",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL2-invalid-identifier-pattern/mutation_manifest.json",
+      "public": "evidence/shacl/cases/E1-SHACL2-invalid-identifier-pattern/mutation_manifest.json",
+      "source_sha256": "c97ea0a4e61d5562865b39b67fdb72d3ed15d4724ac17969102676b929fe7b93",
+      "public_sha256": "5edd343800d1b826cacf565310dce00d5abbcb1cc78fbc400bbfb662f6a8458d",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL2-invalid-identifier-pattern/report.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL2-invalid-identifier-pattern/report.ttl",
+      "source_sha256": "fe23e311899a7ae577df560ba817a41c04f51749342916a2bf6f1532ae4b1c09",
+      "public_sha256": "fe23e311899a7ae577df560ba817a41c04f51749342916a2bf6f1532ae4b1c09",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL2-invalid-identifier-pattern/report.txt",
+      "public": "evidence/shacl/cases/E1-SHACL2-invalid-identifier-pattern/report.txt",
+      "source_sha256": "b41021a397580463b0370c2c2724fba3fee39b14e76888837f09ba2e15acb1a5",
+      "public_sha256": "b41021a397580463b0370c2c2724fba3fee39b14e76888837f09ba2e15acb1a5",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL2-invalid-identifier-pattern/report_extracted.json",
+      "public": "evidence/shacl/cases/E1-SHACL2-invalid-identifier-pattern/report_extracted.json",
+      "source_sha256": "430e30e840b052e7f1b0242378442e3ce6e6eb7d1910bf02ef63f42026c1f00d",
+      "public_sha256": "430e30e840b052e7f1b0242378442e3ce6e6eb7d1910bf02ef63f42026c1f00d",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL2-invalid-identifier-pattern/result.json",
+      "public": "evidence/shacl/cases/E1-SHACL2-invalid-identifier-pattern/result.json",
+      "source_sha256": "a1433ddb98dc1683d6cdd26449e9c0668cec3409642fe1b161cb82137ae6603b",
+      "public_sha256": "cdaa33da08e615acc45ed61c9556afcd659c609134ab7412b45ce97fdb99c1dc",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL2-invalid-identifier-pattern/result_reclassified.json",
+      "public": "evidence/shacl/cases/E1-SHACL2-invalid-identifier-pattern/result_reclassified.json",
+      "source_sha256": "c29dd42705b90279c4cd7bf6756478e5c9e2155742aceaebf6d7df89f5deb890",
+      "public_sha256": "7584b393a68907e0d8063930a043c2e17f0893e5a565604ac55f8038be4ed403",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL3-invalid-language/canonical_shapes_normalized.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL3-invalid-language/canonical_shapes_normalized.ttl",
+      "source_sha256": "d1f2c47e1053923c1235e1b83ca89becf681ede805d7dc6549d7dbaaa6191230",
+      "public_sha256": "d1f2c47e1053923c1235e1b83ca89becf681ede805d7dc6549d7dbaaa6191230",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL3-invalid-language/mutated_posts.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL3-invalid-language/mutated_posts.ttl",
+      "source_sha256": "25747fbeb1ebac507a17c003fe028e4a93876f058e29373ce143b090c022d33d",
+      "public_sha256": "25747fbeb1ebac507a17c003fe028e4a93876f058e29373ce143b090c022d33d",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL3-invalid-language/mutation_manifest.json",
+      "public": "evidence/shacl/cases/E1-SHACL3-invalid-language/mutation_manifest.json",
+      "source_sha256": "4a229f771deefe411757e01410b4932ef74344ece6957c4ea9677939e35f26f5",
+      "public_sha256": "cdcd7365eae1017d61c64420e42be7b006b55e88e15519abc54317482c33b128",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL3-invalid-language/report.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL3-invalid-language/report.ttl",
+      "source_sha256": "54d4fe963371f5bca23692791233b6b93463077006f03fd4a86a92c976c32250",
+      "public_sha256": "54d4fe963371f5bca23692791233b6b93463077006f03fd4a86a92c976c32250",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL3-invalid-language/report.txt",
+      "public": "evidence/shacl/cases/E1-SHACL3-invalid-language/report.txt",
+      "source_sha256": "6e0c5f0ed65ee1c02a7ecd8d91812a01e7b0adc43866ae0184e703747234e553",
+      "public_sha256": "6e0c5f0ed65ee1c02a7ecd8d91812a01e7b0adc43866ae0184e703747234e553",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL3-invalid-language/report_extracted.json",
+      "public": "evidence/shacl/cases/E1-SHACL3-invalid-language/report_extracted.json",
+      "source_sha256": "fa9aae61af8249831d1e98cf6b80535393c526d01efd65e1c9c2228cb35ad4d4",
+      "public_sha256": "fa9aae61af8249831d1e98cf6b80535393c526d01efd65e1c9c2228cb35ad4d4",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL3-invalid-language/result.json",
+      "public": "evidence/shacl/cases/E1-SHACL3-invalid-language/result.json",
+      "source_sha256": "7652ef1688764e1b20471ca5de7293bcca942e284e89eacd7ab6a6883a446bd7",
+      "public_sha256": "be81d573f243bcab9e1569e1e0c6b33c3600c6c9c79505773ca95c28f01f26a6",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL3-invalid-language/result_reclassified.json",
+      "public": "evidence/shacl/cases/E1-SHACL3-invalid-language/result_reclassified.json",
+      "source_sha256": "f629939796efc0fc89b0c062714d3d592951e91b01a148b0f7982493c8618f92",
+      "public_sha256": "90dbf5f883f68342f7dd1953df7a1e37530e80d9d041f3fa596db5e8e8eb34bd",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL4-missing-author/canonical_shapes_normalized.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL4-missing-author/canonical_shapes_normalized.ttl",
+      "source_sha256": "d1f2c47e1053923c1235e1b83ca89becf681ede805d7dc6549d7dbaaa6191230",
+      "public_sha256": "d1f2c47e1053923c1235e1b83ca89becf681ede805d7dc6549d7dbaaa6191230",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL4-missing-author/mutated_posts.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL4-missing-author/mutated_posts.ttl",
+      "source_sha256": "81ca731e42023bbfe90c6e49b2a7be34c88e256956b63dc59d3e08cb80f8f75e",
+      "public_sha256": "81ca731e42023bbfe90c6e49b2a7be34c88e256956b63dc59d3e08cb80f8f75e",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL4-missing-author/mutation_manifest.json",
+      "public": "evidence/shacl/cases/E1-SHACL4-missing-author/mutation_manifest.json",
+      "source_sha256": "51708227cc4a1b69462cd30c1eae381287906fa3e58782449071abd77505e768",
+      "public_sha256": "5a7c6b542527eaae9300630224ea41686f8cb4cbda568e8a9560c10c13c2be07",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL4-missing-author/report.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL4-missing-author/report.ttl",
+      "source_sha256": "d8b01432ae3922b175a2b242bbd081221ee3da499f750a58a5a27a35720314d7",
+      "public_sha256": "d8b01432ae3922b175a2b242bbd081221ee3da499f750a58a5a27a35720314d7",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL4-missing-author/report.txt",
+      "public": "evidence/shacl/cases/E1-SHACL4-missing-author/report.txt",
+      "source_sha256": "39685493b338f5611d8241bde1ae8e341e20def33380e12d4af5925fdbd16f6d",
+      "public_sha256": "39685493b338f5611d8241bde1ae8e341e20def33380e12d4af5925fdbd16f6d",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL4-missing-author/report_extracted.json",
+      "public": "evidence/shacl/cases/E1-SHACL4-missing-author/report_extracted.json",
+      "source_sha256": "5b7587c22f6d739ecb1dc6484e0f0c0eaf4c9a433bf3450eb3c22be1364cfded",
+      "public_sha256": "5b7587c22f6d739ecb1dc6484e0f0c0eaf4c9a433bf3450eb3c22be1364cfded",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL4-missing-author/result.json",
+      "public": "evidence/shacl/cases/E1-SHACL4-missing-author/result.json",
+      "source_sha256": "2a3fd47a891c144da10c0a7e5baa63ac378cada17dea5597e66ef385ce45cd62",
+      "public_sha256": "1d92f809aba98df46e44144840fc3e87604eda179f88f2314eb02468779bd151",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL4-missing-author/result_reclassified.json",
+      "public": "evidence/shacl/cases/E1-SHACL4-missing-author/result_reclassified.json",
+      "source_sha256": "5ac1eb227cbbeb855cb7e100a67cb2c29bb41813eeb9e5ce7e13c0143f7f85cb",
+      "public_sha256": "a8a3636f6e8c27fa6ac1a02777506e983e6fc95dd3ae2d3c5b1449a6cfb15307",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL5-probability-out-of-range/canonical_shapes_normalized.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL5-probability-out-of-range/canonical_shapes_normalized.ttl",
+      "source_sha256": "d1f2c47e1053923c1235e1b83ca89becf681ede805d7dc6549d7dbaaa6191230",
+      "public_sha256": "d1f2c47e1053923c1235e1b83ca89becf681ede805d7dc6549d7dbaaa6191230",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL5-probability-out-of-range/mutated_posts.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL5-probability-out-of-range/mutated_posts.ttl",
+      "source_sha256": "7e093808c3dbfa4a70b98cf60ee3494cb5387716527b0aa4de5628dbd4e4c7f7",
+      "public_sha256": "7e093808c3dbfa4a70b98cf60ee3494cb5387716527b0aa4de5628dbd4e4c7f7",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL5-probability-out-of-range/mutation_manifest.json",
+      "public": "evidence/shacl/cases/E1-SHACL5-probability-out-of-range/mutation_manifest.json",
+      "source_sha256": "e43ba8bc13685a736f98be7e64aa071a2825f27ea841a665c8410d106265c9c4",
+      "public_sha256": "a3a058494cb9afb6d2b2b2c982fbc195562e9741a79cfa5ee8798127548a0174",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL5-probability-out-of-range/report.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL5-probability-out-of-range/report.ttl",
+      "source_sha256": "5a9b77ce5d7384588300bd14f9859527804d7ba4a7c7ac590973ad7459ee9aa7",
+      "public_sha256": "5a9b77ce5d7384588300bd14f9859527804d7ba4a7c7ac590973ad7459ee9aa7",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL5-probability-out-of-range/report.txt",
+      "public": "evidence/shacl/cases/E1-SHACL5-probability-out-of-range/report.txt",
+      "source_sha256": "d5fbffb9b6b3e5fefe08bf0fba628ce14d63a7641167fd58634e51e5d41b18b6",
+      "public_sha256": "d5fbffb9b6b3e5fefe08bf0fba628ce14d63a7641167fd58634e51e5d41b18b6",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL5-probability-out-of-range/report_extracted.json",
+      "public": "evidence/shacl/cases/E1-SHACL5-probability-out-of-range/report_extracted.json",
+      "source_sha256": "2621d4c9f1f371fa087e4066f628b811b1188ec9b8a913a0422c9b87af9f861d",
+      "public_sha256": "2621d4c9f1f371fa087e4066f628b811b1188ec9b8a913a0422c9b87af9f861d",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL5-probability-out-of-range/result.json",
+      "public": "evidence/shacl/cases/E1-SHACL5-probability-out-of-range/result.json",
+      "source_sha256": "889164aa107f09b6f08030931d402d63671699bd7e0ab5c9009abb71c67e96df",
+      "public_sha256": "e4f36fa10a7533b400882d3df69af860427f544f07264f8c43e14e18a2cecd74",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL5-probability-out-of-range/result_reclassified.json",
+      "public": "evidence/shacl/cases/E1-SHACL5-probability-out-of-range/result_reclassified.json",
+      "source_sha256": "1c699e77b3a0d8d121b240858b8c58d089c88bdd73ba2dd66c214f8d8fc4a554",
+      "public_sha256": "9af2f3309ca5ae01ed5fc612b6abb47ae0eaf7bb7ae1f5bea11bcf636855503f",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL6-probability-sum/canonical_shapes_normalized.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL6-probability-sum/canonical_shapes_normalized.ttl",
+      "source_sha256": "d1f2c47e1053923c1235e1b83ca89becf681ede805d7dc6549d7dbaaa6191230",
+      "public_sha256": "d1f2c47e1053923c1235e1b83ca89becf681ede805d7dc6549d7dbaaa6191230",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL6-probability-sum/mutated_posts.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL6-probability-sum/mutated_posts.ttl",
+      "source_sha256": "091d0dba279db6ce30d5b68430d19237abfc91fe32f947def2a15b6d82dd10b4",
+      "public_sha256": "091d0dba279db6ce30d5b68430d19237abfc91fe32f947def2a15b6d82dd10b4",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL6-probability-sum/mutation_manifest.json",
+      "public": "evidence/shacl/cases/E1-SHACL6-probability-sum/mutation_manifest.json",
+      "source_sha256": "3afc320945bf1233f43afbc1786bfe7cfaef75a401e51c70c77a6d4c026ff311",
+      "public_sha256": "390541e8e518c0078597bf343c5f68aa96303ad0cb4d7cb9dba997a4bba97c48",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL6-probability-sum/report.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL6-probability-sum/report.ttl",
+      "source_sha256": "a8f07aedd4c8eb50e34d927d75450fe30964a6932d335d8b4bc383875f3cae47",
+      "public_sha256": "a8f07aedd4c8eb50e34d927d75450fe30964a6932d335d8b4bc383875f3cae47",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL6-probability-sum/report.txt",
+      "public": "evidence/shacl/cases/E1-SHACL6-probability-sum/report.txt",
+      "source_sha256": "e628fb1de2dfc0e33f0a9447e0116679024872ad24c5980133dc86aa0ecc65b3",
+      "public_sha256": "e628fb1de2dfc0e33f0a9447e0116679024872ad24c5980133dc86aa0ecc65b3",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL6-probability-sum/report_extracted.json",
+      "public": "evidence/shacl/cases/E1-SHACL6-probability-sum/report_extracted.json",
+      "source_sha256": "3b9a8bc5f9d2644848b89c1e8098ecf6decc7c618b655b24c3d09fa6d2579c05",
+      "public_sha256": "3b9a8bc5f9d2644848b89c1e8098ecf6decc7c618b655b24c3d09fa6d2579c05",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL6-probability-sum/result.json",
+      "public": "evidence/shacl/cases/E1-SHACL6-probability-sum/result.json",
+      "source_sha256": "65e3ac23bd49f2960a1160d40fbaff38e4c1435e8953eb9352905b32912f802a",
+      "public_sha256": "39695eebd396f55622e99f6c16cf88c6432a9960a48804264dc06e4a2e577f0e",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL6-probability-sum/result_reclassified.json",
+      "public": "evidence/shacl/cases/E1-SHACL6-probability-sum/result_reclassified.json",
+      "source_sha256": "7edfd4b9dc3e9a3e05c44a554b5735da86840b227e47e5e1193be2d6bd06ca03",
+      "public_sha256": "717a8eeb424a4f1ba5647ecabd7373c7d4b9a57e4a410233988a8f7f863fce07",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL7-label-probability-inconsistency/canonical_shapes_normalized.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL7-label-probability-inconsistency/canonical_shapes_normalized.ttl",
+      "source_sha256": "d1f2c47e1053923c1235e1b83ca89becf681ede805d7dc6549d7dbaaa6191230",
+      "public_sha256": "d1f2c47e1053923c1235e1b83ca89becf681ede805d7dc6549d7dbaaa6191230",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL7-label-probability-inconsistency/mutated_posts.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL7-label-probability-inconsistency/mutated_posts.ttl",
+      "source_sha256": "0fabcb3f6bee00d7e4aede6405459579c4eb1dbe59f0bf3902b7ac8c10511b39",
+      "public_sha256": "0fabcb3f6bee00d7e4aede6405459579c4eb1dbe59f0bf3902b7ac8c10511b39",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL7-label-probability-inconsistency/mutation_manifest.json",
+      "public": "evidence/shacl/cases/E1-SHACL7-label-probability-inconsistency/mutation_manifest.json",
+      "source_sha256": "a3a874f0492c73e9d1eb36d716c5e25580a9be62a448fa6a8c85a87ea3073d3f",
+      "public_sha256": "78e45dbb47ae810dd53151f3a81fe52cd43a9d96d37625aa79b29ebe31cbfc3c",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL7-label-probability-inconsistency/report.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL7-label-probability-inconsistency/report.ttl",
+      "source_sha256": "7a63dee40edd372ee3d46f2a25f62178cd38354eca73dda32638af4f4da97626",
+      "public_sha256": "7a63dee40edd372ee3d46f2a25f62178cd38354eca73dda32638af4f4da97626",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL7-label-probability-inconsistency/report.txt",
+      "public": "evidence/shacl/cases/E1-SHACL7-label-probability-inconsistency/report.txt",
+      "source_sha256": "f4ab55b7ece80bd74de123d1566a10f0b50ce912dd2822207a5de8cfcbaf5117",
+      "public_sha256": "f4ab55b7ece80bd74de123d1566a10f0b50ce912dd2822207a5de8cfcbaf5117",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL7-label-probability-inconsistency/report_extracted.json",
+      "public": "evidence/shacl/cases/E1-SHACL7-label-probability-inconsistency/report_extracted.json",
+      "source_sha256": "a1167e51037e0ef7b1c4f7c8787f816541d247cff946c8e050d3ebd2c14120c7",
+      "public_sha256": "a1167e51037e0ef7b1c4f7c8787f816541d247cff946c8e050d3ebd2c14120c7",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL7-label-probability-inconsistency/result.json",
+      "public": "evidence/shacl/cases/E1-SHACL7-label-probability-inconsistency/result.json",
+      "source_sha256": "a0d5f12bc5cad76e1f2282f1226b67429248e1fc73290cf1924673a2232f2231",
+      "public_sha256": "338b210a9aee2ea23a03ecfb0fb878f1aa685f867a178c7e366ee0cc64c8428a",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL7-label-probability-inconsistency/result_reclassified.json",
+      "public": "evidence/shacl/cases/E1-SHACL7-label-probability-inconsistency/result_reclassified.json",
+      "source_sha256": "56cb194a92cf19b0419fd33c2bd8980060df58670013bc75432edcfef3f31171",
+      "public_sha256": "d68b7693f6599f293c54eeefadad8cc3108cc77c7a2622f02df7a8abd5e8152f",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL8-invalid-domain-concept/canonical_shapes_normalized.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL8-invalid-domain-concept/canonical_shapes_normalized.ttl",
+      "source_sha256": "d1f2c47e1053923c1235e1b83ca89becf681ede805d7dc6549d7dbaaa6191230",
+      "public_sha256": "d1f2c47e1053923c1235e1b83ca89becf681ede805d7dc6549d7dbaaa6191230",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL8-invalid-domain-concept/mutated_posts.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL8-invalid-domain-concept/mutated_posts.ttl",
+      "source_sha256": "4c39dd157de3867326cf5e5539288dfadba7d0809b743ee96a4efad35590853e",
+      "public_sha256": "4c39dd157de3867326cf5e5539288dfadba7d0809b743ee96a4efad35590853e",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL8-invalid-domain-concept/mutation_manifest.json",
+      "public": "evidence/shacl/cases/E1-SHACL8-invalid-domain-concept/mutation_manifest.json",
+      "source_sha256": "4252c078c5d9db777bfa0af64d7d683fbdf1a6a47415875e0b35423118100aae",
+      "public_sha256": "e9cdbc93f953846674094ff8d10e770da2ad5e377d57dc07bcde30ef8a097781",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL8-invalid-domain-concept/report.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL8-invalid-domain-concept/report.ttl",
+      "source_sha256": "186d16c7e225188363c4ec7e177d0f52eeb00f5d3862b309d6692f44bfe5a8a4",
+      "public_sha256": "186d16c7e225188363c4ec7e177d0f52eeb00f5d3862b309d6692f44bfe5a8a4",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL8-invalid-domain-concept/report.txt",
+      "public": "evidence/shacl/cases/E1-SHACL8-invalid-domain-concept/report.txt",
+      "source_sha256": "16cd400d188f1e91dc8a758e826cad0dacdca01de20c8e0d01bb24e599995494",
+      "public_sha256": "16cd400d188f1e91dc8a758e826cad0dacdca01de20c8e0d01bb24e599995494",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL8-invalid-domain-concept/report_extracted.json",
+      "public": "evidence/shacl/cases/E1-SHACL8-invalid-domain-concept/report_extracted.json",
+      "source_sha256": "9516383e47542c51d3b6c1e12d86f8432f712483e7486b6dcf1dab4c992d6b7a",
+      "public_sha256": "9516383e47542c51d3b6c1e12d86f8432f712483e7486b6dcf1dab4c992d6b7a",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL8-invalid-domain-concept/result.json",
+      "public": "evidence/shacl/cases/E1-SHACL8-invalid-domain-concept/result.json",
+      "source_sha256": "79f6adfc578d481a3c01bef29276ad9c58d27d6a7e02b5890645095e04ff4821",
+      "public_sha256": "97bd5b5449d0aa4c41bb2be669a3a927bcdef6a5ebf07ebffad72afbd773b1b5",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL8-invalid-domain-concept/result_reclassified.json",
+      "public": "evidence/shacl/cases/E1-SHACL8-invalid-domain-concept/result_reclassified.json",
+      "source_sha256": "b224e82f98899ebee1d3817cd998f2f29e9f370233962e23181871418298af7a",
+      "public_sha256": "ee88d2ef8475a934e59779ba3db83c16245e71c2a68391db6938eda300a548bc",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL9-duplicate-rdf-identifier/canonical_shapes_normalized.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL9-duplicate-rdf-identifier/canonical_shapes_normalized.ttl",
+      "source_sha256": "d1f2c47e1053923c1235e1b83ca89becf681ede805d7dc6549d7dbaaa6191230",
+      "public_sha256": "d1f2c47e1053923c1235e1b83ca89becf681ede805d7dc6549d7dbaaa6191230",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL9-duplicate-rdf-identifier/mutated_posts.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL9-duplicate-rdf-identifier/mutated_posts.ttl",
+      "source_sha256": "da068be1d0995a03ca2952ce5853983792dd5257252391daeb92c3ea00244eef",
+      "public_sha256": "da068be1d0995a03ca2952ce5853983792dd5257252391daeb92c3ea00244eef",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL9-duplicate-rdf-identifier/mutation_manifest.json",
+      "public": "evidence/shacl/cases/E1-SHACL9-duplicate-rdf-identifier/mutation_manifest.json",
+      "source_sha256": "f94c5ef1c5bd8101f74baba1fdb0a51b6c26e36ea0e173200afa32fe6c919ea4",
+      "public_sha256": "e8f6c0a6e68b69dfbb9a8924f330c6a46e0beb7ecb6dedd2f89c071b5c69644e",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL9-duplicate-rdf-identifier/report.ttl",
+      "public": "evidence/shacl/cases/E1-SHACL9-duplicate-rdf-identifier/report.ttl",
+      "source_sha256": "3e157bc53bbfe30ed2bbadffbff9d11352f61e07e676ba003328e2a2a6c94756",
+      "public_sha256": "3e157bc53bbfe30ed2bbadffbff9d11352f61e07e676ba003328e2a2a6c94756",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL9-duplicate-rdf-identifier/report.txt",
+      "public": "evidence/shacl/cases/E1-SHACL9-duplicate-rdf-identifier/report.txt",
+      "source_sha256": "c28e8e8d845d3505160d35bb1cc8dcda83a314b8b2c18c86df3df9540e83ceae",
+      "public_sha256": "c28e8e8d845d3505160d35bb1cc8dcda83a314b8b2c18c86df3df9540e83ceae",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL9-duplicate-rdf-identifier/report_extracted.json",
+      "public": "evidence/shacl/cases/E1-SHACL9-duplicate-rdf-identifier/report_extracted.json",
+      "source_sha256": "1b02dacacaf8faa27df2dc43f02e4159b714c57f1c45f316a56f92c083a0fa68",
+      "public_sha256": "1b02dacacaf8faa27df2dc43f02e4159b714c57f1c45f316a56f92c083a0fa68",
+      "path_normalized": false
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL9-duplicate-rdf-identifier/result.json",
+      "public": "evidence/shacl/cases/E1-SHACL9-duplicate-rdf-identifier/result.json",
+      "source_sha256": "e76bf3dd83346654cc5eb42ca72fffc92b5cb77e553936f0d14c7bd091eef029",
+      "public_sha256": "325a3b2b5a1829ed39e92e9480ce008d9d7f909bd45a86e7491b45911b610396",
+      "path_normalized": true
+    },
+    {
+      "source": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/cases/E1-SHACL9-duplicate-rdf-identifier/result_reclassified.json",
+      "public": "evidence/shacl/cases/E1-SHACL9-duplicate-rdf-identifier/result_reclassified.json",
+      "source_sha256": "02b4d89aa1f762d0c0c5d3d6f71f7092371175a9ba489014cc96c18824774e0d",
+      "public_sha256": "8c965d30966325e47c62b3200a9f291db097f33b22934b91078b1fafaff05c1e",
+      "path_normalized": true
+    }
+  ]
+}

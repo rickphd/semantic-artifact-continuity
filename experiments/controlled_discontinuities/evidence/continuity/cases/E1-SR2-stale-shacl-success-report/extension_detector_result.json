@@ -1,0 +1,46 @@
+{
+  "detected": true,
+  "checks": {
+    "matrix_manifest_rechecker": {
+      "available": true,
+      "detected": false,
+      "mismatches": []
+    },
+    "rdf_inventory_against_gold": {
+      "available": true,
+      "detected": true,
+      "rdf_post_count": 1614,
+      "missing_ids": [],
+      "extra_ids": [],
+      "iri_mismatches": [],
+      "missing_concepts": [
+        {
+          "post_id": "1kkfjn0",
+          "concept_uri": "http://wfrp.ia/dominio/ciencia-tecnologia#Tecnologia"
+        }
+      ],
+      "extra_concepts": [
+        {
+          "post_id": "1kkfjn0",
+          "concept_uri": "http://wfrp.ia/dominio/ciencia-tecnologia#E1InvalidConcept"
+        }
+      ],
+      "invalid_concepts": [
+        {
+          "post_iri": "http://wfrp.ia/resource/reddit/post/1kkfjn0",
+          "concept_uri": "http://wfrp.ia/dominio/ciencia-tecnologia#E1InvalidConcept"
+        }
+      ]
+    },
+    "prediction_output_fingerprint_check": {
+      "available": true,
+      "detected": false,
+      "mismatches": []
+    },
+    "report_freshness_check": {
+      "available": true,
+      "detected": false,
+      "stale_pairs": []
+    }
+  }
+}

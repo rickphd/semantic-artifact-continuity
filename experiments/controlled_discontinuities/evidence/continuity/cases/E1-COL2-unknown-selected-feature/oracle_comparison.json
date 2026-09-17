@@ -1,0 +1,28 @@
+{
+  "case_id": "E1-COL2-unknown-selected-feature",
+  "family": "column_alignment",
+  "required": true,
+  "reserved_for_after_extension": false,
+  "oracle_should_alarm": true,
+  "original_detected": true,
+  "extension_detected": false,
+  "detection_status": "detected_by_original",
+  "expected_exception_detected": false,
+  "evaluation_error": true,
+  "unexpected_errors": [
+    {
+      "phase": "original_after_refresh",
+      "script": "audit_model_input_cells.py",
+      "returncode": 1,
+      "stderr_head": "Traceback (most recent call last):\n  File \"experiments/controlled_discontinuities/evidence/continuity/cases/E1-COL2-unknown-selected-feature/package/scripts/experiments/audit_model_input_cells.py\", line 425, in <module>\n    main()\n    ~~~~^^\n  File \"experiments/controlled_discontinuities/evidence/continuity/cases/E1-COL2-unknown-selected-feature/package/scripts/experiments/audit_model_in"
+    }
+  ],
+  "false_positive": false,
+  "non_detection": false,
+  "partial_detection": false,
+  "original_detected_before_refresh": true,
+  "original_detected_after_refresh": true,
+  "extension_check_ids": "",
+  "mutation_summary": "{\"injected_feature\": \"ont_E1_Injected_Unknown\", \"replaced_feature\": \"ont_domain_density\"}",
+  "notes": "Missing/untraced feature list includes the injected feature."
+}

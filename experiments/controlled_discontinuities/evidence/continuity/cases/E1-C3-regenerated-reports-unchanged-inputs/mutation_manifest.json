@@ -1,0 +1,25 @@
+{
+  "case_id": "E1-C3-regenerated-reports-unchanged-inputs",
+  "case": {
+    "case_id": "E1-C3-regenerated-reports-unchanged-inputs",
+    "family": "valid_control",
+    "required": true,
+    "reserved_for_after_extension": false,
+    "mutation": "Regenerate reports from unchanged case copy.",
+    "affected_artefacts": [
+      "results/knowledge_graph/materialization_report.json",
+      "results/traceability/traceability_audit_report.json",
+      "results/validation/shacl/baseline_report.json"
+    ],
+    "oracle_expected": {
+      "should_alarm": false,
+      "expected_status": "passed"
+    },
+    "original_detector_expectation": "Original producers should reproduce pass status and core counts.",
+    "extension_required": false,
+    "acceptance": "Report timestamps or serialization details may change; scientific counts and status do not."
+  },
+  "mutation_details": {
+    "mutation": "none; detectors regenerate reports"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "status": "prepared_not_model_consumption_verified",
+  "features": [
+    "ont_domain_density",
+    "ont_total_negativo_mentions",
+    "ont_InteligenciaArtificial_Negativo",
+    "ont_Innovacion_Neutro",
+    "ont_Etica_Negativo",
+    "ont_Tecnologia_Neutro"
+  ],
+  "profiles": {
+    "train": {
+      "raw_float64": {
+        "profile": "raw_float64",
+        "rows": 968,
+        "columns": 6,
+        "dtype": "float64",
+        "ordered_post_ids_sha256": "d42ac8c75364349ab2bd40038940caf56eb506b786e420054190294a27f45476",
+        "ordered_features_sha256": "02804b81a4bc0e255e4c42492103505dc799597569205fbfadc99ecbeaf925c6",
+        "matrix_sha256": "e253db61240a8a8ffbf2432f84778bb315380cf9f6acda40797721a22dfd443d"
+      },
+      "train_standardized_float64": {
+        "profile": "train_standardized_float64",
+        "rows": 968,
+        "columns": 6,
+        "dtype": "float64",
+        "ordered_post_ids_sha256": "d42ac8c75364349ab2bd40038940caf56eb506b786e420054190294a27f45476",
+        "ordered_features_sha256": "02804b81a4bc0e255e4c42492103505dc799597569205fbfadc99ecbeaf925c6",
+        "matrix_sha256": "3ce002d4b81351c64a9888b5bb6ea1dc352165f9cc0779b81f4f82afcee155b2"
+      },
+      "train_standardized_float32": {
+        "profile": "train_standardized_float32",
+        "rows": 968,
+        "columns": 6,
+        "dtype": "float32",
+        "ordered_post_ids_sha256": "d42ac8c75364349ab2bd40038940caf56eb506b786e420054190294a27f45476",
+        "ordered_features_sha256": "02804b81a4bc0e255e4c42492103505dc799597569205fbfadc99ecbeaf925c6",
+        "matrix_sha256": "fd9057df2994d77810a6ded079bc7190cce17a7b4c4dad71ff21bb05d7a7cd46"
+      }
+    },
+    "val": {
+      "raw_float64": {
+        "profile": "raw_float64",
+        "rows": 323,
+        "columns": 6,
+        "dtype": "float64",
+        "ordered_post_ids_sha256": "7334119058332c5d6b79d14cf324f0672edbc7b4a314852667deaad73828180e",
+        "ordered_features_sha256": "02804b81a4bc0e255e4c42492103505dc799597569205fbfadc99ecbeaf925c6",
+        "matrix_sha256": "c13e2df1e4b4b93d3b14e2710a0ee6775d13838c1b9f7d53547880211e456dfb"
+      },
+      "train_standardized_float64": {
+        "profile": "train_standardized_float64",
+        "rows": 323,
+        "columns": 6,
+        "dtype": "float64",
+        "ordered_post_ids_sha256": "7334119058332c5d6b79d14cf324f0672edbc7b4a314852667deaad73828180e",
+        "ordered_features_sha256": "02804b81a4bc0e255e4c42492103505dc799597569205fbfadc99ecbeaf925c6",
+        "matrix_sha256": "5f6531ca98c558b0fa1ac96062f01de75d0447fc6a8d2e4fa3bedea9a4de6ae2"
+      },
+      "train_standardized_float32": {
+        "profile": "train_standardized_float32",
+        "rows": 323,
+        "columns": 6,
+        "dtype": "float32",
+        "ordered_post_ids_sha256": "7334119058332c5d6b79d14cf324f0672edbc7b4a314852667deaad73828180e",
+        "ordered_features_sha256": "02804b81a4bc0e255e4c42492103505dc799597569205fbfadc99ecbeaf925c6",
+        "matrix_sha256": "8c01ed2d8726e1ec90ff29c5afbe197ad0045e412fdb267407f1afa2bd74bb59"
+      }
+    },
+    "test": {
+      "raw_float64": {
+        "profile": "raw_float64",
+        "rows": 323,
+        "columns": 6,
+        "dtype": "float64",
+        "ordered_post_ids_sha256": "359d5f85b3b8c5eeacf179a9b91c8d4ed63dfda568712a6ed4c50ef3bf62f009",
+        "ordered_features_sha256": "02804b81a4bc0e255e4c42492103505dc799597569205fbfadc99ecbeaf925c6",
+        "matrix_sha256": "864f06c457b4fe7ddd8d0231ebeee62560f8195fcfa6924c512f37588935a2cf"
+      },
+      "train_standardized_float64": {
+        "profile": "train_standardized_float64",
+        "rows": 323,
+        "columns": 6,
+        "dtype": "float64",
+        "ordered_post_ids_sha256": "359d5f85b3b8c5eeacf179a9b91c8d4ed63dfda568712a6ed4c50ef3bf62f009",
+        "ordered_features_sha256": "02804b81a4bc0e255e4c42492103505dc799597569205fbfadc99ecbeaf925c6",
+        "matrix_sha256": "4d1039253d39d69304718c5c6e3a01d9f095dfc2bfbce5154690b3aeda11fee4"
+      },
+      "train_standardized_float32": {
+        "profile": "train_standardized_float32",
+        "rows": 323,
+        "columns": 6,
+        "dtype": "float32",
+        "ordered_post_ids_sha256": "359d5f85b3b8c5eeacf179a9b91c8d4ed63dfda568712a6ed4c50ef3bf62f009",
+        "ordered_features_sha256": "02804b81a4bc0e255e4c42492103505dc799597569205fbfadc99ecbeaf925c6",
+        "matrix_sha256": "24f62fea534f9f3629e3a40ab3e95f881d489c55549a64df5c663b95976749f1"
+      }
+    }
+  },
+  "scaler_fit_ids": "train only",
+  "training_rows": 968,
+  "cells": 9684,
+  "model_profiles": {
+    "LR": "train_standardized_float64",
+    "RF": "raw_float64",
+    "XGB": "raw_float64",
+    "CNN1D": "train_standardized_float32"
+  },
+  "gold_sha256": "8730955465e71bd9782d6f9bd42cc240f0dc80c6af7432db1f57299010bbacce"
+}

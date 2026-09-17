@@ -42,8 +42,8 @@ class ReleaseStructureTest(unittest.TestCase):
             / "ENR_selected_ont_features_anova_train_only.json"
         )
         payload = json.loads(path.read_text(encoding="utf-8"))
-        self.assertEqual(payload["n_selected"], 7)
-        self.assertEqual(len(payload["selected_features_train_only"]), 7)
+        self.assertEqual(payload["n_selected"], 6)
+        self.assertEqual(len(payload["selected_features_train_only"]), 6)
 
     def test_downstream_file_counts(self) -> None:
         root = ROOT / "results" / "anova_revalidation"
@@ -70,6 +70,7 @@ class ReleaseStructureTest(unittest.TestCase):
                 "knowledge_graph",
                 "lexicon",
                 "provenance",
+                "prepared_model_inputs",
                 "sensitivity",
                 "traceability",
                 "validation",

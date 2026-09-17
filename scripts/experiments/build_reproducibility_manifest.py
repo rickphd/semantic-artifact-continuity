@@ -59,7 +59,7 @@ REQUIRED_OUTPUTS = [
 def main() -> None:
     missing = [p for p in REQUIRED_OUTPUTS if not p.exists()]
     validation = subprocess.run(
-        [sys.executable, str(REPO_ROOT / "scripts" / "experiments" / "validate_v04_2_experiment_chain.py")],
+        [sys.executable, str(REPO_ROOT / "scripts" / "experiments" / "validate_release.py")],
         cwd=REPO_ROOT,
         text=True,
         capture_output=True,
@@ -71,7 +71,7 @@ def main() -> None:
         "project_root": ".",
         "generated_required_count": len(REQUIRED_OUTPUTS),
         "missing_generated_outputs": [rel(p) for p in missing],
-        "v04_2_experiment_chain_validation": {
+        "stored_result_validation": {
             "returncode": validation.returncode,
             "stdout": validation.stdout.strip(),
             "stderr": validation.stderr.strip() if validation.returncode else "",
@@ -82,7 +82,11 @@ def main() -> None:
             "accelerator-specific diagnostic outputs",
             "serialized trained model binaries other than the released input scaler",
         ],
-        "known_non_reproducible_steps": [],
+        "known_non_reproducible_steps": [
+            "This check does not retrain models or establish cross-platform bitwise training reproducibility.",
+            "Private human annotation explanations are not distributed; public structured decisions support recomputation.",
+            "The original global sentiment-label annotation protocol has not been recovered.",
+        ],
     }
     write_json(PROVENANCE_DIR / "reproducibility_manifest.json", payload)
     md = [
@@ -91,7 +95,7 @@ def main() -> None:
         f"Status: `{payload['status']}`",
         f"Generated outputs checked: `{len(REQUIRED_OUTPUTS)}`",
         f"Missing outputs: `{len(missing)}`",
-        f"v04.2 chain validation: `{validation.stdout.strip() or validation.stderr.strip()}`",
+        f"Stored-result validation exit code: `{validation.returncode}`",
         "",
         "## Release Scope Exclusions",
         "",

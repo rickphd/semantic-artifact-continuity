@@ -1,0 +1,21 @@
+{
+  "case_id": "E1-U3-duplicate-prediction-id",
+  "family": "uniqueness",
+  "required": true,
+  "reserved_for_after_extension": false,
+  "oracle_should_alarm": true,
+  "original_detected": true,
+  "extension_detected": true,
+  "detection_status": "detected_by_original",
+  "expected_exception_detected": false,
+  "evaluation_error": false,
+  "unexpected_errors": [],
+  "false_positive": false,
+  "non_detection": false,
+  "partial_detection": false,
+  "original_detected_before_refresh": true,
+  "original_detected_after_refresh": true,
+  "extension_check_ids": "prediction_output_fingerprint_check",
+  "mutation_summary": "{\"displaced_id\": \"1n02v38\", \"duplicated_id\": \"1n1plgb\", \"prediction_file\": \"LR_ENR_seed42_test_predictions_v2.csv\"}",
+  "notes": "Prediction duplicate count is positive and the missing test ID is reported."
+}

@@ -1,0 +1,17 @@
+Validation Report
+Conforms: False
+Results (1):
+Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: rr:PostShape
+	Focus Node: <http://wfrp.ia/resource/reddit/post/1kkfjn0>
+	Value Node: <http://wfrp.ia/resource/reddit/post/1kkfjn0>
+	Source Constraint: [ sh:message Literal("Probabilidades no normalizadas (|sum-1| > 0.02).", lang=es) ; sh:select Literal("
+      PREFIX rr: <http://wfrp.ia/ontologia/ia-sentimiento#>
+      SELECT $this WHERE {
+        $this rr:probPos ?pp ; rr:probNeu ?pn ; rr:probNeg ?pg .
+        BIND(ABS((?pp + ?pn + ?pg) - 1) AS ?delta)
+        FILTER(?delta > 0.02)
+      }
+    ") ]
+	Message: Probabilidades no normalizadas (|sum-1| > 0.02).

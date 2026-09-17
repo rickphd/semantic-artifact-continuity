@@ -1,0 +1,21 @@
+{
+  "case_id": "E1-RDF2-remove-trataSobre-for-active-concept",
+  "family": "rdf_link",
+  "required": true,
+  "reserved_for_after_extension": true,
+  "oracle_should_alarm": true,
+  "original_detected": false,
+  "extension_detected": true,
+  "detection_status": "detected_by_extension",
+  "expected_exception_detected": false,
+  "evaluation_error": false,
+  "unexpected_errors": [],
+  "false_positive": false,
+  "non_detection": false,
+  "partial_detection": true,
+  "original_detected_before_refresh": false,
+  "original_detected_after_refresh": false,
+  "extension_check_ids": "rdf_inventory_against_gold",
+  "mutation_summary": "{\"post_id\": \"1mug8n6\", \"removed_triple\": [\"http://wfrp.ia/resource/reddit/post/1mug8n6\", \"http://wfrp.ia/ontologia/ia-sentimiento#trataSobre\", \"http://wfrp.ia/dominio/ciencia-tecnologia#Datos\"]}",
+  "notes": "Extension reports missing concept assertion and SHACL pass is interpreted as a declared limit."
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "step": "build_train_only_ontology_dataset.py",
+    "exit_code": 0,
+    "seconds": 2.078,
+    "log": "logs/build_train_only_ontology_dataset.py.log"
+  },
+  {
+    "step": "select_ont_features_anova_train_only.py",
+    "exit_code": 0,
+    "seconds": 0.947,
+    "log": "logs/select_ont_features_anova_train_only.py.log"
+  },
+  {
+    "step": "materialize_reddit_rdf.py",
+    "exit_code": 0,
+    "seconds": 0.854,
+    "log": "logs/materialize_reddit_rdf.py.log"
+  },
+  {
+    "step": "run_shacl_conformance.py",
+    "exit_code": 0,
+    "seconds": 34.09,
+    "log": "logs/run_shacl_conformance.py.log"
+  },
+  {
+    "step": "analyze_ontology_coverage.py",
+    "exit_code": 0,
+    "seconds": 0.31,
+    "log": "logs/analyze_ontology_coverage.py.log"
+  },
+  {
+    "step": "audit_traceability.py",
+    "exit_code": 0,
+    "seconds": 0.33,
+    "log": "logs/audit_traceability.py.log"
+  }
+]

@@ -2,13 +2,13 @@
   "model": "RF",
   "condition": "ENR",
   "seed": 2024,
-  "pipeline_version": "canonical_v04_2_vader_train_scope",
-  "created_at": "2026-08-03T00:12:13.589549",
+  "pipeline_version": "information_f123_20260914",
+  "created_at": "2026-09-14T13:43:18.001908",
   "split_source": "GEN_split_gld_reddit_ids_v02.json",
   "dataset": "gold_enriched_ontology.parquet",
-  "dataset_sha256": "62c6394d4ef68191b713d80c9b54849ecf00176822719bf515b8f0ee65b31162",
+  "dataset_sha256": "8730955465e71bd9782d6f9bd42cc240f0dc80c6af7432db1f57299010bbacce",
   "lexicon_manifest": "results/lexicon/ontology_lexicon_v04_2_train_only.json",
-  "lexicon_manifest_sha256": "313af4e18f4d7b58f87e87a7ac5bbbb19c32d5e7c829816bdad9fa6515e51e77",
+  "lexicon_manifest_sha256": "8bd5d395007819b41ff4a1615004a62d9ce43c4383f18408047246bf201c7a53",
   "test_size": 323,
   "class_order": [
     "Negative",
@@ -20,56 +20,56 @@
     119,
     156
   ],
-  "accuracy": 0.6346749226006192,
-  "macro_f1": 0.5975878164624094,
-  "weighted_f1": 0.6300116961826631,
+  "accuracy": 0.6501547987616099,
+  "macro_f1": 0.6031437368335764,
+  "weighted_f1": 0.6465004342191807,
   "confusion_matrix": [
     [
       20,
-      15,
-      13
+      16,
+      12
+    ],
+    [
+      10,
+      74,
+      35
     ],
     [
       7,
-      70,
-      42
-    ],
-    [
-      4,
-      37,
-      115
+      33,
+      116
     ]
   ],
   "classification_report": {
     "Negative": {
-      "precision": 0.6451612903225806,
+      "precision": 0.5405405405405406,
       "recall": 0.4166666666666667,
-      "f1-score": 0.5063291139240507,
+      "f1-score": 0.47058823529411764,
       "support": 48.0
     },
     "Neutral": {
-      "precision": 0.5737704918032787,
-      "recall": 0.5882352941176471,
-      "f1-score": 0.5809128630705395,
+      "precision": 0.6016260162601627,
+      "recall": 0.6218487394957983,
+      "f1-score": 0.6115702479338843,
       "support": 119.0
     },
     "Positive": {
-      "precision": 0.6764705882352942,
-      "recall": 0.7371794871794872,
-      "f1-score": 0.7055214723926381,
+      "precision": 0.7116564417177914,
+      "recall": 0.7435897435897436,
+      "f1-score": 0.7272727272727273,
       "support": 156.0
     },
-    "accuracy": 0.6346749226006192,
+    "accuracy": 0.6501547987616099,
     "macro avg": {
-      "precision": 0.6318007901203845,
-      "recall": 0.5806938159879337,
-      "f1-score": 0.5975878164624094,
+      "precision": 0.6179409995061649,
+      "recall": 0.5940350499174029,
+      "f1-score": 0.6031437368335764,
       "support": 323.0
     },
     "weighted avg": {
-      "precision": 0.6339809356804332,
-      "recall": 0.6346749226006192,
-      "f1-score": 0.6300116961826631,
+      "precision": 0.6456899281389498,
+      "recall": 0.6501547987616099,
+      "f1-score": 0.6465004342191807,
       "support": 323.0
     }
   },
@@ -92,33 +92,32 @@
   },
   "ont_features": [
     "ont_domain_density",
-    "ont_InteligenciaArtificial_Negativo",
     "ont_total_negativo_mentions",
+    "ont_InteligenciaArtificial_Negativo",
     "ont_Innovacion_Neutro",
     "ont_Etica_Negativo",
-    "ont_InteligenciaArtificial_Neutro",
-    "ont_Tecnologia_Positivo"
+    "ont_Tecnologia_Neutro"
   ],
   "ont_list": "anova_p005_train_only_vader_scope",
-  "n_features": 10007,
+  "n_features": 10006,
   "semantic_input_provenance": {
     "train": {
       "profile": "raw_float64",
       "rows": 968,
-      "columns": 7,
+      "columns": 6,
       "dtype": "float64",
       "ordered_post_ids_sha256": "d42ac8c75364349ab2bd40038940caf56eb506b786e420054190294a27f45476",
-      "ordered_features_sha256": "95680f916a7802a3221e04fee777df9e2dcfa6125d12e7c3064d0ce282f0da51",
-      "matrix_sha256": "7ec14f7236be5effe9864312601e0053a6f7d387658cc7943581ea2ab7296e75"
+      "ordered_features_sha256": "02804b81a4bc0e255e4c42492103505dc799597569205fbfadc99ecbeaf925c6",
+      "matrix_sha256": "e253db61240a8a8ffbf2432f84778bb315380cf9f6acda40797721a22dfd443d"
     },
     "test": {
       "profile": "raw_float64",
       "rows": 323,
-      "columns": 7,
+      "columns": 6,
       "dtype": "float64",
       "ordered_post_ids_sha256": "359d5f85b3b8c5eeacf179a9b91c8d4ed63dfda568712a6ed4c50ef3bf62f009",
-      "ordered_features_sha256": "95680f916a7802a3221e04fee777df9e2dcfa6125d12e7c3064d0ce282f0da51",
-      "matrix_sha256": "6bbdae170b9d9f3c752c4cf8a999ffd34a1332b0a478e954a3eb5dac806bd2e6"
+      "ordered_features_sha256": "02804b81a4bc0e255e4c42492103505dc799597569205fbfadc99ecbeaf925c6",
+      "matrix_sha256": "864f06c457b4fe7ddd8d0231ebeee62560f8195fcfa6924c512f37588935a2cf"
     }
   }
 }

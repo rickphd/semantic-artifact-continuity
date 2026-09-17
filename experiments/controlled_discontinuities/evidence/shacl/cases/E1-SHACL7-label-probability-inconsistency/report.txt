@@ -1,0 +1,22 @@
+Validation Report
+Conforms: False
+Results (1):
+Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: rr:PostShape
+	Focus Node: <http://wfrp.ia/resource/reddit/post/1kkfjn0>
+	Value Node: <http://wfrp.ia/resource/reddit/post/1kkfjn0>
+	Source Constraint: [ sh:message Literal("rr:etiquetaSentimiento no coincide con la probabilidad máxima (probPos/probNeu/probNeg).", lang=es) ; sh:select Literal("
+      PREFIX rr:     <http://wfrp.ia/ontologia/ia-sentimiento#>
+      PREFIX rrsent: <http://wfrp.ia/sentimiento/core#>
+      SELECT $this WHERE {
+        $this rr:probPos ?pp ; rr:probNeu ?pn ; rr:probNeg ?pg ; rr:etiquetaSentimiento ?lbl .
+        BIND(
+          IF(?pp >= ?pn && ?pp >= ?pg, rrsent:Positivo,
+             IF(?pn >= ?pp && ?pn >= ?pg, rrsent:Neutro, rrsent:Negativo)
+          ) AS ?expected
+        )
+        FILTER(?lbl != ?expected)
+      }
+    ") ]
+	Message: rr:etiquetaSentimiento no coincide con la probabilidad máxima (probPos/probNeu/probNeg).

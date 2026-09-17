@@ -1,0 +1,16 @@
+{
+  "python": "3.13.13",
+  "packages": {
+    "numpy": "2.5.1",
+    "pandas": "3.0.3",
+    "pyarrow": "25.0.0",
+    "scipy": "1.18.0",
+    "scikit-learn": "1.9.0",
+    "torch": "2.13.0",
+    "xgboost": "3.3.0",
+    "rdflib": "7.6.0",
+    "pyshacl": "0.40.1"
+  },
+  "compute": "cpu",
+  "threads_per_process": 1
+}

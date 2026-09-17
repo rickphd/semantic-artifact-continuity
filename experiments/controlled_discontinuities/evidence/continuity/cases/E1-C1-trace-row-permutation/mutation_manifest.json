@@ -1,0 +1,24 @@
+{
+  "case_id": "E1-C1-trace-row-permutation",
+  "case": {
+    "case_id": "E1-C1-trace-row-permutation",
+    "family": "valid_control",
+    "required": true,
+    "reserved_for_after_extension": false,
+    "mutation": "Permute rows of results/traceability/traceability_map.csv without changing any row content.",
+    "affected_artefacts": [
+      "results/traceability/traceability_map.csv"
+    ],
+    "oracle_expected": {
+      "should_alarm": false,
+      "expected_status": "passed"
+    },
+    "original_detector_expectation": "audit_traceability and audit_model_input_cells should pass because trace rows are reconciled by post_id and feature.",
+    "extension_required": false,
+    "acceptance": "No false positive; row order is not treated as a scientific identity relation for traceability rows."
+  },
+  "mutation_details": {
+    "mutation": "trace rows reversed",
+    "rows": 9454
+  }
+}

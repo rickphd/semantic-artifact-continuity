@@ -21,6 +21,11 @@ from rdflib import Graph, Literal, Namespace
 from rdflib.plugins.sparql import prepareQuery
 
 
+from .window_spans import context_bounds
+from .mention_spans import select_mentions
+MENTION_POLICY = "longest"
+WHOLE_EXPRESSION = True
+
 # ========== UTILIDADES INTERNAS v03 ==========
 
 # Patrón de limpieza selectiva (solo code blocks)
@@ -244,7 +249,8 @@ class OntologyEnricher:
                 - "polarity_ratio": (pos - |neg|) / total_menciones ∈ [-1, 1]
         """
         text_lower = text.lower()
-        words = text_lower.split()
+        spans = list(re.finditer(r"\S+", text_lower))
+        words = [token.group() for token in spans]
         
         positivo_count = 0
         negativo_count = 0
@@ -252,40 +258,35 @@ class OntologyEnricher:
         positivo_score = 0.0
         negativo_score = 0.0
         
-        # Buscar cada mención del concepto
-        for pattern in concept_patterns:
-            for match in re.finditer(pattern, text_lower, re.IGNORECASE):
-                # Encontrar posición en palabras
-                match_start = match.start()
-                match_word_idx = len(text_lower[:match_start].split()) - 1
-                match_word_idx = max(0, match_word_idx)
+        # A0-F2: unique occurrences across all active patterns for this concept.
+        for match in select_mentions(text_lower, concept_patterns, MENTION_POLICY):
+            # A0-F1: same token spans for matching and window extraction.
+            window_start, window_end = context_bounds(
+                spans, match, self.CONTEXT_WINDOW,
+                whole_expression=WHOLE_EXPRESSION)
+            context_words = words[window_start:window_end]
+            
+            # Analizar sentimiento en ventana
+            window_polarity = 0.0
+            for word in context_words:
+                # Limpiar puntuación
+                clean_word = re.sub(r'[^\w\s]', '', word)
                 
-                # Definir ventana contextual
-                window_start = max(0, match_word_idx - self.CONTEXT_WINDOW)
-                window_end = min(len(words), match_word_idx + self.CONTEXT_WINDOW + 1)
-                context_words = words[window_start:window_end]
-                
-                # Analizar sentimiento en ventana
-                window_polarity = 0.0
-                for word in context_words:
-                    # Limpiar puntuación
-                    clean_word = re.sub(r'[^\w\s]', '', word)
-                    
-                    if clean_word in self.positive_words:
-                        window_polarity += self.positive_words[clean_word]
-                    elif clean_word in self.negative_words:
-                        window_polarity += self.negative_words[clean_word]
-                
-                # Clasificar mención según polaridad de ventana
-                if window_polarity > 0.5:
-                    positivo_count += 1
-                    positivo_score += window_polarity
-                elif window_polarity < -0.5:
-                    negativo_count += 1
-                    negativo_score += window_polarity
-                else:
-                    neutro_count += 1
-        
+                if clean_word in self.positive_words:
+                    window_polarity += self.positive_words[clean_word]
+                elif clean_word in self.negative_words:
+                    window_polarity += self.negative_words[clean_word]
+            
+            # Clasificar mención según polaridad de ventana
+            if window_polarity > 0.5:
+                positivo_count += 1
+                positivo_score += window_polarity
+            elif window_polarity < -0.5:
+                negativo_count += 1
+                negativo_score += window_polarity
+            else:
+                neutro_count += 1
+    
         # Calcular ratio de polaridad
         total_mentions = positivo_count + negativo_count + neutro_count
         polarity_ratio = 0.0
@@ -500,6 +501,7 @@ class OntologyEnricher:
         
         # Estructuras auxiliares
         concept_scores = defaultdict(float)
+        compound_bonus_counts = defaultdict(int)
         detected_modifiers = []
         detected_emotions = []
         domain_score = 0.0
@@ -508,6 +510,7 @@ class OntologyEnricher:
         
         # v04: Diccionario para polaridad contextual por concepto
         concept_context_polarity = {}
+        context_patterns_by_concept = defaultdict(set)
 
         # 1. Detectar conceptos de dominio con smart word boundaries
         for term, concept in self.domain_mapping.items():
@@ -532,15 +535,24 @@ class OntologyEnricher:
                 for compound in TECH_COMPOUNDS[concept_name]:
                     if compound in text_lower:
                         score += 0.5
+                        compound_bonus_counts[(concept_name, compound)] += 1
                         patterns_for_concept.append(rf"\b{re.escape(compound)}\b")
             
             # Acumular score si hay detección
             if score > 0:
                 concept_scores[concept_name] += score
                 
-                # v04: CLAVE - Calcular polaridad contextual para este concepto
-                polarity_data = self._calculate_concept_context_polarity(text, patterns_for_concept)
-                concept_context_polarity[concept_name] = polarity_data
+                # A0-F2: preserve legacy scores; gather context patterns once per concept.
+                context_patterns_by_concept[concept_name].update(patterns_for_concept)
+
+        # A0-F3 candidate: each distinct compound contributes its bonus once per concept.
+        # Preserve activation/pattern collection above; alter only the score bookkeeping.
+        for (concept_name, compound), count in compound_bonus_counts.items():
+            concept_scores[concept_name] -= 0.5 * (count - 1)
+
+        for concept_name in sorted(context_patterns_by_concept):
+            concept_context_polarity[concept_name] = self._calculate_concept_context_polarity(
+                text, sorted(context_patterns_by_concept[concept_name]))
         
         # Top-K=10 conceptos
         top_concepts = sorted(

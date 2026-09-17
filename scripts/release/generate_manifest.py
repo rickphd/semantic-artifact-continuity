@@ -10,7 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 OUTPUT = ROOT / "MANIFEST.sha256"
 EXCLUDED_PARTS = {".git", "__pycache__", ".pytest_cache", ".venv"}
-EXCLUDED_NAMES = {".DS_Store", "MANIFEST.sha256"}
+EXCLUDED_NAMES = {".DS_Store"}
 RELEASED_MODEL = (
     ROOT
     / "results"
@@ -29,13 +29,16 @@ def sha256(path: Path) -> str:
 
 
 def included(path: Path) -> bool:
-    if not path.is_file() or path.name in EXCLUDED_NAMES:
+    if not path.is_file() or path.name in EXCLUDED_NAMES or path.resolve() == OUTPUT.resolve():
         return False
     if set(path.relative_to(ROOT).parts) & EXCLUDED_PARTS:
         return False
     if path.suffix in {".pyc", ".pt", ".pth", ".safetensors", ".ckpt"}:
         return False
-    if path.suffix == ".joblib" and path.resolve() != RELEASED_MODEL.resolve():
+    if path.suffix == ".joblib" and path.resolve() not in {
+        RELEASED_MODEL.resolve(),
+        (ROOT / "results/prepared_model_inputs/train_only_scaler.joblib").resolve(),
+    }:
         return False
     return True
 

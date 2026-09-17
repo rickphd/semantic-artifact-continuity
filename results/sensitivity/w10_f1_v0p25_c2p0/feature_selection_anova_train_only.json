@@ -1,0 +1,211 @@
+{
+  "variant_id": "w10_f1_v0p25_c2p0",
+  "method": "ANOVA F-test (sklearn.feature_selection.f_classif), train-only",
+  "alpha": 0.05,
+  "train_size": 968,
+  "n_candidates": 37,
+  "n_selected": 9,
+  "selected_features_train_only": [
+    "ont_domain_density",
+    "ont_total_negativo_mentions",
+    "ont_InteligenciaArtificial_Negativo",
+    "ont_Robot_Negativo",
+    "ont_Innovacion_Positivo",
+    "ont_Datos_Negativo",
+    "ont_total_positivo_mentions",
+    "ont_Tecnologia_Positivo",
+    "ont_InteligenciaArtificial_Positivo"
+  ],
+  "lexicon_manifest": "results/sensitivity/w10_f1_v0p25_c2p0/lexicon_manifest.json",
+  "lexicon_manifest_sha256": "d335bd50eac5c3b6235c6c1f31dbda6b8ae2e3a7d946e20ec292c0ce70e1db52",
+  "ranking": [
+    {
+      "feature": "ont_domain_density",
+      "f_stat": 23.532652120716588,
+      "p_value": 1.0502913592765479e-10
+    },
+    {
+      "feature": "ont_total_negativo_mentions",
+      "f_stat": 22.515062012219385,
+      "p_value": 2.7740611416110903e-10
+    },
+    {
+      "feature": "ont_InteligenciaArtificial_Negativo",
+      "f_stat": 18.932312045042263,
+      "p_value": 8.61019910198706e-09
+    },
+    {
+      "feature": "ont_Robot_Negativo",
+      "f_stat": 9.629928064381927,
+      "p_value": 7.22709071249788e-05
+    },
+    {
+      "feature": "ont_Innovacion_Positivo",
+      "f_stat": 6.726539277629779,
+      "p_value": 0.00125567355382543
+    },
+    {
+      "feature": "ont_Datos_Negativo",
+      "f_stat": 6.509855635115108,
+      "p_value": 0.0015549196177039092
+    },
+    {
+      "feature": "ont_total_positivo_mentions",
+      "f_stat": 5.626266235531367,
+      "p_value": 0.003721174060240134
+    },
+    {
+      "feature": "ont_Tecnologia_Positivo",
+      "f_stat": 4.418757264418653,
+      "p_value": 0.012293970204583426
+    },
+    {
+      "feature": "ont_InteligenciaArtificial_Positivo",
+      "f_stat": 3.1910593752435195,
+      "p_value": 0.041562644475233966
+    },
+    {
+      "feature": "ont_Etica_Negativo",
+      "f_stat": 2.8440126438625852,
+      "p_value": 0.05867956929249903
+    },
+    {
+      "feature": "ont_Futuro_Positivo",
+      "f_stat": 2.7222238210572955,
+      "p_value": 0.06623320828869807
+    },
+    {
+      "feature": "ont_InteligenciaArtificial_Neutro",
+      "f_stat": 2.340078751129516,
+      "p_value": 0.09686641125305617
+    },
+    {
+      "feature": "ont_Algoritmo_Negativo",
+      "f_stat": 1.9212997746055598,
+      "p_value": 0.14697619830680597
+    },
+    {
+      "feature": "ont_AprendizajeAutomatico_Positivo",
+      "f_stat": 1.7807551145188707,
+      "p_value": 0.16906414579538462
+    },
+    {
+      "feature": "ont_Futuro_Negativo",
+      "f_stat": 1.7796445378233523,
+      "p_value": 0.1692513178335663
+    },
+    {
+      "feature": "ont_Etica_Neutro",
+      "f_stat": 1.687134595550882,
+      "p_value": 0.18559437016740962
+    },
+    {
+      "feature": "ont_Tecnologia_Neutro",
+      "f_stat": 1.572581347304381,
+      "p_value": 0.20804014872182314
+    },
+    {
+      "feature": "ont_Futuro_Neutro",
+      "f_stat": 1.5208450347914748,
+      "p_value": 0.21905045231664236
+    },
+    {
+      "feature": "ont_Algoritmo_Neutro",
+      "f_stat": 1.4174759784078632,
+      "p_value": 0.24282896402218876
+    },
+    {
+      "feature": "ont_Robot_Positivo",
+      "f_stat": 1.3446583502565184,
+      "p_value": 0.26111662325397633
+    },
+    {
+      "feature": "ont_Robot_Neutro",
+      "f_stat": 1.222519201145647,
+      "p_value": 0.2949430322004729
+    },
+    {
+      "feature": "ont_Automatizacion_Neutro",
+      "f_stat": 0.8524151713307832,
+      "p_value": 0.42670469253966314
+    },
+    {
+      "feature": "ont_Datos_Positivo",
+      "f_stat": 0.8163957596204301,
+      "p_value": 0.4423269953094046
+    },
+    {
+      "feature": "ont_Innovacion_Neutro",
+      "f_stat": 0.7767401279839329,
+      "p_value": 0.4601901107358352
+    },
+    {
+      "feature": "ont_Etica_Positivo",
+      "f_stat": 0.7569367037101945,
+      "p_value": 0.4693795371803951
+    },
+    {
+      "feature": "ont_has_ontology_elements",
+      "f_stat": 0.6764040845570438,
+      "p_value": 0.5086829163736822
+    },
+    {
+      "feature": "ont_domain_score",
+      "f_stat": 0.5914105906763648,
+      "p_value": 0.5537464135718121
+    },
+    {
+      "feature": "ont_count_domain_concepts",
+      "f_stat": 0.42638380805359966,
+      "p_value": 0.6529886560411454
+    },
+    {
+      "feature": "ont_Algoritmo_Positivo",
+      "f_stat": 0.42017479591107554,
+      "p_value": 0.657052107788036
+    },
+    {
+      "feature": "ont_Tecnologia_Negativo",
+      "f_stat": 0.4149878951795828,
+      "p_value": 0.6604660635036855
+    },
+    {
+      "feature": "ont_AprendizajeAutomatico_Neutro",
+      "f_stat": 0.3559717701930635,
+      "p_value": 0.700584338466085
+    },
+    {
+      "feature": "ont_Datos_Neutro",
+      "f_stat": 0.3365476098618568,
+      "p_value": 0.7143156752956434
+    },
+    {
+      "feature": "ont_Automatizacion_Negativo",
+      "f_stat": 0.3108692873845281,
+      "p_value": 0.7328830163041861
+    },
+    {
+      "feature": "ont_Automatizacion_Positivo",
+      "f_stat": 0.28281114063154494,
+      "p_value": 0.7537245545713138
+    },
+    {
+      "feature": "ont_AprendizajeAutomatico_Negativo",
+      "f_stat": 0.27733989597829295,
+      "p_value": 0.7578572623328604
+    },
+    {
+      "feature": "ont_total_neutro_mentions",
+      "f_stat": 0.1914736649514166,
+      "p_value": 0.8257727345250035
+    },
+    {
+      "feature": "ont_Innovacion_Negativo",
+      "f_stat": null,
+      "p_value": null
+    }
+  ],
+  "environment": {
+    "scikit_learn": "1.9.0"
+  }
+}

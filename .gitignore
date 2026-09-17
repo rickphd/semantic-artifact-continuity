@@ -33,9 +33,9 @@ env/
 *.safetensors
 *.ckpt
 !results/anova_revalidation/models/LR_ENR_scaler_v2.joblib
+!results/prepared_model_inputs/train_only_scaler.joblib
 
-# Regenerated intermediate sensitivity packages
-results/sensitivity/*/
+# Scratch reproductions belong outside the checkout.
 
 # Archives and temporary bundles
 *.zip

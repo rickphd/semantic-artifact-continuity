@@ -1,0 +1,17 @@
+{
+  "method": "Numeric callouts revised in editable Draw.io source and exported using Draw.io CLI",
+  "sources": [
+    {
+      "path": "JOWS/MDPI_manuscript/figures/source/fig_chain_governance_lineage_ledger.drawio",
+      "sha256": "d60c43623211b7db0653559d84b3b627079da2443c8e9bfc684ccda21bbebb3f"
+    },
+    {
+      "path": "JOWS/MDPI_manuscript/figures/fig04_chain_governance_lineage_ledger.png",
+      "sha256": "689e6f752de872a131c1fdd834ee4e9ae193053153d58459daa66bbb14e10684"
+    },
+    {
+      "path": "JOWS/revisions/e123_protocols_20260915/E1_runs/shacl/REPORT_RECLASSIFIED.md",
+      "sha256": "2d9331d177db66d3a20c12f72e06e9e1b0a47d013d3aba684e4d278f1ba6acb9"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "result_node": "N8fb8334528ab4cccaa72f27977771808",
+    "focus_node": [
+      "http://wfrp.ia/dominio/ciencia-tecnologia#E1ConceptWithoutScheme"
+    ],
+    "result_path": [
+      "http://www.w3.org/2004/02/skos/core#inScheme"
+    ],
+    "source_constraint_component": [
+      "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+    ],
+    "result_severity": [
+      "http://www.w3.org/ns/shacl#Violation"
+    ],
+    "source_shape": [
+      "n0cbc063cdbee40d1b200e0839ce03966b22"
+    ],
+    "message": [
+      "Todo skos:Concept debe pertenecer a un skos:ConceptScheme."
+    ]
+  }
+]

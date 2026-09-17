@@ -14,8 +14,8 @@
     {
       "relation": "Selected semantic activations to source records",
       "unit": "nonzero selected activations",
-      "expected": 2425,
-      "verified": 2425,
+      "expected": 1789,
+      "verified": 1789,
       "exceptions": 0,
       "status": "passed",
       "interpretation": "Each selected activation retains a record, semantic-variable, module, and RDF-resource link; domain variables additionally retain their concept links."
@@ -23,8 +23,8 @@
     {
       "relation": "Selected semantic input cells to governed source values",
       "unit": "selected input cells",
-      "expected": 11298,
-      "verified": 11298,
+      "expected": 9684,
+      "verified": 9684,
       "exceptions": 0,
       "status": "passed",
       "interpretation": "All cells in the seven-variable interface retain ordered record and variable identity; every nonzero value matches its traceability relation."

@@ -1,45 +1,44 @@
 # Reproducibility
 
-## Levels
-
-The package supports three distinct levels of verification.
-
-1. **Stored-result verification** checks file integrity, counts, split support,
-   evidence relations, and figure provenance without retraining.
-2. **KE artifact regeneration** rebuilds RDF, SHACL reports, coverage, and
-   traceability from the released dataset.
-3. **Model reruns** retrain the downstream and ablation models. These are
-   computationally heavier and may show small platform-dependent differences.
-
-## Environment
+## Verify Before Rerunning
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
-```
-
-For LR/RF/XGB/CNN1D training:
-
-```bash
-python -m pip install -r requirements-training.txt
-```
-
-## Verify The Release
-
-```bash
 python scripts/verify_release.py
+python -m unittest discover -s tests
 ```
 
-This is the required first command. It validates the active v04.2 chain and
-checks every entry in `MANIFEST.sha256`.
+The v1.1.0 computational verifier is read-only. It recalculates metrics from
+62,016 predictions, checks fixed IDs/labels/order, the six-variable interface,
+27 captured runtime profiles, canonical RDF cardinality and the 125-setting
+sensitivity grid. File integrity alone does not validate scientific meaning.
 
-## Regenerate KE Artifacts
+Frozen environment records are under `results/provenance/canonical/` and
+`results/provenance/campaign/`. They record Python 3.13 and the original package
+versions. The root requirements give installation ranges; they do not promise
+cross-version bitwise identity. Training additionally requires
+`requirements-training.txt`. Joblib scalers should be loaded only from a trusted,
+hash-verified checkout with compatible scikit-learn versions.
 
-Run from the repository root:
+## Reproduce In A Separate Checkout
+
+For a bounded six-stage canonical replay with exact numeric comparisons,
+RDF isomorphism and all nine prepared matrices checked, use:
 
 ```bash
+python scripts/replay_canonical.py --output-dir /tmp/semantic-canonical-replay
+```
+
+This output directory must not already exist and must be outside the checkout.
+
+The original producer scripts write repository-relative outputs. Do not run
+them over the preserved evidence. Create a disposable clone first:
+
+```bash
+git clone --branch v1.1.0 https://github.com/rickphd/semantic-artifact-continuity.git /tmp/semantic-artifact-replay
+cd /tmp/semantic-artifact-replay
+python scripts/experiments/build_train_only_ontology_dataset.py
+python scripts/experiments/select_ont_features_anova_train_only.py
 python scripts/experiments/materialize_reddit_rdf.py
 python scripts/experiments/run_shacl_conformance.py
 python scripts/experiments/analyze_ontology_coverage.py
@@ -49,20 +48,26 @@ python scripts/experiments/audit_model_input_cells.py
 python scripts/experiments/reconcile_artifact_chain.py
 ```
 
-Rebuild the result figures and their provenance manifest:
+The minimized input is `inputs/original_gold.parquet`. Induction uses only the
+968 training texts, without their labels; ANOVA uses training labels. A fresh
+run can differ in timestamps, RDF serialization, library metadata or model
+optimization while preserving substantive values. Compare values and graph
+isomorphism as appropriate. Do not regenerate `MANIFEST.sha256` merely to turn
+a failed reproduction into a passing check: it authenticates released bytes.
 
-```bash
-python scripts/figures/generate_results_plots.py
-```
+## Controlled Tests And Human Assessment
 
-After intentional regeneration, refresh and verify the release manifest:
+The READMEs in `experiments/controlled_discontinuities/` and
+`experiments/human_assessment/` provide independent portable replay commands
+with explicit scratch output directories. E1 distinguishes original from
+supplementary checks and operational errors from expected detections. E2
+recomputes the reference and extraction comparison from anonymous structured
+decisions; omitted private prose cannot be reconstructed from this release.
 
-```bash
-python scripts/release/generate_manifest.py
-python scripts/verify_release.py
-```
+## Training And Sensitivity
 
-## Rerun Downstream Models
+Run these commands only in the disposable checkout after installing training
+dependencies. They were not rerun as part of publishing v1.1.0:
 
 ```bash
 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 MKL_NUM_THREADS=1 \
@@ -71,31 +76,36 @@ python scripts/experiments/train_canonical_anova_revalidation.py --only-cnn --de
 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 MKL_NUM_THREADS=1 \
   python scripts/experiments/run_module_ablation.py
 python scripts/experiments/run_cnn1d_module_ablation.py --device cpu
+python scripts/experiments/run_vader_ke_sensitivity.py --grid expanded
 ```
 
-Use `--quick` on the training and CNN1D scripts for smoke tests. Full CNN1D
-reruns are substantially slower than stored-result verification.
+The fixed seeds are 42, 123 and 2024. LR/CNN1D use train-standardized numeric
+inputs; RF/XGB use raw values. The CNN1D head is matched between BSL and ENR.
+Stored sensitivity results comprise 97 admissible configurations and 28 loader
+rejections. A rejection means no evaluated numeric/RDF/SHACL output, even if a
+historical summary contains a default `False` in its conformance column.
 
-## Rerun Lexical Sensitivity
+Trained classifier weights are not released. The LR input scaler and the
+prepared train-only scaler are included for input reconciliation. Predictions,
+metrics, configurations and training code are distributed; this is not a
+weight-complete model archive.
+
+## Figures
 
 ```bash
-python scripts/experiments/run_vader_ke_sensitivity.py
+python scripts/figures/regenerate_release_figures.py --output-dir /tmp/semantic-figures
 ```
 
-The complete 125-condition intermediate grid is intentionally not stored in
-Git. The six aggregate outputs under
-`results/sensitivity/` are distributed.
+This replays Figures 5-11 without modifying released images. Figure 6 displays
+only admissible settings. Figure 4 is exported separately from its Draw.io
+source. Historical figure hashes and source-to-public mappings are retained;
+font and renderer versions can affect output bytes.
 
-## Determinism And Scope
+## Interpretation Limits
 
-- The split is fixed by post ID.
-- Lexical induction and ANOVA feature selection use training data only.
-- Model seeds are 42, 123, and 2024.
-- LR and CNN1D standardize semantic inputs with training-set statistics; RF and
-  XGB use unscaled semantic inputs.
-- BSL and ENR CNN1D runs use the same pooled-to-hidden-128-to-output
-  classification head.
-- Stored predictions and metrics are the authoritative released outputs.
-- The package contains the active v04.2 lineage and its authoritative outputs.
-- Model binaries are not distributed, except for the small LR semantic-input
-  scaler used for matrix reconciliation.
+SHACL tests structural constraints; E1 tests declared correspondences under
+specified mutations; E2 tests concept presence/local polarity. E2 does not
+validate the global sentiment labels, whose detailed original annotation
+protocol has not been recovered. Adjudications are author-assisted decisions,
+not a third independent annotator. Three-seed predictive comparisons use one
+fixed corpus/split and do not establish cross-corpus generalization.

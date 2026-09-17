@@ -1,0 +1,5410 @@
+{
+  "protocol": "E2-final-v22-reannotation-v1",
+  "sample_sha256": "d251db6bd0796801993d8fd018893e93b08b248a25ffa01665c0d47b19fb1754",
+  "guide_sha256": "b739e8bb73544ce999632f722a83d5355f1c47b602e0596bd9d057abf18bf26d",
+  "annotator": "B",
+  "complete": true,
+  "validation_issues": [],
+  "answers": {
+    "R001": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Innovacion": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        }
+      }
+    },
+    "R002": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "present",
+          "polarity": "positive"
+        }
+      }
+    },
+    "R003": {
+      "language": "es",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R004": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R005": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "present",
+          "polarity": "positive"
+        }
+      }
+    },
+    "R006": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R007": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R008": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "present",
+          "polarity": "neutral"
+        }
+      }
+    },
+    "R009": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R010": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R011": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R012": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R013": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R014": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R015": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "present",
+          "polarity": "mixed"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R016": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Etica": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R017": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R018": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R019": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Datos": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Algoritmo": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "present",
+          "polarity": "positive"
+        }
+      }
+    },
+    "R020": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R021": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R022": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Etica": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R023": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Innovacion": {
+          "presence": "present",
+          "polarity": "positive"
+        }
+      }
+    },
+    "R024": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "present",
+          "polarity": "positive"
+        }
+      }
+    },
+    "R025": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R026": {
+      "language": "es",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "present",
+          "polarity": "negative"
+        }
+      }
+    },
+    "R027": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R028": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R029": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "mixed"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Etica": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R030": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "insufficient"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R031": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "present",
+          "polarity": "neutral"
+        }
+      }
+    },
+    "R032": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Algoritmo": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "present",
+          "polarity": "neutral"
+        }
+      }
+    },
+    "R033": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R034": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R035": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R036": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Datos": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Algoritmo": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        }
+      }
+    },
+    "R037": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Datos": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Algoritmo": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Etica": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R038": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Innovacion": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        }
+      }
+    },
+    "R039": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R040": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R041": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R042": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R043": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "present",
+          "polarity": "neutral"
+        }
+      }
+    },
+    "R044": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R045": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "present",
+          "polarity": "neutral"
+        }
+      }
+    },
+    "R046": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R047": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R048": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R049": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R050": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        }
+      }
+    },
+    "R051": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "present",
+          "polarity": "neutral"
+        }
+      }
+    },
+    "R052": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R053": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R054": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R055": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R056": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "present",
+          "polarity": "neutral"
+        }
+      }
+    },
+    "R057": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R058": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Algoritmo": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "present",
+          "polarity": "positive"
+        }
+      }
+    },
+    "R059": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R060": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "present",
+          "polarity": "neutral"
+        }
+      }
+    },
+    "R061": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R062": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R063": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R064": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R065": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R066": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "mixed"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R067": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "present",
+          "polarity": "neutral"
+        }
+      }
+    },
+    "R068": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "present",
+          "polarity": "neutral"
+        }
+      }
+    },
+    "R069": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R070": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R071": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R072": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Etica": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R073": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "mixed"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R074": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R075": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R076": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R077": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R078": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R079": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R080": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Innovacion": {
+          "presence": "present",
+          "polarity": "negative"
+        }
+      }
+    },
+    "R081": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R082": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "present",
+          "polarity": "neutral"
+        }
+      }
+    },
+    "R083": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        }
+      }
+    },
+    "R084": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R085": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "present",
+          "polarity": "positive"
+        }
+      }
+    },
+    "R086": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "present",
+          "polarity": "positive"
+        }
+      }
+    },
+    "R087": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R088": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R089": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R090": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R091": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R092": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R093": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R094": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R095": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R096": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        }
+      }
+    },
+    "R097": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R098": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Datos": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Algoritmo": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "present",
+          "polarity": "neutral"
+        }
+      }
+    },
+    "R099": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R100": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "present",
+          "polarity": "neutral"
+        }
+      }
+    },
+    "R101": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R102": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R103": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R104": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R105": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R106": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Algoritmo": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R107": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "present",
+          "polarity": "neutral"
+        }
+      }
+    },
+    "R108": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R109": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "present",
+          "polarity": "positive"
+        }
+      }
+    },
+    "R110": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R111": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "present",
+          "polarity": "positive"
+        }
+      }
+    },
+    "R112": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "insufficient"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R113": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "mixed"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "mixed"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "present",
+          "polarity": "mixed"
+        },
+        "Etica": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R114": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R115": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R116": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "mixed"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "mixed"
+        },
+        "Datos": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Algoritmo": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "present",
+          "polarity": "neutral"
+        }
+      }
+    },
+    "R117": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "mixed"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Automatizacion": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Etica": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Innovacion": {
+          "presence": "present",
+          "polarity": "neutral"
+        }
+      }
+    },
+    "R118": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R119": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Futuro": {
+          "presence": "present",
+          "polarity": "neutral"
+        },
+        "Datos": {
+          "presence": "present",
+          "polarity": "positive"
+        },
+        "Algoritmo": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    },
+    "R120": {
+      "language": "en",
+      "concepts": {
+        "InteligenciaArtificial": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "AprendizajeAutomatico": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Tecnologia": {
+          "presence": "present",
+          "polarity": "negative"
+        },
+        "Futuro": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Datos": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Algoritmo": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Robot": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Automatizacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        },
+        "Etica": {
+          "presence": "uncertain",
+          "polarity": "insufficient"
+        },
+        "Innovacion": {
+          "presence": "absent",
+          "polarity": "not_applicable"
+        }
+      }
+    }
+  }
+}

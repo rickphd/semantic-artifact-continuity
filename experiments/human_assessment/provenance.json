@@ -1,0 +1,255 @@
+{
+  "schema": "E2-public-projection-v1",
+  "path_bases": {
+    "source": "original workspace root (not a public dependency)",
+    "public": "experiments/human_assessment"
+  },
+  "gold_public_path": "data/gold/gold_enriched_ontology.parquet",
+  "gold_sha256": "8730955465e71bd9782d6f9bd42cc240f0dc80c6af7432db1f57299010bbacce",
+  "artifacts": [
+    {
+      "source_path": "JOWS/revisions/e2_final_v22_review_20260916/originals/E2_final_v22_A.json",
+      "source_sha256": "cda24df394babea04bb424c73419d033d52044e8aed3719fec0420159db90e93",
+      "public_path": "annotations_A.json",
+      "transformation": "structured_allowlist_v1",
+      "removed_fields": [
+        "exported_at",
+        "answers.*.notes",
+        "answers.*.concepts.*.evidence",
+        "answers.*.concepts.*.justification"
+      ],
+      "equivalence": "retained_source_fields_equal",
+      "public_sha256": "507d72f760dac35ac9d8d1c3f1a44d85a59a4a657cf27aa4e3bd827e84c8682a"
+    },
+    {
+      "source_path": "JOWS/revisions/e2_final_v22_review_20260916/originals/E2_final_v22_B.json",
+      "source_sha256": "009de5f99faf972afb29efe3d6a2463527fc16538215710e7ed35e2153374a80",
+      "public_path": "annotations_B.json",
+      "transformation": "structured_allowlist_v1",
+      "removed_fields": [
+        "exported_at",
+        "answers.*.notes",
+        "answers.*.concepts.*.evidence",
+        "answers.*.concepts.*.justification"
+      ],
+      "equivalence": "retained_source_fields_equal",
+      "public_sha256": "4d064fcdc74f8509edd08dce654e557a4dea9c3ac2d0a1ab5bc5fce556767eef"
+    },
+    {
+      "source_path": "JOWS/revisions/e2_final_v22_adjudication_20260916/adjudications.json",
+      "source_sha256": "4d661282f58969ae6f21705827e1ea236a4a0e5c19be67e2499518e6b540c974",
+      "public_path": "adjudications.json",
+      "transformation": "structured_allowlist_and_anonymous_author_role_v1",
+      "removed_fields": [
+        "user_statement",
+        "history",
+        "adjudicator",
+        "date",
+        "coordinator_note",
+        "human_rationale",
+        "A.evidence",
+        "A.justification",
+        "B.evidence",
+        "B.justification",
+        "assistant_recommendation_rejected.rationale"
+      ],
+      "equivalence": "retained_source_fields_equal",
+      "public_sha256": "78f39406d1cda9c7f02f3d6ee6e3fd441d9aa7039b7fe4790b2ccf2c7949099f"
+    },
+    {
+      "source_path": "JOWS/revisions/e2_final_v22_20260916/items_blinded.json",
+      "source_sha256": "d251db6bd0796801993d8fd018893e93b08b248a25ffa01665c0d47b19fb1754",
+      "public_path": "items_blinded.json",
+      "transformation": "exact_copy",
+      "removed_fields": [],
+      "equivalence": "exact_bytes",
+      "public_sha256": "d251db6bd0796801993d8fd018893e93b08b248a25ffa01665c0d47b19fb1754"
+    },
+    {
+      "source_path": "JOWS/revisions/e2_final_v22_20260916/GUIA_E2_FINAL_V22.md",
+      "source_sha256": "b739e8bb73544ce999632f722a83d5355f1c47b602e0596bd9d057abf18bf26d",
+      "public_path": "GUIA_E2_FINAL_V22.md",
+      "transformation": "exact_copy",
+      "removed_fields": [],
+      "equivalence": "exact_bytes",
+      "public_sha256": "b739e8bb73544ce999632f722a83d5355f1c47b602e0596bd9d057abf18bf26d"
+    },
+    {
+      "source_path": "JOWS/revisions/e2_final_v22_20260916/coordinator_only/sampling_manifest.json",
+      "source_sha256": "2efb60dc89ce4d13d6d3f67485c068025f20ac786784a79d20253325a4c4906a",
+      "public_path": "sampling_manifest.json",
+      "transformation": "structured_allowlist_v1",
+      "removed_fields": [
+        "guide_sections_1_to_6_unchanged",
+        "human_annotations",
+        "source_guide_sha256",
+        "source_manifest_sha256",
+        "source_sample_sha256"
+      ],
+      "equivalence": "retained_source_fields_equal",
+      "public_sha256": "c9b478944eb417f170a065c533df468d1d7c6d91a9e63806650c6d6217badfdc"
+    },
+    {
+      "source_path": "JOWS/revisions/e2_final_v22_evaluation_20260916/human_reference.json",
+      "source_sha256": "600313174cc9380ccdd2706d16235f36c181795f63953d607d78ef2a1ab77ec2",
+      "public_path": "human_reference.json",
+      "transformation": "structured_allowlist_v1",
+      "removed_fields": [
+        "human_rationale",
+        "evidence_A",
+        "evidence_B",
+        "justification_A",
+        "justification_B"
+      ],
+      "equivalence": "retained_source_fields_equal",
+      "public_sha256": "1a07b745f219dab59445965009b9ae5f283470bd9120acdab25c8ce8502145e9"
+    },
+    {
+      "source_path": "JOWS/revisions/e2_final_v22_evaluation_20260916/comparisons.json",
+      "source_sha256": "c96f4227645bddf2ae2eada3f751c1779bdb68f424fb88fa537a3d0b99175583",
+      "public_path": "comparisons.json",
+      "transformation": "exact_copy",
+      "removed_fields": [],
+      "equivalence": "exact_bytes",
+      "public_sha256": "c96f4227645bddf2ae2eada3f751c1779bdb68f424fb88fa537a3d0b99175583"
+    },
+    {
+      "source_path": "JOWS/revisions/e2_final_v22_evaluation_20260916/summary.json",
+      "source_sha256": "036d45041ed58afae2341056087258c50a33d4c57889d54d635db0116728d0c0",
+      "public_path": "summary.json",
+      "transformation": "exact_copy",
+      "removed_fields": [],
+      "equivalence": "exact_bytes",
+      "public_sha256": "036d45041ed58afae2341056087258c50a33d4c57889d54d635db0116728d0c0"
+    },
+    {
+      "source_path": "JOWS/revisions/e2_final_v22_review_20260916/summary.json",
+      "source_sha256": "6dea76c0bbed9a06b37d62cb782817d5f71e1c4b3fc9d9dba38c7972030bd8e6",
+      "public_path": "agreement_summary.json",
+      "transformation": "structured_allowlist_v1",
+      "removed_fields": [
+        "annotators",
+        "disagreement_posts",
+        "disagreement_units",
+        "disagreements_involving_uncertainty",
+        "evidence_entries",
+        "evidence_entries_all_fragments_matched",
+        "evidence_entries_anchored_including_explicit_ellipses",
+        "evidence_entries_any_fragment_matched",
+        "limits",
+        "notes_entries",
+        "posts_with_notes",
+        "process_confirmation",
+        "status",
+        "structural_issues"
+      ],
+      "equivalence": "retained_source_fields_equal",
+      "public_sha256": "d8c825c391c3f46d6abf3be29ee27f6d19f97818d48b158981bf48e450907c3a"
+    },
+    {
+      "source_path": "JOWS/revisions/e2_final_v22_review_20260916/verification.json",
+      "source_sha256": "95dabbaabdf422ca0f521b7a2d86ae4076550e505b5e9e5bc1d10ba3353b4106",
+      "public_path": "agreement_verification.json",
+      "transformation": "structured_allowlist_v1",
+      "removed_fields": [
+        "distributed_manifest_verified",
+        "evidence_entries_anchored",
+        "human_adjudications_generated",
+        "main_tex_sha256",
+        "originals_byte_identical",
+        "pipeline_metrics_computed",
+        "structural_issues"
+      ],
+      "equivalence": "retained_source_fields_equal",
+      "public_sha256": "dc1307cee1b603098c648de14d85afdf8e7cd7af8cbe2310088795b5fb639c46"
+    },
+    {
+      "source_path": "JOWS/revisions/e2_final_v22_evaluation_20260916/verification.json",
+      "source_sha256": "86a7010bd9cdb8647094100e667fb9cb1fecfec09d71aff8d5a712e37f49729a",
+      "public_path": "historical_evaluation_verification.json",
+      "transformation": "structured_allowlist_v1",
+      "removed_fields": [
+        "automatic_values_identical_to_previous_evaluation",
+        "changed_reference_units",
+        "reference_sha256",
+        "source_hashes_unchanged",
+        "tex_unchanged"
+      ],
+      "equivalence": "retained_source_fields_equal",
+      "public_sha256": "672cf8120e56fbdfb64f7c7e2fab1e5b705cea0d8c00410f901a18f2318b696c"
+    },
+    {
+      "source_path": "JOWS/revisions/e2_final_v22_evaluation_20260916/reference_freeze.json",
+      "source_sha256": "207a6fb7816d93458a2f7da3a3c88094e2613531d8ebcd44ddce725ffc2b834f",
+      "public_path": "reference_freeze.json",
+      "transformation": "relative_source_mapping_and_distinct_historical_hash_v1",
+      "removed_fields": [
+        "source_hashes absolute keys"
+      ],
+      "equivalence": "retained_source_fields_equal",
+      "public_sha256": "53da162f0324eec97f2d6b66eaaa533785bd6602c49746fcb025ba5e9eb72ee0"
+    },
+    {
+      "source_path": "JOWS/revisions/e2_final_v22_evaluation_20260916/E2_RESULTS.md",
+      "source_sha256": "b7dfb28404ad194b2213b8aa7f6b925d8fc5244bc295f550d7a1e499359e70d0",
+      "public_path": "E2_RESULTS.md",
+      "public_sha256": "ae2e08bc72084b111cff1857114a8a11fa45062f5a1c87e373394b8f19593cec",
+      "transformation": "curated_final_results_and_limits_v1",
+      "removed_fields": [
+        "prior-round comparisons",
+        "private process confirmation",
+        "editorial discussion",
+        "local execution paths"
+      ],
+      "equivalence": "numeric claims checked against exact summary; final interpretation limits retained"
+    }
+  ],
+  "source_scripts": [
+    {
+      "source_path": "JOWS/revisions/e2_final_v22_evaluation_20260916/evaluate.py",
+      "source_sha256": "ea143b8f91ff43cc7c863f39d5d52bf97fab4c70a8d62a4c5fdeced5a3aef625",
+      "public_paths": [
+        "evaluate.py",
+        "e2.py"
+      ],
+      "public_sha256": {
+        "evaluate.py": "0a1eaf6fcc30f9b0dc8dae05b7c79a570027741c4e3581c19af0268316d58819",
+        "e2.py": "e70e3648b94b02327e8c0b2089620c5a3478060f7d1a2499cb52d96f8460ab36"
+      },
+      "transformation": "portable_final_only_label_replay_v1"
+    },
+    {
+      "source_path": "JOWS/revisions/e2_final_v22_evaluation_20260916/build_reference.py",
+      "source_sha256": "9b80f6ec47df3ce1f39e764eb126cd6578753f5be28f556c4a502e4e1d3dc7d0",
+      "public_paths": [
+        "build_reference.py",
+        "e2.py"
+      ],
+      "public_sha256": {
+        "build_reference.py": "edc1fab3a817aad1fd4b1f5f1d279238eb03ba231a938b1c0827348de89c4e7e",
+        "e2.py": "e70e3648b94b02327e8c0b2089620c5a3478060f7d1a2499cb52d96f8460ab36"
+      },
+      "transformation": "portable_final_only_label_replay_v1"
+    },
+    {
+      "source_path": "JOWS/revisions/e2_final_v22_review_20260916/analyze.py",
+      "source_sha256": "9331c16763805c8805fc9f0d122e58cffb5048a46e0b8de13bb3cdf4ad0a823d",
+      "public_paths": [
+        "analyze.py",
+        "e2.py"
+      ],
+      "public_sha256": {
+        "analyze.py": "b910137ce7a8cfbc31924424970bf230b54a2faf2f212e47ea81e20bd347ce42",
+        "e2.py": "e70e3648b94b02327e8c0b2089620c5a3478060f7d1a2499cb52d96f8460ab36"
+      },
+      "transformation": "portable_final_only_label_replay_v1"
+    }
+  ],
+  "privacy": {
+    "free_annotation_prose": "omitted, not replaced with empty strings",
+    "retained_roles": "anonymous A/B; author with AI assistance for all adjudications",
+    "source_text": "unchanged public-source text and post IDs; not anonymized",
+    "checks": "allowlisted fields; retained metadata checked for local paths, contacts and source adjudicator identity"
+  },
+  "gold_source_path": "JOWS/revisions/f123_20260914/package/data/gold/gold_enriched_ontology.parquet"
+}

@@ -1,0 +1,30 @@
+{
+  "case_id": "E1-P1-move-id-between-splits",
+  "case": {
+    "case_id": "E1-P1-move-id-between-splits",
+    "family": "partition",
+    "required": true,
+    "reserved_for_after_extension": false,
+    "mutation": "Move one test ID to train and one train ID to test in the split JSON while leaving Gold split column unchanged.",
+    "affected_artefacts": [
+      "data/gold/GEN_split_gld_reddit_ids_v02.json",
+      "data/gold/gold_enriched_ontology.parquet"
+    ],
+    "oracle_expected": {
+      "should_alarm": true,
+      "broken_relation": "frozen partition membership",
+      "localization": [
+        "post_id",
+        "from_split",
+        "to_split"
+      ]
+    },
+    "original_detector_expectation": "reconcile_artifact_chain should report test split symmetric difference; audit_model_input_cells should detect downstream order/hash changes when regenerated.",
+    "extension_required": false,
+    "acceptance": "Moved IDs are listed and status is attention_required."
+  },
+  "mutation_details": {
+    "train_to_test": "1mug8n6",
+    "test_to_train": "1n1plgb"
+  }
+}

@@ -110,7 +110,7 @@ def metric_payload(model, condition, seed, y_true, y_pred, extra):
         "model": model,
         "condition": condition,
         "seed": seed,
-        "pipeline_version": "canonical_v04_2_vader_train_scope",
+        "pipeline_version": "information_f123_20260914",
         "created_at": datetime.now().isoformat(),
         "split_source": "GEN_split_gld_reddit_ids_v02.json",
         "dataset": "gold_enriched_ontology.parquet",
@@ -473,6 +473,7 @@ def run_cnn(parts, ont9, seed, condition, device_name="auto"):
 
     best_f1, best_state, patience, bad, best_epoch = -1, None, 5, 0, 0
     for epoch in range(1, 21):
+        pilot_epoch_start = time.perf_counter()
         model.train()
         for xb, ob, yb in dl:
             xb, yb = xb.to(device), yb.to(device)
@@ -482,6 +483,7 @@ def run_cnn(parts, ont9, seed, condition, device_name="auto"):
             loss.backward()
             opt.step()
         val_f1 = f1_score(yva, evaluate(Xva, Ova), average="macro")
+        print(f"[pilot CNN1D {condition}] epoch={epoch} val_f1={val_f1:.6f} seconds={time.perf_counter()-pilot_epoch_start:.3f}", flush=True)
         if val_f1 > best_f1:
             best_f1, best_epoch, bad = val_f1, epoch, 0
             best_state = {k: v.cpu().clone() for k, v in model.state_dict().items()}
@@ -608,7 +610,7 @@ def main():
                     continue
                 payload = json.loads(path.read_text(encoding="utf-8"))
                 if (
-                    payload.get("pipeline_version") == "canonical_v04_2_vader_train_scope"
+                    payload.get("pipeline_version") == "information_f123_20260914"
                     and payload.get("dataset_sha256") == sha256(GOLD_PATH)
                     and payload.get("lexicon_manifest_sha256") == sha256(LEXICON_PATH)
                 ):

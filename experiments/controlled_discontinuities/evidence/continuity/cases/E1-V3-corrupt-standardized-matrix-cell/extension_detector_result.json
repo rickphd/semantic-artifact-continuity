@@ -1,0 +1,50 @@
+{
+  "detected": true,
+  "checks": {
+    "matrix_manifest_rechecker": {
+      "available": true,
+      "detected": true,
+      "mismatches": [
+        {
+          "split": "test",
+          "profile": "train_standardized_float64",
+          "expected_matrix_sha256": "4d1039253d39d69304718c5c6e3a01d9f095dfc2bfbce5154690b3aeda11fee4",
+          "actual_matrix_sha256": "a8590b090eafd7900eab637a128ecdd7d38016b6ae12f49ae4dec3a5d87f0cea",
+          "rows": 323,
+          "columns": 6
+        },
+        {
+          "split": "test",
+          "profile": "train_standardized_float64",
+          "value_mismatch_at": {
+            "row": 0,
+            "column": 0,
+            "actual": "-0.8207374848165924",
+            "expected": "-0.9457374848165924"
+          }
+        }
+      ]
+    },
+    "rdf_inventory_against_gold": {
+      "available": true,
+      "detected": false,
+      "rdf_post_count": 1614,
+      "missing_ids": [],
+      "extra_ids": [],
+      "iri_mismatches": [],
+      "missing_concepts": [],
+      "extra_concepts": [],
+      "invalid_concepts": []
+    },
+    "prediction_output_fingerprint_check": {
+      "available": true,
+      "detected": false,
+      "mismatches": []
+    },
+    "report_freshness_check": {
+      "available": false,
+      "detected": false,
+      "reason": "Report freshness is evaluated only for stale-report cases to avoid treating valid order-only changes as stale evidence."
+    }
+  }
+}

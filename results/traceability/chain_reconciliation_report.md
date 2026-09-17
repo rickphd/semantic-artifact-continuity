@@ -7,8 +7,8 @@ This report reconciles the active evidence lineage at the level of scientific re
 | Evidence relation | Unit | Expected | Verified | Exceptions | Status |
 |---|---:|---:|---:|---:|---|
 | Canonical records to RDF resources | canonical records | 1614 | 1614 | 0 | passed |
-| Selected semantic activations to source records | nonzero selected activations | 2425 | 2425 | 0 | passed |
-| Selected semantic input cells to governed source values | selected input cells | 11298 | 11298 | 0 | passed |
+| Selected semantic activations to source records | nonzero selected activations | 1789 | 1789 | 0 | passed |
+| Selected semantic input cells to governed source values | selected input cells | 9684 | 9684 | 0 | passed |
 | RDF graph to declared structural constraints | baseline graph | 1 | 1 | 0 | passed |
 | Test records to prediction records | record assignments across evaluation units | 7752 | 7752 | 0 | passed |
 

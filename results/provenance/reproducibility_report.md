@@ -3,7 +3,7 @@
 Status: `passed`
 Generated outputs checked: `27`
 Missing outputs: `0`
-v04.2 chain validation: `passed`
+Stored-result validation exit code: `0`
 
 ## Release Scope Exclusions
 
@@ -13,3 +13,6 @@ v04.2 chain validation: `passed`
 
 ## Known Non Reproducible Or Partial Steps
 
+- This check does not retrain models or establish cross-platform bitwise training reproducibility.
+- Private human annotation explanations are not distributed; public structured decisions support recomputation.
+- The original global sentiment-label annotation protocol has not been recovered.

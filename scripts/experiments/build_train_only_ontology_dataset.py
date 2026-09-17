@@ -28,13 +28,17 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 
 ROOT = Path(__file__).resolve().parents[2]
-SOURCE_GOLD = ROOT / "data" / "gold" / "gold_enriched_ontology.parquet"
-GOLD_PATH = SOURCE_GOLD
+sys.path.insert(0, str(ROOT))
+SOURCE_GOLD = ROOT / "inputs" / "original_gold.parquet"
+GOLD_PATH = ROOT / "data" / "gold" / "gold_enriched_ontology.parquet"
 METADATA_PATH = ROOT / "data" / "gold" / "gold_enriched_ontology_metadata.json"
 SPLIT_PATH = ROOT / "data" / "gold" / "GEN_split_gld_reddit_ids_v02.json"
 LEXICON_PATH = ROOT / "results" / "lexicon" / "ontology_lexicon_v04_2_train_only.json"
 REPORT_PATH = ROOT / "results" / "lexicon" / "lexicon_induction_report.json"
 ONTOLOGY_DIR = ROOT / "src" / "ontology" / "resources"
+
+from src.ontology.window_spans import context_bounds
+WHOLE_EXPRESSION = True
 
 CONTEXT_WINDOW = 5
 MIN_FREQUENCY = 3
@@ -99,13 +103,13 @@ def combined_text(df: pd.DataFrame) -> pd.Series:
 
 def context_tokens(text: str) -> list[str]:
     lowered = str(text).lower()
-    tokens = re.findall(r"\b\w+\b", lowered)
+    spans = list(re.finditer(r"\b\w+\b", lowered))
+    tokens = [token.group() for token in spans]
     selected: list[str] = []
     for pattern in CONCEPT_PATTERNS:
         for match in pattern.finditer(lowered):
-            index = max(0, len(lowered[: match.start()].split()) - 1)
-            start = max(0, index - CONTEXT_WINDOW)
-            end = min(len(tokens), index + CONTEXT_WINDOW + 1)
+            start, end = context_bounds(spans, match, CONTEXT_WINDOW,
+                                        whole_expression=WHOLE_EXPRESSION)
             selected.extend(tokens[start:end])
     return [token for token in selected if token not in STOPWORDS and len(token) > 2]
 
@@ -160,7 +164,7 @@ def build_manifest(source: Path, split: dict, train: pd.DataFrame) -> dict:
     test_ids = set(map(str, split["test"]))
     used = set(train_ids)
     return {
-        "version": "v04.2_vader_train_scope",
+        "version": "information_f123_20260914",
         "created_at": datetime.now().isoformat(),
         "status": "frozen_before_application_to_validation_or_test",
         "source_dataset": str(source.relative_to(ROOT)),
@@ -177,6 +181,9 @@ def build_manifest(source: Path, split: dict, train: pd.DataFrame) -> dict:
         },
         "parameters": {
             "context_window": CONTEXT_WINDOW,
+            "window_anchor": "whole_expression",
+            "mention_policy": "longest_per_concept",
+            "compound_bonus_policy": "once_per_distinct_compound_per_concept",
             "minimum_frequency": MIN_FREQUENCY,
             "polarity_source": "VADER valence; labels are not read",
             "minimum_absolute_vader_valence": MIN_ABS_VADER_VALENCE,
@@ -258,13 +265,13 @@ def main() -> None:
     ontology_nonzero = enriched[FEATURES].fillna(0).astype(float).ne(0)
     posts_with_ontology = int(ontology_nonzero.any(axis=1).sum())
     metadata = {
-        "version": "v04.2_vader_train_scope",
+        "version": "information_f123_20260914",
         "created_at": datetime.now().isoformat(),
         "dataset_stats": {"total_rows": len(enriched), "total_columns": len(enriched.columns),
                           "file_size_mb": round(GOLD_PATH.stat().st_size / 1024**2, 2)},
         "split_distribution": {k: int(v) for k, v in enriched["split"].value_counts().to_dict().items()},
         "label_distribution": {str(k): int(v) for k, v in enriched["label"].value_counts().sort_index().to_dict().items()},
-        "ontology_stats": {"enricher_version": "v04.2_vader_train_scope",
+        "ontology_stats": {"enricher_version": "information_f123_20260914",
                            "lexicon_size": manifest["statistics"]["combined_count"],
                            "context_window": CONTEXT_WINDOW, "total_features": len(FEATURES),
                            "posts_with_ontology": posts_with_ontology,

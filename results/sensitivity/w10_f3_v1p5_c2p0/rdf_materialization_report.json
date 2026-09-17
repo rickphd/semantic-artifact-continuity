@@ -1,0 +1,13 @@
+{
+  "variant_id": "w10_f3_v1p5_c2p0",
+  "rdf_post_count": 1614,
+  "rdf_triple_count": 14827,
+  "ontology_feature_count": 37,
+  "nonzero_activation_count": 9413,
+  "nonzero_selected_activations": 1813,
+  "concept_assertion_count": 1901,
+  "posts_with_trace_rows": 1614,
+  "selected_trace_rate_pct": 100.0,
+  "rdf_output": "results/sensitivity/w10_f3_v1p5_c2p0/rdf/posts.ttl",
+  "traceability_output": "results/sensitivity/w10_f3_v1p5_c2p0/traceability_map.csv"
+}

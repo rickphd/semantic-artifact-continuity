@@ -8,6 +8,6 @@ Validation IDs used: `0`
 
 Test IDs used: `0`
 
-Combined lexicon entries: `40`
+Combined lexicon entries: `42`
 
-Dataset SHA-256: `a74cebfa0db51e9d6e34a8b58b16f149db690d2d5bca0cd5d5945a9c2cc0e99f`
+Dataset SHA-256: `8730955465e71bd9782d6f9bd42cc240f0dc80c6af7432db1f57299010bbacce`

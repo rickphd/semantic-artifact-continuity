@@ -1,7 +1,7 @@
 # Semantic Variable Model Input Report
 
 Status: `passed`
-Selected features: `7`
+Selected features: `6`
 Train only selection: `True`
 Train scoped external lexicon: `True`
 

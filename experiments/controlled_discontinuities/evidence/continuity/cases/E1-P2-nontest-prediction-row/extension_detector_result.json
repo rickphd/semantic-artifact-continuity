@@ -1,0 +1,38 @@
+{
+  "detected": true,
+  "checks": {
+    "matrix_manifest_rechecker": {
+      "available": true,
+      "detected": false,
+      "mismatches": []
+    },
+    "rdf_inventory_against_gold": {
+      "available": true,
+      "detected": false,
+      "rdf_post_count": 1614,
+      "missing_ids": [],
+      "extra_ids": [],
+      "iri_mismatches": [],
+      "missing_concepts": [],
+      "extra_concepts": [],
+      "invalid_concepts": []
+    },
+    "prediction_output_fingerprint_check": {
+      "available": true,
+      "detected": true,
+      "mismatches": [
+        {
+          "prediction_file": "LR_ENR_seed42_test_predictions_v2.csv",
+          "column": "split",
+          "baseline_sha256": "8758f7e2c0786c22fc1ab3ab0e85cda76fee9b15c537d3313a96aeea3b450ed8",
+          "current_sha256": "8101b42e21b208985b9a1d1b00cd8457e1386a12bec8444496c0b5e4810020f6"
+        }
+      ]
+    },
+    "report_freshness_check": {
+      "available": false,
+      "detected": false,
+      "reason": "Report freshness is evaluated only for stale-report cases to avoid treating valid order-only changes as stale evidence."
+    }
+  }
+}

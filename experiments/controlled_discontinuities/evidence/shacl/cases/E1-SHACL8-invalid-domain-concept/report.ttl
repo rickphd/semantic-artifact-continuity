@@ -1,0 +1,38 @@
+@prefix rr: <http://wfrp.ia/ontologia/ia-sentimiento#> .
+@prefix rrdom: <http://wfrp.ia/dominio/ciencia-tecnologia#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a sh:ValidationReport ;
+    sh:conforms false ;
+    sh:result [ a sh:ValidationResult ;
+            sh:focusNode rrdom:E1InvalidConcept ;
+            sh:resultMessage "Todo skos:Concept debe pertenecer a un skos:ConceptScheme."@es ;
+            sh:resultPath skos:inScheme ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape [ sh:message "Todo skos:Concept debe pertenecer a un skos:ConceptScheme."@es ;
+                    sh:minCount 1 ;
+                    sh:path skos:inScheme ] ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://wfrp.ia/resource/reddit/post/1kkfjn0> ;
+            sh:resultMessage "rr:trataSobre/rr:perteneceDominio debe apuntar a skos:Concept en el ConceptScheme de dominio." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint [ sh:message "rr:trataSobre/rr:perteneceDominio debe apuntar a skos:Concept en el ConceptScheme de dominio."@es ;
+                    sh:select """
+      PREFIX rr:   <http://wfrp.ia/ontologia/ia-sentimiento#>
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX rrdom:<http://wfrp.ia/dominio/ciencia-tecnologia#>
+      SELECT $this WHERE {
+        $this (rr:trataSobre|rr:perteneceDominio) ?c .
+        FILTER NOT EXISTS {
+          ?c a skos:Concept .
+          ?c skos:inScheme rrdom:ContextoCienciaTecnologia
+        }
+      }
+    """ ] ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape rr:PostShape ;
+            sh:value <http://wfrp.ia/resource/reddit/post/1kkfjn0> ] .
+

@@ -1,0 +1,21 @@
+{
+  "case_id": "E1-RDF3-invalid-domain-concept-iri",
+  "family": "rdf_link",
+  "required": true,
+  "reserved_for_after_extension": false,
+  "oracle_should_alarm": true,
+  "original_detected": true,
+  "extension_detected": true,
+  "detection_status": "detected_by_original",
+  "expected_exception_detected": false,
+  "evaluation_error": false,
+  "unexpected_errors": [],
+  "false_positive": false,
+  "non_detection": false,
+  "partial_detection": false,
+  "original_detected_before_refresh": false,
+  "original_detected_after_refresh": true,
+  "extension_check_ids": "rdf_inventory_against_gold",
+  "mutation_summary": "{\"new_concept\": \"http://wfrp.ia/dominio/ciencia-tecnologia#E1InvalidConcept\", \"old_concept\": \"http://wfrp.ia/dominio/ciencia-tecnologia#Tecnologia\", \"post_iri\": \"http://wfrp.ia/resource/reddit/post/1kkfjn0\"}",
+  "notes": "SHACL report identifies rr:trataSobre or rr:perteneceDominio concept target violation."
+}

@@ -1,0 +1,21 @@
+{
+  "case_id": "E1-V2-corrupt-trace-value",
+  "family": "value",
+  "required": true,
+  "reserved_for_after_extension": true,
+  "oracle_should_alarm": true,
+  "original_detected": true,
+  "extension_detected": false,
+  "detection_status": "detected_by_original",
+  "expected_exception_detected": false,
+  "evaluation_error": false,
+  "unexpected_errors": [],
+  "false_positive": false,
+  "non_detection": false,
+  "partial_detection": false,
+  "original_detected_before_refresh": false,
+  "original_detected_after_refresh": true,
+  "extension_check_ids": "",
+  "mutation_summary": "{\"feature\": \"ont_domain_density\", \"new\": 0.1666666666666666, \"old\": 0.0416666666666666, \"post_id\": \"1mug8n6\"}",
+  "notes": "Trace mismatch is localized to the mutated post_id-feature pair."
+}

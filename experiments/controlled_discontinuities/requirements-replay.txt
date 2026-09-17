@@ -1,0 +1,8 @@
+# Direct scientific dependencies used for the validation replay (Python 3.13.13).
+numpy==2.5.1
+pandas==3.0.3
+pyarrow==25.0.0
+scikit-learn==1.9.0
+joblib==1.5.3
+rdflib==7.6.0
+pyshacl==0.40.1

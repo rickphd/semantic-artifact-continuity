@@ -1,0 +1,30 @@
+{
+  "case_id": "E1-PR2-permute-y-pred-only",
+  "case": {
+    "case_id": "E1-PR2-permute-y-pred-only",
+    "family": "prediction_assignment",
+    "required": true,
+    "reserved_for_after_extension": true,
+    "mutation": "Permute y_pred values among rows while preserving IDs, y_true, split, model, condition, and seed.",
+    "affected_artefacts": [
+      "results/anova_revalidation/predictions/LR_ENR_seed42_test_predictions_v2.csv"
+    ],
+    "oracle_expected": {
+      "should_alarm": true,
+      "broken_relation": "prediction output assignment to ordered test records",
+      "localization": [
+        "prediction_file",
+        "post_id",
+        "y_pred"
+      ]
+    },
+    "original_detector_expectation": "Existing reconciliation is expected to miss this if it checks IDs, split, and y_true only; metric recomputation may reveal metric drift but not original output provenance.",
+    "extension_required": "prediction_output_fingerprint_check",
+    "acceptance": "Extension detects ordered prediction-assignment hash mismatch; original non-detection is documented."
+  },
+  "mutation_details": {
+    "prediction_file": "LR_ENR_seed42_test_predictions_v2.csv",
+    "old_y_pred_order_sha256": "71b825cc2313f15938ed56c98a774f2409604c06e6c0c06eb5be17a67eac9a14",
+    "new_y_pred_order_sha256": "b5c227c83d6a09d5219d855bb28445ba75681290b35e6afaaa85e254691655f9"
+  }
+}

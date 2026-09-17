@@ -1,0 +1,78 @@
+{
+  "case_id": "E1-SHACL8-invalid-domain-concept",
+  "family": "shacl",
+  "oracle_should_alarm": true,
+  "oracle_conforms_expected": false,
+  "pyshacl_conforms": false,
+  "validation_result_count": 2,
+  "original_detected": true,
+  "extension_detected": false,
+  "detection_status": "partial_detection",
+  "localization_status": "detected_without_expected_path_component_match",
+  "false_positive": false,
+  "non_detection": false,
+  "partial_detection": true,
+  "expected": {
+    "should_alarm": true,
+    "conforms": false,
+    "expected_path": "SPARQL",
+    "expected_component": "sh:SPARQLConstraintComponent",
+    "shape_family": "domain_concept_scheme_sparql",
+    "reserved_for_after_extension": false
+  },
+  "matched_result_count": 0,
+  "results": [
+    {
+      "result_node": "N01b2414224e348378e3f2a83f978399a",
+      "focus_node": [
+        "http://wfrp.ia/dominio/ciencia-tecnologia#E1InvalidConcept"
+      ],
+      "result_path": [
+        "http://www.w3.org/2004/02/skos/core#inScheme"
+      ],
+      "source_constraint_component": [
+        "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+      ],
+      "result_severity": [
+        "http://www.w3.org/ns/shacl#Violation"
+      ],
+      "source_shape": [
+        "n97a445c47c3b4b529da268719e1393e0b22"
+      ],
+      "message": [
+        "Todo skos:Concept debe pertenecer a un skos:ConceptScheme."
+      ]
+    },
+    {
+      "result_node": "N7124824734064ac48c1c7c8009a5e160",
+      "focus_node": [
+        "http://wfrp.ia/resource/reddit/post/1kkfjn0"
+      ],
+      "result_path": [],
+      "source_constraint_component": [
+        "http://www.w3.org/ns/shacl#SPARQLConstraintComponent"
+      ],
+      "result_severity": [
+        "http://www.w3.org/ns/shacl#Violation"
+      ],
+      "source_shape": [
+        "http://wfrp.ia/ontologia/ia-sentimiento#PostShape"
+      ],
+      "message": [
+        "rr:trataSobre/rr:perteneceDominio debe apuntar a skos:Concept en el ConceptScheme de dominio."
+      ]
+    }
+  ],
+  "artefacts": {
+    "case_dir": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL8-invalid-domain-concept",
+    "data_graph": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL8-invalid-domain-concept/mutated_posts.ttl",
+    "mutation_manifest": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL8-invalid-domain-concept/mutation_manifest.json",
+    "report_ttl": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL8-invalid-domain-concept/report.ttl",
+    "report_text": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL8-invalid-domain-concept/report.txt",
+    "report_extracted": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL8-invalid-domain-concept/report_extracted.json"
+  },
+  "runtime": {
+    "elapsed_seconds": 35.473427,
+    "command": "${PYTHON} experiments/controlled_discontinuities/evidence/shacl/run_e1_shacl.py"
+  }
+}

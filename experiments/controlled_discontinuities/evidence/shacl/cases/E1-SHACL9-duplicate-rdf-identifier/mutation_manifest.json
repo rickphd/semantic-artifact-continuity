@@ -1,0 +1,30 @@
+{
+  "case_id": "E1-SHACL9-duplicate-rdf-identifier",
+  "created_at_utc": "2026-09-15T03:05:59.858272+00:00",
+  "baseline_posts": "${PUBLIC_REPO}/results/knowledge_graph/posts.ttl",
+  "baseline_shapes": "${PUBLIC_REPO}/src/ontology/resources/rr-shapes.ttl",
+  "normalized_shapes": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL9-duplicate-rdf-identifier/canonical_shapes_normalized.ttl",
+  "namespace_normalization": {
+    "source_shacl_namespace": "https://www.w3.org/ns/shacl#",
+    "runtime_shacl_namespace": "http://www.w3.org/ns/shacl#",
+    "reason": "The F123 run_shacl_conformance.py applies this normalization for pySHACL."
+  },
+  "mutation_details": {
+    "source_focus_node": "http://wfrp.ia/resource/reddit/post/1kkfjn0",
+    "duplicate_focus_node": "http://wfrp.ia/resource/reddit/post/e1_duplicate_identifier_fixture",
+    "duplicated_identifier": "1kkfjn0"
+  },
+  "triple_count_before_mutation": 15616,
+  "triple_count_after_mutation": 15624,
+  "input_hashes": {
+    "baseline_posts_sha256": "fdbac59aa40039e1134863571fa2653fdf0b326b88d8a178dd0cf942ad0c0a55",
+    "baseline_shapes_sha256": "36f9b52a41df2f96e30620b1965a0f5acdb474e2e17e0ed6be2ec0a3d40d4afc",
+    "mutated_posts_sha256": "da068be1d0995a03ca2952ce5853983792dd5257252391daeb92c3ea00244eef",
+    "normalized_shapes_sha256": "d1f2c47e1053923c1235e1b83ca89becf681ede805d7dc6549d7dbaaa6191230",
+    "ontology_sha256": {
+      "${PUBLIC_REPO}/src/ontology/resources/rr-core.ttl": "b30a76e00cf73e0525c5d211246c617db5d3f5254f5c3eda0bb58801ef53d430",
+      "${PUBLIC_REPO}/src/ontology/resources/rr-domain.ttl": "bb51d55c67fc9a98ad21a9e1b88792f78d10739c90272bcc9c1ff90d069b9b91",
+      "${PUBLIC_REPO}/src/ontology/resources/rr-sentiment.ttl": "ef230818d02f9b7c2103935acf2ea8ef4b1046ab15d7775ce7a0019c58fc2942"
+    }
+  }
+}

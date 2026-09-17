@@ -1,0 +1,30 @@
+{
+  "case_id": "E1-PR1-wrong-y-true",
+  "case": {
+    "case_id": "E1-PR1-wrong-y-true",
+    "family": "prediction_assignment",
+    "required": true,
+    "reserved_for_after_extension": false,
+    "mutation": "Change y_true for one test prediction row while leaving Gold unchanged.",
+    "affected_artefacts": [
+      "results/anova_revalidation/predictions/LR_ENR_seed42_test_predictions_v2.csv"
+    ],
+    "oracle_expected": {
+      "should_alarm": true,
+      "broken_relation": "prediction reference label to Gold label",
+      "localization": [
+        "prediction_file",
+        "post_id"
+      ]
+    },
+    "original_detector_expectation": "reconcile_artifact_chain should detect y_true mismatch.",
+    "extension_required": false,
+    "acceptance": "Mismatch is reported for the mutated post_id."
+  },
+  "mutation_details": {
+    "prediction_file": "LR_ENR_seed42_test_predictions_v2.csv",
+    "post_id": "1n1plgb",
+    "old_y_true": 0,
+    "new_y_true": 1
+  }
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "result_node": "N9c2956542f8f4acbbf6c67ab9fca27ef",
+    "focus_node": [
+      "http://wfrp.ia/resource/reddit/post/1kkfjn0"
+    ],
+    "result_path": [],
+    "source_constraint_component": [
+      "http://www.w3.org/ns/shacl#SPARQLConstraintComponent"
+    ],
+    "result_severity": [
+      "http://www.w3.org/ns/shacl#Violation"
+    ],
+    "source_shape": [
+      "http://wfrp.ia/ontologia/ia-sentimiento#PostShape"
+    ],
+    "message": [
+      "Probabilidades no normalizadas (|sum-1| > 0.02)."
+    ]
+  }
+]

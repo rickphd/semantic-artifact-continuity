@@ -1,0 +1,33 @@
+@prefix rr: <http://wfrp.ia/ontologia/ia-sentimiento#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a sh:ValidationReport ;
+    sh:conforms false ;
+    sh:result [ a sh:ValidationResult ;
+            sh:focusNode <http://wfrp.ia/resource/reddit/post/1kkfjn0> ;
+            sh:resultMessage "Duplicado de rr:identificador detectado en el grafo/dataset." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint _:nede2d3af8cf64d4799f47fc117e42d4ab21 ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape rr:PostShape ;
+            sh:value <http://wfrp.ia/resource/reddit/post/1kkfjn0> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://wfrp.ia/resource/reddit/post/e1_duplicate_identifier_fixture> ;
+            sh:resultMessage "Duplicado de rr:identificador detectado en el grafo/dataset." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint _:nede2d3af8cf64d4799f47fc117e42d4ab21 ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape rr:PostShape ;
+            sh:value <http://wfrp.ia/resource/reddit/post/e1_duplicate_identifier_fixture> ] .
+
+_:nede2d3af8cf64d4799f47fc117e42d4ab21 sh:message "Duplicado de rr:identificador detectado en el grafo/dataset."@es ;
+    sh:select """
+      PREFIX rr: <http://wfrp.ia/ontologia/ia-sentimiento#>
+      SELECT $this WHERE {
+        $this rr:identificador ?id .
+        ?other rr:identificador ?id .
+        FILTER(?other != $this)
+      }
+    """ .
+

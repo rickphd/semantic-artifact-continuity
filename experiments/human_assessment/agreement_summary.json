@@ -1,0 +1,1054 @@
+{
+  "presence": {
+    "n": 1200,
+    "agreements": 1160,
+    "disagreements": 40,
+    "agreement": 0.9666666666666667,
+    "kappa": 0.9223627600038818,
+    "marginal_A": {
+      "absent": 857,
+      "present": 313,
+      "uncertain": 30
+    },
+    "marginal_B": {
+      "absent": 843,
+      "present": 313,
+      "uncertain": 44
+    },
+    "confusion": [
+      {
+        "A": "absent",
+        "B": "absent",
+        "count": 835
+      },
+      {
+        "A": "absent",
+        "B": "present",
+        "count": 3
+      },
+      {
+        "A": "absent",
+        "B": "uncertain",
+        "count": 19
+      },
+      {
+        "A": "present",
+        "B": "absent",
+        "count": 3
+      },
+      {
+        "A": "present",
+        "B": "present",
+        "count": 305
+      },
+      {
+        "A": "present",
+        "B": "uncertain",
+        "count": 5
+      },
+      {
+        "A": "uncertain",
+        "B": "absent",
+        "count": 5
+      },
+      {
+        "A": "uncertain",
+        "B": "present",
+        "count": 5
+      },
+      {
+        "A": "uncertain",
+        "B": "uncertain",
+        "count": 20
+      }
+    ]
+  },
+  "polarity_both_present": {
+    "n": 305,
+    "agreements": 288,
+    "disagreements": 17,
+    "agreement": 0.9442622950819672,
+    "kappa": 0.910193123755088,
+    "marginal_A": {
+      "neutral": 164,
+      "negative": 72,
+      "positive": 60,
+      "mixed": 9
+    },
+    "marginal_B": {
+      "neutral": 161,
+      "negative": 73,
+      "positive": 59,
+      "mixed": 10,
+      "insufficient": 2
+    },
+    "confusion": [
+      {
+        "A": "mixed",
+        "B": "insufficient",
+        "count": 1
+      },
+      {
+        "A": "mixed",
+        "B": "mixed",
+        "count": 6
+      },
+      {
+        "A": "mixed",
+        "B": "negative",
+        "count": 1
+      },
+      {
+        "A": "mixed",
+        "B": "neutral",
+        "count": 1
+      },
+      {
+        "A": "negative",
+        "B": "insufficient",
+        "count": 1
+      },
+      {
+        "A": "negative",
+        "B": "mixed",
+        "count": 2
+      },
+      {
+        "A": "negative",
+        "B": "negative",
+        "count": 68
+      },
+      {
+        "A": "negative",
+        "B": "neutral",
+        "count": 1
+      },
+      {
+        "A": "neutral",
+        "B": "mixed",
+        "count": 1
+      },
+      {
+        "A": "neutral",
+        "B": "negative",
+        "count": 4
+      },
+      {
+        "A": "neutral",
+        "B": "neutral",
+        "count": 157
+      },
+      {
+        "A": "neutral",
+        "B": "positive",
+        "count": 2
+      },
+      {
+        "A": "positive",
+        "B": "mixed",
+        "count": 1
+      },
+      {
+        "A": "positive",
+        "B": "neutral",
+        "count": 2
+      },
+      {
+        "A": "positive",
+        "B": "positive",
+        "count": 57
+      }
+    ]
+  },
+  "by_concept": {
+    "InteligenciaArtificial": {
+      "presence": {
+        "n": 120,
+        "agreements": 118,
+        "disagreements": 2,
+        "agreement": 0.9833333333333333,
+        "kappa": 0.9683084642809979,
+        "marginal_A": {
+          "absent": 52,
+          "present": 65,
+          "uncertain": 3
+        },
+        "marginal_B": {
+          "absent": 51,
+          "present": 64,
+          "uncertain": 5
+        },
+        "confusion": [
+          {
+            "A": "absent",
+            "B": "absent",
+            "count": 51
+          },
+          {
+            "A": "absent",
+            "B": "uncertain",
+            "count": 1
+          },
+          {
+            "A": "present",
+            "B": "present",
+            "count": 64
+          },
+          {
+            "A": "present",
+            "B": "uncertain",
+            "count": 1
+          },
+          {
+            "A": "uncertain",
+            "B": "uncertain",
+            "count": 3
+          }
+        ]
+      },
+      "polarity_both_present": {
+        "n": 64,
+        "agreements": 59,
+        "disagreements": 5,
+        "agreement": 0.921875,
+        "kappa": 0.8847677349657904,
+        "marginal_A": {
+          "neutral": 25,
+          "negative": 23,
+          "positive": 13,
+          "mixed": 3
+        },
+        "marginal_B": {
+          "neutral": 25,
+          "negative": 23,
+          "positive": 12,
+          "mixed": 3,
+          "insufficient": 1
+        },
+        "confusion": [
+          {
+            "A": "mixed",
+            "B": "insufficient",
+            "count": 1
+          },
+          {
+            "A": "mixed",
+            "B": "mixed",
+            "count": 1
+          },
+          {
+            "A": "mixed",
+            "B": "neutral",
+            "count": 1
+          },
+          {
+            "A": "negative",
+            "B": "mixed",
+            "count": 1
+          },
+          {
+            "A": "negative",
+            "B": "negative",
+            "count": 22
+          },
+          {
+            "A": "neutral",
+            "B": "negative",
+            "count": 1
+          },
+          {
+            "A": "neutral",
+            "B": "neutral",
+            "count": 24
+          },
+          {
+            "A": "positive",
+            "B": "mixed",
+            "count": 1
+          },
+          {
+            "A": "positive",
+            "B": "positive",
+            "count": 12
+          }
+        ]
+      }
+    },
+    "AprendizajeAutomatico": {
+      "presence": {
+        "n": 120,
+        "agreements": 119,
+        "disagreements": 1,
+        "agreement": 0.9916666666666667,
+        "kappa": 0.8540145985401466,
+        "marginal_A": {
+          "absent": 116,
+          "uncertain": 2,
+          "present": 2
+        },
+        "marginal_B": {
+          "absent": 117,
+          "uncertain": 1,
+          "present": 2
+        },
+        "confusion": [
+          {
+            "A": "absent",
+            "B": "absent",
+            "count": 116
+          },
+          {
+            "A": "present",
+            "B": "present",
+            "count": 2
+          },
+          {
+            "A": "uncertain",
+            "B": "absent",
+            "count": 1
+          },
+          {
+            "A": "uncertain",
+            "B": "uncertain",
+            "count": 1
+          }
+        ]
+      },
+      "polarity_both_present": {
+        "n": 2,
+        "agreements": 2,
+        "disagreements": 0,
+        "agreement": 1.0,
+        "kappa": null,
+        "marginal_A": {
+          "neutral": 2
+        },
+        "marginal_B": {
+          "neutral": 2
+        },
+        "confusion": [
+          {
+            "A": "neutral",
+            "B": "neutral",
+            "count": 2
+          }
+        ]
+      }
+    },
+    "Tecnologia": {
+      "presence": {
+        "n": 120,
+        "agreements": 114,
+        "disagreements": 6,
+        "agreement": 0.95,
+        "kappa": 0.8799799966661109,
+        "marginal_A": {
+          "absent": 28,
+          "uncertain": 5,
+          "present": 87
+        },
+        "marginal_B": {
+          "absent": 29,
+          "present": 87,
+          "uncertain": 4
+        },
+        "confusion": [
+          {
+            "A": "absent",
+            "B": "absent",
+            "count": 27
+          },
+          {
+            "A": "absent",
+            "B": "uncertain",
+            "count": 1
+          },
+          {
+            "A": "present",
+            "B": "absent",
+            "count": 1
+          },
+          {
+            "A": "present",
+            "B": "present",
+            "count": 85
+          },
+          {
+            "A": "present",
+            "B": "uncertain",
+            "count": 1
+          },
+          {
+            "A": "uncertain",
+            "B": "absent",
+            "count": 1
+          },
+          {
+            "A": "uncertain",
+            "B": "present",
+            "count": 2
+          },
+          {
+            "A": "uncertain",
+            "B": "uncertain",
+            "count": 2
+          }
+        ]
+      },
+      "polarity_both_present": {
+        "n": 85,
+        "agreements": 82,
+        "disagreements": 3,
+        "agreement": 0.9647058823529412,
+        "kappa": 0.9449125081011017,
+        "marginal_A": {
+          "neutral": 43,
+          "positive": 19,
+          "negative": 20,
+          "mixed": 3
+        },
+        "marginal_B": {
+          "neutral": 42,
+          "positive": 19,
+          "negative": 21,
+          "mixed": 3
+        },
+        "confusion": [
+          {
+            "A": "mixed",
+            "B": "mixed",
+            "count": 3
+          },
+          {
+            "A": "negative",
+            "B": "negative",
+            "count": 19
+          },
+          {
+            "A": "negative",
+            "B": "neutral",
+            "count": 1
+          },
+          {
+            "A": "neutral",
+            "B": "negative",
+            "count": 2
+          },
+          {
+            "A": "neutral",
+            "B": "neutral",
+            "count": 41
+          },
+          {
+            "A": "positive",
+            "B": "positive",
+            "count": 19
+          }
+        ]
+      }
+    },
+    "Futuro": {
+      "presence": {
+        "n": 120,
+        "agreements": 117,
+        "disagreements": 3,
+        "agreement": 0.975,
+        "kappa": 0.9468713105076741,
+        "marginal_A": {
+          "absent": 75,
+          "present": 43,
+          "uncertain": 2
+        },
+        "marginal_B": {
+          "absent": 77,
+          "present": 43
+        },
+        "confusion": [
+          {
+            "A": "absent",
+            "B": "absent",
+            "count": 75
+          },
+          {
+            "A": "present",
+            "B": "absent",
+            "count": 1
+          },
+          {
+            "A": "present",
+            "B": "present",
+            "count": 42
+          },
+          {
+            "A": "uncertain",
+            "B": "absent",
+            "count": 1
+          },
+          {
+            "A": "uncertain",
+            "B": "present",
+            "count": 1
+          }
+        ]
+      },
+      "polarity_both_present": {
+        "n": 42,
+        "agreements": 40,
+        "disagreements": 2,
+        "agreement": 0.9523809523809523,
+        "kappa": 0.9150657229524771,
+        "marginal_A": {
+          "positive": 7,
+          "neutral": 26,
+          "negative": 8,
+          "mixed": 1
+        },
+        "marginal_B": {
+          "positive": 7,
+          "neutral": 26,
+          "negative": 6,
+          "insufficient": 1,
+          "mixed": 2
+        },
+        "confusion": [
+          {
+            "A": "mixed",
+            "B": "mixed",
+            "count": 1
+          },
+          {
+            "A": "negative",
+            "B": "insufficient",
+            "count": 1
+          },
+          {
+            "A": "negative",
+            "B": "mixed",
+            "count": 1
+          },
+          {
+            "A": "negative",
+            "B": "negative",
+            "count": 6
+          },
+          {
+            "A": "neutral",
+            "B": "neutral",
+            "count": 26
+          },
+          {
+            "A": "positive",
+            "B": "positive",
+            "count": 7
+          }
+        ]
+      }
+    },
+    "Datos": {
+      "presence": {
+        "n": 120,
+        "agreements": 120,
+        "disagreements": 0,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "marginal_A": {
+          "absent": 100,
+          "present": 20
+        },
+        "marginal_B": {
+          "absent": 100,
+          "present": 20
+        },
+        "confusion": [
+          {
+            "A": "absent",
+            "B": "absent",
+            "count": 100
+          },
+          {
+            "A": "present",
+            "B": "present",
+            "count": 20
+          }
+        ]
+      },
+      "polarity_both_present": {
+        "n": 20,
+        "agreements": 19,
+        "disagreements": 1,
+        "agreement": 0.95,
+        "kappa": 0.8360655737704917,
+        "marginal_A": {
+          "neutral": 17,
+          "negative": 2,
+          "positive": 1
+        },
+        "marginal_B": {
+          "neutral": 16,
+          "negative": 2,
+          "positive": 2
+        },
+        "confusion": [
+          {
+            "A": "negative",
+            "B": "negative",
+            "count": 2
+          },
+          {
+            "A": "neutral",
+            "B": "neutral",
+            "count": 16
+          },
+          {
+            "A": "neutral",
+            "B": "positive",
+            "count": 1
+          },
+          {
+            "A": "positive",
+            "B": "positive",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "Algoritmo": {
+      "presence": {
+        "n": 120,
+        "agreements": 116,
+        "disagreements": 4,
+        "agreement": 0.9666666666666667,
+        "kappa": 0.8984556801353925,
+        "marginal_A": {
+          "absent": 98,
+          "present": 19,
+          "uncertain": 3
+        },
+        "marginal_B": {
+          "absent": 95,
+          "present": 18,
+          "uncertain": 7
+        },
+        "confusion": [
+          {
+            "A": "absent",
+            "B": "absent",
+            "count": 95
+          },
+          {
+            "A": "absent",
+            "B": "uncertain",
+            "count": 3
+          },
+          {
+            "A": "present",
+            "B": "present",
+            "count": 18
+          },
+          {
+            "A": "present",
+            "B": "uncertain",
+            "count": 1
+          },
+          {
+            "A": "uncertain",
+            "B": "uncertain",
+            "count": 3
+          }
+        ]
+      },
+      "polarity_both_present": {
+        "n": 18,
+        "agreements": 16,
+        "disagreements": 2,
+        "agreement": 0.8888888888888888,
+        "kappa": 0.689655172413793,
+        "marginal_A": {
+          "positive": 4,
+          "neutral": 14
+        },
+        "marginal_B": {
+          "positive": 3,
+          "neutral": 14,
+          "negative": 1
+        },
+        "confusion": [
+          {
+            "A": "neutral",
+            "B": "negative",
+            "count": 1
+          },
+          {
+            "A": "neutral",
+            "B": "neutral",
+            "count": 13
+          },
+          {
+            "A": "positive",
+            "B": "neutral",
+            "count": 1
+          },
+          {
+            "A": "positive",
+            "B": "positive",
+            "count": 3
+          }
+        ]
+      }
+    },
+    "Robot": {
+      "presence": {
+        "n": 120,
+        "agreements": 120,
+        "disagreements": 0,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "marginal_A": {
+          "absent": 118,
+          "present": 2
+        },
+        "marginal_B": {
+          "absent": 118,
+          "present": 2
+        },
+        "confusion": [
+          {
+            "A": "absent",
+            "B": "absent",
+            "count": 118
+          },
+          {
+            "A": "present",
+            "B": "present",
+            "count": 2
+          }
+        ]
+      },
+      "polarity_both_present": {
+        "n": 2,
+        "agreements": 2,
+        "disagreements": 0,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "marginal_A": {
+          "neutral": 1,
+          "positive": 1
+        },
+        "marginal_B": {
+          "neutral": 1,
+          "positive": 1
+        },
+        "confusion": [
+          {
+            "A": "neutral",
+            "B": "neutral",
+            "count": 1
+          },
+          {
+            "A": "positive",
+            "B": "positive",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "Automatizacion": {
+      "presence": {
+        "n": 120,
+        "agreements": 114,
+        "disagreements": 6,
+        "agreement": 0.95,
+        "kappa": 0.8521256931608132,
+        "marginal_A": {
+          "absent": 98,
+          "present": 19,
+          "uncertain": 3
+        },
+        "marginal_B": {
+          "absent": 93,
+          "uncertain": 6,
+          "present": 21
+        },
+        "confusion": [
+          {
+            "A": "absent",
+            "B": "absent",
+            "count": 93
+          },
+          {
+            "A": "absent",
+            "B": "present",
+            "count": 1
+          },
+          {
+            "A": "absent",
+            "B": "uncertain",
+            "count": 4
+          },
+          {
+            "A": "present",
+            "B": "present",
+            "count": 19
+          },
+          {
+            "A": "uncertain",
+            "B": "present",
+            "count": 1
+          },
+          {
+            "A": "uncertain",
+            "B": "uncertain",
+            "count": 2
+          }
+        ]
+      },
+      "polarity_both_present": {
+        "n": 19,
+        "agreements": 17,
+        "disagreements": 2,
+        "agreement": 0.8947368421052632,
+        "kappa": 0.8031088082901554,
+        "marginal_A": {
+          "neutral": 12,
+          "positive": 5,
+          "negative": 2
+        },
+        "marginal_B": {
+          "neutral": 12,
+          "positive": 4,
+          "negative": 2,
+          "mixed": 1
+        },
+        "confusion": [
+          {
+            "A": "negative",
+            "B": "negative",
+            "count": 2
+          },
+          {
+            "A": "neutral",
+            "B": "mixed",
+            "count": 1
+          },
+          {
+            "A": "neutral",
+            "B": "neutral",
+            "count": 11
+          },
+          {
+            "A": "positive",
+            "B": "neutral",
+            "count": 1
+          },
+          {
+            "A": "positive",
+            "B": "positive",
+            "count": 4
+          }
+        ]
+      }
+    },
+    "Etica": {
+      "presence": {
+        "n": 120,
+        "agreements": 111,
+        "disagreements": 9,
+        "agreement": 0.925,
+        "kappa": 0.8473929631199661,
+        "marginal_A": {
+          "absent": 83,
+          "present": 29,
+          "uncertain": 8
+        },
+        "marginal_B": {
+          "uncertain": 15,
+          "absent": 77,
+          "present": 28
+        },
+        "confusion": [
+          {
+            "A": "absent",
+            "B": "absent",
+            "count": 76
+          },
+          {
+            "A": "absent",
+            "B": "uncertain",
+            "count": 7
+          },
+          {
+            "A": "present",
+            "B": "present",
+            "count": 28
+          },
+          {
+            "A": "present",
+            "B": "uncertain",
+            "count": 1
+          },
+          {
+            "A": "uncertain",
+            "B": "absent",
+            "count": 1
+          },
+          {
+            "A": "uncertain",
+            "B": "uncertain",
+            "count": 7
+          }
+        ]
+      },
+      "polarity_both_present": {
+        "n": 28,
+        "agreements": 27,
+        "disagreements": 1,
+        "agreement": 0.9642857142857143,
+        "kappa": 0.9402985074626866,
+        "marginal_A": {
+          "negative": 15,
+          "mixed": 2,
+          "neutral": 8,
+          "positive": 3
+        },
+        "marginal_B": {
+          "negative": 16,
+          "mixed": 1,
+          "neutral": 8,
+          "positive": 3
+        },
+        "confusion": [
+          {
+            "A": "mixed",
+            "B": "mixed",
+            "count": 1
+          },
+          {
+            "A": "mixed",
+            "B": "negative",
+            "count": 1
+          },
+          {
+            "A": "negative",
+            "B": "negative",
+            "count": 15
+          },
+          {
+            "A": "neutral",
+            "B": "neutral",
+            "count": 8
+          },
+          {
+            "A": "positive",
+            "B": "positive",
+            "count": 3
+          }
+        ]
+      }
+    },
+    "Innovacion": {
+      "presence": {
+        "n": 120,
+        "agreements": 111,
+        "disagreements": 9,
+        "agreement": 0.925,
+        "kappa": 0.8189741870600068,
+        "marginal_A": {
+          "absent": 89,
+          "present": 27,
+          "uncertain": 4
+        },
+        "marginal_B": {
+          "uncertain": 6,
+          "present": 28,
+          "absent": 86
+        },
+        "confusion": [
+          {
+            "A": "absent",
+            "B": "absent",
+            "count": 84
+          },
+          {
+            "A": "absent",
+            "B": "present",
+            "count": 2
+          },
+          {
+            "A": "absent",
+            "B": "uncertain",
+            "count": 3
+          },
+          {
+            "A": "present",
+            "B": "absent",
+            "count": 1
+          },
+          {
+            "A": "present",
+            "B": "present",
+            "count": 25
+          },
+          {
+            "A": "present",
+            "B": "uncertain",
+            "count": 1
+          },
+          {
+            "A": "uncertain",
+            "B": "absent",
+            "count": 1
+          },
+          {
+            "A": "uncertain",
+            "B": "present",
+            "count": 1
+          },
+          {
+            "A": "uncertain",
+            "B": "uncertain",
+            "count": 2
+          }
+        ]
+      },
+      "polarity_both_present": {
+        "n": 25,
+        "agreements": 24,
+        "disagreements": 1,
+        "agreement": 0.96,
+        "kappa": 0.923076923076923,
+        "marginal_A": {
+          "positive": 7,
+          "neutral": 16,
+          "negative": 2
+        },
+        "marginal_B": {
+          "positive": 8,
+          "neutral": 15,
+          "negative": 2
+        },
+        "confusion": [
+          {
+            "A": "negative",
+            "B": "negative",
+            "count": 2
+          },
+          {
+            "A": "neutral",
+            "B": "neutral",
+            "count": 15
+          },
+          {
+            "A": "neutral",
+            "B": "positive",
+            "count": 1
+          },
+          {
+            "A": "positive",
+            "B": "positive",
+            "count": 7
+          }
+        ]
+      }
+    }
+  }
+}

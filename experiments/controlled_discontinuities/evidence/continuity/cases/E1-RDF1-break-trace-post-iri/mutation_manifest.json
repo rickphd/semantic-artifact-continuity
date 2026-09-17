@@ -1,0 +1,31 @@
+{
+  "case_id": "E1-RDF1-break-trace-post-iri",
+  "case": {
+    "case_id": "E1-RDF1-break-trace-post-iri",
+    "family": "rdf_link",
+    "required": true,
+    "reserved_for_after_extension": false,
+    "mutation": "Change post_iri for one nonzero traceability row to an IRI inconsistent with stable_post_iri(post_id).",
+    "affected_artefacts": [
+      "results/traceability/traceability_map.csv"
+    ],
+    "oracle_expected": {
+      "should_alarm": true,
+      "broken_relation": "trace row to stable RDF post IRI",
+      "localization": [
+        "post_id",
+        "feature",
+        "post_iri"
+      ]
+    },
+    "original_detector_expectation": "audit_model_input_cells should report post_iri_mismatches for selected features; audit_traceability may report missing expected IRI only at aggregate level.",
+    "extension_required": false,
+    "acceptance": "Affected post_id-feature IRI mismatch is localized."
+  },
+  "mutation_details": {
+    "post_id": "1mug8n6",
+    "feature": "ont_domain_density",
+    "old_iri": "http://wfrp.ia/resource/reddit/post/1mug8n6",
+    "new_iri": "http://wfrp.ia/resource/reddit/post/1mug8n6_broken"
+  }
+}

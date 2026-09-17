@@ -1,9 +1,9 @@
 # Selected Semantic Input Reconciliation
 
 Status: `passed`
-Expected cells: `11298`
-Matched cells: `11298`
-Nonzero cells with matching trace: `2425`
+Expected cells: `9684`
+Matched cells: `9684`
+Nonzero cells with matching trace: `1789`
 Missing nonzero traces: `0`
 Value mismatches: `0`
 Linked enriched runs: `12` of `12`

@@ -1,0 +1,59 @@
+{
+  "case_id": "E1-SHACL4-missing-author",
+  "family": "shacl",
+  "oracle_should_alarm": true,
+  "oracle_conforms_expected": false,
+  "pyshacl_conforms": false,
+  "validation_result_count": 1,
+  "original_detected": true,
+  "extension_detected": false,
+  "detection_status": "partial_detection",
+  "localization_status": "detected_without_expected_path_component_match",
+  "false_positive": false,
+  "non_detection": false,
+  "partial_detection": true,
+  "expected": {
+    "should_alarm": true,
+    "conforms": false,
+    "expected_path": "rr:publicadoPor",
+    "expected_component": "sh:MinCountConstraintComponent",
+    "shape_family": "author_required",
+    "reserved_for_after_extension": false
+  },
+  "matched_result_count": 0,
+  "results": [
+    {
+      "result_node": "N457c2b7725da4f4ab46b69ef7f3d16ff",
+      "focus_node": [
+        "http://wfrp.ia/resource/reddit/post/1kkfjn0"
+      ],
+      "result_path": [
+        "http://wfrp.ia/ontologia/ia-sentimiento#publicadoPor"
+      ],
+      "source_constraint_component": [
+        "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+      ],
+      "result_severity": [
+        "http://www.w3.org/ns/shacl#Violation"
+      ],
+      "source_shape": [
+        "n7fd1c01edfe04963bcdca06028f3b77db3"
+      ],
+      "message": [
+        "rr:publicadoPor debe apuntar a exactamente 1 rr:Author (IRI)."
+      ]
+    }
+  ],
+  "artefacts": {
+    "case_dir": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL4-missing-author",
+    "data_graph": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL4-missing-author/mutated_posts.ttl",
+    "mutation_manifest": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL4-missing-author/mutation_manifest.json",
+    "report_ttl": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL4-missing-author/report.ttl",
+    "report_text": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL4-missing-author/report.txt",
+    "report_extracted": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL4-missing-author/report_extracted.json"
+  },
+  "runtime": {
+    "elapsed_seconds": 35.045096,
+    "command": "${PYTHON} experiments/controlled_discontinuities/evidence/shacl/run_e1_shacl.py"
+  }
+}

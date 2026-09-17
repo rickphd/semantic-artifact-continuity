@@ -1,0 +1,170 @@
+{
+  "runs": [
+    {
+      "phase": "original_consumer_before_refresh",
+      "script": "reconcile_artifact_chain.py",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": "",
+      "parsed_status": "passed",
+      "detected": false,
+      "operational_error": false,
+      "details": {
+        "status": "passed",
+        "active_evidence_lineage": "v04.2",
+        "checks": [
+          {
+            "relation": "Canonical records to RDF resources",
+            "unit": "canonical records",
+            "expected": 1614,
+            "verified": 1614,
+            "exceptions": 0,
+            "status": "passed",
+            "interpretation": "Each canonical record is represented by one stable RDF resource."
+          },
+          {
+            "relation": "Selected semantic activations to source records",
+            "unit": "nonzero selected activations",
+            "expected": 1789,
+            "verified": 1789,
+            "exceptions": 0,
+            "status": "passed",
+            "interpretation": "Each selected activation retains a record, semantic-variable, module, and RDF-resource link; domain variables additionally retain their concept links."
+          },
+          {
+            "relation": "Selected semantic input cells to governed source values",
+            "unit": "selected input cells",
+            "expected": 9684,
+            "verified": 9684,
+            "exceptions": 0,
+            "status": "passed",
+            "interpretation": "All cells in the seven-variable interface retain ordered record and variable identity; every nonzero value matches its traceability relation."
+          },
+          {
+            "relation": "RDF graph to declared structural constraints",
+            "unit": "baseline graph",
+            "expected": 1,
+            "verified": 1,
+            "exceptions": 0,
+            "status": "passed",
+            "interpretation": "The baseline RDF graph conforms to the declared structural constraints."
+          },
+          {
+            "relation": "Test records to prediction records",
+            "unit": "record assignments across evaluation units",
+            "expected": 7752,
+            "verified": 7752,
+            "exceptions": 0,
+            "status": "passed",
+            "interpretation": "All 323 test records are reconciled across 24 evaluation units with matching reference labels."
+          }
+        ],
+        "summary": {
+          "checked_relations": 5,
+          "passed_relations": 5,
+          "exceptions": 0
+        }
+      }
+    },
+    {
+      "phase": "original_after_refresh",
+      "script": "run_shacl_conformance.py",
+      "returncode": 0,
+      "stdout": "{\n  \"status\": \"passed\",\n  \"namespace_normalization\": {\n    \"source\": \"src/ontology/resources/rr-shapes.ttl\",\n    \"normalized_copy\": \"results/validation/shacl/canonical_shapes_normalized.ttl\",\n    \"reason\": \"The source file used https://www.w3.org/ns/shacl#. pySHACL expects the W3C SHACL namespace http://www.w3.org/ns/shacl#.\"\n  },\n  \"baseline\": {\n    \"conforms\": true,\n    \"validation_result_count\": 0,\n    \"report_ttl\": \"results/validation/shacl/baseline_report.ttl\",\n    \"report_text\": \"results/validation/shacl/baseline_report.txt\"\n  },\n  \"stress_test\": {\n    \"conforms\": false,\n    \"validation_result_count\": 6,\n    \"fixture\": \"results/validation/shacl/invalid_fixture_missing_required.ttl\",\n    \"report_ttl\": \"results/validation/shacl/stress_report.ttl\",\n    \"report_text\": \"results/validation/shacl/stress_report.txt\"\n  }\n}\n",
+      "stderr": "",
+      "parsed_status": "passed",
+      "detected": false,
+      "operational_error": false,
+      "details": {
+        "status": "passed",
+        "namespace_normalization": {
+          "source": "src/ontology/resources/rr-shapes.ttl",
+          "normalized_copy": "results/validation/shacl/canonical_shapes_normalized.ttl",
+          "reason": "The source file used https://www.w3.org/ns/shacl#. pySHACL expects the W3C SHACL namespace http://www.w3.org/ns/shacl#."
+        },
+        "baseline": {
+          "conforms": true,
+          "validation_result_count": 0,
+          "report_ttl": "results/validation/shacl/baseline_report.ttl",
+          "report_text": "results/validation/shacl/baseline_report.txt"
+        },
+        "stress_test": {
+          "conforms": false,
+          "validation_result_count": 6,
+          "fixture": "results/validation/shacl/invalid_fixture_missing_required.ttl",
+          "report_ttl": "results/validation/shacl/stress_report.ttl",
+          "report_text": "results/validation/shacl/stress_report.txt"
+        }
+      }
+    },
+    {
+      "phase": "original_after_refresh",
+      "script": "reconcile_artifact_chain.py",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": "",
+      "parsed_status": "passed",
+      "detected": false,
+      "operational_error": false,
+      "details": {
+        "status": "passed",
+        "active_evidence_lineage": "v04.2",
+        "checks": [
+          {
+            "relation": "Canonical records to RDF resources",
+            "unit": "canonical records",
+            "expected": 1614,
+            "verified": 1614,
+            "exceptions": 0,
+            "status": "passed",
+            "interpretation": "Each canonical record is represented by one stable RDF resource."
+          },
+          {
+            "relation": "Selected semantic activations to source records",
+            "unit": "nonzero selected activations",
+            "expected": 1789,
+            "verified": 1789,
+            "exceptions": 0,
+            "status": "passed",
+            "interpretation": "Each selected activation retains a record, semantic-variable, module, and RDF-resource link; domain variables additionally retain their concept links."
+          },
+          {
+            "relation": "Selected semantic input cells to governed source values",
+            "unit": "selected input cells",
+            "expected": 9684,
+            "verified": 9684,
+            "exceptions": 0,
+            "status": "passed",
+            "interpretation": "All cells in the seven-variable interface retain ordered record and variable identity; every nonzero value matches its traceability relation."
+          },
+          {
+            "relation": "RDF graph to declared structural constraints",
+            "unit": "baseline graph",
+            "expected": 1,
+            "verified": 1,
+            "exceptions": 0,
+            "status": "passed",
+            "interpretation": "The baseline RDF graph conforms to the declared structural constraints."
+          },
+          {
+            "relation": "Test records to prediction records",
+            "unit": "record assignments across evaluation units",
+            "expected": 7752,
+            "verified": 7752,
+            "exceptions": 0,
+            "status": "passed",
+            "interpretation": "All 323 test records are reconciled across 24 evaluation units with matching reference labels."
+          }
+        ],
+        "summary": {
+          "checked_relations": 5,
+          "passed_relations": 5,
+          "exceptions": 0
+        }
+      }
+    }
+  ],
+  "skipped_after_refresh": [
+    "trace/model-input audits inherited; mutation targets RDF graph only"
+  ]
+}

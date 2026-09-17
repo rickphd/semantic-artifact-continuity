@@ -1,0 +1,38 @@
+{
+  "case_id": "E1-I1-remove-selected-trace-row",
+  "case": {
+    "case_id": "E1-I1-remove-selected-trace-row",
+    "family": "identity",
+    "required": true,
+    "reserved_for_after_extension": false,
+    "mutation": "Remove one traceability row for a nonzero selected feature.",
+    "affected_artefacts": [
+      "results/traceability/traceability_map.csv"
+    ],
+    "oracle_expected": {
+      "should_alarm": true,
+      "broken_relation": "selected semantic activation to source record",
+      "localization": [
+        "post_id",
+        "feature"
+      ]
+    },
+    "original_detector_expectation": "audit_traceability should reduce traced_selected_activations; audit_model_input_cells should report missing_nonzero_trace_cells.",
+    "extension_required": false,
+    "acceptance": "Detector reports the missing post_id-feature relation and status is attention_required or equivalent failure."
+  },
+  "mutation_details": {
+    "removed_trace": {
+      "post_id": "1mug8n6",
+      "split": "train",
+      "label": "2",
+      "post_iri": "http://wfrp.ia/resource/reddit/post/1mug8n6",
+      "feature": "ont_domain_density",
+      "module": "global_counts",
+      "concept_uri": "",
+      "value": "0.0416666666666666",
+      "used_downstream": ""
+    },
+    "rows_after": 9453
+  }
+}

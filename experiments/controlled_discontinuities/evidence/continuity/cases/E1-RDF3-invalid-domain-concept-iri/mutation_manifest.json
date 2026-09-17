@@ -1,0 +1,30 @@
+{
+  "case_id": "E1-RDF3-invalid-domain-concept-iri",
+  "case": {
+    "case_id": "E1-RDF3-invalid-domain-concept-iri",
+    "family": "rdf_link",
+    "required": true,
+    "reserved_for_after_extension": false,
+    "mutation": "Replace one rr:trataSobre object with an IRI that is not a skos:Concept in rrdom:ContextoCienciaTecnologia.",
+    "affected_artefacts": [
+      "results/knowledge_graph/posts.ttl"
+    ],
+    "oracle_expected": {
+      "should_alarm": true,
+      "broken_relation": "RDF domain concept target conforms to declared concept scheme",
+      "localization": [
+        "rdf_focus_node",
+        "rdf_path",
+        "concept_uri"
+      ]
+    },
+    "original_detector_expectation": "run_shacl_conformance should produce a validation result for the SPARQL domain concept rule.",
+    "extension_required": "shacl_fixture_classifier for precise result-family classification",
+    "acceptance": "SHACL report identifies rr:trataSobre or rr:perteneceDominio concept target violation."
+  },
+  "mutation_details": {
+    "post_iri": "http://wfrp.ia/resource/reddit/post/1kkfjn0",
+    "old_concept": "http://wfrp.ia/dominio/ciencia-tecnologia#Tecnologia",
+    "new_concept": "http://wfrp.ia/dominio/ciencia-tecnologia#E1InvalidConcept"
+  }
+}

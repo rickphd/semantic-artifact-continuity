@@ -1,0 +1,6 @@
+{
+  "full125audit": "passed",
+  "unexpected_error_negative_test": "passed",
+  "final_verifier_sensitivity_branch": "passed",
+  "scope": "Sensitivity and postprocessing only; global campaign awaits CNN."
+}

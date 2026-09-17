@@ -1,0 +1,28 @@
+{
+  "case_id": "E1-I3-add-extra-valid-rdf-post",
+  "case": {
+    "case_id": "E1-I3-add-extra-valid-rdf-post",
+    "family": "identity",
+    "required": true,
+    "reserved_for_after_extension": true,
+    "mutation": "Add one extra SHACL-conformant rr:Post with an identifier absent from Gold.",
+    "affected_artefacts": [
+      "results/knowledge_graph/posts.ttl"
+    ],
+    "oracle_expected": {
+      "should_alarm": true,
+      "broken_relation": "RDF resource set exceeds Gold record set",
+      "localization": [
+        "post_id",
+        "post_iri"
+      ]
+    },
+    "original_detector_expectation": "SHACL should pass if the extra post satisfies shapes; existing reconciliation may miss stale report mismatch.",
+    "extension_required": "rdf_inventory_against_gold",
+    "acceptance": "Extension identifies extra RDF post ID without calling it a SHACL violation."
+  },
+  "mutation_details": {
+    "extra_post_id": "e1extra001",
+    "extra_post_iri": "http://wfrp.ia/resource/reddit/post/e1extra001"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "case_id": "E1-U1-duplicate-trace-key",
+  "case": {
+    "case_id": "E1-U1-duplicate-trace-key",
+    "family": "uniqueness",
+    "required": true,
+    "reserved_for_after_extension": false,
+    "mutation": "Duplicate one traceability row with the same post_id and feature.",
+    "affected_artefacts": [
+      "results/traceability/traceability_map.csv"
+    ],
+    "oracle_expected": {
+      "should_alarm": true,
+      "broken_relation": "unique post-feature trace key",
+      "localization": [
+        "post_id",
+        "feature",
+        "trace_row_number"
+      ]
+    },
+    "original_detector_expectation": "audit_model_input_cells should report duplicate_trace_keys.",
+    "extension_required": false,
+    "acceptance": "Duplicate key count is positive and duplicated key is listed."
+  },
+  "mutation_details": {
+    "duplicated_trace": {
+      "post_id": "1mug8n6",
+      "split": "train",
+      "label": "2",
+      "post_iri": "http://wfrp.ia/resource/reddit/post/1mug8n6",
+      "feature": "ont_domain_density",
+      "module": "global_counts",
+      "concept_uri": "",
+      "value": "0.0416666666666666",
+      "used_downstream": ""
+    }
+  }
+}

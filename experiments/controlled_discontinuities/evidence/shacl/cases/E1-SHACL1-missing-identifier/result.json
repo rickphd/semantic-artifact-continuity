@@ -1,0 +1,59 @@
+{
+  "case_id": "E1-SHACL1-missing-identifier",
+  "family": "shacl",
+  "oracle_should_alarm": true,
+  "oracle_conforms_expected": false,
+  "pyshacl_conforms": false,
+  "validation_result_count": 1,
+  "original_detected": true,
+  "extension_detected": false,
+  "detection_status": "partial_detection",
+  "localization_status": "detected_without_expected_path_component_match",
+  "false_positive": false,
+  "non_detection": false,
+  "partial_detection": true,
+  "expected": {
+    "should_alarm": true,
+    "conforms": false,
+    "expected_path": "rr:identificador",
+    "expected_component": "sh:MinCountConstraintComponent",
+    "shape_family": "identifier_min_count",
+    "reserved_for_after_extension": false
+  },
+  "matched_result_count": 0,
+  "results": [
+    {
+      "result_node": "Na2a82009e2a24304b23fbd152195e632",
+      "focus_node": [
+        "http://wfrp.ia/resource/reddit/post/1kkfjn0"
+      ],
+      "result_path": [
+        "http://wfrp.ia/ontologia/ia-sentimiento#identificador"
+      ],
+      "source_constraint_component": [
+        "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+      ],
+      "result_severity": [
+        "http://www.w3.org/ns/shacl#Violation"
+      ],
+      "source_shape": [
+        "na5419cb0b6d3456fa187822926048456b1"
+      ],
+      "message": [
+        "rr:identificador debe ser alfanumérico base36."
+      ]
+    }
+  ],
+  "artefacts": {
+    "case_dir": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL1-missing-identifier",
+    "data_graph": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL1-missing-identifier/mutated_posts.ttl",
+    "mutation_manifest": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL1-missing-identifier/mutation_manifest.json",
+    "report_ttl": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL1-missing-identifier/report.ttl",
+    "report_text": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL1-missing-identifier/report.txt",
+    "report_extracted": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL1-missing-identifier/report_extracted.json"
+  },
+  "runtime": {
+    "elapsed_seconds": 34.831361,
+    "command": "${PYTHON} experiments/controlled_discontinuities/evidence/shacl/run_e1_shacl.py"
+  }
+}

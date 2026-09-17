@@ -1,0 +1,6 @@
+{
+  "expected_units_per_annotator": 1200,
+  "disagreement_cases": 57,
+  "shared_uncertainty_cases": 20,
+  "distinct_review_units": 77
+}

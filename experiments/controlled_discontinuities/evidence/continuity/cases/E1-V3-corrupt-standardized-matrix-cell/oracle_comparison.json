@@ -1,0 +1,21 @@
+{
+  "case_id": "E1-V3-corrupt-standardized-matrix-cell",
+  "family": "value",
+  "required": true,
+  "reserved_for_after_extension": false,
+  "oracle_should_alarm": true,
+  "original_detected": false,
+  "extension_detected": true,
+  "detection_status": "detected_by_extension",
+  "expected_exception_detected": false,
+  "evaluation_error": false,
+  "unexpected_errors": [],
+  "false_positive": false,
+  "non_detection": false,
+  "partial_detection": true,
+  "original_detected_before_refresh": false,
+  "original_detected_after_refresh": false,
+  "extension_check_ids": "matrix_manifest_rechecker",
+  "mutation_summary": "{\"feature\": \"ont_domain_density\", \"matrix\": \"test_train_standardized_float64.npy\", \"new\": -0.8207374848165924, \"old\": -0.9457374848165924, \"post_id\": \"1n1plgb\", \"row\": 0}",
+  "notes": "Recomputed standardized value/fingerprint differs and cell is localized."
+}

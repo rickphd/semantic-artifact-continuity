@@ -1,0 +1,34 @@
+{
+  "case_id": "E1-RDF2-remove-trataSobre-for-active-concept",
+  "case": {
+    "case_id": "E1-RDF2-remove-trataSobre-for-active-concept",
+    "family": "rdf_link",
+    "required": true,
+    "reserved_for_after_extension": true,
+    "mutation": "Remove one rr:trataSobre triple for a post that has a nonzero concept activation.",
+    "affected_artefacts": [
+      "results/knowledge_graph/posts.ttl",
+      "results/traceability/traceability_map.csv"
+    ],
+    "oracle_expected": {
+      "should_alarm": true,
+      "broken_relation": "activation concept to RDF concept assertion",
+      "localization": [
+        "post_id",
+        "concept_uri",
+        "rdf_triple"
+      ]
+    },
+    "original_detector_expectation": "SHACL may still conform because rr:trataSobre is not required for every active concept; existing trace checks may miss RDF triple absence.",
+    "extension_required": "rdf_inventory_against_gold with concept assertion comparison",
+    "acceptance": "Extension reports missing concept assertion and SHACL pass is interpreted as a declared limit."
+  },
+  "mutation_details": {
+    "post_id": "1mug8n6",
+    "removed_triple": [
+      "http://wfrp.ia/resource/reddit/post/1mug8n6",
+      "http://wfrp.ia/ontologia/ia-sentimiento#trataSobre",
+      "http://wfrp.ia/dominio/ciencia-tecnologia#Datos"
+    ]
+  }
+}

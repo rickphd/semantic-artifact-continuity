@@ -1,0 +1,19 @@
+@prefix rr: <http://wfrp.ia/ontologia/ia-sentimiento#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a sh:ValidationReport ;
+    sh:conforms false ;
+    sh:result [ a sh:ValidationResult ;
+            sh:focusNode <http://wfrp.ia/resource/reddit/post/1kkfjn0> ;
+            sh:resultMessage "rr:publicadoPor debe apuntar a exactamente 1 rr:Author (IRI)."@es ;
+            sh:resultPath rr:publicadoPor ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape [ sh:class rr:Author ;
+                    sh:maxCount 1 ;
+                    sh:message "rr:publicadoPor debe apuntar a exactamente 1 rr:Author (IRI)."@es ;
+                    sh:minCount 1 ;
+                    sh:nodeKind sh:IRI ;
+                    sh:path rr:publicadoPor ] ] .
+

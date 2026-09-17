@@ -1,0 +1,31 @@
+{
+  "case_id": "E1-V2-corrupt-trace-value",
+  "case": {
+    "case_id": "E1-V2-corrupt-trace-value",
+    "family": "value",
+    "required": true,
+    "reserved_for_after_extension": true,
+    "mutation": "Change one traceability value for a nonzero selected feature while leaving Gold unchanged.",
+    "affected_artefacts": [
+      "results/traceability/traceability_map.csv"
+    ],
+    "oracle_expected": {
+      "should_alarm": true,
+      "broken_relation": "trace value to Gold value",
+      "localization": [
+        "post_id",
+        "feature",
+        "trace_row_number"
+      ]
+    },
+    "original_detector_expectation": "audit_model_input_cells should report value_mismatches.",
+    "extension_required": false,
+    "acceptance": "Trace mismatch is localized to the mutated post_id-feature pair."
+  },
+  "mutation_details": {
+    "post_id": "1mug8n6",
+    "feature": "ont_domain_density",
+    "old": 0.0416666666666666,
+    "new": 0.1666666666666666
+  }
+}

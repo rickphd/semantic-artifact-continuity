@@ -1,0 +1,57 @@
+{
+  "case_id": "E1-SHACL6-probability-sum",
+  "family": "shacl",
+  "oracle_should_alarm": true,
+  "oracle_conforms_expected": false,
+  "pyshacl_conforms": false,
+  "validation_result_count": 1,
+  "original_detected": true,
+  "extension_detected": false,
+  "detection_status": "partial_detection",
+  "localization_status": "detected_without_expected_path_component_match",
+  "false_positive": false,
+  "non_detection": false,
+  "partial_detection": true,
+  "expected": {
+    "should_alarm": true,
+    "conforms": false,
+    "expected_path": "SPARQL",
+    "expected_component": "sh:SPARQLConstraintComponent",
+    "shape_family": "probability_sum_sparql",
+    "reserved_for_after_extension": true
+  },
+  "matched_result_count": 0,
+  "results": [
+    {
+      "result_node": "N9c2956542f8f4acbbf6c67ab9fca27ef",
+      "focus_node": [
+        "http://wfrp.ia/resource/reddit/post/1kkfjn0"
+      ],
+      "result_path": [],
+      "source_constraint_component": [
+        "http://www.w3.org/ns/shacl#SPARQLConstraintComponent"
+      ],
+      "result_severity": [
+        "http://www.w3.org/ns/shacl#Violation"
+      ],
+      "source_shape": [
+        "http://wfrp.ia/ontologia/ia-sentimiento#PostShape"
+      ],
+      "message": [
+        "Probabilidades no normalizadas (|sum-1| > 0.02)."
+      ]
+    }
+  ],
+  "artefacts": {
+    "case_dir": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL6-probability-sum",
+    "data_graph": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL6-probability-sum/mutated_posts.ttl",
+    "mutation_manifest": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL6-probability-sum/mutation_manifest.json",
+    "report_ttl": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL6-probability-sum/report.ttl",
+    "report_text": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL6-probability-sum/report.txt",
+    "report_extracted": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL6-probability-sum/report_extracted.json"
+  },
+  "runtime": {
+    "elapsed_seconds": 34.665555,
+    "command": "${PYTHON} experiments/controlled_discontinuities/evidence/shacl/run_e1_shacl.py"
+  }
+}

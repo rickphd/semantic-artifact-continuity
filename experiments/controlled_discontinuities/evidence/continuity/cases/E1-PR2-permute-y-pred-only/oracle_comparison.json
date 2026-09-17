@@ -1,0 +1,21 @@
+{
+  "case_id": "E1-PR2-permute-y-pred-only",
+  "family": "prediction_assignment",
+  "required": true,
+  "reserved_for_after_extension": true,
+  "oracle_should_alarm": true,
+  "original_detected": false,
+  "extension_detected": true,
+  "detection_status": "detected_by_extension",
+  "expected_exception_detected": false,
+  "evaluation_error": false,
+  "unexpected_errors": [],
+  "false_positive": false,
+  "non_detection": false,
+  "partial_detection": true,
+  "original_detected_before_refresh": false,
+  "original_detected_after_refresh": false,
+  "extension_check_ids": "prediction_output_fingerprint_check",
+  "mutation_summary": "{\"new_y_pred_order_sha256\": \"b5c227c83d6a09d5219d855bb28445ba75681290b35e6afaaa85e254691655f9\", \"old_y_pred_order_sha256\": \"71b825cc2313f15938ed56c98a774f2409604c06e6c0c06eb5be17a67eac9a14\", \"prediction_file\": \"LR_ENR_seed42_test_predictions_v2.csv\"}",
+  "notes": "Extension detects ordered prediction-assignment hash mismatch; original non-detection is documented."
+}

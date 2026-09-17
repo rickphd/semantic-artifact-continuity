@@ -1,0 +1,44 @@
+{
+  "date": "2026-09-17",
+  "status": "passed",
+  "baseline": "assembled public repository root",
+  "python_version": "3.13.13",
+  "dependency_versions": "requirements-replay.txt",
+  "continuity": {
+    "cases": 26,
+    "controls_passed": 4,
+    "faults_detected_by_original": 15,
+    "faults_detected_only_by_supplementary_checks": 7,
+    "false_positives": 0,
+    "non_detections": 0,
+    "comparison": "compare_replay.py continuity REPLAY_DIRECTORY",
+    "differences": []
+  },
+  "shacl": {
+    "cases": 11,
+    "controls_passed": 1,
+    "faults_detected_by_original": 10,
+    "false_positives": 0,
+    "non_detections": 0,
+    "authoritative_classification": "summary_reclassified.json",
+    "comparison": "compare_replay.py shacl REPLAY_DIRECTORY",
+    "differences": []
+  },
+  "integrity": {
+    "exported_scientific_files": 284,
+    "source_hash_mismatches": 0,
+    "public_hash_mismatches": 0,
+    "unchanged_scientific_and_helper_function_asts": 52,
+    "unchanged_original_detector_and_helper_files": 7,
+    "scratch_boundary_rejection_checks_passed": 7,
+    "excluded_artifact_violations": 0
+  },
+  "packaging_correction": "An initial diagnostic replay omitted the 727-byte LR scaler required by the original cell auditor and produced control false positives. That run was stopped; the scaler was added to the bounded baseline subset, and the full fresh replay reported here passed without changing detector logic.",
+  "limits": [
+    "Comparison covers all declared case IDs and scientific decision fields listed in compare_replay.py.",
+    "RDF byte serialization, blank-node labels, timestamps, paths, and timing are not compared.",
+    "Direct scientific dependencies are pinned; the file is not a complete transitive environment lock.",
+    "Stored predictions and preprocessing artifacts are audited; models are not trained or used for inference.",
+    "SHACL establishes conformance to declared shapes, not semantic correctness or general fault-detection recall."
+  ]
+}

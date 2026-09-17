@@ -1,0 +1,10 @@
+{
+  "variant_id": "w2_f2_v1p0_c2p0",
+  "status": "passed",
+  "conforms": true,
+  "validation_result_count": 0,
+  "inference": "rdfs",
+  "advanced": true,
+  "report_ttl": "results/sensitivity/w2_f2_v1p0_c2p0/shacl/baseline_report.ttl",
+  "report_text": "results/sensitivity/w2_f2_v1p0_c2p0/shacl/baseline_report.txt"
+}

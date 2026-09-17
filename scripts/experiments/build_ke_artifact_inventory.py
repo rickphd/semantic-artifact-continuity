@@ -25,6 +25,8 @@ from ke_artifact_utils import (
 
 
 SCAN_ROOTS = [
+    REPO_ROOT / "inputs",
+    REPO_ROOT / "experiments",
     REPO_ROOT / "data" / "gold",
     REPO_ROOT / "results" / "lexicon",
     REPO_ROOT / "results" / "feature_selection",
@@ -119,7 +121,10 @@ def include_path(path: Path) -> bool:
         return False
     if path.suffix == ".pyc" or path.suffix in {".pt", ".pth", ".safetensors", ".ckpt"}:
         return False
-    if path.suffix == ".joblib" and resolved != RELEASED_MODEL.resolve():
+    if path.suffix == ".joblib" and resolved not in {
+        RELEASED_MODEL.resolve(),
+        (REPO_ROOT / "results/prepared_model_inputs/train_only_scaler.joblib").resolve(),
+    }:
         return False
     return path.is_file() and path.stat().st_size > 0
 
@@ -172,9 +177,9 @@ def main() -> None:
     payload = {
         "status": "passed" if not missing else "blocked",
         "scope": {
-            "active_lineage": "v04.2",
+            "active_lineage": "information_f123_20260914; public v1.1.0",
             "excluded_paths": [rel(root) for root in EXCLUDED_ROOTS],
-            "sensitivity_policy": "Hashes the six aggregate sensitivity summaries; variant-level intermediates are referenced by the sensitivity manifest and excluded from the canonical inventory count.",
+            "sensitivity_policy": "Includes all 125 lexicons, complete artifacts for 97 admissible settings, rejection records and aggregate summaries.",
             "control_output_policy": "Inventory and reproducibility reports do not hash themselves; the reproducibility manifest records the inventory and hash-manifest hashes after generation.",
         },
         "artifact_count": len(artifacts),
@@ -200,9 +205,9 @@ def main() -> None:
         "",
         "## Scope",
         "",
-        "Active lineage: `v04.2`.",
+        "Active lineage: `information_f123_20260914`, public `v1.1.0`.",
         "",
-        "- The sensitivity inventory includes six aggregate summaries; the 125 variant-level intermediate packages can be regenerated and are not distributed.",
+        "- Sensitivity includes all 125 lexicons and complete artifacts for the 97 admissible configurations; rejected settings have no evaluated graph.",
         "- Inventory and reproducibility reports do not hash themselves. Their final hashes are recorded by the reproducibility manifest after inventory generation.",
         "",
         "## Canonical Ontology Decision",

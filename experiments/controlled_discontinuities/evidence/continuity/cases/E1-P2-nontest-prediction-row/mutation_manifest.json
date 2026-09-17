@@ -1,0 +1,29 @@
+{
+  "case_id": "E1-P2-nontest-prediction-row",
+  "case": {
+    "case_id": "E1-P2-nontest-prediction-row",
+    "family": "partition",
+    "required": true,
+    "reserved_for_after_extension": false,
+    "mutation": "Set split='train' for one row in a test prediction CSV.",
+    "affected_artefacts": [
+      "results/anova_revalidation/predictions/LR_ENR_seed42_test_predictions_v2.csv"
+    ],
+    "oracle_expected": {
+      "should_alarm": true,
+      "broken_relation": "prediction row belongs to test split",
+      "localization": [
+        "prediction_file",
+        "post_id"
+      ]
+    },
+    "original_detector_expectation": "reconcile_artifact_chain should count prediction split mismatch.",
+    "extension_required": false,
+    "acceptance": "Prediction split mismatch count is positive and affected row is identified."
+  },
+  "mutation_details": {
+    "prediction_file": "LR_ENR_seed42_test_predictions_v2.csv",
+    "post_id": "1n1plgb",
+    "new_split": "train"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "scope": "public packaging replay 2026-09-17",
+  "reference_rows": 1200,
+  "comparison_rows": 1200,
+  "agreements_origin": 1123,
+  "adjudications": 77,
+  "reference_exact": true,
+  "comparisons_exact": true,
+  "summary_overall_and_per_concept_exact": true,
+  "agreement_overall_and_per_concept_exact": true,
+  "sklearn_presence_and_kappa_crosscheck": true,
+  "source_public_hashes_verified": true,
+  "output_existing_directory_rejected": true,
+  "output_public_checkout_rejected": true,
+  "private_free_annotation_prose_omitted": true,
+  "semantic_rationale_audit_reproduced": false,
+  "training_performed": false,
+  "python": "3.13.13",
+  "pandas": "3.0.3",
+  "pyarrow": "25.0.0",
+  "scikit_learn_crosscheck": "1.9.0"
+}

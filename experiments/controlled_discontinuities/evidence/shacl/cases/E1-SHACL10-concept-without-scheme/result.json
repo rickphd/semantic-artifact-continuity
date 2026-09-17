@@ -1,0 +1,59 @@
+{
+  "case_id": "E1-SHACL10-concept-without-scheme",
+  "family": "shacl",
+  "oracle_should_alarm": true,
+  "oracle_conforms_expected": false,
+  "pyshacl_conforms": false,
+  "validation_result_count": 1,
+  "original_detected": true,
+  "extension_detected": false,
+  "detection_status": "partial_detection",
+  "localization_status": "detected_without_expected_path_component_match",
+  "false_positive": false,
+  "non_detection": false,
+  "partial_detection": true,
+  "expected": {
+    "should_alarm": true,
+    "conforms": false,
+    "expected_path": "skos:inScheme",
+    "expected_component": "sh:MinCountConstraintComponent",
+    "shape_family": "concept_scheme_membership",
+    "reserved_for_after_extension": false
+  },
+  "matched_result_count": 0,
+  "results": [
+    {
+      "result_node": "N8fb8334528ab4cccaa72f27977771808",
+      "focus_node": [
+        "http://wfrp.ia/dominio/ciencia-tecnologia#E1ConceptWithoutScheme"
+      ],
+      "result_path": [
+        "http://www.w3.org/2004/02/skos/core#inScheme"
+      ],
+      "source_constraint_component": [
+        "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+      ],
+      "result_severity": [
+        "http://www.w3.org/ns/shacl#Violation"
+      ],
+      "source_shape": [
+        "n0cbc063cdbee40d1b200e0839ce03966b22"
+      ],
+      "message": [
+        "Todo skos:Concept debe pertenecer a un skos:ConceptScheme."
+      ]
+    }
+  ],
+  "artefacts": {
+    "case_dir": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL10-concept-without-scheme",
+    "data_graph": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL10-concept-without-scheme/mutated_posts.ttl",
+    "mutation_manifest": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL10-concept-without-scheme/mutation_manifest.json",
+    "report_ttl": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL10-concept-without-scheme/report.ttl",
+    "report_text": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL10-concept-without-scheme/report.txt",
+    "report_extracted": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL10-concept-without-scheme/report_extracted.json"
+  },
+  "runtime": {
+    "elapsed_seconds": 35.423678,
+    "command": "${PYTHON} experiments/controlled_discontinuities/evidence/shacl/run_e1_shacl.py"
+  }
+}

@@ -1,0 +1,19 @@
+@prefix rr: <http://wfrp.ia/ontologia/ia-sentimiento#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a sh:ValidationReport ;
+    sh:conforms false ;
+    sh:result [ a sh:ValidationResult ;
+            sh:focusNode <http://wfrp.ia/resource/reddit/post/1kkfjn0> ;
+            sh:resultMessage "rr:identificador debe ser alfanumérico base36."@es ;
+            sh:resultPath rr:identificador ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape [ sh:datatype xsd:string ;
+                    sh:maxCount 1 ;
+                    sh:message "rr:identificador debe ser alfanumérico base36."@es ;
+                    sh:minCount 1 ;
+                    sh:path rr:identificador ;
+                    sh:pattern "^[0-9a-z]+$" ] ] .
+

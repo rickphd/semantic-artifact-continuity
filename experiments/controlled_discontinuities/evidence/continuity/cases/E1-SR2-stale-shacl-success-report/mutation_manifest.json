@@ -1,0 +1,31 @@
+{
+  "case_id": "E1-SR2-stale-shacl-success-report",
+  "case": {
+    "case_id": "E1-SR2-stale-shacl-success-report",
+    "family": "stale_report",
+    "required": true,
+    "reserved_for_after_extension": true,
+    "mutation": "Introduce a SHACL violation in posts.ttl but leave baseline_report.json from the pristine graph.",
+    "affected_artefacts": [
+      "results/knowledge_graph/posts.ttl",
+      "results/validation/shacl/baseline_report.json"
+    ],
+    "oracle_expected": {
+      "should_alarm": true,
+      "broken_relation": "SHACL report freshness against RDF input",
+      "localization": [
+        "report_path",
+        "rdf_focus_node",
+        "rdf_path"
+      ]
+    },
+    "original_detector_expectation": "reconcile_artifact_chain may pass if it reads the stale baseline_report.json; run_shacl_conformance should fail when rerun.",
+    "extension_required": "report_freshness_check and enforced SHACL rerun",
+    "acceptance": "Stale report is rejected and regenerated SHACL report exposes the violation."
+  },
+  "mutation_details": {
+    "post_iri": "http://wfrp.ia/resource/reddit/post/1kkfjn0",
+    "old_concept": "http://wfrp.ia/dominio/ciencia-tecnologia#Tecnologia",
+    "new_concept": "http://wfrp.ia/dominio/ciencia-tecnologia#E1InvalidConcept"
+  }
+}

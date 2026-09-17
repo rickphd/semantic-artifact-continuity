@@ -1,0 +1,21 @@
+{
+  "case_id": "E1-V1-corrupt-selected-gold-cell",
+  "family": "value",
+  "required": true,
+  "reserved_for_after_extension": false,
+  "oracle_should_alarm": true,
+  "original_detected": true,
+  "extension_detected": true,
+  "detection_status": "detected_by_original",
+  "expected_exception_detected": false,
+  "evaluation_error": false,
+  "unexpected_errors": [],
+  "false_positive": false,
+  "non_detection": false,
+  "partial_detection": false,
+  "original_detected_before_refresh": false,
+  "original_detected_after_refresh": true,
+  "extension_check_ids": "matrix_manifest_rechecker",
+  "mutation_summary": "{\"feature\": \"ont_domain_density\", \"new\": 0.16666666666666666, \"old\": 0.041666666666666664, \"post_id\": \"1mug8n6\"}",
+  "notes": "Value mismatch count is positive and affected cell is listed."
+}

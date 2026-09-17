@@ -1,0 +1,28 @@
+@prefix rr: <http://wfrp.ia/ontologia/ia-sentimiento#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a sh:ValidationReport ;
+    sh:conforms false ;
+    sh:result [ a sh:ValidationResult ;
+            sh:focusNode <http://wfrp.ia/resource/reddit/post/1kkfjn0> ;
+            sh:resultMessage "rr:etiquetaSentimiento no coincide con la probabilidad máxima (probPos/probNeu/probNeg)." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint [ sh:message "rr:etiquetaSentimiento no coincide con la probabilidad máxima (probPos/probNeu/probNeg)."@es ;
+                    sh:select """
+      PREFIX rr:     <http://wfrp.ia/ontologia/ia-sentimiento#>
+      PREFIX rrsent: <http://wfrp.ia/sentimiento/core#>
+      SELECT $this WHERE {
+        $this rr:probPos ?pp ; rr:probNeu ?pn ; rr:probNeg ?pg ; rr:etiquetaSentimiento ?lbl .
+        BIND(
+          IF(?pp >= ?pn && ?pp >= ?pg, rrsent:Positivo,
+             IF(?pn >= ?pp && ?pn >= ?pg, rrsent:Neutro, rrsent:Negativo)
+          ) AS ?expected
+        )
+        FILTER(?lbl != ?expected)
+      }
+    """ ] ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape rr:PostShape ;
+            sh:value <http://wfrp.ia/resource/reddit/post/1kkfjn0> ] .
+

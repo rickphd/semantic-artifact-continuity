@@ -1,0 +1,60 @@
+{
+  "case_id": "E1-SHACL6-probability-sum",
+  "family": "shacl",
+  "oracle_should_alarm": true,
+  "oracle_conforms_expected": false,
+  "pyshacl_conforms": false,
+  "validation_result_count": 1,
+  "original_detected": true,
+  "extension_detected": true,
+  "detection_status": "detected_by_original",
+  "localization_status": "localized_to_expected_constraint",
+  "false_positive": false,
+  "non_detection": false,
+  "partial_detection": false,
+  "expected": {
+    "should_alarm": true,
+    "conforms": false,
+    "expected_path": "SPARQL",
+    "expected_path_iri": "SPARQL",
+    "expected_component": "sh:SPARQLConstraintComponent",
+    "expected_component_iri": "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+    "shape_family": "probability_sum_sparql",
+    "reserved_for_after_extension": true
+  },
+  "matched_result_count": 1,
+  "results": [
+    {
+      "result_node": "nbd0e71dddadd4e4db7b616e2268424c2b2",
+      "focus_node": [
+        "http://wfrp.ia/resource/reddit/post/1kkfjn0"
+      ],
+      "result_path": [],
+      "source_constraint_component": [
+        "http://www.w3.org/ns/shacl#SPARQLConstraintComponent"
+      ],
+      "result_severity": [
+        "http://www.w3.org/ns/shacl#Violation"
+      ],
+      "source_shape": [
+        "http://wfrp.ia/ontologia/ia-sentimiento#PostShape"
+      ],
+      "message": [
+        "Probabilidades no normalizadas (|sum-1| > 0.02)."
+      ]
+    }
+  ],
+  "artefacts": {
+    "case_dir": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL6-probability-sum",
+    "data_graph": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL6-probability-sum/mutated_posts.ttl",
+    "mutation_manifest": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL6-probability-sum/mutation_manifest.json",
+    "report_ttl": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL6-probability-sum/report.ttl",
+    "report_text": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL6-probability-sum/report.txt",
+    "report_extracted": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL6-probability-sum/report_extracted.json"
+  },
+  "runtime": {
+    "elapsed_seconds": 34.665555,
+    "command": "${PYTHON} experiments/controlled_discontinuities/evidence/shacl/run_e1_shacl.py"
+  },
+  "reclassification_note": "Recomputed from preserved report.ttl; pySHACL was not rerun."
+}

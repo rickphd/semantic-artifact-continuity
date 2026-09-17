@@ -1,0 +1,16 @@
+{
+  "version": "information_f123_20260914",
+  "status": "local_frozen_method_not_published",
+  "parent_release_commit": "5dd36420a9aa5dd8a5b208af45b985026e4d2ce9",
+  "method": {
+    "F1": "whole-expression token spans; original stage tokenizers",
+    "F2": "union per concept; exact duplicate elimination and longest-first nonoverlap",
+    "F3": "one 0.5 bonus per distinct present compound per concept",
+    "domain_scope": "21 resources, top10 dynamic; 10 fixed polarity column families",
+    "selection": "train-only ANOVA p<0.05; no forced feature count"
+  },
+  "original_gold_sha256": "62c6394d4ef68191b713d80c9b54849ecf00176822719bf515b8f0ee65b31162",
+  "split_sha256": "473f7bad51f04cfb3de2cbf066e46d5539000037d5edab2cf20f06da7af95444",
+  "baseline_metrics_carried_over": false,
+  "manuscript_modified": false
+}

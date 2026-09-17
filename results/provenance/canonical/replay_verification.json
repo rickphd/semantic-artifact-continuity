@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "date": "2026-09-17",
+  "command": "python scripts/replay_canonical.py --output-dir NEW_SCRATCH_DIRECTORY",
+  "canonical_cells_compared": 59718,
+  "gold_all_fields_exact": true,
+  "rdf_isomorphic": true,
+  "prepared_matrices_exact": 9,
+  "training_performed": false
+}

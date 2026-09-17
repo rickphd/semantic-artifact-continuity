@@ -1,0 +1,21 @@
+{
+  "case_id": "E1-I3-add-extra-valid-rdf-post",
+  "family": "identity",
+  "required": true,
+  "reserved_for_after_extension": true,
+  "oracle_should_alarm": true,
+  "original_detected": false,
+  "extension_detected": true,
+  "detection_status": "detected_by_extension",
+  "expected_exception_detected": false,
+  "evaluation_error": false,
+  "unexpected_errors": [],
+  "false_positive": false,
+  "non_detection": false,
+  "partial_detection": true,
+  "original_detected_before_refresh": false,
+  "original_detected_after_refresh": false,
+  "extension_check_ids": "rdf_inventory_against_gold",
+  "mutation_summary": "{\"extra_post_id\": \"e1extra001\", \"extra_post_iri\": \"http://wfrp.ia/resource/reddit/post/e1extra001\"}",
+  "notes": "Extension identifies extra RDF post ID without calling it a SHACL violation."
+}

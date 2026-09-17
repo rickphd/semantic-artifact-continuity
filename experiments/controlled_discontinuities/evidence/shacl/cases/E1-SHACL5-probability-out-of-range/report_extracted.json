@@ -1,0 +1,23 @@
+[
+  {
+    "result_node": "Nb7edae794f2443eda00958fb77781811",
+    "focus_node": [
+      "http://wfrp.ia/resource/reddit/post/1kkfjn0"
+    ],
+    "result_path": [
+      "http://wfrp.ia/ontologia/ia-sentimiento#probPos"
+    ],
+    "source_constraint_component": [
+      "http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent"
+    ],
+    "result_severity": [
+      "http://www.w3.org/ns/shacl#Violation"
+    ],
+    "source_shape": [
+      "n23c88676ea07409cb692cdc6a4a68dd4b13"
+    ],
+    "message": [
+      "rr:probPos fuera de [0,1] o con tipo inválido."
+    ]
+  }
+]

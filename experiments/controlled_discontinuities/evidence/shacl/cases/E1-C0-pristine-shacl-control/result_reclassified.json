@@ -1,0 +1,40 @@
+{
+  "case_id": "E1-C0-pristine-shacl-control",
+  "family": "valid_control",
+  "oracle_should_alarm": false,
+  "oracle_conforms_expected": true,
+  "pyshacl_conforms": true,
+  "validation_result_count": 0,
+  "original_detected": false,
+  "extension_detected": false,
+  "detection_status": "control_passed",
+  "localization_status": "not_applicable",
+  "false_positive": false,
+  "non_detection": false,
+  "partial_detection": false,
+  "expected": {
+    "should_alarm": false,
+    "conforms": true,
+    "expected_path": null,
+    "expected_path_iri": null,
+    "expected_component": null,
+    "expected_component_iri": null,
+    "shape_family": null,
+    "reserved_for_after_extension": false
+  },
+  "matched_result_count": 0,
+  "results": [],
+  "artefacts": {
+    "case_dir": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-C0-pristine-shacl-control",
+    "data_graph": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-C0-pristine-shacl-control/mutated_posts.ttl",
+    "mutation_manifest": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-C0-pristine-shacl-control/mutation_manifest.json",
+    "report_ttl": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-C0-pristine-shacl-control/report.ttl",
+    "report_text": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-C0-pristine-shacl-control/report.txt",
+    "report_extracted": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-C0-pristine-shacl-control/report_extracted.json"
+  },
+  "runtime": {
+    "elapsed_seconds": 34.897541,
+    "command": "${PYTHON} experiments/controlled_discontinuities/evidence/shacl/run_e1_shacl.py"
+  },
+  "reclassification_note": "Recomputed from preserved report.ttl; pySHACL was not rerun."
+}

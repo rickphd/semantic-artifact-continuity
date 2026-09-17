@@ -1,9 +1,9 @@
 {
-  "version": "v04.2_vader_train_scope",
-  "created_at": "2026-07-15T11:18:28.137315",
+  "version": "information_f123_20260914",
+  "created_at": "2026-09-14T12:47:22.832489",
   "status": "frozen_before_application_to_validation_or_test",
-  "source_dataset": "data/gold/archive/v04.1_full_corpus/gold_enriched_ontology.parquet",
-  "source_dataset_sha256": "d3e1820a9aa50e722932ffd553f358d49c68cc8911cd336ae1410a4181fa3612",
+  "source_dataset": "inputs/original_gold.parquet",
+  "source_dataset_sha256": "62c6394d4ef68191b713d80c9b54849ecf00176822719bf515b8f0ee65b31162",
   "split_source": "data/gold/GEN_split_gld_reddit_ids_v02.json",
   "split_sha256": "473f7bad51f04cfb3de2cbf066e46d5539000037d5edab2cf20f06da7af95444",
   "induction_scope": "train_text_only_no_labels",
@@ -985,6 +985,9 @@
   },
   "parameters": {
     "context_window": 5,
+    "window_anchor": "whole_expression",
+    "mention_policy": "longest_per_concept",
+    "compound_bonus_policy": "once_per_distinct_compound_per_concept",
     "minimum_frequency": 3,
     "polarity_source": "VADER valence; labels are not read",
     "minimum_absolute_vader_valence": 1.0,
@@ -1010,15 +1013,21 @@
     "selected_entries": [
       {
         "term": "like",
-        "train_context_frequency": 16,
+        "train_context_frequency": 19,
         "vader_valence": 1.5,
         "bounded_context_weight": 1.5
       },
       {
         "term": "safety",
-        "train_context_frequency": 11,
+        "train_context_frequency": 17,
         "vader_valence": 1.8,
         "bounded_context_weight": 1.8
+      },
+      {
+        "term": "help",
+        "train_context_frequency": 11,
+        "vader_valence": 1.7,
+        "bounded_context_weight": 1.7
       },
       {
         "term": "advanced",
@@ -1027,16 +1036,16 @@
         "bounded_context_weight": 1.0
       },
       {
-        "term": "fight",
+        "term": "create",
         "train_context_frequency": 7,
-        "vader_valence": -1.6,
-        "bounded_context_weight": -1.6
+        "vader_valence": 1.1,
+        "bounded_context_weight": 1.1
       },
       {
-        "term": "help",
-        "train_context_frequency": 7,
-        "vader_valence": 1.7,
-        "bounded_context_weight": 1.7
+        "term": "fight",
+        "train_context_frequency": 6,
+        "vader_valence": -1.6,
+        "bounded_context_weight": -1.6
       },
       {
         "term": "fire",
@@ -1051,10 +1060,10 @@
         "bounded_context_weight": 1.4
       },
       {
-        "term": "create",
-        "train_context_frequency": 5,
-        "vader_valence": 1.1,
-        "bounded_context_weight": 1.1
+        "term": "smart",
+        "train_context_frequency": 6,
+        "vader_valence": 1.7,
+        "bounded_context_weight": 1.7
       },
       {
         "term": "embrace",
@@ -1063,16 +1072,16 @@
         "bounded_context_weight": 1.3
       },
       {
+        "term": "fake",
+        "train_context_frequency": 5,
+        "vader_valence": -2.1,
+        "bounded_context_weight": -2.0
+      },
+      {
         "term": "love",
         "train_context_frequency": 5,
         "vader_valence": 3.2,
         "bounded_context_weight": 2.0
-      },
-      {
-        "term": "repetitive",
-        "train_context_frequency": 5,
-        "vader_valence": -1.0,
-        "bounded_context_weight": -1.0
       },
       {
         "term": "risks",
@@ -1081,34 +1090,16 @@
         "bounded_context_weight": -1.1
       },
       {
-        "term": "smart",
+        "term": "threatens",
         "train_context_frequency": 5,
-        "vader_valence": 1.7,
-        "bounded_context_weight": 1.7
+        "vader_valence": -1.6,
+        "bounded_context_weight": -1.6
       },
       {
-        "term": "alarmed",
+        "term": "better",
         "train_context_frequency": 4,
-        "vader_valence": -1.4,
-        "bounded_context_weight": -1.4
-      },
-      {
-        "term": "best",
-        "train_context_frequency": 4,
-        "vader_valence": 3.2,
-        "bounded_context_weight": 2.0
-      },
-      {
-        "term": "care",
-        "train_context_frequency": 4,
-        "vader_valence": 2.2,
-        "bounded_context_weight": 2.0
-      },
-      {
-        "term": "created",
-        "train_context_frequency": 4,
-        "vader_valence": 1.0,
-        "bounded_context_weight": 1.0
+        "vader_valence": 1.9,
+        "bounded_context_weight": 1.9
       },
       {
         "term": "creation",
@@ -1117,46 +1108,22 @@
         "bounded_context_weight": 1.1
       },
       {
-        "term": "curious",
-        "train_context_frequency": 4,
-        "vader_valence": 1.3,
-        "bounded_context_weight": 1.3
-      },
-      {
         "term": "cut",
         "train_context_frequency": 4,
         "vader_valence": -1.1,
         "bounded_context_weight": -1.1
       },
       {
-        "term": "efficiency",
+        "term": "shares",
         "train_context_frequency": 4,
-        "vader_valence": 1.5,
-        "bounded_context_weight": 1.5
+        "vader_valence": 1.2,
+        "bounded_context_weight": 1.2
       },
       {
-        "term": "ethical",
+        "term": "stop",
         "train_context_frequency": 4,
-        "vader_valence": 2.3,
-        "bounded_context_weight": 2.0
-      },
-      {
-        "term": "growth",
-        "train_context_frequency": 4,
-        "vader_valence": 1.6,
-        "bounded_context_weight": 1.6
-      },
-      {
-        "term": "justice",
-        "train_context_frequency": 4,
-        "vader_valence": 2.4,
-        "bounded_context_weight": 2.0
-      },
-      {
-        "term": "sophisticated",
-        "train_context_frequency": 4,
-        "vader_valence": 2.6,
-        "bounded_context_weight": 2.0
+        "vader_valence": -1.2,
+        "bounded_context_weight": -1.2
       },
       {
         "term": "support",
@@ -1165,16 +1132,46 @@
         "bounded_context_weight": 1.7
       },
       {
-        "term": "better",
+        "term": "best",
         "train_context_frequency": 3,
-        "vader_valence": 1.9,
-        "bounded_context_weight": 1.9
+        "vader_valence": 3.2,
+        "bounded_context_weight": 2.0
       },
       {
-        "term": "easier",
+        "term": "boosts",
         "train_context_frequency": 3,
-        "vader_valence": 1.8,
-        "bounded_context_weight": 1.8
+        "vader_valence": 1.3,
+        "bounded_context_weight": 1.3
+      },
+      {
+        "term": "created",
+        "train_context_frequency": 3,
+        "vader_valence": 1.0,
+        "bounded_context_weight": 1.0
+      },
+      {
+        "term": "curious",
+        "train_context_frequency": 3,
+        "vader_valence": 1.3,
+        "bounded_context_weight": 1.3
+      },
+      {
+        "term": "death",
+        "train_context_frequency": 3,
+        "vader_valence": -2.9,
+        "bounded_context_weight": -2.0
+      },
+      {
+        "term": "endorses",
+        "train_context_frequency": 3,
+        "vader_valence": 1.4,
+        "bounded_context_weight": 1.4
+      },
+      {
+        "term": "ethical",
+        "train_context_frequency": 3,
+        "vader_valence": 2.3,
+        "bounded_context_weight": 2.0
       },
       {
         "term": "fail",
@@ -1183,10 +1180,22 @@
         "bounded_context_weight": -2.0
       },
       {
-        "term": "fake",
+        "term": "free",
         "train_context_frequency": 3,
-        "vader_valence": -2.1,
-        "bounded_context_weight": -2.0
+        "vader_valence": 2.3,
+        "bounded_context_weight": 2.0
+      },
+      {
+        "term": "good",
+        "train_context_frequency": 3,
+        "vader_valence": 1.9,
+        "bounded_context_weight": 1.9
+      },
+      {
+        "term": "helps",
+        "train_context_frequency": 3,
+        "vader_valence": 1.6,
+        "bounded_context_weight": 1.6
       },
       {
         "term": "hunger",
@@ -1195,7 +1204,7 @@
         "bounded_context_weight": -1.0
       },
       {
-        "term": "kind",
+        "term": "justice",
         "train_context_frequency": 3,
         "vader_valence": 2.4,
         "bounded_context_weight": 2.0
@@ -1207,28 +1216,34 @@
         "bounded_context_weight": -1.6
       },
       {
+        "term": "optimization",
+        "train_context_frequency": 3,
+        "vader_valence": 1.6,
+        "bounded_context_weight": 1.6
+      },
+      {
         "term": "problem",
         "train_context_frequency": 3,
         "vader_valence": -1.7,
         "bounded_context_weight": -1.7
       },
       {
-        "term": "progress",
+        "term": "profit",
         "train_context_frequency": 3,
-        "vader_valence": 1.8,
-        "bounded_context_weight": 1.8
+        "vader_valence": 1.9,
+        "bounded_context_weight": 1.9
       },
       {
-        "term": "stop",
+        "term": "profits",
         "train_context_frequency": 3,
-        "vader_valence": -1.2,
-        "bounded_context_weight": -1.2
+        "vader_valence": 1.9,
+        "bounded_context_weight": 1.9
       },
       {
-        "term": "super",
+        "term": "spam",
         "train_context_frequency": 3,
-        "vader_valence": 2.9,
-        "bounded_context_weight": 2.0
+        "vader_valence": -1.5,
+        "bounded_context_weight": -1.5
       },
       {
         "term": "threat",
@@ -1237,16 +1252,16 @@
         "bounded_context_weight": -2.0
       },
       {
-        "term": "threatens",
+        "term": "truly",
         "train_context_frequency": 3,
-        "vader_valence": -1.6,
-        "bounded_context_weight": -1.6
+        "vader_valence": 1.9,
+        "bounded_context_weight": 1.9
       },
       {
-        "term": "true",
+        "term": "trust",
         "train_context_frequency": 3,
-        "vader_valence": 1.8,
-        "bounded_context_weight": 1.8
+        "vader_valence": 2.3,
+        "bounded_context_weight": 2.0
       }
     ]
   },
@@ -1255,33 +1270,35 @@
       "advanced": 1.0,
       "best": 2.0,
       "better": 1.9,
-      "care": 2.0,
+      "boosts": 1.3,
       "create": 1.1,
       "created": 1.0,
       "creation": 1.1,
       "curious": 1.3,
-      "easier": 1.8,
-      "efficiency": 1.5,
       "embrace": 1.3,
+      "endorses": 1.4,
       "ethical": 2.0,
-      "growth": 1.6,
+      "free": 2.0,
+      "good": 1.9,
       "help": 1.7,
+      "helps": 1.6,
       "justice": 2.0,
-      "kind": 2.0,
       "like": 1.5,
       "love": 2.0,
-      "progress": 1.8,
+      "optimization": 1.6,
+      "profit": 1.9,
+      "profits": 1.9,
       "safety": 1.8,
       "security": 1.4,
+      "shares": 1.2,
       "smart": 1.7,
-      "sophisticated": 2.0,
-      "super": 2.0,
       "support": 1.7,
-      "true": 1.8
+      "truly": 1.9,
+      "trust": 2.0
     },
     "negative": {
-      "alarmed": -1.4,
       "cut": -1.1,
+      "death": -2.0,
       "fail": -2.0,
       "fake": -2.0,
       "fight": -1.6,
@@ -1289,21 +1306,21 @@
       "hunger": -1.0,
       "losing": -1.6,
       "problem": -1.7,
-      "repetitive": -1.0,
       "risks": -1.1,
+      "spam": -1.5,
       "stop": -1.2,
       "threat": -2.0,
       "threatens": -1.6
     }
   },
   "statistics": {
-    "train_context_token_count": 5212,
-    "train_context_vocabulary_size": 2533,
+    "train_context_token_count": 5253,
+    "train_context_vocabulary_size": 2524,
     "vader_full_lexicon_size": 7506,
     "vader_lexicon_sha256": "8c1f98185dbf84decf3479114eb909771b1b05327bb04e1913738a6da2947a6d",
     "vader_package_version": "3.3.2",
-    "selected_positive_count": 26,
+    "selected_positive_count": 28,
     "selected_negative_count": 14,
-    "combined_count": 40
+    "combined_count": 42
   }
 }

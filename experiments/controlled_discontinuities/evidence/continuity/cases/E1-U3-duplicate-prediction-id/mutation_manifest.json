@@ -1,0 +1,29 @@
+{
+  "case_id": "E1-U3-duplicate-prediction-id",
+  "case": {
+    "case_id": "E1-U3-duplicate-prediction-id",
+    "family": "uniqueness",
+    "required": true,
+    "reserved_for_after_extension": false,
+    "mutation": "Duplicate one prediction row ID and remove another test ID in one prediction file.",
+    "affected_artefacts": [
+      "results/anova_revalidation/predictions/LR_ENR_seed42_test_predictions_v2.csv"
+    ],
+    "oracle_expected": {
+      "should_alarm": true,
+      "broken_relation": "unique test prediction assignment",
+      "localization": [
+        "prediction_file",
+        "post_id"
+      ]
+    },
+    "original_detector_expectation": "reconcile_artifact_chain should report duplicated prediction ID and ID-set mismatch.",
+    "extension_required": false,
+    "acceptance": "Prediction duplicate count is positive and the missing test ID is reported."
+  },
+  "mutation_details": {
+    "prediction_file": "LR_ENR_seed42_test_predictions_v2.csv",
+    "duplicated_id": "1n1plgb",
+    "displaced_id": "1n02v38"
+  }
+}

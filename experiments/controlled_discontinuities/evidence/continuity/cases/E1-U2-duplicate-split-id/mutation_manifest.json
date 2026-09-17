@@ -1,0 +1,29 @@
+{
+  "case_id": "E1-U2-duplicate-split-id",
+  "case": {
+    "case_id": "E1-U2-duplicate-split-id",
+    "family": "uniqueness",
+    "required": true,
+    "reserved_for_after_extension": false,
+    "mutation": "Duplicate one ID inside GEN_split_gld_reddit_ids_v02.json and remove another ID from the same split to preserve split length.",
+    "affected_artefacts": [
+      "data/gold/GEN_split_gld_reddit_ids_v02.json"
+    ],
+    "oracle_expected": {
+      "should_alarm": true,
+      "broken_relation": "unique partition membership",
+      "localization": [
+        "split",
+        "post_id"
+      ]
+    },
+    "original_detector_expectation": "audit_model_input_cells load_parts should raise a duplicate identifier error.",
+    "extension_required": false,
+    "acceptance": "The duplicate ID and missing displaced ID are reported."
+  },
+  "mutation_details": {
+    "split": "train",
+    "duplicated_id": "1mug8n6",
+    "displaced_id": "1n111of"
+  }
+}

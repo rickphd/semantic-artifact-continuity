@@ -1,0 +1,8 @@
+{
+  "reference_frozen_before_pipeline_read": true,
+  "gold_sha256": "8730955465e71bd9782d6f9bd42cc240f0dc80c6af7432db1f57299010bbacce",
+  "post_ids_texts_val_verified": true,
+  "units": 1200,
+  "adjudications": 77,
+  "sklearn_metrics_crosscheck": true
+}

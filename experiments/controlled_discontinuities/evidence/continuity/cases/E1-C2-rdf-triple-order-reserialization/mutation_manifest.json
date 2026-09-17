@@ -1,0 +1,24 @@
+{
+  "case_id": "E1-C2-rdf-triple-order-reserialization",
+  "case": {
+    "case_id": "E1-C2-rdf-triple-order-reserialization",
+    "family": "valid_control",
+    "required": true,
+    "reserved_for_after_extension": true,
+    "mutation": "Reserialize posts.ttl with changed triple order but identical RDF graph.",
+    "affected_artefacts": [
+      "results/knowledge_graph/posts.ttl"
+    ],
+    "oracle_expected": {
+      "should_alarm": false,
+      "expected_status": "passed"
+    },
+    "original_detector_expectation": "run_shacl_conformance should pass; byte-hash-only checks may differ and must not be used as semantic failure evidence.",
+    "extension_required": "RDF graph isomorphism or inventory check should confirm logical equivalence.",
+    "acceptance": "No continuity exception after graph-level comparison; byte hash difference is reported only as serialization difference."
+  },
+  "mutation_details": {
+    "mutation": "rdf graph reserialized",
+    "triples": 15616
+  }
+}

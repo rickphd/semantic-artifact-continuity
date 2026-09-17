@@ -1,0 +1,22 @@
+{
+  "variant_id": "w7_f5_v1p5_c2p0",
+  "parameters": {
+    "variant_id": "w7_f5_v1p5_c2p0",
+    "context_window": 7,
+    "minimum_frequency": 5,
+    "minimum_absolute_valence": 1.5,
+    "maximum_absolute_context_weight": 2.0
+  },
+  "rows": 1614,
+  "columns": 47,
+  "dataset_sha256": "c115e56471ed6f987c6cd50f1aa7892c7c8bc9adaf32c796078dd4cceaf52409",
+  "lexicon_manifest": "results/sensitivity/w7_f5_v1p5_c2p0/lexicon_manifest.json",
+  "lexicon_manifest_sha256": "0c7c485c63e20f9a9617288608c94b5a32c8b4d61b2eb99886052556118d3dd1",
+  "split_distribution": {
+    "train": 968,
+    "val": 323,
+    "test": 323
+  },
+  "canonical_dataset": "data/gold/gold_enriched_ontology.parquet",
+  "canonical_dataset_not_overwritten": true
+}

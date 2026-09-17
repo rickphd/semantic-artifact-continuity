@@ -1,14 +1,14 @@
 # Public Artifact Inventory
 
 Status: `passed`
-Artefacts hashed: `156`
+Artefacts hashed: `1901`
 Missing required artefacts: `0`
 
 ## Scope
 
-Active lineage: `v04.2`.
+Active lineage: `information_f123_20260914`, public `v1.1.0`.
 
-- The sensitivity inventory includes six aggregate summaries; the 125 variant-level intermediate packages can be regenerated and are not distributed.
+- Sensitivity includes all 125 lexicons and complete artifacts for the 97 admissible configurations; rejected settings have no evaluated graph.
 - Inventory and reproducibility reports do not hash themselves. Their final hashes are recorded by the reproducibility manifest after inventory generation.
 
 ## Canonical Ontology Decision
@@ -21,11 +21,11 @@ The public ontology directory is the canonical RDF/SHACL source used by the rele
 
 ## Role Counts
 
-- `documentation`: 12
+- `documentation`: 20
 - `metric`: 26
-- `ontology_or_shacl`: 9
-- `prediction`: 26
-- `semantic_feature_table`: 1
-- `semantic_variable_selection`: 2
+- `ontology_or_shacl`: 333
+- `prediction`: 33
+- `semantic_feature_table`: 98
+- `semantic_variable_selection`: 99
 - `split`: 1
-- `supporting_artifact`: 79
+- `supporting_artifact`: 1291

@@ -1,0 +1,19 @@
+@prefix rr: <http://wfrp.ia/ontologia/ia-sentimiento#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a sh:ValidationReport ;
+    sh:conforms false ;
+    sh:result [ a sh:ValidationResult ;
+            sh:focusNode <http://wfrp.ia/resource/reddit/post/1kkfjn0> ;
+            sh:resultMessage "rr:probPos fuera de [0,1] o con tipo inválido."@es ;
+            sh:resultPath rr:probPos ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxInclusiveConstraintComponent ;
+            sh:sourceShape [ sh:datatype xsd:decimal ;
+                    sh:maxInclusive 1 ;
+                    sh:message "rr:probPos fuera de [0,1] o con tipo inválido."@es ;
+                    sh:minInclusive 0 ;
+                    sh:path rr:probPos ] ;
+            sh:value 1.5 ] .
+

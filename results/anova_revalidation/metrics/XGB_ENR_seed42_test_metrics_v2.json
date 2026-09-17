@@ -2,13 +2,13 @@
   "model": "XGB",
   "condition": "ENR",
   "seed": 42,
-  "pipeline_version": "canonical_v04_2_vader_train_scope",
-  "created_at": "2026-08-03T00:12:02.965273",
+  "pipeline_version": "information_f123_20260914",
+  "created_at": "2026-09-14T13:01:43.011054",
   "split_source": "GEN_split_gld_reddit_ids_v02.json",
   "dataset": "gold_enriched_ontology.parquet",
-  "dataset_sha256": "62c6394d4ef68191b713d80c9b54849ecf00176822719bf515b8f0ee65b31162",
+  "dataset_sha256": "8730955465e71bd9782d6f9bd42cc240f0dc80c6af7432db1f57299010bbacce",
   "lexicon_manifest": "results/lexicon/ontology_lexicon_v04_2_train_only.json",
-  "lexicon_manifest_sha256": "313af4e18f4d7b58f87e87a7ac5bbbb19c32d5e7c829816bdad9fa6515e51e77",
+  "lexicon_manifest_sha256": "8bd5d395007819b41ff4a1615004a62d9ce43c4383f18408047246bf201c7a53",
   "test_size": 323,
   "class_order": [
     "Negative",
@@ -21,55 +21,55 @@
     156
   ],
   "accuracy": 0.6408668730650154,
-  "macro_f1": 0.5443465403098431,
-  "weighted_f1": 0.621724426055383,
+  "macro_f1": 0.5535572158290211,
+  "weighted_f1": 0.6238458882848762,
   "confusion_matrix": [
     [
-      12,
-      20,
+      13,
+      19,
       16
     ],
     [
-      14,
-      61,
-      44
+      11,
+      63,
+      45
     ],
     [
-      4,
-      18,
-      134
+      5,
+      20,
+      131
     ]
   ],
   "classification_report": {
     "Negative": {
-      "precision": 0.4,
-      "recall": 0.25,
-      "f1-score": 0.3076923076923077,
+      "precision": 0.4482758620689655,
+      "recall": 0.2708333333333333,
+      "f1-score": 0.33766233766233766,
       "support": 48.0
     },
     "Neutral": {
-      "precision": 0.6161616161616161,
-      "recall": 0.5126050420168067,
-      "f1-score": 0.5596330275229358,
+      "precision": 0.6176470588235294,
+      "recall": 0.5294117647058824,
+      "f1-score": 0.5701357466063348,
       "support": 119.0
     },
     "Positive": {
-      "precision": 0.6907216494845361,
-      "recall": 0.8589743589743589,
-      "f1-score": 0.7657142857142857,
+      "precision": 0.6822916666666666,
+      "recall": 0.8397435897435898,
+      "f1-score": 0.7528735632183908,
       "support": 156.0
     },
     "accuracy": 0.6408668730650154,
     "macro avg": {
-      "precision": 0.5689610885487174,
-      "recall": 0.5405264669970552,
-      "f1-score": 0.5443465403098431,
+      "precision": 0.5827381958530539,
+      "recall": 0.5466628959276019,
+      "f1-score": 0.5535572158290211,
       "support": 323.0
     },
     "weighted avg": {
-      "precision": 0.6200489462626004,
+      "precision": 0.623698889719227,
       "recall": 0.6408668730650154,
-      "f1-score": 0.621724426055383,
+      "f1-score": 0.6238458882848762,
       "support": 323.0
     }
   },
@@ -93,34 +93,33 @@
   },
   "ont_features": [
     "ont_domain_density",
-    "ont_InteligenciaArtificial_Negativo",
     "ont_total_negativo_mentions",
+    "ont_InteligenciaArtificial_Negativo",
     "ont_Innovacion_Neutro",
     "ont_Etica_Negativo",
-    "ont_InteligenciaArtificial_Neutro",
-    "ont_Tecnologia_Positivo"
+    "ont_Tecnologia_Neutro"
   ],
   "ont_list": "anova_p005_train_only_vader_scope",
-  "n_features": 10007,
+  "n_features": 10006,
   "class_weighting": "balanced_sample_weight",
   "semantic_input_provenance": {
     "train": {
       "profile": "raw_float64",
       "rows": 968,
-      "columns": 7,
+      "columns": 6,
       "dtype": "float64",
       "ordered_post_ids_sha256": "d42ac8c75364349ab2bd40038940caf56eb506b786e420054190294a27f45476",
-      "ordered_features_sha256": "95680f916a7802a3221e04fee777df9e2dcfa6125d12e7c3064d0ce282f0da51",
-      "matrix_sha256": "7ec14f7236be5effe9864312601e0053a6f7d387658cc7943581ea2ab7296e75"
+      "ordered_features_sha256": "02804b81a4bc0e255e4c42492103505dc799597569205fbfadc99ecbeaf925c6",
+      "matrix_sha256": "e253db61240a8a8ffbf2432f84778bb315380cf9f6acda40797721a22dfd443d"
     },
     "test": {
       "profile": "raw_float64",
       "rows": 323,
-      "columns": 7,
+      "columns": 6,
       "dtype": "float64",
       "ordered_post_ids_sha256": "359d5f85b3b8c5eeacf179a9b91c8d4ed63dfda568712a6ed4c50ef3bf62f009",
-      "ordered_features_sha256": "95680f916a7802a3221e04fee777df9e2dcfa6125d12e7c3064d0ce282f0da51",
-      "matrix_sha256": "6bbdae170b9d9f3c752c4cf8a999ffd34a1332b0a478e954a3eb5dac806bd2e6"
+      "ordered_features_sha256": "02804b81a4bc0e255e4c42492103505dc799597569205fbfadc99ecbeaf925c6",
+      "matrix_sha256": "864f06c457b4fe7ddd8d0231ebeee62560f8195fcfa6924c512f37588935a2cf"
     }
   }
 }

@@ -1,0 +1,122 @@
+{
+  "package/results/anova_revalidation/metrics/XGB_BSL_seed42_test_metrics_v2.json": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/anova_revalidation/metrics/XGB_BSL_seed42_test_metrics_v2.json",
+    "sha256": "f4fd596fc0236cd70e4221feab52116619b0141aef84f7f9e86879afc3b2e65f"
+  },
+  "package/results/anova_revalidation/metrics/XGB_ENR_seed42_test_metrics_v2.json": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/anova_revalidation/metrics/XGB_ENR_seed42_test_metrics_v2.json",
+    "sha256": "c5629fd3ed0597735bff1dcabd6ad84d1b26e6a6c0d072933c2b62da7ad63756"
+  },
+  "package/results/anova_revalidation/metrics/CNN1D_ENR_seed42_test_metrics_v2.json": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/anova_revalidation/metrics/CNN1D_ENR_seed42_test_metrics_v2.json",
+    "sha256": "e032fddd48f91578409082c338fd4e1af1eb133c050e141259a0047ab481dda6"
+  },
+  "package/results/anova_revalidation/metrics/CNN1D_BSL_seed42_test_metrics_v2.json": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/anova_revalidation/metrics/CNN1D_BSL_seed42_test_metrics_v2.json",
+    "sha256": "0116b8d4063b2224ff09c81d4cbb207e4f34d1388050eed167c6ac0495bcfc85"
+  },
+  "package/results/anova_revalidation/metrics/RF_BSL_seed42_test_metrics_v2.json": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/anova_revalidation/metrics/RF_BSL_seed42_test_metrics_v2.json",
+    "sha256": "3b7264fae436ba829f271ee3d92dd0db56d0713cb0b76afaa427478874ea8b91"
+  },
+  "package/results/anova_revalidation/metrics/LR_BSL_seed42_test_metrics_v2.json": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/anova_revalidation/metrics/LR_BSL_seed42_test_metrics_v2.json",
+    "sha256": "5f43fbc481c864d0890141454c66fbebbbdab1933adefb5e2718c8cd267c0cad"
+  },
+  "package/results/anova_revalidation/metrics/LR_ENR_seed42_test_metrics_v2.json": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/anova_revalidation/metrics/LR_ENR_seed42_test_metrics_v2.json",
+    "sha256": "fbbda196bcc569343e3e4e70fd86ebf828c3507d6fb2c561d32fb58b0f7fc722"
+  },
+  "package/results/anova_revalidation/metrics/RF_ENR_seed42_test_metrics_v2.json": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/anova_revalidation/metrics/RF_ENR_seed42_test_metrics_v2.json",
+    "sha256": "946034b42c8dba0ffd98fbebf6c98530a91ba58a7cb84ad0c64820d28169e033"
+  },
+  "package/results/anova_revalidation/predictions/LR_BSL_seed42_test_predictions_v2.csv": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/anova_revalidation/predictions/LR_BSL_seed42_test_predictions_v2.csv",
+    "sha256": "6802a899d989f49bc71b0de1b83742905155d49ef9d630d61756066b06991cb6"
+  },
+  "package/results/anova_revalidation/predictions/XGB_BSL_seed42_test_predictions_v2.csv": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/anova_revalidation/predictions/XGB_BSL_seed42_test_predictions_v2.csv",
+    "sha256": "34a5cea73504d68c065544802655873511024a553b2e210a17c79a2f754bc9f5"
+  },
+  "package/results/anova_revalidation/predictions/RF_ENR_seed42_test_predictions_v2.csv": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/anova_revalidation/predictions/RF_ENR_seed42_test_predictions_v2.csv",
+    "sha256": "9120eaabfaa70c8f68fd43272edd4f0c20580b01dd1d1f2095c4f8f4d04e0279"
+  },
+  "package/results/anova_revalidation/predictions/CNN1D_BSL_seed42_test_predictions_v2.csv": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/anova_revalidation/predictions/CNN1D_BSL_seed42_test_predictions_v2.csv",
+    "sha256": "c51fb193bde465298bac6b2385e37d00b494fe4e9d3d32ccc8d3a2b67892ebfc"
+  },
+  "package/results/anova_revalidation/predictions/XGB_ENR_seed42_test_predictions_v2.csv": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/anova_revalidation/predictions/XGB_ENR_seed42_test_predictions_v2.csv",
+    "sha256": "5dd1aa0dbd307ac8f22feb0f4512c0c8c9fc1778580ae1a82b16f082765af6a9"
+  },
+  "package/results/anova_revalidation/predictions/LR_ENR_seed42_test_predictions_v2.csv": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/anova_revalidation/predictions/LR_ENR_seed42_test_predictions_v2.csv",
+    "sha256": "f4190cd8a9a314e08b3fade9cdef057e42014b92ddf9d8151ee7d40efb1236b2"
+  },
+  "package/results/anova_revalidation/predictions/CNN1D_ENR_seed42_test_predictions_v2.csv": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/anova_revalidation/predictions/CNN1D_ENR_seed42_test_predictions_v2.csv",
+    "sha256": "fd366e838028fcf8669c3dcd896a6c632f14911644a9b22cf56932c5b40cac70"
+  },
+  "package/results/anova_revalidation/predictions/RF_BSL_seed42_test_predictions_v2.csv": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/anova_revalidation/predictions/RF_BSL_seed42_test_predictions_v2.csv",
+    "sha256": "5b1651d6cc71673d91b992c3c7ba70d66d8626b41caebfb8885b52f23adabd18"
+  },
+  "package/results/sensitivity/canonical_w5_f3_v1p0_c2p0/lexicon_manifest.json": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/sensitivity/canonical_w5_f3_v1p0_c2p0/lexicon_manifest.json",
+    "sha256": "5307419632891e87c10224065d6f992b180cefb6e67a6bc3af4d6deb6e946cad"
+  },
+  "package/results/sensitivity/canonical_w5_f3_v1p0_c2p0/dataset_metadata.json": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/sensitivity/canonical_w5_f3_v1p0_c2p0/dataset_metadata.json",
+    "sha256": "d66ca989c3a8a3c53c7e204d02aff4a0c313474e9cfe4a93f60208f63557254c"
+  },
+  "package/results/sensitivity/canonical_w5_f3_v1p0_c2p0/rdf_materialization_report.json": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/sensitivity/canonical_w5_f3_v1p0_c2p0/rdf_materialization_report.json",
+    "sha256": "157098262e96b377076b3a4bc09116828791af4a2b45ee821a2bdd3545503cad"
+  },
+  "package/results/sensitivity/canonical_w5_f3_v1p0_c2p0/feature_selection_anova_train_only.json": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/sensitivity/canonical_w5_f3_v1p0_c2p0/feature_selection_anova_train_only.json",
+    "sha256": "dc85091a715ba2462e55faa79f8ef6a9341aa5c811d34544d5934a6ff68f9c0b"
+  },
+  "package/results/sensitivity/canonical_w5_f3_v1p0_c2p0/coverage_sparsity.csv": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/sensitivity/canonical_w5_f3_v1p0_c2p0/coverage_sparsity.csv",
+    "sha256": "0b07e28b9038d648d4e3376b6767576de703972ef4e6f376cecf232e304c2315"
+  },
+  "package/results/sensitivity/canonical_w5_f3_v1p0_c2p0/coverage_sparsity_report.json": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/sensitivity/canonical_w5_f3_v1p0_c2p0/coverage_sparsity_report.json",
+    "sha256": "842bd4ce8430b9d79328d893d7acd640bd935a54bd90f6ec5d8cc3d941992ae2"
+  },
+  "package/results/sensitivity/canonical_w5_f3_v1p0_c2p0/gold_enriched_ontology.parquet": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/sensitivity/canonical_w5_f3_v1p0_c2p0/gold_enriched_ontology.parquet",
+    "sha256": "8730955465e71bd9782d6f9bd42cc240f0dc80c6af7432db1f57299010bbacce"
+  },
+  "package/results/sensitivity/canonical_w5_f3_v1p0_c2p0/traceability_map.csv": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/sensitivity/canonical_w5_f3_v1p0_c2p0/traceability_map.csv",
+    "sha256": "57232e86b10bf912bd06acc1ec10f5487bc7e9059f6d6a4c1f1965a109043b62"
+  },
+  "package/results/sensitivity/canonical_w5_f3_v1p0_c2p0/module_coverage.csv": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/sensitivity/canonical_w5_f3_v1p0_c2p0/module_coverage.csv",
+    "sha256": "a9918e9fac22b4345329dd64887e0f0253fbcde8da3193b3029861ede0ec8508"
+  },
+  "package/results/sensitivity/canonical_w5_f3_v1p0_c2p0/shacl/baseline_report.ttl": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/sensitivity/canonical_w5_f3_v1p0_c2p0/shacl/baseline_report.ttl",
+    "sha256": "4a53a3befd9bcdb7273ef3d6e47a83be519927771faee49ef0d2a44ee23be2be"
+  },
+  "package/results/sensitivity/canonical_w5_f3_v1p0_c2p0/shacl/baseline_report.txt": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/sensitivity/canonical_w5_f3_v1p0_c2p0/shacl/baseline_report.txt",
+    "sha256": "77debc800e6c973b66475968bdf71e2e667df8f4108e7f5299fe1651e6606dc9"
+  },
+  "package/results/sensitivity/canonical_w5_f3_v1p0_c2p0/shacl/baseline_report.json": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/sensitivity/canonical_w5_f3_v1p0_c2p0/shacl/baseline_report.json",
+    "sha256": "51fd38d078e7416d57a90b36643a095d19b1cba22c8c36a0120118b5caf05770"
+  },
+  "package/results/sensitivity/canonical_w5_f3_v1p0_c2p0/shacl/canonical_shapes_normalized.ttl": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/sensitivity/canonical_w5_f3_v1p0_c2p0/shacl/canonical_shapes_normalized.ttl",
+    "sha256": "d1f2c47e1053923c1235e1b83ca89becf681ede805d7dc6549d7dbaaa6191230"
+  },
+  "package/results/sensitivity/canonical_w5_f3_v1p0_c2p0/rdf/posts.ttl": {
+    "source": "JOWS/revisions/pilot_f123_seed42_20260914/package/results/sensitivity/canonical_w5_f3_v1p0_c2p0/rdf/posts.ttl",
+    "sha256": "791849a386dfebcf4d0bdf7a19fe4b692f7f86adb1a785be13e7b2557db94181"
+  }
+}

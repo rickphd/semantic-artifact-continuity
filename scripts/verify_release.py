@@ -6,6 +6,7 @@ from __future__ import annotations
 import hashlib
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
 
 
@@ -44,18 +45,26 @@ def verify_manifest() -> list[str]:
 
 
 def main() -> None:
+    if sys.flags.optimize:
+        raise SystemExit('Run without -O; the E2 replay uses assertion-based checks.')
     validation = subprocess.run(
         [
             sys.executable,
-            str(ROOT / "scripts" / "experiments" / "validate_v04_2_experiment_chain.py"),
+            str(ROOT / "scripts" / "experiments" / "validate_release.py"),
         ],
         cwd=ROOT,
         check=False,
     )
+    e1 = subprocess.run([sys.executable, '-B', str(ROOT / 'experiments/controlled_discontinuities/verify_package.py')], cwd=ROOT, check=False)
+    with tempfile.TemporaryDirectory(prefix='semantic-release-verify-') as temporary:
+        e2 = subprocess.run([
+            sys.executable, '-B', str(ROOT / 'experiments/human_assessment/evaluate.py'),
+            '--output-dir', str(Path(temporary) / 'e2'),
+        ], cwd=ROOT, check=False)
     manifest_errors = verify_manifest()
     for error in manifest_errors:
         print(f"- {error}")
-    if validation.returncode or manifest_errors:
+    if validation.returncode or e1.returncode or e2.returncode or manifest_errors:
         raise SystemExit(1)
     print("Release verification passed")
 

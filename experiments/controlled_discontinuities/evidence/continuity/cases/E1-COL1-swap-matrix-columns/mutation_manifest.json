@@ -1,0 +1,37 @@
+{
+  "case_id": "E1-COL1-swap-matrix-columns",
+  "case": {
+    "case_id": "E1-COL1-swap-matrix-columns",
+    "family": "column_alignment",
+    "required": true,
+    "reserved_for_after_extension": false,
+    "mutation": "Swap two columns in test_raw_float64.npy while leaving selected feature order unchanged.",
+    "affected_artefacts": [
+      "results/prepared_model_inputs/test_raw_float64.npy",
+      "results/prepared_model_inputs/manifest.json"
+    ],
+    "oracle_expected": {
+      "should_alarm": true,
+      "broken_relation": "ordered selected features to matrix columns",
+      "localization": [
+        "matrix_profile",
+        "feature",
+        "column_index"
+      ]
+    },
+    "original_detector_expectation": "Metric feature-order checks detect only metric metadata changes, not silent .npy column swaps.",
+    "extension_required": "matrix_manifest_rechecker",
+    "acceptance": "Recomputed matrix_sha256 differs and column-level comparison identifies swapped features."
+  },
+  "mutation_details": {
+    "matrix": "test_raw_float64.npy",
+    "swapped_columns": [
+      0,
+      1
+    ],
+    "features": [
+      "ont_domain_density",
+      "ont_total_negativo_mentions"
+    ]
+  }
+}

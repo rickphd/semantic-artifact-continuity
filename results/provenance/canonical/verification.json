@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "version": "information_f123_20260914",
+  "records": 1614,
+  "columns": 47,
+  "semantic_variables": 37,
+  "exact_equal_to_F3_cells": 59718,
+  "nonsemantic_fields_and_ids_preserved": true,
+  "lexicon_entries": 42,
+  "lexicon_weights_and_frequencies_equal_to_F1": true,
+  "selected_features": [
+    "ont_domain_density",
+    "ont_total_negativo_mentions",
+    "ont_InteligenciaArtificial_Negativo",
+    "ont_Innovacion_Neutro",
+    "ont_Etica_Negativo",
+    "ont_Tecnologia_Neutro"
+  ],
+  "rdf_triples": 15616,
+  "rdf_triples_original": 15603,
+  "rdf_added": 13,
+  "rdf_removed": 0,
+  "trace_values_checked": 9329,
+  "selected_nonzero_trace_cells": 1789,
+  "shacl_baseline_conforms": true,
+  "shacl_stress_results": 6,
+  "prepared_semantic_cells": 9684,
+  "frozen_source_files": 21,
+  "protected_files": 317,
+  "protected_unchanged": true,
+  "model_training_executed": false,
+  "model_consumption_verified": false
+}

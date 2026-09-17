@@ -1,0 +1,57 @@
+{
+  "case_id": "E1-SHACL7-label-probability-inconsistency",
+  "family": "shacl",
+  "oracle_should_alarm": true,
+  "oracle_conforms_expected": false,
+  "pyshacl_conforms": false,
+  "validation_result_count": 1,
+  "original_detected": true,
+  "extension_detected": false,
+  "detection_status": "partial_detection",
+  "localization_status": "detected_without_expected_path_component_match",
+  "false_positive": false,
+  "non_detection": false,
+  "partial_detection": true,
+  "expected": {
+    "should_alarm": true,
+    "conforms": false,
+    "expected_path": "SPARQL",
+    "expected_component": "sh:SPARQLConstraintComponent",
+    "shape_family": "label_probability_consistency_sparql",
+    "reserved_for_after_extension": false
+  },
+  "matched_result_count": 0,
+  "results": [
+    {
+      "result_node": "N3a6eb703679d4877805beda3fb874503",
+      "focus_node": [
+        "http://wfrp.ia/resource/reddit/post/1kkfjn0"
+      ],
+      "result_path": [],
+      "source_constraint_component": [
+        "http://www.w3.org/ns/shacl#SPARQLConstraintComponent"
+      ],
+      "result_severity": [
+        "http://www.w3.org/ns/shacl#Violation"
+      ],
+      "source_shape": [
+        "http://wfrp.ia/ontologia/ia-sentimiento#PostShape"
+      ],
+      "message": [
+        "rr:etiquetaSentimiento no coincide con la probabilidad máxima (probPos/probNeu/probNeg)."
+      ]
+    }
+  ],
+  "artefacts": {
+    "case_dir": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL7-label-probability-inconsistency",
+    "data_graph": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL7-label-probability-inconsistency/mutated_posts.ttl",
+    "mutation_manifest": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL7-label-probability-inconsistency/mutation_manifest.json",
+    "report_ttl": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL7-label-probability-inconsistency/report.ttl",
+    "report_text": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL7-label-probability-inconsistency/report.txt",
+    "report_extracted": "experiments/controlled_discontinuities/evidence/shacl/cases/E1-SHACL7-label-probability-inconsistency/report_extracted.json"
+  },
+  "runtime": {
+    "elapsed_seconds": 34.792592,
+    "command": "${PYTHON} experiments/controlled_discontinuities/evidence/shacl/run_e1_shacl.py"
+  }
+}
