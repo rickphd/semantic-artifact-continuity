@@ -1,3 +1,13 @@
+# v1.1.1 - 2026-09-17
+
+Packaging-only follow-up: declare XGBoost in the verification requirements.
+The stored-result verifier imports the existing ablation-condition helpers from
+a module that imports XGBoost, even though verification does not train models.
+The prior local environment already contained it; the minimal CI environment
+did not install it. Experimental data, metrics, E1/E2 decisions, original
+detectors and figures are unchanged. Use v1.1.1 for the corrected installation
+instructions; v1.1.0 remains available as published.
+
 # v1.1.0 - 2026-09-17
 
 This version replaces the active seven-variable experimental package with the

@@ -3,11 +3,13 @@
 Research artifacts for **Evaluating Semantic-Artifact Continuity for Noisy Social
 Text: RDF Materialization, SHACL Conformance, and Model-Input Evidence**.
 
-**Version 1.1.0** publishes the corrected extraction and evaluation artifacts,
+**Version 1.1.1** publishes the corrected extraction and evaluation artifacts,
 controlled-discontinuity experiments, and final human assessment. The original
 package remains available at [v1.0.0](https://github.com/rickphd/semantic-artifact-continuity/tree/v1.0.0).
-Use [v1.1.0](https://github.com/rickphd/semantic-artifact-continuity/tree/v1.1.0)
-when citing this evidence; do not mix results from the two versions.
+Use [v1.1.1](https://github.com/rickphd/semantic-artifact-continuity/tree/v1.1.1)
+when citing this evidence; do not mix results from the original and corrected
+versions. Version 1.1.1 declares the verification dependency missing in v1.1.0;
+the experimental data and decisions are unchanged.
 
 The evaluated workflow connects 1,614 source posts, ontology activations, RDF
 resources, SHACL conformance reports, 37 numeric semantic variables, six

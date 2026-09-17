@@ -8,7 +8,7 @@ python scripts/verify_release.py
 python -m unittest discover -s tests
 ```
 
-The v1.1.0 computational verifier is read-only. It recalculates metrics from
+The computational verifier is read-only. It recalculates metrics from
 62,016 predictions, checks fixed IDs/labels/order, the six-variable interface,
 27 captured runtime profiles, canonical RDF cardinality and the 125-setting
 sensitivity grid. File integrity alone does not validate scientific meaning.
@@ -35,7 +35,7 @@ The original producer scripts write repository-relative outputs. Do not run
 them over the preserved evidence. Create a disposable clone first:
 
 ```bash
-git clone --branch v1.1.0 https://github.com/rickphd/semantic-artifact-continuity.git /tmp/semantic-artifact-replay
+git clone --branch v1.1.1 https://github.com/rickphd/semantic-artifact-continuity.git /tmp/semantic-artifact-replay
 cd /tmp/semantic-artifact-replay
 python scripts/experiments/build_train_only_ontology_dataset.py
 python scripts/experiments/select_ont_features_anova_train_only.py

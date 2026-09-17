@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this artifact, please cite the associated manuscript and the repository release."
 title: "Traceable Knowledge Engineering Artifacts"
 type: software
-version: "1.1.0"
+version: "1.1.1"
 date-released: "2026-09-17"
 repository-code: "https://github.com/rickphd/semantic-artifact-continuity"
 url: "https://github.com/rickphd/semantic-artifact-continuity"

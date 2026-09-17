@@ -141,7 +141,7 @@ def validate():
     require(shacl['counts'] == {'total_cases': 11, 'controls': 1, 'faults': 10, 'detected_by_original': 10, 'control_passed': 1, 'partial_detection': 0, 'not_detected': 0, 'false_positive': 0}, 'Independent SHACL cases')
     summary = pd.DataFrame(rows).groupby(['model', 'condition']).agg(macro_f1_mean=('macro_f1', 'mean'), macro_f1_std=('macro_f1', 'std'), accuracy_mean=('accuracy', 'mean'), seeds=('seed', 'count')).reset_index()
     pd.testing.assert_frame_equal(summary, pd.read_csv(RESULTS / 'provenance/campaign/main_summary.csv'), check_exact=False, rtol=0, atol=1e-12)
-    return {'status': 'passed', 'release': 'v1.1.0', 'main_runs': 24, 'classical_ablation_runs': 126, 'cnn_ablation_runs': 42, 'predictions_recomputed': 62016, 'runtime_profiles_matched': fingerprints, 'sensitivity_admissible': 97, 'sensitivity_rejected': 28, 'training_performed': False}
+    return {'status': 'passed', 'release': 'v1.1.1', 'main_runs': 24, 'classical_ablation_runs': 126, 'cnn_ablation_runs': 42, 'predictions_recomputed': 62016, 'runtime_profiles_matched': fingerprints, 'sensitivity_admissible': 97, 'sensitivity_rejected': 28, 'training_performed': False}
 
 if __name__ == '__main__':
     print(json.dumps(validate(), indent=2))

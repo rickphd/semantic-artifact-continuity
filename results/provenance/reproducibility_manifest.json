@@ -6,17 +6,17 @@
   "missing_generated_outputs": [],
   "stored_result_validation": {
     "returncode": 0,
-    "stdout": "{\n  \"status\": \"passed\",\n  \"release\": \"v1.1.0\",\n  \"main_runs\": 24,\n  \"classical_ablation_runs\": 126,\n  \"cnn_ablation_runs\": 42,\n  \"predictions_recomputed\": 62016,\n  \"runtime_profiles_matched\": 27,\n  \"sensitivity_admissible\": 97,\n  \"sensitivity_rejected\": 28,\n  \"training_performed\": false\n}",
+    "stdout": "{\n  \"status\": \"passed\",\n  \"release\": \"v1.1.1\",\n  \"main_runs\": 24,\n  \"classical_ablation_runs\": 126,\n  \"cnn_ablation_runs\": 42,\n  \"predictions_recomputed\": 62016,\n  \"runtime_profiles_matched\": 27,\n  \"sensitivity_admissible\": 97,\n  \"sensitivity_rejected\": 28,\n  \"training_performed\": false\n}",
     "stderr": ""
   },
   "hashes": [
     {
       "path": "results/provenance/artifact_inventory.json",
-      "hash_sha256": "310758aed77efdda3d32d2b97efea2e35d8726febcaf91791c7f4e7cef954e30"
+      "hash_sha256": "9d7c89790d158a57b0e7bba7bae14e0350c655a65cb6c130cdc948bc463acaf2"
     },
     {
       "path": "results/provenance/hash_manifest.json",
-      "hash_sha256": "8e49b32ef99e5ef370a0fbb0a13a73da275149932fa85647dcc403a394977b40"
+      "hash_sha256": "bd14f7ebf4bbf290ca892bb35871af143927162b4f9af19cc577d40811795a0a"
     },
     {
       "path": "results/lexicon/lexicon_induction_report.json",
@@ -116,7 +116,7 @@
     },
     {
       "path": "results/validation/experiment_chain_validation.json",
-      "hash_sha256": "915a0d2e399e22e24761a4040d6bf1b6dc705045b86156b46dfb5d3e4590b093"
+      "hash_sha256": "dbaab5c0695d9878c94f25e1de72a5558f1d086b2f6b834e51967db1117d5d08"
     }
   ],
   "release_scope_exclusions": [

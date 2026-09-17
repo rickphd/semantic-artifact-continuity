@@ -2298,8 +2298,8 @@
     {
       "path": "docs/REPRODUCIBILITY.md",
       "role": "documentation",
-      "size_bytes": 5200,
-      "hash_sha256": "3ab961764717794b137a329ef74c4d9dc00a991d080ab76da9cc6ce4c8c6d8d9",
+      "size_bytes": 5193,
+      "hash_sha256": "9f70ad609eb408002f65a428b9a0012ddbc8bc8e2cbb10954a60136858da3a13",
       "regeneration_status": "stored_or_scripted"
     },
     {
@@ -2614,7 +2614,7 @@
       "path": "scripts/experiments/validate_release.py",
       "role": "supporting_artifact",
       "size_bytes": 10614,
-      "hash_sha256": "d591512e39af5f5c8b24544e0d84dae30164a4563f0da71f02b702d514e5650b",
+      "hash_sha256": "88da4e0bd85f530e0c9a33276f071bdaa82bc358dbac31668d843447d6eafbc5",
       "regeneration_status": "stored_or_scripted"
     },
     {
@@ -13261,7 +13261,7 @@
       "path": "results/validation/experiment_chain_validation.json",
       "role": "supporting_artifact",
       "size_bytes": 290,
-      "hash_sha256": "915a0d2e399e22e24761a4040d6bf1b6dc705045b86156b46dfb5d3e4590b093",
+      "hash_sha256": "dbaab5c0695d9878c94f25e1de72a5558f1d086b2f6b834e51967db1117d5d08",
       "regeneration_status": "stored_or_scripted"
     },
     {
